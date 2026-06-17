@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../ext/commands/api.rst:4
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
 
 #: ../../../ext/commands/api.rst:6
 msgid ""

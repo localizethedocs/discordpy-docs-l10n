@@ -19,11 +19,11 @@ msgstr ""
 
 #: ../../../index.rst:59
 msgid "discord.ext.commands API Reference"
-msgstr ""
+msgstr "discord.ext.commands API 參考"
 
 #: ../../../index.rst:59
 msgid "discord.ext.tasks API Reference"
-msgstr ""
+msgstr "discord.ext.tasks API 參考"
 
 #: ../../../index.rst:7
 msgid "Welcome to discord.py"
@@ -34,10 +34,11 @@ msgid ""
 "discord.py is a modern, easy to use, feature-rich, and async ready API "
 "wrapper for Discord."
 msgstr ""
+"discord.py 是一個現代、易於使用、功能豐富且支援異步的 Discord API 包裝器。"
 
 #: ../../../index.rst:15
 msgid "**Features:**"
-msgstr ""
+msgstr "**功能：**"
 
 #: ../../../index.rst:17
 msgid "Modern Pythonic API using ``async``\\/``await`` syntax"
@@ -49,7 +50,7 @@ msgstr ""
 
 #: ../../../index.rst:19
 msgid "Command extension to aid with bot creation"
-msgstr ""
+msgstr "用於協助機器人開發的命令擴充功能"
 
 #: ../../../index.rst:20
 msgid "Easy to use with an object oriented design"
@@ -61,7 +62,7 @@ msgstr ""
 
 #: ../../../index.rst:24
 msgid "Getting started"
-msgstr ""
+msgstr "開始使用"
 
 #: ../../../index.rst:26
 msgid ""
@@ -84,7 +85,7 @@ msgstr ""
 
 #: ../../../index.rst:33
 msgid "Getting help"
-msgstr ""
+msgstr "取得幫助"
 
 #: ../../../index.rst:35
 msgid "If you're having trouble with something, these resources might help."
@@ -115,7 +116,7 @@ msgstr ""
 
 #: ../../../index.rst:44
 msgid "Extensions"
-msgstr ""
+msgstr "擴充功能"
 
 #: ../../../index.rst:46
 msgid ""
@@ -124,7 +125,7 @@ msgstr ""
 
 #: ../../../index.rst:55
 msgid "Manuals"
-msgstr ""
+msgstr "手冊"
 
 #: ../../../index.rst:57
 msgid "These pages go into great detail about everything the API can do."

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../ext/commands/extensions.rst:6
 msgid "Extensions"
-msgstr ""
+msgstr "擴充功能"
 
 #: ../../../ext/commands/extensions.rst:8
 msgid ""

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../api.rst:4
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
 
 #: ../../../api.rst:6
 msgid "The following section outlines the API of discord.py."

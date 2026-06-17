@@ -245,7 +245,7 @@ msgstr ""
 
 #: ../../../ext/tasks/index.rst:193
 msgid "API Reference"
-msgstr ""
+msgstr "API 參考"
 
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
 #: discord.ext.tasks.Loop:1
