@@ -13,22 +13,22 @@
     },
     "zh_CN" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-05-21 10:34:48 -0400",
+        "hash" : "2fbed9362422dad4f7850eb6c5d9b1f8bff7c71a",
+        "title" : "Fix CRLF line endings in test_permissions_all.py"
       }
     },
     "zh_TW" : 
     {
-      "branch" : "",
+      "branch" : "master",
       "commit" : 
       {
-        "date" : "",
-        "hash" : "",
-        "title" : ""
+        "date" : "2026-05-21 10:34:48 -0400",
+        "hash" : "2fbed9362422dad4f7850eb6c5d9b1f8bff7c71a",
+        "title" : "Fix CRLF line endings in test_permissions_all.py"
       }
     }
   },

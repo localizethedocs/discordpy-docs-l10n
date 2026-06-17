@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../logging.rst:8
+msgid "Setting Up Logging"
+msgstr ""
+
+#: ../../../logging.rst:10
+msgid ""
+"*discord.py* logs errors and debug information via the :mod:`logging` python "
+"module. In order to streamline this process, the library provides default "
+"configuration for the ``discord`` logger when using :meth:`Client.run`. It "
+"is strongly recommended that the logging module is configured, as no errors "
+"or warnings will be output if it is not set up."
+msgstr ""
+
+#: ../../../logging.rst:13
+msgid ""
+"The default logging configuration provided by the library will print to :"
+"data:`sys.stderr` using coloured output. You can configure it to send to a "
+"file instead by using one of the built-in :mod:`logging.handlers`, such as :"
+"class:`logging.FileHandler`."
+msgstr ""
+
+#: ../../../logging.rst:15
+msgid "This can be done by passing it through :meth:`Client.run`:"
+msgstr ""
+
+#: ../../../logging.rst:17
+msgid ""
+"import logging\n"
+"\n"
+"handler = logging.FileHandler(filename='discord.log', encoding='utf-8', "
+"mode='w')\n"
+"\n"
+"# Assume client refers to a discord.Client subclass...\n"
+"client.run(token, log_handler=handler)"
+msgstr ""
+
+#: ../../../logging.rst:26
+msgid ""
+"You can also disable the library's logging configuration completely by "
+"passing ``None``:"
+msgstr ""
+
+#: ../../../logging.rst:28
+msgid "client.run(token, log_handler=None)"
+msgstr ""
+
+#: ../../../logging.rst:33
+msgid ""
+"Likewise, configuring the log level to ``logging.DEBUG`` is also possible:"
+msgstr ""
+
+#: ../../../logging.rst:35
+msgid ""
+"import logging\n"
+"\n"
+"handler = logging.FileHandler(filename='discord.log', encoding='utf-8', "
+"mode='w')\n"
+"\n"
+"# Assume client refers to a discord.Client subclass...\n"
+"client.run(token, log_handler=handler, log_level=logging.DEBUG)"
+msgstr ""
+
+#: ../../../logging.rst:44
+msgid ""
+"This is recommended, especially at verbose levels such as ``DEBUG``, as "
+"there are a lot of events logged and it would clog the stderr of your "
+"program."
+msgstr ""
+
+#: ../../../logging.rst:46
+msgid ""
+"If you want the logging configuration the library provides to affect all "
+"loggers rather than just the ``discord`` logger, you can pass "
+"``root_logger=True`` inside :meth:`Client.run`:"
+msgstr ""
+
+#: ../../../logging.rst:48
+msgid "client.run(token, log_handler=handler, root_logger=True)"
+msgstr ""
+
+#: ../../../logging.rst:52
+msgid ""
+"If you want to setup logging using the library provided configuration "
+"without using :meth:`Client.run`, you can use :func:`discord.utils."
+"setup_logging`:"
+msgstr ""
+
+#: ../../../logging.rst:54
+msgid ""
+"import discord\n"
+"\n"
+"discord.utils.setup_logging()\n"
+"\n"
+"# or, for example\n"
+"discord.utils.setup_logging(level=logging.INFO, root=False)"
+msgstr ""
+
+#: ../../../logging.rst:63
+msgid ""
+"More advanced setups are possible with the :mod:`logging` module. The "
+"example below configures a rotating file handler that outputs DEBUG output "
+"for everything the library outputs, except for HTTP requests:"
+msgstr ""
+
+#: ../../../logging.rst:65
+msgid ""
+"import discord\n"
+"import logging\n"
+"import logging.handlers\n"
+"\n"
+"logger = logging.getLogger('discord')\n"
+"logger.setLevel(logging.DEBUG)\n"
+"logging.getLogger('discord.http').setLevel(logging.INFO)\n"
+"\n"
+"handler = logging.handlers.RotatingFileHandler(\n"
+"    filename='discord.log',\n"
+"    encoding='utf-8',\n"
+"    maxBytes=32 * 1024 * 1024,  # 32 MiB\n"
+"    backupCount=5,  # Rotate through 5 files\n"
+")\n"
+"dt_fmt = '%Y-%m-%d %H:%M:%S'\n"
+"formatter = logging.Formatter('[{asctime}] [{levelname:<8}] {name}: "
+"{message}', dt_fmt, style='{')\n"
+"handler.setFormatter(formatter)\n"
+"logger.addHandler(handler)\n"
+"\n"
+"# Assume client refers to a discord.Client subclass...\n"
+"# Suppress the default configuration since we have our own\n"
+"client.run(token, log_handler=None)"
+msgstr ""
+
+#: ../../../logging.rst:91
+msgid ""
+"For more information, check the documentation and tutorial of the :mod:"
+"`logging` module."
+msgstr ""
+
+#: ../../../logging.rst:95
+msgid "The library now provides a default logging configuration."
+msgstr ""
