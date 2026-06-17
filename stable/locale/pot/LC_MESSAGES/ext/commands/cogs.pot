@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../ext/commands/cogs.rst:6
+msgid "Cogs"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:8
+msgid ""
+"There comes a point in your bot's development when you want to organize a "
+"collection of commands, listeners, and some state into one class. Cogs allow "
+"you to do just that."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:10
+msgid "The gist:"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:12
+msgid "Each cog is a Python class that subclasses :class:`.commands.Cog`."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:13
+msgid "Every command is marked with the :func:`.commands.command` decorator."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:14
+msgid ""
+"Every hybrid command is marked with the :func:`.commands.hybrid_command` "
+"decorator."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:15
+msgid ""
+"Every listener is marked with the :meth:`.commands.Cog.listener` decorator."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:16
+msgid "Cogs are then registered with the :meth:`.Bot.add_cog` call."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:17
+msgid "Cogs are subsequently removed with the :meth:`.Bot.remove_cog` call."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:19
+msgid ""
+"It should be noted that cogs are typically used alongside with :ref:"
+"`ext_commands_extensions`."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:22
+msgid "Quick Example"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:24
+msgid ""
+"This example cog defines a ``Greetings`` category for your commands, with a "
+"single :ref:`command <ext_commands_commands>` named ``hello`` as well as a "
+"listener to listen to an :ref:`Event <discord-api-events>`."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:26
+msgid ""
+"class Greetings(commands.Cog):\n"
+"    def __init__(self, bot):\n"
+"        self.bot = bot\n"
+"        self._last_member = None\n"
+"\n"
+"    @commands.Cog.listener()\n"
+"    async def on_member_join(self, member):\n"
+"        channel = member.guild.system_channel\n"
+"        if channel is not None:\n"
+"            await channel.send(f'Welcome {member.mention}.')\n"
+"\n"
+"    @commands.command()\n"
+"    async def hello(self, ctx, *, member: discord.Member = None):\n"
+"        \"\"\"Says hello\"\"\"\n"
+"        member = member or ctx.author\n"
+"        if self._last_member is None or self._last_member.id != member.id:\n"
+"            await ctx.send(f'Hello {member.name}~')\n"
+"        else:\n"
+"            await ctx.send(f'Hello {member.name}... This feels familiar.')\n"
+"        self._last_member = member"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:49
+msgid "A couple of technical notes to take into consideration:"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:51
+msgid ""
+"All listeners must be explicitly marked via decorator, :meth:`~.commands.Cog."
+"listener`."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:52
+msgid ""
+"The name of the cog is automatically derived from the class name but can be "
+"overridden. See :ref:`ext_commands_cogs_meta_options`."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:53
+msgid ""
+"All commands must now take a ``self`` parameter to allow usage of instance "
+"attributes that can be used to maintain state."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:56
+msgid "Cog Registration"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:58
+msgid ""
+"Once you have defined your cogs, you need to tell the bot to register the "
+"cogs to be used. We do this via the :meth:`~.commands.Bot.add_cog` method."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:60
+msgid "await bot.add_cog(Greetings(bot))"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:64
+msgid ""
+"This binds the cog to the bot, adding all commands and listeners to the bot "
+"automatically."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:66
+msgid ""
+"Note that we reference the cog by name, which we can override through :ref:"
+"`ext_commands_cogs_meta_options`. So if we ever want to remove the cog "
+"eventually, we would have to do the following."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:68
+msgid "await bot.remove_cog('Greetings')"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:73
+msgid "Using Cogs"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:75
+msgid ""
+"Just as we remove a cog by its name, we can also retrieve it by its name as "
+"well. This allows us to use a cog as an inter-command communication protocol "
+"to share data. For example:"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:77
+msgid ""
+"class Economy(commands.Cog):\n"
+"    ...\n"
+"\n"
+"    async def withdraw_money(self, member, money):\n"
+"        # implementation here\n"
+"        ...\n"
+"\n"
+"    async def deposit_money(self, member, money):\n"
+"        # implementation here\n"
+"        ...\n"
+"\n"
+"class Gambling(commands.Cog):\n"
+"    def __init__(self, bot):\n"
+"        self.bot = bot\n"
+"\n"
+"    def coinflip(self):\n"
+"        return random.randint(0, 1)\n"
+"\n"
+"    @commands.command()\n"
+"    async def gamble(self, ctx, money: int):\n"
+"        \"\"\"Gambles some money.\"\"\"\n"
+"        economy = self.bot.get_cog('Economy')\n"
+"        if economy is not None:\n"
+"            await economy.withdraw_money(ctx.author, money)\n"
+"            if self.coinflip() == 1:\n"
+"                await economy.deposit_money(ctx.author, money * 1.5)"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:110
+msgid "Special Methods"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:112
+msgid ""
+"As cogs get more complicated and have more commands, there comes a point "
+"where we want to customise the behaviour of the entire cog or bot."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:114
+msgid "They are as follows:"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:116
+msgid ":meth:`.Cog.cog_load`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:117
+msgid ":meth:`.Cog.cog_unload`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:118
+msgid ":meth:`.Cog.cog_check`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:119
+msgid ":meth:`.Cog.cog_command_error`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:120
+msgid ":meth:`.Cog.cog_before_invoke`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:121
+msgid ":meth:`.Cog.cog_after_invoke`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:122
+msgid ":meth:`.Cog.bot_check`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:123
+msgid ":meth:`.Cog.bot_check_once`"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:125
+msgid "You can visit the reference to get more detail."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:130
+msgid "Meta Options"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:132
+msgid ""
+"At the heart of a cog resides a metaclass, :class:`.commands.CogMeta`, which "
+"can take various options to customise some of the behaviour. To do this, we "
+"pass keyword arguments to the class definition line. For example, to change "
+"the cog name we can pass the ``name`` keyword argument as follows:"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:134
+msgid ""
+"class MyCog(commands.Cog, name='My Cog'):\n"
+"    pass"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:139
+msgid ""
+"To see more options that you can set, see the documentation of :class:`."
+"commands.CogMeta`."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:142
+msgid "Inspection"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:144
+msgid ""
+"Since cogs ultimately are classes, we have some tools to help us inspect "
+"certain properties of the cog."
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:147
+msgid ""
+"To get a :class:`list` of commands, we can use :meth:`.Cog.get_commands`. ::"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:149
+msgid ""
+">>> cog = bot.get_cog('Greetings')\n"
+">>> commands = cog.get_commands()\n"
+">>> print([c.name for c in commands])"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:153
+msgid ""
+"If we want to get the subcommands as well, we can use the :meth:`.Cog."
+"walk_commands` generator. ::"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:155
+msgid ">>> print([c.qualified_name for c in cog.walk_commands()])"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:157
+msgid ""
+"To do the same with listeners, we can query them with :meth:`.Cog."
+"get_listeners`. This returns a list of tuples -- the first element being the "
+"listener name and the second one being the actual function itself. ::"
+msgstr ""
+
+#: ../../../ext/commands/cogs.rst:159
+msgid ""
+">>> for name, func in cog.get_listeners():\n"
+"...     print(name, '->', func)"
+msgstr ""
