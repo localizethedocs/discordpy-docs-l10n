@@ -115,7 +115,7 @@ msgstr ""
 #: ../../../intents.rst:62
 msgid ""
 "Make sure you're logged on to the `Discord website <https://discord.com>`_."
-msgstr ""
+msgstr "請確保您已登入 `Discord 網站 <https://discord.com>`_。"
 
 #: ../../../intents.rst:63
 msgid ""
