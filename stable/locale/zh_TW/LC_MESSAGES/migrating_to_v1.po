@@ -19,19 +19,19 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:8
 msgid "Migrating to v1.0"
-msgstr ""
+msgstr "遷移至 v1.0"
 
 #: ../../../migrating_to_v1.rst:10
 msgid ""
 "v1.0 is one of the biggest breaking changes in the library due to a complete "
 "redesign."
-msgstr ""
+msgstr "v1.0 是此程式庫中最大的破壞性變更之一，因為進行了完全的重新設計。"
 
 #: ../../../migrating_to_v1.rst:13
 msgid ""
 "The amount of changes are so massive and long that for all intents and "
 "purposes, it is a completely new library."
-msgstr ""
+msgstr "變更幅度如此之大，以至於實際上它是一個全新的程式庫。"
 
 #: ../../../migrating_to_v1.rst:16
 msgid ""
@@ -39,10 +39,12 @@ msgid ""
 "Things are done on the :ref:`models <discord_api_models>` instead of "
 "requiring a :class:`Client` instance to do any work."
 msgstr ""
+"重新設計的一部分是讓使用上更簡單、更自然。操作現在直接在 :ref:`模型 "
+"<discord_api_models>` 上進行，而不需要:class:`Client` 實例來完成工作。"
 
 #: ../../../migrating_to_v1.rst:20
 msgid "Python Version Change"
-msgstr ""
+msgstr "Python 版本變更"
 
 #: ../../../migrating_to_v1.rst:22
 msgid ""
@@ -51,28 +53,32 @@ msgid ""
 "support for Python versions lower than 3.5.3, which essentially means that "
 "**support for Python 3.4 is dropped**."
 msgstr ""
+"為了簡化開發並允許依賴項目升級以支援 3.7 或更高版本，此程式庫不得不移除對低"
+"於 3.5.3 的 Python版本支援，這基本上意味著**已停止支援 Python 3.4**。"
 
 #: ../../../migrating_to_v1.rst:27
 msgid "Major Model Changes"
-msgstr ""
+msgstr "主要模型變更"
 
 #: ../../../migrating_to_v1.rst:29
 msgid "Below are major model changes that have happened in v1.0"
-msgstr ""
+msgstr "以下是 v1.0 中發生的主要模型變更"
 
 #: ../../../migrating_to_v1.rst:32
 msgid "Snowflakes are int"
-msgstr ""
+msgstr "Snowflake 改為 int"
 
 #: ../../../migrating_to_v1.rst:34
 msgid ""
 "Before v1.0, all snowflakes (the ``id`` attribute) were strings. This has "
 "been changed to :class:`int`."
 msgstr ""
+"在 v1.0 之前，所有 snowflake（``id`` 屬性）都是字串。現已變更為 :class:"
+"`int`。"
 
 #: ../../../migrating_to_v1.rst:36 ../../../migrating_to_v1.rst:256
 msgid "Quick example: ::"
-msgstr ""
+msgstr "快速範例： ::"
 
 #: ../../../migrating_to_v1.rst:38
 msgid ""
@@ -94,10 +100,12 @@ msgid ""
 "optimisation opportunities by allowing ETF to be used instead of JSON "
 "internally."
 msgstr ""
+"此變更可減少使用官方客戶端中的「複製 ID」功能時的錯誤，因為您不再需要用引號括"
+"起來，並且允許內部使用 ETF 而非 JSON來進行效能最佳化。"
 
 #: ../../../migrating_to_v1.rst:52
 msgid "Server is now Guild"
-msgstr ""
+msgstr "Server 改為 Guild"
 
 #: ../../../migrating_to_v1.rst:54
 msgid ""
@@ -109,17 +117,17 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:58
 msgid "A list of changes is as follows:"
-msgstr ""
+msgstr "變更列表如下："
 
 #: ../../../migrating_to_v1.rst:61 ../../../migrating_to_v1.rst:97
 #: ../../../migrating_to_v1.rst:871
 msgid "Before"
-msgstr ""
+msgstr "之前"
 
 #: ../../../migrating_to_v1.rst:61 ../../../migrating_to_v1.rst:97
 #: ../../../migrating_to_v1.rst:871
 msgid "After"
-msgstr ""
+msgstr "之後"
 
 #: ../../../migrating_to_v1.rst:63
 msgid "``Message.server``"
@@ -211,17 +219,19 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:89
 msgid "Models are Stateful"
-msgstr ""
+msgstr "模型具有狀態"
 
 #: ../../../migrating_to_v1.rst:91
 msgid ""
 "As mentioned earlier, a lot of functionality was moved out of :class:"
 "`Client` and put into their respective :ref:`model <discord_api_models>`."
 msgstr ""
+"如前所述，許多功能已從 :class:`Client` 移出，放入各自的 :ref:`模型 "
+"<discord_api_models>` 中。"
 
 #: ../../../migrating_to_v1.rst:94
 msgid "A list of these changes is enumerated below."
-msgstr ""
+msgstr "以下列舉這些變更。"
 
 #: ../../../migrating_to_v1.rst:99
 msgid "``Client.add_reaction``"
@@ -245,7 +255,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:103
 msgid ":meth:`Member.ban` or :meth:`Guild.ban`"
-msgstr ""
+msgstr ":meth:`Member.ban` 或 :meth:`Guild.ban`"
 
 #: ../../../migrating_to_v1.rst:105
 msgid "``Client.change_nickname``"
@@ -272,6 +282,7 @@ msgstr ""
 msgid ""
 ":meth:`Guild.create_text_channel` and :meth:`Guild.create_voice_channel`"
 msgstr ""
+":meth:`Guild.create_text_channel` 和 :meth:`Guild.create_voice_channel`"
 
 #: ../../../migrating_to_v1.rst:111
 msgid "``Client.create_custom_emoji``"
@@ -328,7 +339,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:123
 msgid ":meth:`Invite.delete` or :meth:`Client.delete_invite`"
-msgstr ""
+msgstr ":meth:`Invite.delete` 或 :meth:`Client.delete_invite`"
 
 #: ../../../migrating_to_v1.rst:125
 msgid "``Client.delete_message``"
@@ -368,7 +379,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:133 ../../../migrating_to_v1.rst:171
 msgid ":meth:`TextChannel.edit` or :meth:`VoiceChannel.edit`"
-msgstr ""
+msgstr ":meth:`TextChannel.edit` 或 :meth:`VoiceChannel.edit`"
 
 #: ../../../migrating_to_v1.rst:135
 msgid "``Client.edit_channel_permissions``"
@@ -480,7 +491,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:161
 msgid ":meth:`abc.GuildChannel.invites` or :meth:`Guild.invites`"
-msgstr ""
+msgstr ":meth:`abc.GuildChannel.invites` 或 :meth:`Guild.invites`"
 
 #: ../../../migrating_to_v1.rst:163
 msgid "``Client.join_voice_channel``"
@@ -618,7 +629,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:201
 msgid ":meth:`Guild.unban` or :meth:`Member.unban`"
-msgstr ""
+msgstr ":meth:`Guild.unban` 或 :meth:`Member.unban`"
 
 #: ../../../migrating_to_v1.rst:203
 msgid "``Client.unpin_message``"
@@ -646,7 +657,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:209
 msgid "Removed"
-msgstr ""
+msgstr "已移除"
 
 #: ../../../migrating_to_v1.rst:211
 msgid "``Client.wait_until_ready``"
@@ -654,22 +665,22 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:211
 msgid "No change"
-msgstr ""
+msgstr "無變更"
 
 #: ../../../migrating_to_v1.rst:215
 msgid "Property Changes"
-msgstr ""
+msgstr "屬性變更"
 
 #: ../../../migrating_to_v1.rst:217
 msgid ""
 "In order to be a bit more consistent, certain things that were properties "
 "were changed to methods instead."
-msgstr ""
+msgstr "為了更加一致，某些原本是屬性的項目已改為方法。"
 
 #: ../../../migrating_to_v1.rst:219
 msgid ""
 "The following are now methods instead of properties (requires parentheses):"
-msgstr ""
+msgstr "以下項目現在是方法而非屬性（需要加括號）："
 
 #: ../../../migrating_to_v1.rst:221
 msgid ":meth:`Role.is_default`"
@@ -685,7 +696,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:226
 msgid "Dict Value Change"
-msgstr ""
+msgstr "字典值變更"
 
 #: ../../../migrating_to_v1.rst:228
 msgid ""
@@ -702,7 +713,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:233
 msgid "The following views were changed to a list:"
-msgstr ""
+msgstr "以下視圖已變更為列表："
 
 #: ../../../migrating_to_v1.rst:236
 msgid ":attr:`Client.users` (new in v1.0)"
@@ -734,19 +745,23 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:245
 msgid "Voice State Changes"
-msgstr ""
+msgstr "語音狀態變更"
 
 #: ../../../migrating_to_v1.rst:247
 msgid ""
 "Earlier, in v0.11.0 a :class:`VoiceState` class was added to refer to voice "
 "states along with a :attr:`Member.voice` attribute to refer to it."
 msgstr ""
+"較早時，在 v0.11.0 中新增了 :class:`VoiceState` 類別來表示語音狀態，以及用於"
+"引用的:attr:`Member.voice` 屬性。"
 
 #: ../../../migrating_to_v1.rst:250
 msgid ""
 "However, it was transparent to the user. In an effort to make the library "
 "save more memory, the voice state change is now more visible."
 msgstr ""
+"然而，這對使用者來說是透明的。為了讓程式庫節省更多記憶體，語音狀態的變更現在"
+"更加明顯。"
 
 #: ../../../migrating_to_v1.rst:253
 msgid ""
@@ -754,6 +769,8 @@ msgid ""
 "attribute. Note that if the member does not have a voice state this "
 "attribute can be ``None``."
 msgstr ""
+"存取語音屬性的唯一方式是透過 :attr:`Member.voice` 屬性。請注意，如果成員沒有"
+"語音狀態，此屬性可能為 ``None``。"
 
 #: ../../../migrating_to_v1.rst:258
 msgid ""
@@ -769,7 +786,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:269
 msgid "User and Member Type Split"
-msgstr ""
+msgstr "User 與 Member 類型拆分"
 
 #: ../../../migrating_to_v1.rst:271
 msgid ""
@@ -788,10 +805,13 @@ msgid ""
 "get a list of all :class:`User` your client can see with :attr:`Client."
 "users`."
 msgstr ""
+"這些記憶體節省是通過全域 :class:`User` 快取實現的，作為正面的附帶效果，您現在"
+"可以使用新的:meth:`Client.get_user` 透過 ID 輕鬆取得 :class:`User`。您還可以"
+"透過:attr:`Client.users` 取得客戶端可見的所有 :class:`User` 列表。"
 
 #: ../../../migrating_to_v1.rst:282
 msgid "Channel Type Split"
-msgstr ""
+msgstr "頻道類型拆分"
 
 #: ../../../migrating_to_v1.rst:284
 msgid ""
@@ -799,11 +819,13 @@ msgid ""
 "``PrivateChannel`` with a ``is_private`` property to help differentiate "
 "between them."
 msgstr ""
+"在 v1.0 之前，頻道有兩種類型：``Channel`` 和 ``PrivateChannel``，並使用 "
+"``is_private``屬性來區分它們。"
 
 #: ../../../migrating_to_v1.rst:287
 msgid ""
 "In order to save memory the channels have been split into 4 different types:"
-msgstr ""
+msgstr "為了節省記憶體，頻道已拆分為 4 種不同的類型："
 
 #: ../../../migrating_to_v1.rst:289
 msgid ":class:`TextChannel` for guild text channels."
@@ -826,10 +848,11 @@ msgid ""
 "With this split came the removal of the ``is_private`` attribute. You should "
 "now use :func:`isinstance`."
 msgstr ""
+"隨著此拆分，``is_private`` 屬性已被移除。您現在應該使用 :func:`isinstance`。"
 
 #: ../../../migrating_to_v1.rst:296
 msgid "The types are split into two different :ref:`discord_api_abcs`:"
-msgstr ""
+msgstr "這些類型拆分為兩個不同的 :ref:`discord_api_abcs`："
 
 #: ../../../migrating_to_v1.rst:298
 msgid ":class:`abc.GuildChannel` for guild channels."
@@ -841,7 +864,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:301
 msgid "So to check if something is a guild channel you would do: ::"
-msgstr ""
+msgstr "因此，要檢查某個項目是否為伺服器頻道，您可以這樣做： ::"
 
 #: ../../../migrating_to_v1.rst:303
 msgid "isinstance(channel, discord.abc.GuildChannel)"
@@ -849,7 +872,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:305
 msgid "And to check if it's a private channel you would do: ::"
-msgstr ""
+msgstr "要檢查是否為私人頻道，您可以這樣做： ::"
 
 #: ../../../migrating_to_v1.rst:307
 msgid "isinstance(channel, discord.abc.PrivateChannel)"
@@ -859,7 +882,7 @@ msgstr ""
 msgid ""
 "Of course, if you're looking for only a specific type you can pass that too, "
 "e.g. ::"
-msgstr ""
+msgstr "當然，如果您只想尋找特定類型，也可以傳入該類型，例如： ::"
 
 #: ../../../migrating_to_v1.rst:311
 msgid "isinstance(channel, discord.TextChannel)"
@@ -870,35 +893,36 @@ msgid ""
 "With this type split also came event changes, which are enumerated in :ref:"
 "`migrating_1_0_event_changes`."
 msgstr ""
+"隨著此類型拆分，事件也發生了變更，詳見 :ref:`migrating_1_0_event_changes`。"
 
 #: ../../../migrating_to_v1.rst:317
 msgid "Miscellaneous Model Changes"
-msgstr ""
+msgstr "其他模型變更"
 
 #: ../../../migrating_to_v1.rst:319
 msgid ""
 "There were lots of other things added or removed in the models in general."
-msgstr ""
+msgstr "模型中還有許多其他新增或移除的項目。"
 
 #: ../../../migrating_to_v1.rst:321
 msgid "They will be enumerated here."
-msgstr ""
+msgstr "以下列舉這些變更。"
 
 #: ../../../migrating_to_v1.rst:323
 msgid "**Removed**"
-msgstr ""
+msgstr "**已移除**"
 
 #: ../../../migrating_to_v1.rst:325
 msgid ":meth:`Client.login` no longer accepts email and password logins."
-msgstr ""
+msgstr ":meth:`Client.login` 不再接受電子郵件和密碼登入。"
 
 #: ../../../migrating_to_v1.rst:327
 msgid "Use a token and ``bot=False``."
-msgstr ""
+msgstr "請使用 token 和 ``bot=False``。"
 
 #: ../../../migrating_to_v1.rst:331
 msgid "Use :attr:`Client.emojis` instead."
-msgstr ""
+msgstr "請改用 :attr:`Client.emojis`。"
 
 #: ../../../migrating_to_v1.rst:333
 msgid "``Client.messages``"
@@ -906,7 +930,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:335
 msgid "Use read-only :attr:`Client.cached_messages` instead."
-msgstr ""
+msgstr "請改用唯讀的 :attr:`Client.cached_messages`。"
 
 #: ../../../migrating_to_v1.rst:337
 msgid "``Client.wait_for_message`` and ``Client.wait_for_reaction`` are gone."
@@ -914,7 +938,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:339
 msgid "Use :meth:`Client.wait_for` instead."
-msgstr ""
+msgstr "請改用 :meth:`Client.wait_for`。"
 
 #: ../../../migrating_to_v1.rst:341
 msgid "``Channel.voice_members``"
@@ -922,7 +946,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:343
 msgid "Use :attr:`VoiceChannel.members` instead."
-msgstr ""
+msgstr "請改用 :attr:`VoiceChannel.members`。"
 
 #: ../../../migrating_to_v1.rst:345
 msgid "``Channel.is_private``"
@@ -954,6 +978,8 @@ msgid ""
 "``Guild.default_channel`` / ``Server.default_channel`` and ``Channel."
 "is_default``"
 msgstr ""
+"``Guild.default_channel`` / ``Server.default_channel`` 和 ``Channel."
+"is_default``"
 
 #: ../../../migrating_to_v1.rst:356
 msgid ""
@@ -967,7 +993,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:361
 msgid "Use :attr:`Message.edited_at` instead."
-msgstr ""
+msgstr "請改用 :attr:`Message.edited_at`。"
 
 #: ../../../migrating_to_v1.rst:363
 msgid "``Message.timestamp``"
@@ -975,7 +1001,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:365
 msgid "Use :attr:`Message.created_at` instead."
-msgstr ""
+msgstr "請改用 :attr:`Message.created_at`。"
 
 #: ../../../migrating_to_v1.rst:367
 msgid "``Colour.to_tuple()``"
@@ -983,7 +1009,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:369
 msgid "Use :meth:`Colour.to_rgb` instead."
-msgstr ""
+msgstr "請改用 :meth:`Colour.to_rgb`。"
 
 #: ../../../migrating_to_v1.rst:371
 msgid "``Permissions.view_audit_logs``"
@@ -991,7 +1017,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:373
 msgid "Use :attr:`Permissions.view_audit_log` instead."
-msgstr ""
+msgstr "請改用 :attr:`Permissions.view_audit_log`。"
 
 #: ../../../migrating_to_v1.rst:375
 msgid "``Member.game``"
@@ -999,7 +1025,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:377
 msgid "Use :attr:`Member.activities` instead."
-msgstr ""
+msgstr "請改用 :attr:`Member.activities`。"
 
 #: ../../../migrating_to_v1.rst:379
 msgid "``Guild.role_hierarchy`` / ``Server.role_hierarchy``"
@@ -1013,7 +1039,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:384
 msgid "**Changed**"
-msgstr ""
+msgstr "**已變更**"
 
 #: ../../../migrating_to_v1.rst:386
 msgid ""
@@ -1041,7 +1067,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:391
 msgid "**Added**"
-msgstr ""
+msgstr "**已新增**"
 
 #: ../../../migrating_to_v1.rst:393
 msgid ":class:`Attachment` to represent a discord attachment."
@@ -1145,7 +1171,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:420
 msgid "Sending Messages"
-msgstr ""
+msgstr "發送訊息"
 
 #: ../../../migrating_to_v1.rst:422
 msgid ""
@@ -1156,7 +1182,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:425 ../../../migrating_to_v1.rst:1079
 msgid "Basically: ::"
-msgstr ""
+msgstr "基本上： ::"
 
 #: ../../../migrating_to_v1.rst:427
 msgid ""
@@ -1212,7 +1238,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:459
 msgid "Asynchronous Iterators"
-msgstr ""
+msgstr "異步迭代器"
 
 #: ../../../migrating_to_v1.rst:461
 msgid ""
@@ -1292,7 +1318,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:500 ../../../migrating_to_v1.rst:926
 msgid "Event Changes"
-msgstr ""
+msgstr "事件變更"
 
 #: ../../../migrating_to_v1.rst:502
 msgid "A lot of events have gone through some changes."
@@ -1306,7 +1332,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:506 ../../../migrating_to_v1.rst:570
 msgid "Before:"
-msgstr ""
+msgstr "之前："
 
 #: ../../../migrating_to_v1.rst:508
 msgid "``on_server_join``"
@@ -1346,7 +1372,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:518 ../../../migrating_to_v1.rst:576
 msgid "After:"
-msgstr ""
+msgstr "之後："
 
 #: ../../../migrating_to_v1.rst:520
 msgid ":func:`on_guild_join`"
@@ -1393,7 +1419,7 @@ msgstr ""
 #: ../../../migrating_to_v1.rst:557 ../../../migrating_to_v1.rst:617
 #: ../../../migrating_to_v1.rst:930
 msgid "Before: ::"
-msgstr ""
+msgstr "之前： ::"
 
 #: ../../../migrating_to_v1.rst:535
 msgid "async def on_voice_state_update(before, after)"
@@ -1403,7 +1429,7 @@ msgstr ""
 #: ../../../migrating_to_v1.rst:561 ../../../migrating_to_v1.rst:629
 #: ../../../migrating_to_v1.rst:936
 msgid "After: ::"
-msgstr ""
+msgstr "之後： ::"
 
 #: ../../../migrating_to_v1.rst:539
 msgid "async def on_voice_state_update(member, before, after)"
@@ -1506,7 +1532,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:592
 msgid "Voice Changes"
-msgstr ""
+msgstr "語音變更"
 
 #: ../../../migrating_to_v1.rst:594
 msgid "Voice sending has gone through a complete redesign."
@@ -1514,7 +1540,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:596
 msgid "In particular:"
-msgstr ""
+msgstr "特別是："
 
 #: ../../../migrating_to_v1.rst:598
 msgid ""
@@ -1565,7 +1591,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:615
 msgid "Basically:"
-msgstr ""
+msgstr "基本上："
 
 #: ../../../migrating_to_v1.rst:619
 msgid ""
@@ -1640,7 +1666,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:659
 msgid "Waiting For Events"
-msgstr ""
+msgstr "等待事件"
 
 #: ../../../migrating_to_v1.rst:661
 msgid ""
@@ -1715,7 +1741,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:704
 msgid "Upgraded Dependencies"
-msgstr ""
+msgstr "依賴升級"
 
 #: ../../../migrating_to_v1.rst:706
 msgid ""
@@ -1785,7 +1811,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:733
 msgid "Sharding"
-msgstr ""
+msgstr "分片（Sharding）"
 
 #: ../../../migrating_to_v1.rst:735
 msgid ""
@@ -1853,7 +1879,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:764
 msgid "Connection Improvements"
-msgstr ""
+msgstr "連線改進"
 
 #: ../../../migrating_to_v1.rst:766
 msgid "In v1.0, the auto reconnection logic has been powered up significantly."
@@ -1876,7 +1902,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:778
 msgid "Command Extension Changes"
-msgstr ""
+msgstr "命令擴充功能變更"
 
 #: ../../../migrating_to_v1.rst:780
 msgid ""
@@ -1886,7 +1912,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:784
 msgid "Context Changes"
-msgstr ""
+msgstr "Context 變更"
 
 #: ../../../migrating_to_v1.rst:786
 msgid ""
@@ -1932,7 +1958,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:810
 msgid "**New Shortcuts**"
-msgstr ""
+msgstr "**新捷徑**"
 
 #: ../../../migrating_to_v1.rst:812
 msgid ""
@@ -1966,7 +1992,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:818
 msgid "**New Functionality**"
-msgstr ""
+msgstr "**新功能**"
 
 #: ../../../migrating_to_v1.rst:820
 msgid ":meth:`.Context.reinvoke` to invoke a command again."
@@ -1995,7 +2021,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:829
 msgid "Subclassing Context"
-msgstr ""
+msgstr "子類化 Context"
 
 #: ../../../migrating_to_v1.rst:831
 msgid ""
@@ -2043,7 +2069,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:864
 msgid "Removed Helpers"
-msgstr ""
+msgstr "已移除的輔助方法"
 
 #: ../../../migrating_to_v1.rst:866
 msgid ""
@@ -2089,11 +2115,11 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:881
 msgid "No replacement."
-msgstr ""
+msgstr "無替代方案。"
 
 #: ../../../migrating_to_v1.rst:885
 msgid "Command Changes"
-msgstr ""
+msgstr "命令變更"
 
 #: ../../../migrating_to_v1.rst:887
 msgid ""
@@ -2155,7 +2181,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:909
 msgid "Check Changes"
-msgstr ""
+msgstr "檢查（Check）變更"
 
 #: ../../../migrating_to_v1.rst:911
 msgid ""
@@ -2236,7 +2262,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:952
 msgid "HelpFormatter and Help Command Changes"
-msgstr ""
+msgstr "HelpFormatter 與 Help 命令變更"
 
 #: ../../../migrating_to_v1.rst:954
 msgid ""
@@ -2418,7 +2444,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1010
 msgid "Cog Changes"
-msgstr ""
+msgstr "Cog 變更"
 
 #: ../../../migrating_to_v1.rst:1012
 msgid ""
@@ -2479,7 +2505,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1027
 msgid ":meth:`.Cog.cog_before_invoke` and :meth:`.Cog.cog_after_invoke`"
-msgstr ""
+msgstr ":meth:`.Cog.cog_before_invoke` 和 :meth:`.Cog.cog_after_invoke`"
 
 #: ../../../migrating_to_v1.rst:1027
 msgid ""
@@ -2542,7 +2568,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1070
 msgid "Before and After Invocation Hooks"
-msgstr ""
+msgstr "前後調用掛鉤"
 
 #: ../../../migrating_to_v1.rst:1072
 msgid ""
@@ -2663,7 +2689,7 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1142
 msgid "Converter Changes"
-msgstr ""
+msgstr "轉換器變更"
 
 #: ../../../migrating_to_v1.rst:1144
 msgid ""

@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../../../interactions/api.rst:11
 msgid "Models"
-msgstr ""
+msgstr "模型"
 
 #: ../../../interactions/api.rst:13
 msgid ""
@@ -1386,7 +1386,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.create_thread:30
 msgid "The created thread."
-msgstr ""
+msgstr "建立的討論串。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.create_thread:31
@@ -1402,7 +1402,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionMessage.edit:3
 msgid "Edits the message."
-msgstr ""
+msgstr "編輯此訊息。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionMessage.edit:43
@@ -1448,7 +1448,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.end_poll:11
 msgid "The updated message."
-msgstr ""
+msgstr "更新的訊息。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.end_poll:12
@@ -1480,7 +1480,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.fetch:9
 msgid "The full message."
-msgstr ""
+msgstr "完整的訊息。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.fetch:10
@@ -1607,7 +1607,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.pin:3
 msgid "Pins the message."
-msgstr ""
+msgstr "釘選此訊息。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.pin:5 discord.message.PartialMessage.unpin:5
@@ -1729,7 +1729,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.remove_reaction:17
 msgid "The emoji to remove."
-msgstr ""
+msgstr "要移除的表情符號。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.remove_reaction:19
@@ -1846,7 +1846,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.unpin:3
 msgid "Unpins the message."
-msgstr ""
+msgstr "取消釘選此訊息。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.unpin:8
@@ -1892,7 +1892,7 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionMessage.delete:3
 msgid "Deletes the message."
-msgstr ""
+msgstr "刪除此訊息。"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionMessage.delete:5

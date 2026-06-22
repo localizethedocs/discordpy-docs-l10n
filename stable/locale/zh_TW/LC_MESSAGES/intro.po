@@ -19,17 +19,19 @@ msgstr ""
 
 #: ../../../intro.rst:8
 msgid "Introduction"
-msgstr ""
+msgstr "介紹"
 
 #: ../../../intro.rst:10
 msgid ""
 "This is the documentation for discord.py, a library for Python to aid in "
 "creating applications that utilise the Discord API."
 msgstr ""
+"這是 discord.py 的文件，discord.py 是一個 Python 程式庫，用於協助建立使用 "
+"Discord API 的應用程式。"
 
 #: ../../../intro.rst:14
 msgid "Prerequisites"
-msgstr ""
+msgstr "必要條件"
 
 #: ../../../intro.rst:16
 msgid ""
@@ -37,14 +39,16 @@ msgid ""
 "Python is not provided. Python 2.7 or lower is not supported. Python 3.7 or "
 "lower is not supported."
 msgstr ""
+"discord.py 支援 Python 3.8 或更高版本。不提供對較舊 Python 版本的支援。不支"
+"援 Python 2.7 或更低版本。不支援 Python 3.7 或更低版本。"
 
 #: ../../../intro.rst:23
 msgid "Installing"
-msgstr ""
+msgstr "安裝"
 
 #: ../../../intro.rst:25
 msgid "You can get the library directly from PyPI: ::"
-msgstr ""
+msgstr "您可以直接從 PyPI 取得此程式庫： ::"
 
 #: ../../../intro.rst:27
 msgid "python3 -m pip install -U discord.py"
@@ -52,7 +56,7 @@ msgstr ""
 
 #: ../../../intro.rst:29
 msgid "If you are using Windows, then the following should be used instead: ::"
-msgstr ""
+msgstr "如果您使用的是 Windows，則應改用以下指令： ::"
 
 #: ../../../intro.rst:31
 msgid "py -3 -m pip install -U discord.py"
@@ -63,6 +67,8 @@ msgid ""
 "To get voice support, you should use ``discord.py[voice]`` instead of "
 "``discord.py``, e.g. ::"
 msgstr ""
+"若要取得語音支援，您應使用 ``discord.py[voice]`` 而非 ``discord.py``，例"
+"如： ::"
 
 #: ../../../intro.rst:36
 msgid "python3 -m pip install -U discord.py[voice]"
@@ -72,7 +78,7 @@ msgstr ""
 msgid ""
 "On Linux environments, installing voice requires getting the following "
 "dependencies:"
-msgstr ""
+msgstr "在 Linux 環境中，安裝語音支援需要取得以下依賴："
 
 #: ../../../intro.rst:40
 msgid "`libffi <https://github.com/libffi/libffi>`_"
@@ -84,12 +90,12 @@ msgstr ""
 
 #: ../../../intro.rst:42
 msgid "`python3-dev <https://packages.debian.org/python3-dev>`_"
-msgstr ""
+msgstr "python3-dev <https://packages.debian.org/python3-dev>`_"
 
 #: ../../../intro.rst:44
 msgid ""
 "For a Debian-based system, the following command will get these dependencies:"
-msgstr ""
+msgstr "對於基於 Debian 的系統，以下命令可以取得這些依賴："
 
 #: ../../../intro.rst:46
 msgid "$ apt install libffi-dev libnacl-dev python3-dev"
@@ -97,11 +103,11 @@ msgstr ""
 
 #: ../../../intro.rst:50
 msgid "Remember to check your permissions!"
-msgstr ""
+msgstr "請記得檢查您的權限！"
 
 #: ../../../intro.rst:53
 msgid "Virtual Environments"
-msgstr ""
+msgstr "虛擬環境"
 
 #: ../../../intro.rst:55
 msgid ""
@@ -111,18 +117,21 @@ msgid ""
 "purpose, the standard library as of Python 3.3 comes with a concept called "
 "\"Virtual Environment\"s to help maintain these separate versions."
 msgstr ""
+"有時您可能希望避免程式庫污染系統安裝，或需要使用與系統上已安裝版本不同的程式"
+"庫。您也可能沒有全系統安裝程式庫的權限。為此，Python 3.3 起標準庫提供了一個稱"
+"為「虛擬環境」的概念，來協助維護這些獨立的版本。"
 
 #: ../../../intro.rst:60
 msgid "A more in-depth tutorial is found on :doc:`py:tutorial/venv`."
-msgstr ""
+msgstr "更深入的教學請參考 :doc:`py:tutorial/venv`。"
 
 #: ../../../intro.rst:62
 msgid "However, for the quick and dirty:"
-msgstr ""
+msgstr "不過，以下是快速上手的方法："
 
 #: ../../../intro.rst:64
 msgid "Go to your project's working directory:"
-msgstr ""
+msgstr "前往您的專案的工作目錄："
 
 #: ../../../intro.rst:66
 msgid ""
@@ -132,7 +141,7 @@ msgstr ""
 
 #: ../../../intro.rst:71
 msgid "Activate the virtual environment:"
-msgstr ""
+msgstr "激活虛擬環境："
 
 #: ../../../intro.rst:73
 msgid "$ source bot-env/bin/activate"
@@ -140,7 +149,7 @@ msgstr ""
 
 #: ../../../intro.rst:77
 msgid "On Windows you activate it with:"
-msgstr ""
+msgstr "在 Windows 上，您可以這樣激活虛擬環境："
 
 #: ../../../intro.rst:79
 msgid "$ bot-env\\Scripts\\activate.bat"
@@ -148,7 +157,7 @@ msgstr ""
 
 #: ../../../intro.rst:83
 msgid "Use pip like usual:"
-msgstr ""
+msgstr "像平常一樣使用 pip："
 
 #: ../../../intro.rst:85
 msgid "$ pip install -U discord.py"
@@ -156,17 +165,19 @@ msgstr ""
 
 #: ../../../intro.rst:89
 msgid "Congratulations. You now have a virtual environment all set up."
-msgstr ""
+msgstr "恭喜！您現在已經設定好虛擬環境了。"
 
 #: ../../../intro.rst:93
 msgid ""
 "Scripts executed with ``py -3`` will ignore any currently active virtual "
 "environment, as the ``-3`` specifies a global scope."
 msgstr ""
+"使用 ``py -3`` 執行的腳本會忽略當前已激活的虛擬環境，因為 ``-3`` 指定了全域範"
+"圍。"
 
 #: ../../../intro.rst:97
 msgid "Basic Concepts"
-msgstr ""
+msgstr "基礎概念"
 
 #: ../../../intro.rst:99
 msgid ""
@@ -175,10 +186,13 @@ msgid ""
 "example, when a message happens, you will receive an event about it that you "
 "can respond to."
 msgstr ""
+"discord.py 的核心概念是 :ref:`事件 <discord-api-events>`。事件是您監聽並回應"
+"的事物。例如，當有新訊息時，您會收到一個關於該訊息的事件，然後您可以對其做出"
+"回應。"
 
 #: ../../../intro.rst:103
 msgid "A quick example to showcase how events work:"
-msgstr ""
+msgstr "以下是一個快速展示事件運作方式的範例："
 
 #: ../../../intro.rst:105
 msgid ""
@@ -199,3 +213,19 @@ msgid ""
 "client = MyClient(intents=intents)\n"
 "client.run('my token goes here')"
 msgstr ""
+"# 此範例需要 'message_content' intent。\n"
+"\n"
+"import discord\n"
+"\n"
+"class MyClient(discord.Client):\n"
+"    async def on_ready(self):\n"
+"        print(f'Logged on as {self.user}!')\n"
+"\n"
+"    async def on_message(self, message):\n"
+"        print(f'Message from {message.author}: {message.content}')\n"
+"\n"
+"intents = discord.Intents.default()\n"
+"intents.message_content = True\n"
+"\n"
+"client = MyClient(intents=intents)\n"
+"client.run('my token goes here')"

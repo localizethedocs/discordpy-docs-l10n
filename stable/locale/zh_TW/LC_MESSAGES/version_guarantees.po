@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../version_guarantees.rst:4
 msgid "Version Guarantees"
-msgstr ""
+msgstr "版本保證"
 
 #: ../../../version_guarantees.rst:6
 msgid ""
@@ -30,6 +30,9 @@ msgid ""
 "nature of Python it can be hard to discern what can be considered a breaking "
 "change and what isn't."
 msgstr ""
+"此程式庫遵循 `語意化版本原則 <https://semver.org/>`_，這表示每當有不相容的 "
+"API 變更時，主要版本號就會更新。然而，由於 Discord 方面對破壞性變更缺乏保證，"
+"加上 Python 本身的動態特性，有時很難區分什麼算是破壞性變更，什麼不算。"
 
 #: ../../../version_guarantees.rst:8
 msgid ""
@@ -39,42 +42,45 @@ msgid ""
 "to change. This includes attributes that start with an underscore or "
 "functions without an underscore that are not documented."
 msgstr ""
+"首先要記住的是，破壞性變更僅適用於**公開文件中的函數與類別**。如果某個項目未"
+"列在此處的文件中，則它不屬於公開 API 的一部分，因此可能會變更。這包括以底線開"
+"頭的屬性，或是沒有底線但未記載於文件中的函數。"
 
 #: ../../../version_guarantees.rst:12
 msgid "The examples below are non-exhaustive."
-msgstr ""
+msgstr "以下範例並非詳盡列舉。"
 
 #: ../../../version_guarantees.rst:15
 msgid "Examples of Breaking Changes"
-msgstr ""
+msgstr "破壞性變更的範例"
 
 #: ../../../version_guarantees.rst:17
 msgid "Changing the default parameter value to something else."
-msgstr ""
+msgstr "將預設參數值更改為其他值。"
 
 #: ../../../version_guarantees.rst:18
 msgid "Renaming a function without an alias to an old function."
-msgstr ""
+msgstr "重新命名函數但未提供指向舊函數的別名。"
 
 #: ../../../version_guarantees.rst:19
 msgid "Adding or removing parameters to an event."
-msgstr ""
+msgstr "對事件新增或移除參數。"
 
 #: ../../../version_guarantees.rst:22
 msgid "Examples of Non-Breaking Changes"
-msgstr ""
+msgstr "非破壞性變更的範例"
 
 #: ../../../version_guarantees.rst:24
 msgid "Adding or removing private underscored attributes."
-msgstr ""
+msgstr "新增或移除私有底線屬性。"
 
 #: ../../../version_guarantees.rst:25
 msgid "Adding an element into the ``__slots__`` of a data class."
-msgstr ""
+msgstr "在資料類別的 ``__slots__`` 中新增元素。"
 
 #: ../../../version_guarantees.rst:26
 msgid "Changing the behaviour of a function to fix a bug."
-msgstr ""
+msgstr "修改函數行為以修正錯誤。"
 
 #: ../../../version_guarantees.rst:27
 msgid "Changes in the typing behaviour of the library"
@@ -88,12 +94,12 @@ msgstr ""
 
 #: ../../../version_guarantees.rst:29
 msgid "Changes in the documentation."
-msgstr ""
+msgstr "文件內容的變更。"
 
 #: ../../../version_guarantees.rst:30
 msgid "Modifying the internal HTTP handling."
-msgstr ""
+msgstr "修改內部的 HTTP 處理方式。"
 
 #: ../../../version_guarantees.rst:31
 msgid "Upgrading the dependencies to a new version, major or otherwise."
-msgstr ""
+msgstr "將依賴項目升級至新版本，無論是主要版本或其他版本。"

@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../_templates/layout.html:30
 msgid "Copy Code"
-msgstr ""
+msgstr "複製程式碼"
 
 #: ../../../_templates/layout.html:31
 msgid "Could not copy codeblock:"
@@ -27,19 +27,19 @@ msgstr ""
 
 #: ../../../_templates/layout.html:46
 msgid "About these documents"
-msgstr ""
+msgstr "關於這些文件"
 
 #: ../../../_templates/layout.html:49
 msgid "Index"
-msgstr ""
+msgstr "索引"
 
 #: ../../../_templates/layout.html:52 ../../../_templates/layout.html:76
 msgid "Search"
-msgstr ""
+msgstr "搜尋"
 
 #: ../../../_templates/layout.html:55
 msgid "Copyright"
-msgstr ""
+msgstr "著作權"
 
 #: ../../../_templates/layout.html:73
 msgid "Discord"
@@ -47,16 +47,16 @@ msgstr ""
 
 #: ../../../_templates/layout.html:74
 msgid "FAQ"
-msgstr ""
+msgstr "常見問題"
 
 #: ../../../_templates/layout.html:77 ../../../_templates/layout.html:170
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: ../../../_templates/layout.html:82 ../../../_templates/layout.html:105
 #: ../../../_templates/layout.html:126
 msgid "Search documentation"
-msgstr ""
+msgstr "搜尋文件"
 
 #: ../../../_templates/layout.html:92
 msgid "View Documentation For"
@@ -82,7 +82,7 @@ msgstr ""
 
 #: ../../../_templates/layout.html:173
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: ../../../_templates/layout.html:175
 msgid "Font"
@@ -98,7 +98,7 @@ msgstr ""
 
 #: ../../../_templates/layout.html:186
 msgid "Theme"
-msgstr ""
+msgstr "主題"
 
 #: ../../../_templates/layout.html:189
 msgid "Set your theme based on your system preferences"
@@ -114,7 +114,7 @@ msgstr ""
 
 #: ../../../_templates/layout.html:198
 msgid "Light"
-msgstr ""
+msgstr "淺色"
 
 #: ../../../_templates/layout.html:201
 msgid "Set your theme to dark theme"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: ../../../_templates/layout.html:204
 msgid "Dark"
-msgstr ""
+msgstr "深色"
 
 #: ../../../_templates/layout.html:212
 msgid "to top"

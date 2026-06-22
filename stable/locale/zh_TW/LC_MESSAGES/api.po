@@ -23,7 +23,7 @@ msgstr "API 參考"
 
 #: ../../../api.rst:6
 msgid "The following section outlines the API of discord.py."
-msgstr ""
+msgstr "以下章節概述了 discord.py 的 API。"
 
 #: ../../../api.rst:10
 msgid ""
@@ -32,36 +32,43 @@ msgid ""
 "logs will not be output anywhere.  See :ref:`logging_setup` for more "
 "information on how to set up and use the logging module with discord.py."
 msgstr ""
+"此模組使用 Python 的 logging 模組，以獨立於輸出的方式記錄診斷資訊和錯誤。如果"
+"未設定 logging 模組，這些記錄將不會輸出到任何地方。有關如何設定並將 logging "
+"模組與 discord.py 一起使用的更多資訊，請參閱 :ref:`logging_setup`。"
 
 #: ../../../api.rst:17
 msgid "Version Related Info"
-msgstr ""
+msgstr "版本相關資訊"
 
 #: ../../../api.rst:19
 msgid ""
 "There are two main ways to query version information about the library. For "
 "guarantees, check :ref:`version_guarantees`."
 msgstr ""
+"查詢函式庫版本資訊主要有兩種方式。如需版本保證，請參閱 :ref:"
+"`version_guarantees`。"
 
 #: ../../../api.rst:23
 msgid "A named tuple that is similar to :obj:`py:sys.version_info`."
-msgstr ""
+msgstr "一個類似於 :obj:`py:sys.version_info` 的命名元組。"
 
 #: ../../../api.rst:25
 msgid ""
 "Just like :obj:`py:sys.version_info` the valid values for ``releaselevel`` "
 "are 'alpha', 'beta', 'candidate' and 'final'."
 msgstr ""
+"與 :obj:`py:sys.version_info` 相同，``releaselevel`` 的有效值為 "
+"'alpha'、'beta'、'candidate' 和 'final'。"
 
 #: ../../../api.rst:30
 msgid ""
 "A string representation of the version. e.g. ``'1.0.0rc1'``. This is based "
 "off of :pep:`440`."
-msgstr ""
+msgstr "版本的字串表示形式，例如 ``'1.0.0rc1'``。基於 :pep:`440`。"
 
 #: ../../../api.rst:34
 msgid "Clients"
-msgstr ""
+msgstr "客戶端"
 
 #: ../../../api.rst:37
 msgid "Client"
@@ -72,6 +79,8 @@ msgid ""
 "Represents a client connection that connects to Discord. This class is used "
 "to interact with the Discord WebSocket and API."
 msgstr ""
+"表示連接到 Discord 的客戶端連線。此類別用於與 Discord WebSocket 和 API 進行互"
+"動。"
 
 #: ../../../../discord/client.py:docstring of discord.client.Client:8
 #: ../../../../discord/shard.py:docstring discord.shard.AutoShardedClient:25

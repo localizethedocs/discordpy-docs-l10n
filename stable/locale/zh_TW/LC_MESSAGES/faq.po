@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../faq.rst:7
 msgid "Frequently Asked Questions"
-msgstr ""
+msgstr "常見問題"
 
 #: ../../../faq.rst:9
 msgid ""
@@ -369,7 +369,7 @@ msgstr ""
 #: ../../../faq.rst:195 ../../../faq.rst:213 ../../../faq.rst:292
 #: ../../../faq.rst:310 ../../../faq.rst:334
 msgid "Quick example:"
-msgstr ""
+msgstr "快速範例："
 
 #: ../../../faq.rst:197
 msgid ""
