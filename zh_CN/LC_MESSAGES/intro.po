@@ -1,0 +1,201 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro.rst:8
+msgid "Introduction"
+msgstr ""
+
+#: ../../../intro.rst:10
+msgid ""
+"This is the documentation for discord.py, a library for Python to aid in "
+"creating applications that utilise the Discord API."
+msgstr ""
+
+#: ../../../intro.rst:14
+msgid "Prerequisites"
+msgstr ""
+
+#: ../../../intro.rst:16
+msgid ""
+"discord.py works with Python 3.8 or higher. Support for earlier versions of "
+"Python is not provided. Python 2.7 or lower is not supported. Python 3.7 or "
+"lower is not supported."
+msgstr ""
+
+#: ../../../intro.rst:23
+msgid "Installing"
+msgstr ""
+
+#: ../../../intro.rst:25
+msgid "You can get the library directly from PyPI: ::"
+msgstr ""
+
+#: ../../../intro.rst:27
+msgid "python3 -m pip install -U discord.py"
+msgstr ""
+
+#: ../../../intro.rst:29
+msgid "If you are using Windows, then the following should be used instead: ::"
+msgstr ""
+
+#: ../../../intro.rst:31
+msgid "py -3 -m pip install -U discord.py"
+msgstr ""
+
+#: ../../../intro.rst:34
+msgid ""
+"To get voice support, you should use ``discord.py[voice]`` instead of "
+"``discord.py``, e.g. ::"
+msgstr ""
+
+#: ../../../intro.rst:36
+msgid "python3 -m pip install -U discord.py[voice]"
+msgstr ""
+
+#: ../../../intro.rst:38
+msgid ""
+"On Linux environments, installing voice requires getting the following "
+"dependencies:"
+msgstr ""
+
+#: ../../../intro.rst:40
+msgid "`libffi <https://github.com/libffi/libffi>`_"
+msgstr ""
+
+#: ../../../intro.rst:41
+msgid "`libnacl <https://github.com/saltstack/libnacl>`_"
+msgstr ""
+
+#: ../../../intro.rst:42
+msgid "`python3-dev <https://packages.debian.org/python3-dev>`_"
+msgstr ""
+
+#: ../../../intro.rst:44
+msgid ""
+"For a Debian-based system, the following command will get these dependencies:"
+msgstr ""
+
+#: ../../../intro.rst:46
+msgid "$ apt install libffi-dev libnacl-dev python3-dev"
+msgstr ""
+
+#: ../../../intro.rst:50
+msgid "Remember to check your permissions!"
+msgstr ""
+
+#: ../../../intro.rst:53
+msgid "Virtual Environments"
+msgstr ""
+
+#: ../../../intro.rst:55
+msgid ""
+"Sometimes you want to keep libraries from polluting system installs or use a "
+"different version of libraries than the ones installed on the system. You "
+"might also not have permissions to install libraries system-wide. For this "
+"purpose, the standard library as of Python 3.3 comes with a concept called "
+"\"Virtual Environment\"s to help maintain these separate versions."
+msgstr ""
+
+#: ../../../intro.rst:60
+msgid "A more in-depth tutorial is found on :doc:`py:tutorial/venv`."
+msgstr ""
+
+#: ../../../intro.rst:62
+msgid "However, for the quick and dirty:"
+msgstr ""
+
+#: ../../../intro.rst:64
+msgid "Go to your project's working directory:"
+msgstr ""
+
+#: ../../../intro.rst:66
+msgid ""
+"$ cd your-bot-source\n"
+"$ python3 -m venv bot-env"
+msgstr ""
+
+#: ../../../intro.rst:71
+msgid "Activate the virtual environment:"
+msgstr ""
+
+#: ../../../intro.rst:73
+msgid "$ source bot-env/bin/activate"
+msgstr ""
+
+#: ../../../intro.rst:77
+msgid "On Windows you activate it with:"
+msgstr ""
+
+#: ../../../intro.rst:79
+msgid "$ bot-env\\Scripts\\activate.bat"
+msgstr ""
+
+#: ../../../intro.rst:83
+msgid "Use pip like usual:"
+msgstr ""
+
+#: ../../../intro.rst:85
+msgid "$ pip install -U discord.py"
+msgstr ""
+
+#: ../../../intro.rst:89
+msgid "Congratulations. You now have a virtual environment all set up."
+msgstr ""
+
+#: ../../../intro.rst:93
+msgid ""
+"Scripts executed with ``py -3`` will ignore any currently active virtual "
+"environment, as the ``-3`` specifies a global scope."
+msgstr ""
+
+#: ../../../intro.rst:97
+msgid "Basic Concepts"
+msgstr ""
+
+#: ../../../intro.rst:99
+msgid ""
+"discord.py revolves around the concept of :ref:`events <discord-api-"
+"events>`. An event is something you listen to and then respond to. For "
+"example, when a message happens, you will receive an event about it that you "
+"can respond to."
+msgstr ""
+
+#: ../../../intro.rst:103
+msgid "A quick example to showcase how events work:"
+msgstr ""
+
+#: ../../../intro.rst:105
+msgid ""
+"# This example requires the 'message_content' intent.\n"
+"\n"
+"import discord\n"
+"\n"
+"class MyClient(discord.Client):\n"
+"    async def on_ready(self):\n"
+"        print(f'Logged on as {self.user}!')\n"
+"\n"
+"    async def on_message(self, message):\n"
+"        print(f'Message from {message.author}: {message.content}')\n"
+"\n"
+"intents = discord.Intents.default()\n"
+"intents.message_content = True\n"
+"\n"
+"client = MyClient(intents=intents)\n"
+"client.run('my token goes here')"
+msgstr ""
