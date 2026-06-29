@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>建立機器人帳號</title>
+ 
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+  <!-- end extra head -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  <link rel="stylesheet" type="text/css" href="_static/basic.css" />
+  <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  <link rel="stylesheet" href="_static/codeblocks.css" type="text/css" />
+  <link rel="stylesheet" href="_static/icons.css" type="text/css" />
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  <script type="text/javascript">
+    var DPY_TRANSLATIONS = {
+      copy_code: "複製程式碼",
+      copy_code_error: "Could not copy codeblock:",
+    }
+  </script>
+  <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+  <script src="_static/jquery.js"></script>
+  <script src="_static/underscore.js"></script>
+  <script src="_static/doctools.js"></script>
+  <script src="_static/tabs.js"></script>
+  <script src="_static/translations.js"></script>
+  <script src="_static/custom.js"></script>
+  <script src="_static/settings.js"></script>
+  <script src="_static/copy.js"></script>
+  <script src="_static/sidebar.js"></script>
+  <link rel="canonical" href="https://projects.localizethedocs.org/discordpy-docs-l10n/discord.html" />
+  <link rel="shortcut icon" href="_static/discord_py_logo.ico"/>
+  <link rel="index" title="索引" href="genindex.html" />
+  <link rel="search" title="搜尋" href="search.html" />
+</head>
+<body>
+  <div class="main-grid">
+    <header class="grid-item">
+      <nav>
+        <a href="index.html" class="main-heading">discord.py</a>
+        <a href="https://github.com/Rapptz/discord.py" title="GitHub"><span class="material-icons custom-icons">github</span></a>
+        <a href="https://discord.gg/r3sSKJJ" title="Discord"><span class="material-icons custom-icons">discord</span></a>
+        <a href="faq.html" title="常見問題"><span class="material-icons">help_center</span></a>
+        <a onclick="mobileSearch.open();" title="搜尋" id="open-search" class="mobile-only"><span class="material-icons">search</span></a>
+        <a onclick="mobileSearch.close();" title="關閉" id="close-search" class="mobile-only" hidden><span class="material-icons">close</span></a>
+      </nav>
+      <nav class="mobile-only">
+        <form role="search" class="search" action="search.html" method="get">
+          <div class="search-wrapper">
+            <input type="search" name="q" placeholder="搜尋文件" />
+            <button type="submit">
+              <span class="material-icons">search</span>
+            </button>
+          </div>
+        </form>
+      </nav>
+    </header>
+    <div class="sub-header grid-item">
+      <label for="documentation_select">View Documentation For</label>
+      <select id="documentation_select" onchange="window.location = this.value;">
+        <option value="#" selected>discord</option>
+        <option value="ext/commands/index.html" >discord.ext.commands</option>
+        <option value="ext/tasks/index.html" >discord.ext.tasks</option>
+      </select>
+      <form id="search-form" role="search" class="search" action="search.html" method="get">
+        <div class="search-wrapper">
+          <input type="search" name="q" placeholder="搜尋文件" />
+          <button type="submit" onmousedown="searchBarClick(event, document.getElementById('search-form'));">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+      </form>
+      <a accesskey="S" class="settings" onclick="settingsModal.open();"><span class="material-icons">settings</span></a>
+    </div>
+    <aside class="grid-item">
+      <span id="hamburger-toggle">
+        <span class="material-icons">menu</span>
+      </span>
+      <span id="settings-toggle" class="settings" onclick="settingsModal.open();">
+        <span class="material-icons">settings</span>
+      </span>
+      <div id="sidebar">
+        <form id="sidebar-form" role="search" class="search" action="search.html" method="get">
+        <div class="search-wrapper search-sidebar">
+          <input type="search" name="q" placeholder="搜尋文件" />
+          <button type="submit" onmousedown="searchBarClick(event, document.getElementById('sidebar-form'));">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+      </form>
+  <div>
+    <h3><a href="index.html">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">建立機器人帳號</a><ul>
+<li><a class="reference internal" href="#inviting-your-bot">邀請您的機器人</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+      </div>
+    </aside>
+    <main class="grid-item" role="main">
+      
+  <section id="creating-a-bot-account">
+<span id="discord-intro"></span><h1>建立機器人帳號<a class="headerlink" href="#creating-a-bot-account" title="本標題的永久連結">¶</a></h1>
+<p>為了使用此程式庫以及 Discord API，我們必須先建立一個 Discord 機器人帳號。</p>
+<p>建立機器人帳號是一個相當簡單的流程。</p>
+<ol class="arabic">
+<li><p>請確保您已登入 <a class="reference external" href="https://discord.com">Discord 網站</a>。</p></li>
+<li><p>前往 <a class="reference external" href="https://discord.com/developers/applications">應用程式頁面</a></p></li>
+<li><p>點擊「New Application」按鈕。</p>
+<blockquote>
+<div><img alt="新應用程式按鈕。" src="_images/discord_create_app_button.png" />
+</div></blockquote>
+</li>
+<li><p>為應用程式命名，然後點擊「Create」。</p>
+<blockquote>
+<div><img alt="已填寫的新應用程式表單。" src="_images/discord_create_app_form.png" />
+</div></blockquote>
+</li>
+<li><p>前往「Bot」分頁進行設定。</p></li>
+<li><p>如果您希望其他人能邀請您的機器人，請確保已勾選 <strong>Public Bot</strong>。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>您也應該確保 <strong>Require OAuth2 Code Grant</strong> 未被勾選，除非您正在開發需要此功能的服務。如果不確定，請**保持未勾選**。</p></li>
+</ul>
+<img alt="對大多數人來說，Bot User 選項應該呈現的樣子。" src="_images/discord_bot_user_options.png" />
+</div></blockquote>
+</li>
+<li><p>使用「Copy」按鈕複製 token。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>這不是 General Information 頁面中的 Client Secret。</strong></p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">警告</p>
+<p>請注意，這個 token 基本上就是您機器人的密碼。您**絕對不應**與他人分享。一旦洩漏，他人可以登入您的機器人並進行惡意操作，例如離開伺服器、封鎖伺服器中的所有成員，或惡意 &#64;everyone。</p>
+<p>可能造成的後果不勝枚舉，因此**請勿分享此 token。**</p>
+<p>如果您不小心洩漏了 token，請盡快點擊「Regenerate」按鈕。這將撤銷您的舊 token 並重新產生新的 token。之後您需要使用新的 token 來登入。</p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+<p>這樣就完成了。您現在擁有一個機器人帳號，可以使用該 token 登入。</p>
+<section id="inviting-your-bot">
+<span id="discord-invite-bot"></span><h2>邀請您的機器人<a class="headerlink" href="#inviting-your-bot" title="本標題的永久連結">¶</a></h2>
+<p>您已經建立了機器人使用者，但它實際上還沒有加入任何伺服器。</p>
+<p>如果您想邀請您的機器人，必須為它建立一個邀請網址。</p>
+<ol class="arabic">
+<li><p>請確保您已登入 <a class="reference external" href="https://discord.com">Discord 網站</a>。</p></li>
+<li><p>前往 <a class="reference external" href="https://discord.com/developers/applications">應用程式頁面</a></p></li>
+<li><p>點擊您機器人的頁面。</p></li>
+<li><p>前往「OAuth2 &gt; URL Generator」分頁。</p>
+<blockquote>
+<div><img alt="OAuth2 頁面應該呈現的樣子。" src="_images/discord_oauth2.png" />
+</div></blockquote>
+</li>
+<li><p>在「scopes」下方勾選「bot」核取方塊。</p>
+<blockquote>
+<div><img alt="已勾選「bot」的 scopes 核取方塊。" src="_images/discord_oauth2_scope.png" />
+</div></blockquote>
+</li>
+<li><p>在「Bot Permissions」下方勾選機器人運作所需的權限。</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>請注意要求機器人擁有「Administrator」權限所帶來的後果。</p></li>
+<li><p>當機器人被加入到已啟用全伺服器 2FA 的伺服器時，機器人擁有者必須啟用 2FA 才能執行某些操作和權限。請查看 <a class="reference external" href="https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-Factor-Authentication">2FA 支援頁面</a> 以獲取更多資訊。</p></li>
+</ul>
+<img alt="已勾選部分權限的權限核取方塊。" src="_images/discord_oauth2_perms.png" />
+</div></blockquote>
+</li>
+<li><p>現在產生的網址可以用來將您的機器人加入伺服器。將網址複製並貼到瀏覽器中，選擇要邀請機器人的伺服器，然後點擊「Authorize」。</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">備註</p>
+<p>新增機器人的人需要擁有「Manage Server」權限才能執行此操作。</p>
+</div>
+<p>如果您想要在機器人執行期間使用 <a class="reference internal" href="api.html#discord.Permissions" title="discord.Permissions"><code class="xref py py-class docutils literal notranslate"><span class="pre">discord.Permissions</span></code></a> 介面動態產生此網址，可以使用 <a class="reference internal" href="api.html#discord.utils.oauth_url" title="discord.utils.oauth_url"><code class="xref py py-func docutils literal notranslate"><span class="pre">discord.utils.oauth_url()</span></code></a>。</p>
+</section>
+</section>
+
+
+    </main>
+    <footer class="grid-item">
+        &#169; 版權所有 2015-present, Rapptz。
+      使用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0 建立。
+    </footer>
+  </div>
+
+  <div id="settings" class="modal" onclick="if (event.target == this){ settingsModal.close(); }" hidden>
+    <div class="modal-content">
+      <span class="close" onclick="settingsModal.close();" title="關閉">
+        <span class="material-icons">close</span>
+      </span>
+      <h1>設定</h1>
+
+      <h2>Font</h2>
+      <div class="setting">
+        <h3>Use a serif font:
+          <label class="toggle"
+            title="Use a serif font? Your system font will be used, falling back to serif.">
+            <input type="checkbox" name="useSerifFont" onclick="updateSetting(this);">
+            <span class="toggle-slider"></span>
+          </label>
+        </h3>
+      </div>
+
+      <h2>主題</h2>
+      <div class="setting">
+        <h3>
+          <label class="toggle" title="Set your theme based on your system preferences">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="automatic" checked>
+          </label>
+          Automatic
+        </h3>
+        <h3>
+          <label class="toggle" title="Set your theme to light theme">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="light">
+          </label>
+          淺色
+        </h3>
+        <h3>
+          <label class="toggle" title="Set your theme to dark theme">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="dark">
+          </label>
+          深色
+        </h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="to-top" onclick="scrollToTop()" hidden>
+    <span><span class="material-icons">arrow_upward</span>to top</span>
+  </div>
+
+</body>
+</html>

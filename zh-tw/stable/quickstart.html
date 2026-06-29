@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>快速入門</title>
+ 
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+  <!-- end extra head -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  <link rel="stylesheet" type="text/css" href="_static/basic.css" />
+  <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  <link rel="stylesheet" href="_static/codeblocks.css" type="text/css" />
+  <link rel="stylesheet" href="_static/icons.css" type="text/css" />
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  <script type="text/javascript">
+    var DPY_TRANSLATIONS = {
+      copy_code: "複製程式碼",
+      copy_code_error: "Could not copy codeblock:",
+    }
+  </script>
+  <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+  <script src="_static/jquery.js"></script>
+  <script src="_static/underscore.js"></script>
+  <script src="_static/doctools.js"></script>
+  <script src="_static/tabs.js"></script>
+  <script src="_static/translations.js"></script>
+  <script src="_static/custom.js"></script>
+  <script src="_static/settings.js"></script>
+  <script src="_static/copy.js"></script>
+  <script src="_static/sidebar.js"></script>
+  <link rel="canonical" href="https://projects.localizethedocs.org/discordpy-docs-l10n/quickstart.html" />
+  <link rel="shortcut icon" href="_static/discord_py_logo.ico"/>
+  <link rel="index" title="索引" href="genindex.html" />
+  <link rel="search" title="搜尋" href="search.html" />
+</head>
+<body>
+  <div class="main-grid">
+    <header class="grid-item">
+      <nav>
+        <a href="index.html" class="main-heading">discord.py</a>
+        <a href="https://github.com/Rapptz/discord.py" title="GitHub"><span class="material-icons custom-icons">github</span></a>
+        <a href="https://discord.gg/r3sSKJJ" title="Discord"><span class="material-icons custom-icons">discord</span></a>
+        <a href="faq.html" title="常見問題"><span class="material-icons">help_center</span></a>
+        <a onclick="mobileSearch.open();" title="搜尋" id="open-search" class="mobile-only"><span class="material-icons">search</span></a>
+        <a onclick="mobileSearch.close();" title="關閉" id="close-search" class="mobile-only" hidden><span class="material-icons">close</span></a>
+      </nav>
+      <nav class="mobile-only">
+        <form role="search" class="search" action="search.html" method="get">
+          <div class="search-wrapper">
+            <input type="search" name="q" placeholder="搜尋文件" />
+            <button type="submit">
+              <span class="material-icons">search</span>
+            </button>
+          </div>
+        </form>
+      </nav>
+    </header>
+    <div class="sub-header grid-item">
+      <label for="documentation_select">View Documentation For</label>
+      <select id="documentation_select" onchange="window.location = this.value;">
+        <option value="#" selected>discord</option>
+        <option value="ext/commands/index.html" >discord.ext.commands</option>
+        <option value="ext/tasks/index.html" >discord.ext.tasks</option>
+      </select>
+      <form id="search-form" role="search" class="search" action="search.html" method="get">
+        <div class="search-wrapper">
+          <input type="search" name="q" placeholder="搜尋文件" />
+          <button type="submit" onmousedown="searchBarClick(event, document.getElementById('search-form'));">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+      </form>
+      <a accesskey="S" class="settings" onclick="settingsModal.open();"><span class="material-icons">settings</span></a>
+    </div>
+    <aside class="grid-item">
+      <span id="hamburger-toggle">
+        <span class="material-icons">menu</span>
+      </span>
+      <span id="settings-toggle" class="settings" onclick="settingsModal.open();">
+        <span class="material-icons">settings</span>
+      </span>
+      <div id="sidebar">
+        <form id="sidebar-form" role="search" class="search" action="search.html" method="get">
+        <div class="search-wrapper search-sidebar">
+          <input type="search" name="q" placeholder="搜尋文件" />
+          <button type="submit" onmousedown="searchBarClick(event, document.getElementById('sidebar-form'));">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+      </form>
+  <div>
+    <h3><a href="index.html">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">快速入門</a><ul>
+<li><a class="reference internal" href="#a-minimal-bot">最小化機器人</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+      </div>
+    </aside>
+    <main class="grid-item" role="main">
+      
+  <section id="quickstart">
+<span id="id1"></span><h1>快速入門<a class="headerlink" href="#quickstart" title="本標題的永久連結">¶</a></h1>
+<p>本頁提供此程式庫的簡要介紹。它假設您已經安裝了程式庫，如果尚未安裝，請參閱 <a class="reference internal" href="intro.html#installing"><span class="std std-ref">安裝</span></a> 章節。</p>
+<section id="a-minimal-bot">
+<h2>最小化機器人<a class="headerlink" href="#a-minimal-bot" title="本標題的永久連結">¶</a></h2>
+<p>讓我們建立一個會回應特定訊息的機器人，並逐步帶您了解。</p>
+<p>它看起來像這樣：</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 此範例需要 &#39;message_content&#39; 意圖。</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">discord</span>
+
+<span class="n">intents</span> <span class="o">=</span> <span class="n">discord</span><span class="o">.</span><span class="n">Intents</span><span class="o">.</span><span class="n">default</span><span class="p">()</span>
+<span class="n">intents</span><span class="o">.</span><span class="n">message_content</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">client</span> <span class="o">=</span> <span class="n">discord</span><span class="o">.</span><span class="n">Client</span><span class="p">(</span><span class="n">intents</span><span class="o">=</span><span class="n">intents</span><span class="p">)</span>
+
+<span class="nd">@client</span><span class="o">.</span><span class="n">event</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_ready</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;我們已以 </span><span class="si">{</span><span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="si">}</span><span class="s1"> 身份登入&#39;</span><span class="p">)</span>
+
+<span class="nd">@client</span><span class="o">.</span><span class="n">event</span>
+<span class="k">async</span> <span class="k">def</span><span class="w"> </span><span class="nf">on_message</span><span class="p">(</span><span class="n">message</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">author</span> <span class="o">==</span> <span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="p">:</span>
+        <span class="k">return</span>
+
+    <span class="k">if</span> <span class="n">message</span><span class="o">.</span><span class="n">content</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s1">&#39;$hello&#39;</span><span class="p">):</span>
+        <span class="k">await</span> <span class="n">message</span><span class="o">.</span><span class="n">channel</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="s1">&#39;Hello!&#39;</span><span class="p">)</span>
+
+<span class="n">client</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s1">&#39;在此輸入您的 token&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>讓我們將此檔案命名為 <code class="docutils literal notranslate"><span class="pre">example_bot.py</span></code>。請確保不要將其命名為 <code class="docutils literal notranslate"><span class="pre">discord.py</span></code>，因為這會與程式庫產生衝突。</p>
+<p>這裡有很多內容，讓我們逐步帶您了解。</p>
+<ol class="arabic">
+<li><p>第一行只是匯入程式庫，如果這引發了 <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ModuleNotFoundError" title="(於 Python v3.14)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ModuleNotFoundError</span></code></a> 或 <a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ImportError" title="(於 Python v3.14)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ImportError</span></code></a>，請前往 <a class="reference internal" href="intro.html#installing"><span class="std std-ref">安裝</span></a> 章節進行正確安裝。</p></li>
+<li><p>接下來，我們建立一個 <a class="reference internal" href="api.html#discord.Client" title="discord.Client"><code class="xref py py-class docutils literal notranslate"><span class="pre">Client</span></code></a> 的實例。此 client 是我們與 Discord 的連線。</p></li>
+<li><p>然後我們使用 <a class="reference internal" href="api.html#discord.Client.event" title="discord.Client.event"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Client.event()</span></code></a> 裝飾器來註冊事件。此程式庫有許多事件。由於此程式庫是異步的，我們以「回呼」（callback）風格的方式來處理事情。</p>
+<p>回呼本質上是一個在特定事件發生時被呼叫的函式。在我們的例子中，<a class="reference internal" href="api.html#discord.on_ready" title="discord.on_ready"><code class="xref py py-func docutils literal notranslate"><span class="pre">on_ready()</span></code></a> 事件會在機器人完成登入與設定後被呼叫，而 <a class="reference internal" href="api.html#discord.on_message" title="discord.on_message"><code class="xref py py-func docutils literal notranslate"><span class="pre">on_message()</span></code></a> 事件則在機器人收到訊息時被呼叫。</p>
+</li>
+<li><p>由於 <a class="reference internal" href="api.html#discord.on_message" title="discord.on_message"><code class="xref py py-func docutils literal notranslate"><span class="pre">on_message()</span></code></a> 事件會對*每則*收到的訊息觸發，我們必須確保忽略來自自己的訊息。我們透過檢查 <a class="reference internal" href="api.html#discord.Message.author" title="discord.Message.author"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Message.author</span></code></a> 是否與 <a class="reference internal" href="api.html#discord.Client.user" title="discord.Client.user"><code class="xref py py-attr docutils literal notranslate"><span class="pre">Client.user</span></code></a> 相同來做到這一點。</p></li>
+<li><p>之後，我們檢查 <a class="reference internal" href="api.html#discord.Message.content" title="discord.Message.content"><code class="xref py py-class docutils literal notranslate"><span class="pre">Message.content</span></code></a> 是否以 <code class="docutils literal notranslate"><span class="pre">'$hello'</span></code> 開頭。如果是，則在使用該指令的頻道中發送 <code class="docutils literal notranslate"><span class="pre">'Hello!'</span></code>。這是一種基本的指令處理方式，之後可以使用 <a class="reference internal" href="ext/commands/index.html"><span class="doc">discord.ext.commands – Bot commands framework</span></a> 框架來自動化處理。</p></li>
+<li><p>最後，我們使用登入 token 來執行機器人。如果您需要取得 token 或建立機器人的協助，請查閱 <a class="reference internal" href="discord.html#discord-intro"><span class="std std-ref">建立機器人帳號</span></a> 章節。</p></li>
+</ol>
+<p>現在我們已經建立了一個機器人，我們必須*執行*它。幸運的是，這很簡單，因為這只是一個 Python 腳本，我們可以直接執行它。</p>
+<p>在 Windows 上：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>py<span class="w"> </span>-3<span class="w"> </span>example_bot.py
+</pre></div>
+</div>
+<p>在其他系統上：</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$<span class="w"> </span>python3<span class="w"> </span>example_bot.py
+</pre></div>
+</div>
+<p>現在您可以試著玩玩看您的基本機器人了。</p>
+</section>
+</section>
+
+
+    </main>
+    <footer class="grid-item">
+        &#169; 版權所有 2015-present, Rapptz。
+      使用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0 建立。
+    </footer>
+  </div>
+
+  <div id="settings" class="modal" onclick="if (event.target == this){ settingsModal.close(); }" hidden>
+    <div class="modal-content">
+      <span class="close" onclick="settingsModal.close();" title="關閉">
+        <span class="material-icons">close</span>
+      </span>
+      <h1>設定</h1>
+
+      <h2>Font</h2>
+      <div class="setting">
+        <h3>Use a serif font:
+          <label class="toggle"
+            title="Use a serif font? Your system font will be used, falling back to serif.">
+            <input type="checkbox" name="useSerifFont" onclick="updateSetting(this);">
+            <span class="toggle-slider"></span>
+          </label>
+        </h3>
+      </div>
+
+      <h2>主題</h2>
+      <div class="setting">
+        <h3>
+          <label class="toggle" title="Set your theme based on your system preferences">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="automatic" checked>
+          </label>
+          Automatic
+        </h3>
+        <h3>
+          <label class="toggle" title="Set your theme to light theme">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="light">
+          </label>
+          淺色
+        </h3>
+        <h3>
+          <label class="toggle" title="Set your theme to dark theme">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="dark">
+          </label>
+          深色
+        </h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="to-top" onclick="scrollToTop()" hidden>
+    <span><span class="material-icons">arrow_upward</span>to top</span>
+  </div>
+
+</body>
+</html>
