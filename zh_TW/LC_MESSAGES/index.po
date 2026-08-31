@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../index.rst:59
+msgid "discord.ext.commands API Reference"
+msgstr "discord.ext.commands API 參考"
+
+#: ../../../index.rst:59
+msgid "discord.ext.tasks API Reference"
+msgstr "discord.ext.tasks API 參考"
+
+#: ../../../index.rst:7
+msgid "Welcome to discord.py"
+msgstr "歡迎使用 discord.py"
+
+#: ../../../index.rst:12
+msgid ""
+"discord.py is a modern, easy to use, feature-rich, and async ready API "
+"wrapper for Discord."
+msgstr ""
+"discord.py 是一個現代、易於使用、功能豐富且支援異步的 Discord API 包裝器。"
+
+#: ../../../index.rst:15
+msgid "**Features:**"
+msgstr "**功能：**"
+
+#: ../../../index.rst:17
+msgid "Modern Pythonic API using ``async``\\/``await`` syntax"
+msgstr "使用 ``async``\\/``await`` 語法的現代 Pythonic API"
+
+#: ../../../index.rst:18
+msgid "Sane rate limit handling that prevents 429s"
+msgstr "合理的速率限制處理機制，防止 429 錯誤"
+
+#: ../../../index.rst:19
+msgid "Command extension to aid with bot creation"
+msgstr "用於協助機器人開發的命令擴充功能"
+
+#: ../../../index.rst:20
+msgid "Easy to use with an object oriented design"
+msgstr "物件導向設計，易於使用"
+
+#: ../../../index.rst:21
+msgid "Optimised for both speed and memory"
+msgstr "在速度與記憶體使用上皆經過最佳化"
+
+#: ../../../index.rst:24
+msgid "Getting started"
+msgstr "開始使用"
+
+#: ../../../index.rst:26
+msgid ""
+"Is this your first time using the library? This is the place to get started!"
+msgstr "這是您第一次使用這個程式庫嗎？這裡是您開始著手的最佳起點！"
+
+#: ../../../index.rst:28
+msgid "**First steps:** :doc:`intro` | :doc:`quickstart` | :doc:`logging`"
+msgstr "**起步走：** :doc:`intro` | :doc:`quickstart` | :doc:`logging`"
+
+#: ../../../index.rst:29
+msgid "**Working with Discord:** :doc:`discord` | :doc:`intents`"
+msgstr "**與 Discord 協作：** :doc:`discord` | :doc:`intents`"
+
+#: ../../../index.rst:30
+msgid ""
+"**Examples:** Many examples are available in the :resource:`repository "
+"<examples>`."
+msgstr "**範例：** 在 :resource:`儲存庫 <examples>` 中有許多範例可供參考。"
+
+#: ../../../index.rst:33
+msgid "Getting help"
+msgstr "取得幫助"
+
+#: ../../../index.rst:35
+msgid "If you're having trouble with something, these resources might help."
+msgstr "如果您遇到任何問題，這些資源或許能幫上忙。"
+
+#: ../../../index.rst:37
+msgid "Try the :doc:`faq` first, it's got answers to all common questions."
+msgstr "先試試 :doc:`faq`，裡面有所有常見問題的解答。"
+
+#: ../../../index.rst:38
+msgid ""
+"Ask us and hang out with us in our :resource:`Discord <discord>` server."
+msgstr ""
+"在我們的 :resource:`Discord <discord>` 伺服器中向我們提問或與我們閒聊。"
+
+#: ../../../index.rst:39
+msgid ""
+"If you're looking for something specific, try the :ref:`index <genindex>` "
+"or :ref:`searching <search>`."
+msgstr ""
+"如果您在尋找特定內容，請試試 :ref:`索引 <genindex>` 或 :ref:`搜尋 <search>`。"
+
+#: ../../../index.rst:40
+msgid "Report bugs in the :resource:`issue tracker <issues>`."
+msgstr "在 :resource:`議題追蹤器 <issues>` 中回報錯誤。"
+
+#: ../../../index.rst:41
+msgid "Ask in our :resource:`GitHub discussions page <discussions>`."
+msgstr "在我們的 :resource:`GitHub 討論頁面 <discussions>`\\ 中發問。"
+
+#: ../../../index.rst:44
+msgid "Extensions"
+msgstr "擴充功能"
+
+#: ../../../index.rst:46
+msgid ""
+"These extensions help you during development when it comes to common tasks."
+msgstr "這些擴充功能可在開發過程中協助您處理常見任務。"
+
+#: ../../../index.rst:55
+msgid "Manuals"
+msgstr "手冊"
+
+#: ../../../index.rst:57
+msgid "These pages go into great detail about everything the API can do."
+msgstr "這些頁面詳細介紹了 API 所能做到的一切。"
+
+#: ../../../index.rst:68
+msgid "Meta"
+msgstr "其他資訊"
+
+#: ../../../index.rst:70
+msgid ""
+"If you're looking for something related to the project itself, it's here."
+msgstr "如果您在尋找與專案本身相關的資訊，這裡應有盡有。"

@@ -1,0 +1,198 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../quickstart.rst:8
+msgid "Quickstart"
+msgstr "快速入門"
+
+#: ../../../quickstart.rst:10
+msgid ""
+"This page gives a brief introduction to the library. It assumes you have the "
+"library installed, if you don't check the :ref:`installing` portion."
+msgstr ""
+"本頁提供此程式庫的簡要介紹。它假設您已經安裝了程式庫，如果尚未安裝，請參閱 :"
+"ref:`installing` 章節。"
+
+#: ../../../quickstart.rst:14
+msgid "A Minimal Bot"
+msgstr "最小化機器人"
+
+#: ../../../quickstart.rst:16
+msgid ""
+"Let's make a bot that responds to a specific message and walk you through it."
+msgstr "讓我們建立一個會回應特定訊息的機器人，並逐步帶您了解。"
+
+#: ../../../quickstart.rst:18
+msgid "It looks something like this:"
+msgstr "它看起來像這樣："
+
+#: ../../../quickstart.rst:20
+msgid ""
+"# This example requires the 'message_content' intent.\n"
+"\n"
+"import discord\n"
+"\n"
+"intents = discord.Intents.default()\n"
+"intents.message_content = True\n"
+"\n"
+"client = discord.Client(intents=intents)\n"
+"\n"
+"@client.event\n"
+"async def on_ready():\n"
+"    print(f'We have logged in as {client.user}')\n"
+"\n"
+"@client.event\n"
+"async def on_message(message):\n"
+"    if message.author == client.user:\n"
+"        return\n"
+"\n"
+"    if message.content.startswith('$hello'):\n"
+"        await message.channel.send('Hello!')\n"
+"\n"
+"client.run('your token here')"
+msgstr ""
+"# 此範例需要 'message_content' 意圖。\n"
+"\n"
+"import discord\n"
+"\n"
+"intents = discord.Intents.default()\n"
+"intents.message_content = True\n"
+"\n"
+"client = discord.Client(intents=intents)\n"
+"\n"
+"@client.event\n"
+"async def on_ready():\n"
+"    print(f'我們已以 {client.user} 身份登入')\n"
+"\n"
+"@client.event\n"
+"async def on_message(message):\n"
+"    if message.author == client.user:\n"
+"        return\n"
+"\n"
+"    if message.content.startswith('$hello'):\n"
+"        await message.channel.send('Hello!')\n"
+"\n"
+"client.run('在此輸入您的 token')"
+
+#: ../../../quickstart.rst:45
+msgid ""
+"Let's name this file ``example_bot.py``. Make sure not to name it ``discord."
+"py`` as that'll conflict with the library."
+msgstr ""
+"讓我們將此檔案命名為 ``example_bot.py``。請確保不要將其命名為 ``discord."
+"py``，因為這會與程式庫產生衝突。"
+
+#: ../../../quickstart.rst:48
+msgid "There's a lot going on here, so let's walk you through it step by step."
+msgstr "這裡有很多內容，讓我們逐步帶您了解。"
+
+#: ../../../quickstart.rst:50
+msgid ""
+"The first line just imports the library, if this raises a :exc:"
+"`ModuleNotFoundError` or :exc:`ImportError` then head on over to :ref:"
+"`installing` section to properly install."
+msgstr ""
+"第一行只是匯入程式庫，如果這引發了 :exc:`ModuleNotFoundError` 或 :exc:"
+"`ImportError`，請前往 :ref:`installing` 章節進行正確安裝。"
+
+#: ../../../quickstart.rst:52
+msgid ""
+"Next, we create an instance of a :class:`Client`. This client is our "
+"connection to Discord."
+msgstr ""
+"接下來，我們建立一個 :class:`Client` 的實例。此 client 是我們與 Discord 的連"
+"線。"
+
+#: ../../../quickstart.rst:53
+msgid ""
+"We then use the :meth:`Client.event` decorator to register an event. This "
+"library has many events. Since this library is asynchronous, we do things in "
+"a \"callback\" style manner."
+msgstr ""
+"然後我們使用 :meth:`Client.event` 裝飾器來註冊事件。此程式庫有許多事件。由於"
+"此程式庫是異步的，我們以「回呼」（callback）風格的方式來處理事情。"
+
+#: ../../../quickstart.rst:56
+msgid ""
+"A callback is essentially a function that is called when something happens. "
+"In our case, the :func:`on_ready` event is called when the bot has finished "
+"logging in and setting things up and the :func:`on_message` event is called "
+"when the bot has received a message."
+msgstr ""
+"回呼本質上是一個在特定事件發生時被呼叫的函式。在我們的例子中，:func:"
+"`on_ready` 事件會在機器人完成登入與設定後被呼叫，而 :func:`on_message` 事件則"
+"在機器人收到訊息時被呼叫。"
+
+#: ../../../quickstart.rst:59
+msgid ""
+"Since the :func:`on_message` event triggers for *every* message received, we "
+"have to make sure that we ignore messages from ourselves. We do this by "
+"checking if the :attr:`Message.author` is the same as the :attr:`Client."
+"user`."
+msgstr ""
+"由於 :func:`on_message` 事件會對*每則*收到的訊息觸發，我們必須確保忽略來自自"
+"己的訊息。我們透過檢查 :attr:`Message.author` 是否與 :attr:`Client.user` 相同"
+"來做到這一點。"
+
+#: ../../../quickstart.rst:62
+msgid ""
+"Afterwards, we check if the :class:`Message.content` starts with "
+"``'$hello'``. If it does, then we send a message in the channel it was used "
+"in with ``'Hello!'``. This is a basic way of handling commands, which can be "
+"later automated with the :doc:`./ext/commands/index` framework."
+msgstr ""
+"之後，我們檢查 :class:`Message.content` 是否以 ``'$hello'`` 開頭。如果是，則"
+"在使用該指令的頻道中發送 ``'Hello!'``。這是一種基本的指令處理方式，之後可以使"
+"用 :doc:`./ext/commands/index` 框架來自動化處理。"
+
+#: ../../../quickstart.rst:65
+msgid ""
+"Finally, we run the bot with our login token. If you need help getting your "
+"token or creating a bot, look in the :ref:`discord-intro` section."
+msgstr ""
+"最後，我們使用登入 token 來執行機器人。如果您需要取得 token 或建立機器人的協"
+"助，請查閱 :ref:`discord-intro` 章節。"
+
+#: ../../../quickstart.rst:69
+msgid ""
+"Now that we've made a bot, we have to *run* the bot. Luckily, this is simple "
+"since this is just a Python script, we can run it directly."
+msgstr ""
+"現在我們已經建立了一個機器人，我們必須*執行*它。幸運的是，這很簡單，因為這只"
+"是一個 Python 腳本，我們可以直接執行它。"
+
+#: ../../../quickstart.rst:72
+msgid "On Windows:"
+msgstr "在 Windows 上："
+
+#: ../../../quickstart.rst:74
+msgid "$ py -3 example_bot.py"
+msgstr ""
+
+#: ../../../quickstart.rst:78
+msgid "On other systems:"
+msgstr "在其他系統上："
+
+#: ../../../quickstart.rst:80
+msgid "$ python3 example_bot.py"
+msgstr ""
+
+#: ../../../quickstart.rst:84
+msgid "Now you can try playing around with your basic bot."
+msgstr "現在您可以試著玩玩看您的基本機器人了。"
