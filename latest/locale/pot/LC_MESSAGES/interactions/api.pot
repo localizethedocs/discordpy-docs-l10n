@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-08-31 15:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -1252,7 +1253,7 @@ msgstr ""
 msgid ""
 "A property that returns the content in a \"cleaned up\" manner. This "
 "basically means that mentions are transformed into the way the client shows "
-"it. e.g. ``<#id>`` will transform into ``#name``."
+"them. e.g. ``<#id>`` will transform into ``#name``."
 msgstr ""
 
 #: ../../../docstring of discord.InteractionMessage.clean_content:6
@@ -1982,7 +1983,7 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.message.MessageInteractionMetadata:46
 msgid ""
-"The ID of the message that containes the interactive components, if "
+"The ID of the message that contains the interactive components, if "
 "applicable."
 msgstr ""
 
@@ -2032,7 +2033,7 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.MessageInteractionMetadata.interacted_message:1
 msgid ""
-"The message that containes the interactive components, if applicable and is "
+"The message that contains the interactive components, if applicable and is "
 "found in cache."
 msgstr ""
 
@@ -6710,7 +6711,7 @@ msgstr ""
 msgid ""
 "Buttons with a URL or a SKU cannot be created with this function. Consider "
 "creating a :class:`Button` manually and adding it via :meth:`ActionRow."
-"add_item` instead. This is beacuse these buttons cannot have a callback "
+"add_item` instead. This is because these buttons cannot have a callback "
 "associated with them since Discord does not do any processing with them."
 msgstr ""
 
@@ -6718,7 +6719,7 @@ msgstr ""
 #: discord.ui.action_row.ActionRow.button:18
 msgid ""
 "The ID of the button that gets received during an interaction. It is "
-"recommended to not set this parameters to prevent conflicts. Can only be up "
+"recommended to not set this parameter to prevent conflicts. Can only be up "
 "to 100 characters."
 msgstr ""
 
@@ -6831,7 +6832,9 @@ msgid "RadioGroup"
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.radio.RadioGroup:1
-msgid "Represents a radio group component within a modal."
+msgid ""
+"Represents a radio group component within a modal that can only be used in :"
+"class:`Label`."
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.radio.RadioGroup:7
@@ -6847,7 +6850,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.RadioGroup.value:1
-msgid "The value have been selected by the user, if any."
+msgid "The value that has been selected by the user, if any."
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.RadioGroup.options:1
@@ -6895,7 +6898,9 @@ msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of
 #: discord.ui.checkbox.Checkbox:1
-msgid "Represents a checkbox component within a modal."
+msgid ""
+"Represents a checkbox component within a modal that can only be used in :"
+"class:`Label`."
 msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of discord.ui.Checkbox.value:1
@@ -6908,7 +6913,9 @@ msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of
 #: discord.ui.checkbox.CheckboxGroup:1
-msgid "Represents a checkbox group component within a modal."
+msgid ""
+"Represents a checkbox group component within a modal that can only be used "
+"in :class:`Label`."
 msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of

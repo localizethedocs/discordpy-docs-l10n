@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-05-21 10:34:48 -0400",
-      "hash" : "2fbed9362422dad4f7850eb6c5d9b1f8bff7c71a",
-      "title" : "Fix CRLF line endings in test_permissions_all.py"
+      "date" : "2026-07-22 09:52:00 -0400",
+      "hash" : "1add8a0b40577186431cdb5f63f97affadab285b",
+      "title" : "Fix DeprecationWarning in escape_markdown()"
     }
   },
   "type" : "branch",
