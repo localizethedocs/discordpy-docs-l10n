@@ -1,0 +1,202 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py stable\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../discord.rst:6
+msgid "Creating a Bot Account"
+msgstr "建立機器人帳號"
+
+#: ../../../discord.rst:8
+msgid ""
+"In order to work with the library and the Discord API in general, we must "
+"first create a Discord Bot account."
+msgstr ""
+"為了使用此程式庫以及 Discord API，我們必須先建立一個 Discord 機器人帳號。"
+
+#: ../../../discord.rst:10
+msgid "Creating a Bot account is a pretty straightforward process."
+msgstr "建立機器人帳號是一個相當簡單的流程。"
+
+#: ../../../discord.rst:12 ../../../discord.rst:61
+msgid ""
+"Make sure you're logged on to the `Discord website <https://discord.com>`_."
+msgstr "請確保您已登入 `Discord 網站 <https://discord.com>`_。"
+
+#: ../../../discord.rst:13 ../../../discord.rst:62
+msgid ""
+"Navigate to the `application page <https://discord.com/developers/"
+"applications>`_"
+msgstr "前往 `應用程式頁面 <https://discord.com/developers/applications>`_"
+
+#: ../../../discord.rst:14
+msgid "Click on the \"New Application\" button."
+msgstr "點擊「New Application」按鈕。"
+
+#: ../../../discord.rst:0
+msgid "The new application button."
+msgstr "新應用程式按鈕。"
+
+#: ../../../discord.rst:19
+msgid "Give the application a name and click \"Create\"."
+msgstr "為應用程式命名，然後點擊「Create」。"
+
+#: ../../../discord.rst:0
+msgid "The new application form filled in."
+msgstr "已填寫的新應用程式表單。"
+
+#: ../../../discord.rst:24
+msgid "Navigate to the \"Bot\" tab to configure it."
+msgstr "前往「Bot」分頁進行設定。"
+
+#: ../../../discord.rst:25
+msgid ""
+"Make sure that **Public Bot** is ticked if you want others to invite your "
+"bot."
+msgstr "如果您希望其他人能邀請您的機器人，請確保已勾選 **Public Bot**。"
+
+#: ../../../discord.rst:27
+msgid ""
+"You should also make sure that **Require OAuth2 Code Grant** is unchecked "
+"unless you are developing a service that needs it. If you're unsure, then "
+"**leave it unchecked**."
+msgstr ""
+"您也應該確保 **Require OAuth2 Code Grant** 未被勾選，除非您正在開發需要此功能"
+"的服務。如果不確定，請**保持未勾選**。"
+
+#: ../../../discord.rst:0
+msgid "How the Bot User options should look like for most people."
+msgstr "對大多數人來說，Bot User 選項應該呈現的樣子。"
+
+#: ../../../discord.rst:33
+msgid "Copy the token using the \"Copy\" button."
+msgstr "使用「Copy」按鈕複製 token。"
+
+#: ../../../discord.rst:35
+msgid "**This is not the Client Secret at the General Information page.**"
+msgstr "**這不是 General Information 頁面中的 Client Secret。**"
+
+#: ../../../discord.rst:39
+msgid ""
+"It should be worth noting that this token is essentially your bot's "
+"password. You should **never** share this with someone else. In doing so, "
+"someone can log in to your bot and do malicious things, such as leaving "
+"servers, ban all members inside a server, or pinging everyone maliciously."
+msgstr ""
+"請注意，這個 token 基本上就是您機器人的密碼。您**絕對不應**與他人分享。一旦洩"
+"漏，他人可以登入您的機器人並進行惡意操作，例如離開伺服器、封鎖伺服器中的所有"
+"成員，或惡意 @everyone。"
+
+#: ../../../discord.rst:44
+msgid "The possibilities are endless, so **do not share this token.**"
+msgstr "可能造成的後果不勝枚舉，因此**請勿分享此 token。**"
+
+#: ../../../discord.rst:46
+msgid ""
+"If you accidentally leaked your token, click the \"Regenerate\" button as "
+"soon as possible. This revokes your old token and re-generates a new one. "
+"Now you need to use the new token to login."
+msgstr ""
+"如果您不小心洩漏了 token，請盡快點擊「Regenerate」按鈕。這將撤銷您的舊 token "
+"並重新產生新的 token。之後您需要使用新的 token 來登入。"
+
+#: ../../../discord.rst:50
+msgid ""
+"And that's it. You now have a bot account and you can login with that token."
+msgstr "這樣就完成了。您現在擁有一個機器人帳號，可以使用該 token 登入。"
+
+#: ../../../discord.rst:55
+msgid "Inviting Your Bot"
+msgstr "邀請您的機器人"
+
+#: ../../../discord.rst:57
+msgid "So you've made a Bot User but it's not actually in any server."
+msgstr "您已經建立了機器人使用者，但它實際上還沒有加入任何伺服器。"
+
+#: ../../../discord.rst:59
+msgid "If you want to invite your bot you must create an invite URL for it."
+msgstr "如果您想邀請您的機器人，必須為它建立一個邀請網址。"
+
+#: ../../../discord.rst:63
+msgid "Click on your bot's page."
+msgstr "點擊您機器人的頁面。"
+
+#: ../../../discord.rst:64
+msgid "Go to the \"OAuth2 > URL Generator\" tab."
+msgstr "前往「OAuth2 > URL Generator」分頁。"
+
+#: ../../../discord.rst:0
+msgid "How the OAuth2 page should look like."
+msgstr "OAuth2 頁面應該呈現的樣子。"
+
+#: ../../../discord.rst:69
+msgid "Tick the \"bot\" checkbox under \"scopes\"."
+msgstr "在「scopes」下方勾選「bot」核取方塊。"
+
+#: ../../../discord.rst:0
+msgid "The scopes checkbox with \"bot\" ticked."
+msgstr "已勾選「bot」的 scopes 核取方塊。"
+
+#: ../../../discord.rst:74
+msgid ""
+"Tick the permissions required for your bot to function under \"Bot "
+"Permissions\"."
+msgstr "在「Bot Permissions」下方勾選機器人運作所需的權限。"
+
+#: ../../../discord.rst:76
+msgid ""
+"Please be aware of the consequences of requiring your bot to have the "
+"\"Administrator\" permission."
+msgstr "請注意要求機器人擁有「Administrator」權限所帶來的後果。"
+
+#: ../../../discord.rst:78
+msgid ""
+"Bot owners must have 2FA enabled for certain actions and permissions when "
+"added in servers that have Server-Wide 2FA enabled. Check the `2FA support "
+"page <https://support.discord.com/hc/en-us/articles/219576828-Setting-up-Two-"
+"Factor-Authentication>`_ for more information."
+msgstr ""
+"當機器人被加入到已啟用全伺服器 2FA 的伺服器時，機器人擁有者必須啟用 2FA 才能"
+"執行某些操作和權限。請查看 `2FA 支援頁面 <https://support.discord.com/hc/en-"
+"us/articles/219576828-Setting-up-Two-Factor-Authentication>`_ 以獲取更多資"
+"訊。"
+
+#: ../../../discord.rst:0
+msgid "The permission checkboxes with some permissions checked."
+msgstr "已勾選部分權限的權限核取方塊。"
+
+#: ../../../discord.rst:83
+msgid ""
+"Now the resulting URL can be used to add your bot to a server. Copy and "
+"paste the URL into your browser, choose a server to invite the bot to, and "
+"click \"Authorize\"."
+msgstr ""
+"現在產生的網址可以用來將您的機器人加入伺服器。將網址複製並貼到瀏覽器中，選擇"
+"要邀請機器人的伺服器，然後點擊「Authorize」。"
+
+#: ../../../discord.rst:88
+msgid "The person adding the bot needs \"Manage Server\" permissions to do so."
+msgstr "新增機器人的人需要擁有「Manage Server」權限才能執行此操作。"
+
+#: ../../../discord.rst:90
+msgid ""
+"If you want to generate this URL dynamically at run-time inside your bot and "
+"using the :class:`discord.Permissions` interface, you can use :func:`discord."
+"utils.oauth_url`."
+msgstr ""
+"如果您想要在機器人執行期間使用 :class:`discord.Permissions` 介面動態產生此網"
+"址，可以使用 :func:`discord.utils.oauth_url`。"
