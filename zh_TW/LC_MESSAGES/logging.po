@@ -1,0 +1,216 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../logging.rst:8
+msgid "Setting Up Logging"
+msgstr "設定日誌記錄"
+
+#: ../../../logging.rst:10
+msgid ""
+"*discord.py* logs errors and debug information via the :mod:`logging` python "
+"module. In order to streamline this process, the library provides default "
+"configuration for the ``discord`` logger when using :meth:`Client.run`. It "
+"is strongly recommended that the logging module is configured, as no errors "
+"or warnings will be output if it is not set up."
+msgstr ""
+"*discord.py* 透過 :mod:`logging` Python 模組來記錄錯誤與除錯資訊。為了簡化此"
+"流程，程式庫在使用 :meth:`Client.run` 時會為 ``discord`` 日誌記錄器提供預設設"
+"定。強烈建議您設定日誌模組，因為如果未進行設定，將不會輸出任何錯誤或警告。"
+
+#: ../../../logging.rst:13
+msgid ""
+"The default logging configuration provided by the library will print to :"
+"data:`sys.stderr` using coloured output. You can configure it to send to a "
+"file instead by using one of the built-in :mod:`logging.handlers`, such as :"
+"class:`logging.FileHandler`."
+msgstr ""
+"程式庫提供的預設日誌設定會使用彩色輸出將內容列印到 :data:`sys.stderr`。您也可"
+"以改用內建的 :mod:`logging.handlers`（例如 :class:`logging.FileHandler`）將其"
+"設定為輸出到檔案。"
+
+#: ../../../logging.rst:15
+msgid "This can be done by passing it through :meth:`Client.run`:"
+msgstr "這可以透過將其傳遞給 :meth:`Client.run` 來完成："
+
+#: ../../../logging.rst:17
+msgid ""
+"import logging\n"
+"\n"
+"handler = logging.FileHandler(filename='discord.log', encoding='utf-8', "
+"mode='w')\n"
+"\n"
+"# Assume client refers to a discord.Client subclass...\n"
+"client.run(token, log_handler=handler)"
+msgstr ""
+"import logging\n"
+"\n"
+"handler = logging.FileHandler(filename='discord.log', encoding='utf-8', "
+"mode='w')\n"
+"\n"
+"# 假設 client 指向一個 discord.Client 子類別...\n"
+"client.run(token, log_handler=handler)"
+
+#: ../../../logging.rst:26
+msgid ""
+"You can also disable the library's logging configuration completely by "
+"passing ``None``:"
+msgstr "您也可以透過傳遞 ``None`` 來完全停用程式庫的日誌設定："
+
+#: ../../../logging.rst:28
+msgid "client.run(token, log_handler=None)"
+msgstr ""
+
+#: ../../../logging.rst:33
+msgid ""
+"Likewise, configuring the log level to ``logging.DEBUG`` is also possible:"
+msgstr "同樣地，也可以將日誌層級設定為 ``logging.DEBUG``："
+
+#: ../../../logging.rst:35
+msgid ""
+"import logging\n"
+"\n"
+"handler = logging.FileHandler(filename='discord.log', encoding='utf-8', "
+"mode='w')\n"
+"\n"
+"# Assume client refers to a discord.Client subclass...\n"
+"client.run(token, log_handler=handler, log_level=logging.DEBUG)"
+msgstr ""
+"import logging\n"
+"\n"
+"handler = logging.FileHandler(filename='discord.log', encoding='utf-8', "
+"mode='w')\n"
+"\n"
+"# 假設 client 指向一個 discord.Client 子類別...\n"
+"client.run(token, log_handler=handler, log_level=logging.DEBUG)"
+
+#: ../../../logging.rst:44
+msgid ""
+"This is recommended, especially at verbose levels such as ``DEBUG``, as "
+"there are a lot of events logged and it would clog the stderr of your "
+"program."
+msgstr ""
+"建議這樣做，特別是在 ``DEBUG`` 等詳細層級下，因為會記錄大量事件，若輸出到 "
+"stderr 可能會淹沒您程式的終端輸出。"
+
+#: ../../../logging.rst:46
+msgid ""
+"If you want the logging configuration the library provides to affect all "
+"loggers rather than just the ``discord`` logger, you can pass "
+"``root_logger=True`` inside :meth:`Client.run`:"
+msgstr ""
+"如果您希望程式庫提供的日誌設定影響所有日誌記錄器，而不僅是 ``discord`` 日誌記"
+"錄器，可以在 :meth:`Client.run` 中傳遞 ``root_logger=True``："
+
+#: ../../../logging.rst:48
+msgid "client.run(token, log_handler=handler, root_logger=True)"
+msgstr ""
+
+#: ../../../logging.rst:52
+msgid ""
+"If you want to setup logging using the library provided configuration "
+"without using :meth:`Client.run`, you can use :func:`discord.utils."
+"setup_logging`:"
+msgstr ""
+"如果您想在不使用 :meth:`Client.run` 的情況下使用程式庫提供的設定來設置日誌，"
+"可以使用 :func:`discord.utils.setup_logging`："
+
+#: ../../../logging.rst:54
+msgid ""
+"import discord\n"
+"\n"
+"discord.utils.setup_logging()\n"
+"\n"
+"# or, for example\n"
+"discord.utils.setup_logging(level=logging.INFO, root=False)"
+msgstr ""
+"import discord\n"
+"\n"
+"discord.utils.setup_logging()\n"
+"\n"
+"# 或者，例如\n"
+"discord.utils.setup_logging(level=logging.INFO, root=False)"
+
+#: ../../../logging.rst:63
+msgid ""
+"More advanced setups are possible with the :mod:`logging` module. The "
+"example below configures a rotating file handler that outputs DEBUG output "
+"for everything the library outputs, except for HTTP requests:"
+msgstr ""
+"使用 :mod:`logging` 模組可以進行更進階的設定。以下範例設定了一個循環檔案處理"
+"器，對程式庫輸出的所有內容（HTTP 請求除外）輸出 DEBUG 層級的記錄："
+
+#: ../../../logging.rst:65
+msgid ""
+"import discord\n"
+"import logging\n"
+"import logging.handlers\n"
+"\n"
+"logger = logging.getLogger('discord')\n"
+"logger.setLevel(logging.DEBUG)\n"
+"logging.getLogger('discord.http').setLevel(logging.INFO)\n"
+"\n"
+"handler = logging.handlers.RotatingFileHandler(\n"
+"    filename='discord.log',\n"
+"    encoding='utf-8',\n"
+"    maxBytes=32 * 1024 * 1024,  # 32 MiB\n"
+"    backupCount=5,  # Rotate through 5 files\n"
+")\n"
+"dt_fmt = '%Y-%m-%d %H:%M:%S'\n"
+"formatter = logging.Formatter('[{asctime}] [{levelname:<8}] {name}: "
+"{message}', dt_fmt, style='{')\n"
+"handler.setFormatter(formatter)\n"
+"logger.addHandler(handler)\n"
+"\n"
+"# Assume client refers to a discord.Client subclass...\n"
+"# Suppress the default configuration since we have our own\n"
+"client.run(token, log_handler=None)"
+msgstr ""
+"import discord\n"
+"import logging\n"
+"import logging.handlers\n"
+"\n"
+"logger = logging.getLogger('discord')\n"
+"logger.setLevel(logging.DEBUG)\n"
+"logging.getLogger('discord.http').setLevel(logging.INFO)\n"
+"\n"
+"handler = logging.handlers.RotatingFileHandler(\n"
+"    filename='discord.log',\n"
+"    encoding='utf-8',\n"
+"    maxBytes=32 * 1024 * 1024,  # 32 MiB\n"
+"    backupCount=5,  # 在 5 個檔案之間循環\n"
+")\n"
+"dt_fmt = '%Y-%m-%d %H:%M:%S'\n"
+"formatter = logging.Formatter('[{asctime}] [{levelname:<8}] {name}: "
+"{message}', dt_fmt, style='{')\n"
+"handler.setFormatter(formatter)\n"
+"logger.addHandler(handler)\n"
+"\n"
+"# 假設 client 指向一個 discord.Client 子類別...\n"
+"# 抑制預設設定，因為我們已有自己的設定\n"
+"client.run(token, log_handler=None)"
+
+#: ../../../logging.rst:91
+msgid ""
+"For more information, check the documentation and tutorial of the :mod:"
+"`logging` module."
+msgstr "如需更多資訊，請查閱 :mod:`logging` 模組的文件與教學。"
+
+#: ../../../logging.rst:95
+msgid "The library now provides a default logging configuration."
+msgstr "此程式庫現在提供預設的日誌設定。"
