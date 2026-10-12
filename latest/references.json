@@ -37,9 +37,9 @@
     "branch" : "master",
     "commit" : 
     {
-      "date" : "2026-05-21 10:34:48 -0400",
-      "hash" : "2fbed9362422dad4f7850eb6c5d9b1f8bff7c71a",
-      "title" : "Fix CRLF line endings in test_permissions_all.py"
+      "date" : "2026-09-01 05:17:34 -0400",
+      "hash" : "65232c38702be5844cf2ce865a4777eb1928b5d0",
+      "title" : "Reconnect the gateway with the default URL during 500s"
     }
   },
   "type" : "branch",
