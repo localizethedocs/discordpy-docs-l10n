@@ -1,0 +1,231 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2015-present, Rapptz
+# This file is distributed under the same license as the discord.py package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: discord.py latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../../intro.rst:8
+msgid "Introduction"
+msgstr "介紹"
+
+#: ../../../intro.rst:10
+msgid ""
+"This is the documentation for discord.py, a library for Python to aid in "
+"creating applications that utilise the Discord API."
+msgstr ""
+"這是 discord.py 的文件，discord.py 是一個 Python 程式庫，用於協助建立使用 "
+"Discord API 的應用程式。"
+
+#: ../../../intro.rst:14
+msgid "Prerequisites"
+msgstr "必要條件"
+
+#: ../../../intro.rst:16
+msgid ""
+"discord.py works with Python 3.8 or higher. Support for earlier versions of "
+"Python is not provided. Python 2.7 or lower is not supported. Python 3.7 or "
+"lower is not supported."
+msgstr ""
+"discord.py 支援 Python 3.8 或更高版本。不提供對較舊 Python 版本的支援。不支"
+"援 Python 2.7 或更低版本。不支援 Python 3.7 或更低版本。"
+
+#: ../../../intro.rst:23
+msgid "Installing"
+msgstr "安裝"
+
+#: ../../../intro.rst:25
+msgid "You can get the library directly from PyPI: ::"
+msgstr "您可以直接從 PyPI 取得此程式庫： ::"
+
+#: ../../../intro.rst:27
+msgid "python3 -m pip install -U discord.py"
+msgstr ""
+
+#: ../../../intro.rst:29
+msgid "If you are using Windows, then the following should be used instead: ::"
+msgstr "如果您使用的是 Windows，則應改用以下指令： ::"
+
+#: ../../../intro.rst:31
+msgid "py -3 -m pip install -U discord.py"
+msgstr ""
+
+#: ../../../intro.rst:34
+msgid ""
+"To get voice support, you should use ``discord.py[voice]`` instead of "
+"``discord.py``, e.g. ::"
+msgstr ""
+"若要取得語音支援，您應使用 ``discord.py[voice]`` 而非 ``discord.py``，例"
+"如： ::"
+
+#: ../../../intro.rst:36
+msgid "python3 -m pip install -U discord.py[voice]"
+msgstr ""
+
+#: ../../../intro.rst:38
+msgid ""
+"On Linux environments, installing voice requires getting the following "
+"dependencies:"
+msgstr "在 Linux 環境中，安裝語音支援需要取得以下依賴："
+
+#: ../../../intro.rst:40
+msgid "`libffi <https://github.com/libffi/libffi>`_"
+msgstr ""
+
+#: ../../../intro.rst:41
+msgid "`libnacl <https://github.com/saltstack/libnacl>`_"
+msgstr ""
+
+#: ../../../intro.rst:42
+msgid "`python3-dev <https://packages.debian.org/python3-dev>`_"
+msgstr "python3-dev <https://packages.debian.org/python3-dev>`_"
+
+#: ../../../intro.rst:44
+msgid ""
+"For a Debian-based system, the following command will get these dependencies:"
+msgstr "對於基於 Debian 的系統，以下命令可以取得這些依賴："
+
+#: ../../../intro.rst:46
+msgid "$ apt install libffi-dev libnacl-dev python3-dev"
+msgstr ""
+
+#: ../../../intro.rst:50
+msgid "Remember to check your permissions!"
+msgstr "請記得檢查您的權限！"
+
+#: ../../../intro.rst:53
+msgid "Virtual Environments"
+msgstr "虛擬環境"
+
+#: ../../../intro.rst:55
+msgid ""
+"Sometimes you want to keep libraries from polluting system installs or use a "
+"different version of libraries than the ones installed on the system. You "
+"might also not have permissions to install libraries system-wide. For this "
+"purpose, the standard library as of Python 3.3 comes with a concept called "
+"\"Virtual Environment\"s to help maintain these separate versions."
+msgstr ""
+"有時您可能希望避免程式庫污染系統安裝，或需要使用與系統上已安裝版本不同的程式"
+"庫。您也可能沒有全系統安裝程式庫的權限。為此，Python 3.3 起標準庫提供了一個稱"
+"為「虛擬環境」的概念，來協助維護這些獨立的版本。"
+
+#: ../../../intro.rst:60
+msgid "A more in-depth tutorial is found on :doc:`py:tutorial/venv`."
+msgstr "更深入的教學請參考 :doc:`py:tutorial/venv`。"
+
+#: ../../../intro.rst:62
+msgid "However, for the quick and dirty:"
+msgstr "不過，以下是快速上手的方法："
+
+#: ../../../intro.rst:64
+msgid "Go to your project's working directory:"
+msgstr "前往您的專案的工作目錄："
+
+#: ../../../intro.rst:66
+msgid ""
+"$ cd your-bot-source\n"
+"$ python3 -m venv bot-env"
+msgstr ""
+
+#: ../../../intro.rst:71
+msgid "Activate the virtual environment:"
+msgstr "激活虛擬環境："
+
+#: ../../../intro.rst:73
+msgid "$ source bot-env/bin/activate"
+msgstr ""
+
+#: ../../../intro.rst:77
+msgid "On Windows you activate it with:"
+msgstr "在 Windows 上，您可以這樣激活虛擬環境："
+
+#: ../../../intro.rst:79
+msgid "$ bot-env\\Scripts\\activate.bat"
+msgstr ""
+
+#: ../../../intro.rst:83
+msgid "Use pip like usual:"
+msgstr "像平常一樣使用 pip："
+
+#: ../../../intro.rst:85
+msgid "$ pip install -U discord.py"
+msgstr ""
+
+#: ../../../intro.rst:89
+msgid "Congratulations. You now have a virtual environment all set up."
+msgstr "恭喜！您現在已經設定好虛擬環境了。"
+
+#: ../../../intro.rst:93
+msgid ""
+"Scripts executed with ``py -3`` will ignore any currently active virtual "
+"environment, as the ``-3`` specifies a global scope."
+msgstr ""
+"使用 ``py -3`` 執行的腳本會忽略當前已激活的虛擬環境，因為 ``-3`` 指定了全域範"
+"圍。"
+
+#: ../../../intro.rst:97
+msgid "Basic Concepts"
+msgstr "基礎概念"
+
+#: ../../../intro.rst:99
+msgid ""
+"discord.py revolves around the concept of :ref:`events <discord-api-"
+"events>`. An event is something you listen to and then respond to. For "
+"example, when a message happens, you will receive an event about it that you "
+"can respond to."
+msgstr ""
+"discord.py 的核心概念是 :ref:`事件 <discord-api-events>`。事件是您監聽並回應"
+"的事物。例如，當有新訊息時，您會收到一個關於該訊息的事件，然後您可以對其做出"
+"回應。"
+
+#: ../../../intro.rst:103
+msgid "A quick example to showcase how events work:"
+msgstr "以下是一個快速展示事件運作方式的範例："
+
+#: ../../../intro.rst:105
+msgid ""
+"# This example requires the 'message_content' intent.\n"
+"\n"
+"import discord\n"
+"\n"
+"class MyClient(discord.Client):\n"
+"    async def on_ready(self):\n"
+"        print(f'Logged on as {self.user}!')\n"
+"\n"
+"    async def on_message(self, message):\n"
+"        print(f'Message from {message.author}: {message.content}')\n"
+"\n"
+"intents = discord.Intents.default()\n"
+"intents.message_content = True\n"
+"\n"
+"client = MyClient(intents=intents)\n"
+"client.run('my token goes here')"
+msgstr ""
+"# 此範例需要 'message_content' intent。\n"
+"\n"
+"import discord\n"
+"\n"
+"class MyClient(discord.Client):\n"
+"    async def on_ready(self):\n"
+"        print(f'Logged on as {self.user}!')\n"
+"\n"
+"    async def on_message(self, message):\n"
+"        print(f'Message from {message.author}: {message.content}')\n"
+"\n"
+"intents = discord.Intents.default()\n"
+"intents.message_content = True\n"
+"\n"
+"client = MyClient(intents=intents)\n"
+"client.run('my token goes here')"
