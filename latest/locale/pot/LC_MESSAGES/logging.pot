@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -31,10 +32,10 @@ msgstr ""
 
 #: ../../../logging.rst:13
 msgid ""
-"The default logging configuration provided by the library will print to :"
-"data:`sys.stderr` using coloured output. You can configure it to send to a "
-"file instead by using one of the built-in :mod:`logging.handlers`, such as :"
-"class:`logging.FileHandler`."
+"The default logging configuration provided by the library will print "
+"to :data:`sys.stderr` using coloured output. You can configure it to send to "
+"a file instead by using one of the built-in :mod:`logging.handlers`, such "
+"as :class:`logging.FileHandler`."
 msgstr ""
 
 #: ../../../logging.rst:15
@@ -99,8 +100,8 @@ msgstr ""
 #: ../../../logging.rst:52
 msgid ""
 "If you want to setup logging using the library provided configuration "
-"without using :meth:`Client.run`, you can use :func:`discord.utils."
-"setup_logging`:"
+"without using :meth:`Client.run`, you can "
+"use :func:`discord.utils.setup_logging`:"
 msgstr ""
 
 #: ../../../logging.rst:54
@@ -149,8 +150,8 @@ msgstr ""
 
 #: ../../../logging.rst:91
 msgid ""
-"For more information, check the documentation and tutorial of the :mod:"
-"`logging` module."
+"For more information, check the documentation and tutorial of "
+"the :mod:`logging` module."
 msgstr ""
 
 #: ../../../logging.rst:95

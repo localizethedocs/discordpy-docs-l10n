@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -111,15 +112,13 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.Interaction:30
 msgid ""
-"Note that due to a Discord limitation, if sent from a DM channel :attr:"
-"`~DMChannel.recipient` is ``None``."
+"Note that due to a Discord limitation, if sent from a DM "
+"channel :attr:`~DMChannel.recipient` is ``None``."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.Interaction:32
-msgid ""
-"Optional[Union[:class:`abc.GuildChannel`, :class:`abc.PrivateChannel`, :"
-"class:`Thread`]]"
+msgid "Optional[Union[:class:`abc.GuildChannel`, :class:`abc.PrivateChannel`, :class:`Thread`]]"
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -279,8 +278,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.Interaction.client:3
 msgid ""
-"Note that :class:`AutoShardedClient`, :class:`~.commands.Bot`, and :class:`~."
-"commands.AutoShardedBot` are all subclasses of client."
+"Note that :class:`AutoShardedClient`, :class:`~.commands.Bot`, "
+"and :class:`~.commands.AutoShardedBot` are all subclasses of client."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -351,9 +350,7 @@ msgid ""
 msgstr ""
 
 #: ../../../docstring of discord.Interaction.command:7
-msgid ""
-"Optional[Union[:class:`app_commands.Command`, :class:`app_commands."
-"ContextMenu`]]"
+msgid "Optional[Union[:class:`app_commands.Command`, :class:`app_commands.ContextMenu`]]"
 msgstr ""
 
 #: ../../../docstring of discord.Interaction.command_id:1
@@ -362,8 +359,9 @@ msgstr ""
 
 #: ../../../docstring of discord.Interaction.command_id:3
 msgid ""
-"Only applicable if :attr:`type` is one of, :attr:`InteractionType."
-"application_command` or :attr:`InteractionType.autocomplete`."
+"Only applicable if :attr:`type` is one "
+"of, :attr:`InteractionType.application_command` "
+"or :attr:`InteractionType.autocomplete`."
 msgstr ""
 
 #: ../../../docstring of discord.Interaction.response:1
@@ -467,11 +465,12 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.Interaction.original_response:5
 msgid ""
-"If the interaction response was a newly created message (i.e. through :meth:"
-"`InteractionResponse.send_message` or :meth:`InteractionResponse.defer`, "
-"where ``thinking`` is ``True``) then this returns the message that was sent "
-"using that response. Otherwise, this returns the message that triggered the "
-"interaction (i.e. through a component)."
+"If the interaction response was a newly created message (i.e. "
+"through :meth:`InteractionResponse.send_message` "
+"or :meth:`InteractionResponse.defer`, where ``thinking`` is ``True``) then "
+"this returns the message that was sent using that response. Otherwise, this "
+"returns the message that triggered the interaction (i.e. through a "
+"component)."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -598,8 +597,8 @@ msgstr ""
 #: discord.interactions.InteractionResponse.send_message:28
 #: discord.interactions.InteractionMessage.edit:19
 msgid ""
-"Controls the mentions being processed in this message. See :meth:`.abc."
-"Messageable.send` for more information."
+"Controls the mentions being processed in this message. "
+"See :meth:`.abc.Messageable.send` for more information."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -629,8 +628,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.Interaction.edit_original_response:43
 msgid ""
-"This is only accepted when the response type is :attr:"
-"`InteractionResponseType.deferred_channel_message`."
+"This is only accepted when the response type "
+"is :attr:`InteractionResponseType.deferred_channel_message`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -729,9 +728,9 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.Interaction.translate:15
 msgid ""
-"The extraneous data that is being translated. If not specified, either :attr:"
-"`.command` or :attr:`.message` will be passed, depending on which is "
-"available in the context."
+"The extraneous data that is being translated. If not specified, "
+"either :attr:`.command` or :attr:`.message` will be passed, depending on "
+"which is available in the context."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -827,14 +826,14 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionResponse.defer:20
 msgid ""
-"Indicates whether the deferred type should be :attr:`InteractionResponseType."
-"deferred_channel_message` instead of the default :attr:"
-"`InteractionResponseType.deferred_message_update` if both are valid. In UI "
-"terms, this is represented as if the bot is thinking of a response. It is "
-"your responsibility to eventually send a followup message via :attr:"
-"`Interaction.followup` to make this thinking state go away. Application "
-"commands (AKA Slash commands) cannot use :attr:`InteractionResponseType."
-"deferred_message_update`."
+"Indicates whether the deferred type should "
+"be :attr:`InteractionResponseType.deferred_channel_message` instead of the "
+"default :attr:`InteractionResponseType.deferred_message_update` if both are "
+"valid. In UI terms, this is represented as if the bot is thinking of a "
+"response. It is your responsibility to eventually send a followup message "
+"via :attr:`Interaction.followup` to make this thinking state go away. "
+"Application commands (AKA Slash commands) cannot "
+"use :attr:`InteractionResponseType.deferred_message_update`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1006,8 +1005,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionResponse.edit_message:32
 msgid ""
-"Controls the mentions being processed in this message. See :meth:`.Message."
-"edit` for more information."
+"Controls the mentions being processed in this message. "
+"See :meth:`.Message.edit` for more information."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1023,8 +1022,8 @@ msgstr ""
 msgid ""
 "Whether to suppress embeds for the message. This removes all the embeds if "
 "set to ``True``. If set to ``False`` this brings the embeds back if they "
-"were suppressed. Using this parameter requires :attr:`~.Permissions."
-"manage_messages`."
+"were suppressed. Using this parameter "
+"requires :attr:`~.Permissions.manage_messages`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1120,23 +1119,21 @@ msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionCallbackResponse:23
-msgid ""
-"Optional[Union[:class:`InteractionMessage`, :class:"
-"`InteractionCallbackActivityInstance`]]"
+msgid "Optional[Union[:class:`InteractionMessage`, :class:`InteractionCallbackActivityInstance`]]"
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionCallbackResponse:27
 msgid ""
-"The message ID of the resource. Only available if the resource is a :class:"
-"`InteractionMessage`."
+"The message ID of the resource. Only available if the resource is "
+"a :class:`InteractionMessage`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionCallbackResponse:33
 msgid ""
-"The activity ID of the resource. Only available if the resource is a :class:"
-"`InteractionCallbackActivityInstance`."
+"The activity ID of the resource. Only available if the resource is "
+"a :class:`InteractionCallbackActivityInstance`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1176,8 +1173,8 @@ msgstr ""
 #: discord.interactions.InteractionMessage:3
 msgid ""
 "This allows you to edit or delete the message associated with the "
-"interaction response. To retrieve this object see :meth:`Interaction."
-"original_response`."
+"interaction response. To retrieve this object "
+"see :meth:`Interaction.original_response`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1203,8 +1200,8 @@ msgstr ""
 #: discord.message.PartialMessage.add_reaction:7
 msgid ""
 "You must have :attr:`~Permissions.read_message_history` to do this. If "
-"nobody else has reacted to the message using this emoji, :attr:`~Permissions."
-"add_reactions` is required."
+"nobody else has reacted to the message using this "
+"emoji, :attr:`~Permissions.add_reactions` is required."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1252,7 +1249,7 @@ msgstr ""
 msgid ""
 "A property that returns the content in a \"cleaned up\" manner. This "
 "basically means that mentions are transformed into the way the client shows "
-"it. e.g. ``<#id>`` will transform into ``#name``."
+"them. e.g. ``<#id>`` will transform into ``#name``."
 msgstr ""
 
 #: ../../../docstring of discord.InteractionMessage.clean_content:6
@@ -1406,9 +1403,9 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.InteractionMessage.edit:43
 msgid ""
-"This is only accepted if the interaction response's :attr:"
-"`InteractionResponse.type` attribute is :attr:`InteractionResponseType."
-"deferred_channel_message`."
+"This is only accepted if the interaction "
+"response's :attr:`InteractionResponse.type` attribute "
+"is :attr:`InteractionResponseType.deferred_channel_message`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1435,8 +1432,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.end_poll:7
 msgid ""
-"If the poll was successfully ended, then it returns the updated :class:"
-"`Message`."
+"If the poll was successfully ended, then it returns the "
+"updated :class:`Message`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1540,9 +1537,9 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.forward:9
 msgid ""
-"Whether replying using the message reference should raise :class:"
-"`HTTPException` if the message no longer exists or Discord could not fetch "
-"the message."
+"Whether replying using the message reference should "
+"raise :class:`HTTPException` if the message no longer exists or Discord "
+"could not fetch the message."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1563,8 +1560,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.InteractionMessage.interaction:4
 msgid ""
-"This attribute is deprecated and will be removed in a future version. Use :"
-"attr:`.interaction_metadata` instead."
+"This attribute is deprecated and will be removed in a future version. "
+"Use :attr:`.interaction_metadata` instead."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1575,8 +1572,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.Message.is_forwardable:1
 msgid ""
-":class:`bool`: Whether the message can be forwarded using :meth:`Message."
-"forward`."
+":class:`bool`: Whether the message can be forwarded "
+"using :meth:`Message.forward`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1647,8 +1644,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.InteractionMessage.pinned_at:5
 msgid ""
-"This is only set for messages that are returned by :meth:`abc.Messageable."
-"pins`."
+"This is only set for messages that are returned "
+"by :meth:`abc.Messageable.pins`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1659,8 +1656,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.publish:5
 msgid ""
-"The message must have been sent in a news channel. You must have :attr:"
-"`~Permissions.send_messages` to do this."
+"The message must have been sent in a news channel. You must "
+"have :attr:`~Permissions.send_messages` to do this."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1714,15 +1711,15 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.remove_reaction:7
 msgid ""
-"If the reaction is not your own (i.e. ``member`` parameter is not you) then :"
-"attr:`~Permissions.manage_messages` is needed."
+"If the reaction is not your own (i.e. ``member`` parameter is not you) "
+"then :attr:`~Permissions.manage_messages` is needed."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.remove_reaction:10
 msgid ""
-"The ``member`` parameter must represent a member and meet the :class:`abc."
-"Snowflake` abc."
+"The ``member`` parameter must represent a member and meet "
+"the :class:`abc.Snowflake` abc."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1753,8 +1750,8 @@ msgstr ""
 #: ../../../../discord/interactions.py:docstring of
 #: discord.message.PartialMessage.reply:3
 msgid ""
-"A shortcut method to :meth:`.abc.Messageable.send` to reply to the :class:`."
-"Message`."
+"A shortcut method to :meth:`.abc.Messageable.send` to reply to "
+"the :class:`.Message`."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1786,8 +1783,8 @@ msgstr ""
 
 #: ../../../docstring of discord.InteractionMessage.system_content:1
 msgid ""
-"A property that returns the content that is rendered regardless of the :attr:"
-"`Message.type`."
+"A property that returns the content that is rendered regardless of "
+"the :attr:`Message.type`."
 msgstr ""
 
 #: ../../../docstring of discord.InteractionMessage.system_content:4
@@ -1806,8 +1803,8 @@ msgstr ""
 #: discord.InteractionMessage.thread:5
 msgid ""
 "For messages received via the gateway this does not retrieve archived "
-"threads, as they are not retained in the internal cache. Use :meth:"
-"`fetch_thread` instead."
+"threads, as they are not retained in the internal cache. "
+"Use :meth:`fetch_thread` instead."
 msgstr ""
 
 #: ../../../../discord/interactions.py:docstring of
@@ -1982,7 +1979,7 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.message.MessageInteractionMetadata:46
 msgid ""
-"The ID of the message that containes the interactive components, if "
+"The ID of the message that contains the interactive components, if "
 "applicable."
 msgstr ""
 
@@ -2032,7 +2029,7 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.MessageInteractionMetadata.interacted_message:1
 msgid ""
-"The message that containes the interactive components, if applicable and is "
+"The message that contains the interactive components, if applicable and is "
 "found in cache."
 msgstr ""
 
@@ -2185,8 +2182,8 @@ msgstr ""
 
 #: ../../../../discord/components.py:docstring of discord.components.Button:7
 msgid ""
-"The user constructible and usable type to create a button is :class:`discord."
-"ui.Button` not this one."
+"The user constructible and usable type to create a button "
+"is :class:`discord.ui.Button` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of discord.components.Button:14
@@ -2254,8 +2251,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.SelectMenu:8
 msgid ""
-"The user constructible and usable type to create a select menu is :class:"
-"`discord.ui.Select` not this one."
+"The user constructible and usable type to create a select menu "
+"is :class:`discord.ui.Select` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2340,8 +2337,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.TextInput:4
 msgid ""
-"The user constructible and usable type to create a text input is :class:"
-"`discord.ui.TextInput` not this one."
+"The user constructible and usable type to create a text input "
+"is :class:`discord.ui.TextInput` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2419,8 +2416,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.LabelComponent:7
 msgid ""
-"The user constructible and usable type for creating a label is :class:"
-"`discord.ui.Label` not this one."
+"The user constructible and usable type for creating a label "
+"is :class:`discord.ui.Label` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2456,8 +2453,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.SectionComponent:7
 msgid ""
-"The user constructible and usable type to create a section is :class:"
-"`discord.ui.Section` not this one."
+"The user constructible and usable type to create a section "
+"is :class:`discord.ui.Section` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2487,8 +2484,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.ThumbnailComponent:7
 msgid ""
-"The user constructible and usable type to create a thumbnail is :class:"
-"`discord.ui.Thumbnail` not this one."
+"The user constructible and usable type to create a thumbnail "
+"is :class:`discord.ui.Thumbnail` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2524,8 +2521,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.TextDisplay:7
 msgid ""
-"The user constructible and usable type to create a text display is :class:"
-"`discord.ui.TextDisplay` not this one."
+"The user constructible and usable type to create a text display "
+"is :class:`discord.ui.TextDisplay` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2545,8 +2542,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.MediaGalleryComponent:7
 msgid ""
-"The user constructible and usable type for creating a media gallery is :"
-"class:`discord.ui.MediaGallery` not this one."
+"The user constructible and usable type for creating a media gallery "
+"is :class:`discord.ui.MediaGallery` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2571,8 +2568,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.FileComponent:7
 msgid ""
-"The user constructible and usable type for create a file component is :class:"
-"`discord.ui.File` not this one."
+"The user constructible and usable type for create a file component "
+"is :class:`discord.ui.File` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2607,8 +2604,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.SeparatorComponent:7
 msgid ""
-"The user constructible and usable type for creating a separator is :class:"
-"`discord.ui.Separator` not this one."
+"The user constructible and usable type for creating a separator "
+"is :class:`discord.ui.Separator` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2638,8 +2635,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.Container:7
 msgid ""
-"The user constructible and usable type for creating a container is :class:"
-"`discord.ui.Container` not this one."
+"The user constructible and usable type for creating a container "
+"is :class:`discord.ui.Container` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2674,8 +2671,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.FileUploadComponent:7
 msgid ""
-"The user constructible and usable type for creating a file upload is :class:"
-"`discord.ui.FileUpload` not this one."
+"The user constructible and usable type for creating a file upload "
+"is :class:`discord.ui.FileUpload` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2721,8 +2718,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.RadioGroupComponent:7
 msgid ""
-"The user constructible and usable type for creating a radio group is :class:"
-"`discord.ui.RadioGroup` not this one."
+"The user constructible and usable type for creating a radio group "
+"is :class:`discord.ui.RadioGroup` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2748,8 +2745,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.CheckboxComponent:7
 msgid ""
-"The user constructible and usable type for creating a checkbox is :class:"
-"`discord.ui.Checkbox` not this one."
+"The user constructible and usable type for creating a checkbox "
+"is :class:`discord.ui.Checkbox` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -2771,8 +2768,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.CheckboxGroupComponent:7
 msgid ""
-"The user constructible and usable type for creating a checkbox group is :"
-"class:`discord.ui.CheckboxGroup` not this one."
+"The user constructible and usable type for creating a checkbox group "
+"is :class:`discord.ui.CheckboxGroup` not this one."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -3281,8 +3278,8 @@ msgstr ""
 #: discord.app_commands.models.AppCommandChannel:90
 msgid ""
 "The number of seconds a member must wait between sending messages in this "
-"channel. A value of ``0`` denotes that it is disabled. Bots and users with :"
-"attr:`~discord.Permissions.bypass_slowmode` bypass slowmode."
+"channel. A value of ``0`` denotes that it is disabled. Bots and users "
+"with :attr:`~discord.Permissions.bypass_slowmode` bypass slowmode."
 msgstr ""
 
 #: ../../../../discord/app_commands/models.py:docstring of
@@ -3443,8 +3440,8 @@ msgstr ""
 #: discord.app_commands.models.AppCommandThread:66
 msgid ""
 "The number of seconds a member must wait between sending messages in this "
-"thread. A value of ``0`` denotes that it is disabled. Bots and users with :"
-"attr:`~discord.Permissions.bypass_slowmode` bypass slowmode."
+"thread. A value of ``0`` denotes that it is disabled. Bots and users "
+"with :attr:`~discord.Permissions.bypass_slowmode` bypass slowmode."
 msgstr ""
 
 #: ../../../../discord/app_commands/models.py:docstring of
@@ -3527,9 +3524,7 @@ msgstr ""
 
 #: ../../../../discord/app_commands/models.py:docstring of
 #: discord.app_commands.AppCommandThread.parent:4
-msgid ""
-"Optional[Union[:class:`~discord.ForumChannel`, :class:`~discord."
-"TextChannel`]]"
+msgid "Optional[Union[:class:`~discord.ForumChannel`, :class:`~discord.TextChannel`]]"
 msgstr ""
 
 #: ../../../../discord/app_commands/models.py:docstring of
@@ -3626,8 +3621,8 @@ msgstr ""
 #: discord.app_commands.models.AppCommandPermissions:20
 msgid ""
 "The role, user, or channel associated with this permission. This could also "
-"be the :class:`AllChannels` sentinel type. Falls back to :class:`~discord."
-"Object` if the target could not be found in the cache."
+"be the :class:`AllChannels` sentinel type. Falls back "
+"to :class:`~discord.Object` if the target could not be found in the cache."
 msgstr ""
 
 #: ../../../../discord/app_commands/models.py:docstring of
@@ -4017,8 +4012,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.SelectDefaultValue.from_channel:1
 msgid ""
-"Creates a :class:`SelectDefaultValue` with the type set to :attr:"
-"`~SelectDefaultValueType.channel`."
+"Creates a :class:`SelectDefaultValue` with the type set "
+"to :attr:`~SelectDefaultValueType.channel`."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -4041,8 +4036,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.SelectDefaultValue.from_role:1
 msgid ""
-"Creates a :class:`SelectDefaultValue` with the type set to :attr:"
-"`~SelectDefaultValueType.role`."
+"Creates a :class:`SelectDefaultValue` with the type set "
+"to :attr:`~SelectDefaultValueType.role`."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -4058,8 +4053,8 @@ msgstr ""
 #: ../../../../discord/components.py:docstring of
 #: discord.components.SelectDefaultValue.from_user:1
 msgid ""
-"Creates a :class:`SelectDefaultValue` with the type set to :attr:"
-"`~SelectDefaultValueType.user`."
+"Creates a :class:`SelectDefaultValue` with the type set "
+"to :attr:`~SelectDefaultValueType.user`."
 msgstr ""
 
 #: ../../../../discord/components.py:docstring of
@@ -4632,8 +4627,8 @@ msgstr ""
 msgid ""
 "The :attr:`.Message.components` of a message are read-only and separate "
 "types from those in the ``discord.ui`` namespace. In order to modify and "
-"edit message components they must be converted into a :class:`View` or :"
-"class:`LayoutView` first."
+"edit message components they must be converted into a :class:`View` "
+"or :class:`LayoutView` first."
 msgstr ""
 
 #: ../../../../discord/ui/view.py:docstring of
@@ -4657,8 +4652,8 @@ msgstr ""
 #: ../../../../discord/ui/view.py:docstring of
 #: discord.ui.view.BaseView.from_message:18
 msgid ""
-"The converted view. This will always return one of :class:`View` or :class:"
-"`LayoutView`, and not one of its subclasses."
+"The converted view. This will always return one of :class:`View` "
+"or :class:`LayoutView`, and not one of its subclasses."
 msgstr ""
 
 #: ../../../../discord/ui/view.py:docstring of
@@ -4864,15 +4859,15 @@ msgstr ""
 #: discord.ui.view.BaseView.is_persistent:3
 #: ../../../../discord/ui/modal.py:docstring
 msgid ""
-"A persistent view has all their components with a set ``custom_id`` and a :"
-"attr:`timeout` set to ``None``."
+"A persistent view has all their components with a set ``custom_id`` and "
+"a :attr:`timeout` set to ``None``."
 msgstr ""
 
 #: ../../../../discord/ui/view.py:docstring of
 #: discord.ui.view.BaseView.on_error:3
 msgid ""
-"A callback that is called when an item's callback or :meth:"
-"`interaction_check` fails with an error."
+"A callback that is called when an item's callback "
+"or :meth:`interaction_check` fails with an error."
 msgstr ""
 
 #: ../../../../discord/ui/view.py:docstring of
@@ -5051,8 +5046,8 @@ msgid ""
 "\n"
 "class Questionnaire(ui.Modal, title='Questionnaire Response'):\n"
 "    name = ui.Label(text='Name', component=ui.TextInput())\n"
-"    answer = ui.Label(text='Answer', component=ui.TextInput(style=discord."
-"TextStyle.paragraph))\n"
+"    answer = ui.Label(text='Answer', "
+"component=ui.TextInput(style=discord.TextStyle.paragraph))\n"
 "\n"
 "    async def on_submit(self, interaction: discord.Interaction):\n"
 "        await interaction.response.send_message(f'Thanks for your response, "
@@ -5512,8 +5507,8 @@ msgstr ""
 #: ../../../../discord/ui/action_row.py:docstring
 #: discord.ui.action_row.ActionRow.button:26
 msgid ""
-"The emoji of the button. This can be in string form or a :class:`."
-"PartialEmoji` or a full :class:`.Emoji`."
+"The emoji of the button. This can be in string form or "
+"a :class:`.PartialEmoji` or a full :class:`.Emoji`."
 msgstr ""
 
 #: ../../../interactions/api.rst:771
@@ -5616,8 +5611,8 @@ msgstr ""
 #: ../../../../discord/ui/select.py:docstring of
 #: discord.ui.select.Select.add_option:3
 msgid ""
-"To append a pre-existing :class:`discord.SelectOption` use the :meth:"
-"`append_option` method instead."
+"To append a pre-existing :class:`discord.SelectOption` use "
+"the :meth:`append_option` method instead."
 msgstr ""
 
 #: ../../../../discord/ui/select.py:docstring of
@@ -5635,8 +5630,8 @@ msgstr ""
 #: discord.ui.select.Select.add_option:16
 msgid ""
 "The emoji of the option, if available. This can either be a string "
-"representing the custom or unicode emoji or an instance of :class:`."
-"PartialEmoji` or :class:`.Emoji`."
+"representing the custom or unicode emoji or an instance "
+"of :class:`.PartialEmoji` or :class:`.Emoji`."
 msgstr ""
 
 #: ../../../../discord/ui/select.py:docstring of
@@ -5725,9 +5720,7 @@ msgstr ""
 #: discord.ui.ChannelSelect.values:3 discord.ui.select.select:21
 #: ../../../../discord/ui/action_row.py:docstring
 #: discord.ui.action_row.ActionRow.select:21
-msgid ""
-"List[Union[:class:`~discord.app_commands.AppCommandChannel`, :class:"
-"`~discord.app_commands.AppCommandThread`]]"
+msgid "List[Union[:class:`~discord.app_commands.AppCommandChannel`, :class:`~discord.app_commands.AppCommandThread`]]"
 msgstr ""
 
 #: ../../../../discord/ui/select.py:docstring of
@@ -5826,17 +5819,15 @@ msgstr ""
 #: ../../../../discord/ui/select.py:docstring of
 #: discord.ui.MentionableSelect.values:8 discord.ui.UserSelect.values:8
 msgid ""
-"If invoked in a guild, the values will always resolve to :class:`discord."
-"Member`."
+"If invoked in a guild, the values will always resolve "
+"to :class:`discord.Member`."
 msgstr ""
 
 #: ../../../../discord/ui/select.py:docstring of
 #: discord.ui.MentionableSelect.values:10 discord.ui.select.select:19
 #: ../../../../discord/ui/action_row.py:docstring
 #: discord.ui.action_row.ActionRow.select:19
-msgid ""
-"List[Union[:class:`discord.Role`, :class:`discord.Member`, :class:`discord."
-"User`]]"
+msgid "List[Union[:class:`discord.Role`, :class:`discord.Member`, :class:`discord.User`]]"
 msgstr ""
 
 #: ../../../interactions/api.rst:812
@@ -5946,8 +5937,8 @@ msgstr ""
 msgid ""
 "class View(discord.ui.View):\n"
 "\n"
-"    @discord.ui.select(cls=ChannelSelect, channel_types=[discord.ChannelType."
-"text])\n"
+"    @discord.ui.select(cls=ChannelSelect, "
+"channel_types=[discord.ChannelType.text])\n"
 "    async def select_channels(self, interaction: discord.Interaction, "
 "select: ChannelSelect):\n"
 "        return await interaction.response.send_message(f'You selected "
@@ -5958,11 +5949,11 @@ msgstr ""
 #: ../../../../discord/ui/action_row.py:docstring
 #: discord.ui.action_row.ActionRow.select:35
 msgid ""
-"The class to use for the select menu. Defaults to :class:`discord.ui."
-"Select`. You can use other select types to display different select menus to "
-"the user. See the table above for the different values you can get from each "
-"select type. Subclasses work as well, however the callback in the subclass "
-"will get overridden."
+"The class to use for the select menu. Defaults "
+"to :class:`discord.ui.Select`. You can use other select types to display "
+"different select menus to the user. See the table above for the different "
+"values you can get from each select type. Subclasses work as well, however "
+"the callback in the subclass will get overridden."
 msgstr ""
 
 #: ../../../../discord/ui/select.py:docstring of discord.ui.select.select:45
@@ -6001,9 +5992,9 @@ msgstr ""
 #: discord.ui.action_row.ActionRow.select:62
 msgid ""
 "A list of objects representing the default values for the select menu. This "
-"cannot be used with regular :class:`Select` instances. If ``cls`` is :class:"
-"`MentionableSelect` and :class:`.Object` is passed, then the type must be "
-"specified in the constructor. Number of items must be in range of "
+"cannot be used with regular :class:`Select` instances. If ``cls`` "
+"is :class:`MentionableSelect` and :class:`.Object` is passed, then the type "
+"must be specified in the constructor. Number of items must be in range of "
 "``min_values`` and ``max_values``."
 msgstr ""
 
@@ -6108,10 +6099,10 @@ msgstr ""
 #: ../../../../discord/ui/container.py:docstring of
 #: discord.ui.container.Container:3
 msgid ""
-"This is a top-level layout component that can only be used on :class:"
-"`LayoutView` and can contain :class:`ActionRow`\\s, :class:"
-"`TextDisplay`\\s, :class:`Section`\\s, :class:`MediaGallery`\\s, :class:"
-"`File`\\s, and :class:`Separator`\\s in it."
+"This is a top-level layout component that can only be used "
+"on :class:`LayoutView` and can "
+"contain :class:`ActionRow`\\s, :class:`TextDisplay`\\s, :class:`Section`\\s, :class:`MediaGallery`\\s, :class:`File`\\s, "
+"and :class:`Separator`\\s in it."
 msgstr ""
 
 #: ../../../../discord/ui/container.py:docstring of
@@ -6241,8 +6232,8 @@ msgstr ""
 #: ../../../../discord/ui/separator.py:docstring
 #: discord.ui.separator.Separator:3
 msgid ""
-"This is a top-level layout component that can only be used on :class:"
-"`LayoutView`."
+"This is a top-level layout component that can only be used "
+"on :class:`LayoutView`."
 msgstr ""
 
 #: ../../../../discord/ui/file.py:docstring of discord.ui.file.File:9
@@ -6420,8 +6411,8 @@ msgstr ""
 
 #: ../../../../discord/ui/section.py:docstring of discord.ui.section.Section:9
 msgid ""
-"The section accessory. This is usually either a :class:`Button` or :class:"
-"`Thumbnail`."
+"The section accessory. This is usually either a :class:`Button` "
+"or :class:`Thumbnail`."
 msgstr ""
 
 #: ../../../../discord/ui/section.py:docstring of discord.ui.Section.children:1
@@ -6459,8 +6450,8 @@ msgstr ""
 #: ../../../../discord/ui/section.py:docstring of
 #: discord.ui.section.Section.add_item:6
 msgid ""
-"The item to append, if it is a string it automatically wrapped around :class:"
-"`TextDisplay`."
+"The item to append, if it is a string it automatically wrapped "
+"around :class:`TextDisplay`."
 msgstr ""
 
 #: ../../../../discord/ui/section.py:docstring of
@@ -6539,8 +6530,9 @@ msgstr ""
 #: ../../../../discord/ui/text_display.py:docstring of
 #: discord.ui.text_display.TextDisplay:3
 msgid ""
-"This is a top-level layout component that can only be used on :class:"
-"`LayoutView`, :class:`Section`, :class:`Container`, or :class:`Modal`."
+"This is a top-level layout component that can only be used "
+"on :class:`LayoutView`, :class:`Section`, :class:`Container`, "
+"or :class:`Modal`."
 msgstr ""
 
 #: ../../../../discord/ui/text_display.py:docstring of
@@ -6555,8 +6547,8 @@ msgstr ""
 #: ../../../../discord/ui/thumbnail.py:docstring of
 #: discord.ui.thumbnail.Thumbnail:1
 msgid ""
-"Represents a UI Thumbnail. This currently can only be used as a :class:"
-"`Section`'s accessory."
+"Represents a UI Thumbnail. This currently can only be used as "
+"a :class:`Section`'s accessory."
 msgstr ""
 
 #: ../../../../discord/ui/thumbnail.py:docstring of
@@ -6596,8 +6588,9 @@ msgstr ""
 #: ../../../../discord/ui/action_row.py:docstring of
 #: discord.ui.action_row.ActionRow:3
 msgid ""
-"This is a top-level layout component that can only be used on :class:"
-"`LayoutView` and can contain :class:`Button`\\s and :class:`Select`\\s in it."
+"This is a top-level layout component that can only be used "
+"on :class:`LayoutView` and can contain :class:`Button`\\s "
+"and :class:`Select`\\s in it."
 msgstr ""
 
 #: ../../../../discord/ui/action_row.py:docstring of
@@ -6701,24 +6694,26 @@ msgstr ""
 #: discord.ui.action_row.ActionRow.button:3
 msgid ""
 "The function being decorated should have three parameters, ``self`` "
-"representing the :class:`discord.ui.ActionRow`, the :class:`discord."
-"Interaction` you receive and the :class:`discord.ui.Button` being pressed."
+"representing the :class:`discord.ui.ActionRow`, "
+"the :class:`discord.Interaction` you receive and "
+"the :class:`discord.ui.Button` being pressed."
 msgstr ""
 
 #: ../../../../discord/ui/action_row.py:docstring of
 #: discord.ui.action_row.ActionRow.button:9
 msgid ""
 "Buttons with a URL or a SKU cannot be created with this function. Consider "
-"creating a :class:`Button` manually and adding it via :meth:`ActionRow."
-"add_item` instead. This is beacuse these buttons cannot have a callback "
-"associated with them since Discord does not do any processing with them."
+"creating a :class:`Button` manually and adding it "
+"via :meth:`ActionRow.add_item` instead. This is because these buttons cannot "
+"have a callback associated with them since Discord does not do any "
+"processing with them."
 msgstr ""
 
 #: ../../../../discord/ui/action_row.py:docstring of
 #: discord.ui.action_row.ActionRow.button:18
 msgid ""
 "The ID of the button that gets received during an interaction. It is "
-"recommended to not set this parameters to prevent conflicts. Can only be up "
+"recommended to not set this parameter to prevent conflicts. Can only be up "
 "to 100 characters."
 msgstr ""
 
@@ -6731,8 +6726,8 @@ msgstr ""
 #: discord.ui.action_row.ActionRow.select:3
 msgid ""
 "The function being decorated should have three parameters, ``self`` "
-"representing the :class:`discord.ui.ActionRow`, the :class:`discord."
-"Interaction` you receive and the chosen select class."
+"representing the :class:`discord.ui.ActionRow`, "
+"the :class:`discord.Interaction` you receive and the chosen select class."
 msgstr ""
 
 #: ../../../../discord/ui/action_row.py:docstring of
@@ -6741,8 +6736,8 @@ msgid ""
 "class MyView(discord.ui.LayoutView):\n"
 "    action_row = discord.ui.ActionRow()\n"
 "\n"
-"    @action_row.select(cls=ChannelSelect, channel_types=[discord.ChannelType."
-"text])\n"
+"    @action_row.select(cls=ChannelSelect, "
+"channel_types=[discord.ChannelType.text])\n"
 "    async def select_channels(self, interaction: discord.Interaction, "
 "select: ChannelSelect):\n"
 "        return await interaction.response.send_message(f'You selected "
@@ -6831,7 +6826,9 @@ msgid "RadioGroup"
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.radio.RadioGroup:1
-msgid "Represents a radio group component within a modal."
+msgid ""
+"Represents a radio group component within a modal that can only be used "
+"in :class:`Label`."
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.radio.RadioGroup:7
@@ -6847,7 +6844,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.RadioGroup.value:1
-msgid "The value have been selected by the user, if any."
+msgid "The value that has been selected by the user, if any."
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of discord.ui.RadioGroup.options:1
@@ -6866,8 +6863,8 @@ msgstr ""
 #: ../../../../discord/ui/radio.py:docstring of
 #: discord.ui.radio.RadioGroup.add_option:3
 msgid ""
-"To append a pre-existing :class:`discord.RadioGroupOption` use the :meth:"
-"`append_option` method instead."
+"To append a pre-existing :class:`discord.RadioGroupOption` use "
+"the :meth:`append_option` method instead."
 msgstr ""
 
 #: ../../../../discord/ui/radio.py:docstring of
@@ -6895,7 +6892,9 @@ msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of
 #: discord.ui.checkbox.Checkbox:1
-msgid "Represents a checkbox component within a modal."
+msgid ""
+"Represents a checkbox component within a modal that can only be used "
+"in :class:`Label`."
 msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of discord.ui.Checkbox.value:1
@@ -6908,7 +6907,9 @@ msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of
 #: discord.ui.checkbox.CheckboxGroup:1
-msgid "Represents a checkbox group component within a modal."
+msgid ""
+"Represents a checkbox group component within a modal that can only be used "
+"in :class:`Label`."
 msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of
@@ -6945,8 +6946,8 @@ msgstr ""
 #: ../../../../discord/ui/checkbox.py:docstring of
 #: discord.ui.checkbox.CheckboxGroup.add_option:3
 msgid ""
-"To append a pre-existing :class:`discord.CheckboxGroupOption` use the :meth:"
-"`append_option` method instead."
+"To append a pre-existing :class:`discord.CheckboxGroupOption` use "
+"the :meth:`append_option` method instead."
 msgstr ""
 
 #: ../../../../discord/ui/checkbox.py:docstring of
@@ -7079,9 +7080,9 @@ msgstr ""
 msgid ""
 "The guild to add the command to. If not given or ``None`` then it becomes a "
 "global command instead.  .. note ::      Due to a Discord limitation, this "
-"keyword argument cannot be used in conjunction with     contexts (e.g. :func:"
-"`.app_commands.allowed_contexts`) or installation types     (e.g. :func:`."
-"app_commands.allowed_installs`)."
+"keyword argument cannot be used in conjunction with     contexts "
+"(e.g. :func:`.app_commands.allowed_contexts`) or installation types     "
+"(e.g. :func:`.app_commands.allowed_installs`)."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
@@ -7113,9 +7114,9 @@ msgid ""
 "The list of guilds to add the command to. This cannot be mixed with the "
 "``guild`` parameter. If no guilds are given at all then it becomes a global "
 "command instead.  .. note ::      Due to a Discord limitation, this keyword "
-"argument cannot be used in conjunction with     contexts (e.g. :func:`."
-"app_commands.allowed_contexts`) or installation types     (e.g. :func:`."
-"app_commands.allowed_installs`)."
+"argument cannot be used in conjunction with     contexts "
+"(e.g. :func:`.app_commands.allowed_contexts`) or installation types     "
+"(e.g. :func:`.app_commands.allowed_installs`)."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
@@ -7168,9 +7169,10 @@ msgstr ""
 #: discord.app_commands.commands.context_menu:3
 msgid ""
 "This function must have a signature of :class:`~discord.Interaction` as its "
-"first parameter and taking either a :class:`~discord.Member`, :class:"
-"`~discord.User`, or :class:`~discord.Message`, or a :obj:`typing.Union` of "
-"``Member`` and ``User`` as its second parameter."
+"first parameter and taking either "
+"a :class:`~discord.Member`, :class:`~discord.User`, "
+"or :class:`~discord.Message`, or a :obj:`typing.Union` of ``Member`` and "
+"``User`` as its second parameter."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
@@ -7179,8 +7181,8 @@ msgstr ""
 #: discord.app_commands.commands.context_menu:9
 msgid ""
 "@app_commands.context_menu()\n"
-"async def react(interaction: discord.Interaction, message: discord."
-"Message):\n"
+"async def react(interaction: discord.Interaction, message: "
+"discord.Message):\n"
 "    await interaction.response.send_message('Very cool message!', "
 "ephemeral=True)\n"
 "\n"
@@ -7430,8 +7432,8 @@ msgstr ""
 #: ../../../../discord/app_commands/tree.py:docstring of
 #: discord.app_commands.tree.CommandTree.remove_command:11
 msgid ""
-"The type of command to remove. Defaults to :attr:`~discord.AppCommandType."
-"chat_input`, i.e. slash commands."
+"The type of command to remove. Defaults "
+"to :attr:`~discord.AppCommandType.chat_input`, i.e. slash commands."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
@@ -7493,8 +7495,8 @@ msgstr ""
 #: ../../../../discord/app_commands/tree.py:docstring of
 #: discord.app_commands.tree.CommandTree.get_command:8
 msgid ""
-"The type of command to get. Defaults to :attr:`~discord.AppCommandType."
-"chat_input`, i.e. slash commands."
+"The type of command to get. Defaults "
+"to :attr:`~discord.AppCommandType.chat_input`, i.e. slash commands."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
@@ -7550,8 +7552,8 @@ msgstr ""
 #: ../../../../discord/app_commands/tree.py:docstring of
 #: discord.app_commands.tree.CommandTree.walk_commands:6
 msgid ""
-"The type of commands to iterate over. Defaults to :attr:`~discord."
-"AppCommandType.chat_input`, i.e. slash commands."
+"The type of commands to iterate over. Defaults "
+"to :attr:`~discord.AppCommandType.chat_input`, i.e. slash commands."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
@@ -7614,15 +7616,15 @@ msgstr ""
 #: ../../../../discord/app_commands/tree.py:docstring of
 #: discord.app_commands.tree.CommandTree.set_translator:5
 msgid ""
-"If a translator was previously set, it will be unloaded using its :meth:"
-"`Translator.unload` method."
+"If a translator was previously set, it will be unloaded using "
+"its :meth:`Translator.unload` method."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
 #: discord.app_commands.tree.CommandTree.set_translator:8
 msgid ""
-"When a translator is set, it will be loaded using its :meth:`Translator."
-"load` method."
+"When a translator is set, it will be loaded using "
+"its :meth:`Translator.load` method."
 msgstr ""
 
 #: ../../../../discord/app_commands/tree.py:docstring of
@@ -7779,9 +7781,9 @@ msgstr ""
 msgid ""
 "A list of predicates that take a :class:`~discord.Interaction` parameter to "
 "indicate whether the command callback should be executed. If an exception is "
-"necessary to be thrown to signal failure, then one inherited from :exc:"
-"`AppCommandError` should be used. If all the checks fail without propagating "
-"an exception, :exc:`CheckFailure` is raised."
+"necessary to be thrown to signal failure, then one inherited "
+"from :exc:`AppCommandError` should be used. If all the checks fail without "
+"propagating an exception, :exc:`CheckFailure` is raised."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -7832,17 +7834,17 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Command.autocomplete:3
 msgid ""
-"The coroutine callback must have 2 parameters, the :class:`~discord."
-"Interaction`, and the current value by the user (the string currently being "
-"typed by the user)."
+"The coroutine callback must have 2 parameters, "
+"the :class:`~discord.Interaction`, and the current value by the user (the "
+"string currently being typed by the user)."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Command.autocomplete:6
 msgid ""
-"To get the values from other parameters that may be filled in, accessing :"
-"attr:`.Interaction.namespace` will give a :class:`Namespace` object with "
-"those values."
+"To get the values from other parameters that may be filled in, "
+"accessing :attr:`.Interaction.namespace` will give a :class:`Namespace` "
+"object with those values."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -7857,8 +7859,9 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Command.autocomplete:14
 msgid ""
-"The coroutine decorator **must** return a list of :class:`~discord."
-"app_commands.Choice` objects. Only up to 25 objects are supported."
+"The coroutine decorator **must** return a list "
+"of :class:`~discord.app_commands.Choice` objects. Only up to 25 objects are "
+"supported."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8095,8 +8098,8 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Parameter:79
 msgid ""
-"The default value of the parameter, if given. If not given then this is :"
-"data:`~discord.utils.MISSING`."
+"The default value of the parameter, if given. If not given then this "
+"is :data:`~discord.utils.MISSING`."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8126,8 +8129,8 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.ContextMenu:7
 msgid ""
-":meth:`CommandTree.context_menu <discord.app_commands.CommandTree."
-"context_menu>`"
+":meth:`CommandTree.context_menu "
+"<discord.app_commands.CommandTree.context_menu>`"
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8185,9 +8188,9 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Group:5
 msgid ""
-"Decorators such as :func:`guild_only`, :func:`guilds`, and :func:"
-"`default_permissions` will apply to the group if used on top of a subclass. "
-"For example:"
+"Decorators such as :func:`guild_only`, :func:`guilds`, "
+"and :func:`default_permissions` will apply to the group if used on top of a "
+"subclass. For example:"
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8340,8 +8343,8 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Group.on_error:3
 msgid ""
-"A callback that is called when a child's command raises an :exc:"
-"`AppCommandError`."
+"A callback that is called when a child's command raises "
+"an :exc:`AppCommandError`."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8363,8 +8366,8 @@ msgstr ""
 #: discord.app_commands.commands.Group.interaction_check:13
 msgid ""
 "If an exception occurs within the body then the check is considered a "
-"failure and error handlers such as :meth:`on_error` is called. See :exc:"
-"`AppCommandError` for more information."
+"failure and error handlers such as :meth:`on_error` is called. "
+"See :exc:`AppCommandError` for more information."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8387,9 +8390,9 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Group.add_command:9
 msgid ""
-"The command or group is already registered. Note that the :attr:"
-"`CommandAlreadyRegistered.guild_id`     attribute will always be ``None`` in "
-"this case."
+"The command or group is already registered. Note that "
+"the :attr:`CommandAlreadyRegistered.guild_id`     attribute will always be "
+"``None`` in this case."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8424,9 +8427,7 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.Group.remove_command:8
 #: discord.app_commands.commands.Group.get_command:8
-msgid ""
-"Optional[Union[:class:`~discord.app_commands.Command`, :class:`~discord."
-"app_commands.Group`]]"
+msgid "Optional[Union[:class:`~discord.app_commands.Command`, :class:`~discord.app_commands.Group`]]"
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8529,8 +8530,8 @@ msgstr ""
 msgid ""
 "@app_commands.command()\n"
 "@app_commands.rename(the_member_to_ban='member')\n"
-"async def ban(interaction: discord.Interaction, the_member_to_ban: discord."
-"Member):\n"
+"async def ban(interaction: discord.Interaction, the_member_to_ban: "
+"discord.Member):\n"
 "    await interaction.response.send_message(f'Banned {the_member_to_ban}')"
 msgstr ""
 
@@ -8570,8 +8571,8 @@ msgstr ""
 #: discord.app_commands.commands.choices:19
 msgid ""
 "This is not the only way to provide choices to a command. There are two more "
-"ergonomic ways of doing this. The first one is to use a :obj:`typing."
-"Literal` annotation:"
+"ergonomic ways of doing this. The first one is to use "
+"a :obj:`typing.Literal` annotation:"
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8624,8 +8625,8 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.autocomplete:3
 msgid ""
-"Autocomplete is only supported on types that have :class:`str`, :class:"
-"`int`, or :class:`float` values."
+"Autocomplete is only supported on types that "
+"have :class:`str`, :class:`int`, or :class:`float` values."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8692,8 +8693,9 @@ msgstr ""
 #: discord.app_commands.commands.guilds:12
 msgid ""
 "Due to an implementation quirk and Python limitation, if this is used in "
-"conjunction with the :meth:`CommandTree.command` or :meth:`CommandTree."
-"context_menu` decorator then this must go below that decorator."
+"conjunction with the :meth:`CommandTree.command` "
+"or :meth:`CommandTree.context_menu` decorator then this must go below that "
+"decorator."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8807,8 +8809,8 @@ msgstr ""
 msgid ""
 "@app_commands.command()\n"
 "@app_commands.private_channel_only()\n"
-"async def my_private_channel_only_command(interaction: discord.Interaction) -"
-"> None:\n"
+"async def my_private_channel_only_command(interaction: discord.Interaction) "
+"-> None:\n"
 "    await interaction.response.send_message('I am only available in DMs and "
 "GDMs!')"
 msgstr ""
@@ -8925,8 +8927,8 @@ msgstr ""
 msgid ""
 "This serves as a *hint* and members are *not* required to have the "
 "permissions given to actually execute this command. If you want to ensure "
-"that members have the permissions needed, consider using :func:`~discord."
-"app_commands.checks.has_permissions` instead."
+"that members have the permissions needed, consider "
+"using :func:`~discord.app_commands.checks.has_permissions` instead."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -8975,10 +8977,10 @@ msgstr ""
 #: ../../../../discord/app_commands/commands.py:docstring of
 #: discord.app_commands.commands.check:3
 msgid ""
-"These checks should be predicates that take in a single parameter taking a :"
-"class:`~discord.Interaction`. If the check returns a ``False``\\-like value "
-"then during invocation a :exc:`CheckFailure` exception is raised and sent to "
-"the appropriate error handlers."
+"These checks should be predicates that take in a single parameter taking "
+"a :class:`~discord.Interaction`. If the check returns a ``False``\\-like "
+"value then during invocation a :exc:`CheckFailure` exception is raised and "
+"sent to the appropriate error handlers."
 msgstr ""
 
 #: ../../../../discord/app_commands/commands.py:docstring of
@@ -9051,10 +9053,10 @@ msgstr ""
 #: ../../../../discord/app_commands/checks.py:docstring of
 #: discord.app_commands.checks.has_role:9
 msgid ""
-"This check raises one of two special exceptions, :exc:`~discord.app_commands."
-"MissingRole` if the user is missing a role, or :exc:`~discord.app_commands."
-"NoPrivateMessage` if it is used in a private message. Both inherit from :exc:"
-"`~discord.app_commands.CheckFailure`."
+"This check raises one of two special "
+"exceptions, :exc:`~discord.app_commands.MissingRole` if the user is missing "
+"a role, or :exc:`~discord.app_commands.NoPrivateMessage` if it is used in a "
+"private message. Both inherit from :exc:`~discord.app_commands.CheckFailure`."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9090,10 +9092,11 @@ msgstr ""
 #: ../../../../discord/app_commands/checks.py:docstring of
 #: discord.app_commands.checks.has_any_role:7
 msgid ""
-"This check raises one of two special exceptions, :exc:`~discord.app_commands."
-"MissingAnyRole` if the user is missing all roles, or :exc:`~discord."
-"app_commands.NoPrivateMessage` if it is used in a private message. Both "
-"inherit from :exc:`~discord.app_commands.CheckFailure`."
+"This check raises one of two special "
+"exceptions, :exc:`~discord.app_commands.MissingAnyRole` if the user is "
+"missing all roles, or :exc:`~discord.app_commands.NoPrivateMessage` if it is "
+"used in a private message. Both inherit "
+"from :exc:`~discord.app_commands.CheckFailure`."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9122,23 +9125,23 @@ msgstr ""
 #: ../../../../discord/app_commands/checks.py:docstring of
 #: discord.app_commands.checks.has_permissions:4
 msgid ""
-"Note that this check operates on the permissions given by :attr:`discord."
-"Interaction.permissions`."
+"Note that this check operates on the permissions given "
+"by :attr:`discord.Interaction.permissions`."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
 #: discord.app_commands.checks.has_permissions:7
 msgid ""
-"The permissions passed in must be exactly like the properties shown under :"
-"class:`discord.Permissions`."
+"The permissions passed in must be exactly like the properties shown "
+"under :class:`discord.Permissions`."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
 #: discord.app_commands.checks.has_permissions:10
 msgid ""
-"This check raises a special exception, :exc:`~discord.app_commands."
-"MissingPermissions` that is inherited from :exc:`~discord.app_commands."
-"CheckFailure`."
+"This check raises a special "
+"exception, :exc:`~discord.app_commands.MissingPermissions` that is inherited "
+"from :exc:`~discord.app_commands.CheckFailure`."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9159,16 +9162,16 @@ msgstr ""
 #: discord.app_commands.checks.bot_has_permissions:1
 msgid ""
 "Similar to :func:`has_permissions` except checks if the bot itself has the "
-"permissions listed. This relies on :attr:`discord.Interaction."
-"app_permissions`."
+"permissions listed. This relies "
+"on :attr:`discord.Interaction.app_permissions`."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
 #: discord.app_commands.checks.bot_has_permissions:4
 msgid ""
-"This check raises a special exception, :exc:`~discord.app_commands."
-"BotMissingPermissions` that is inherited from :exc:`~discord.app_commands."
-"CheckFailure`."
+"This check raises a special "
+"exception, :exc:`~discord.app_commands.BotMissingPermissions` that is "
+"inherited from :exc:`~discord.app_commands.CheckFailure`."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9183,9 +9186,9 @@ msgid ""
 "A cooldown allows a command to only be used a specific amount of times in a "
 "specific time frame. These cooldowns are based off of the ``key`` function "
 "provided. If a ``key`` is not provided then it defaults to a user-level "
-"cooldown. The ``key`` function must take a single parameter, the :class:"
-"`discord.Interaction` and return a value that is used as a key to the "
-"internal cooldown mapping."
+"cooldown. The ``key`` function must take a single parameter, "
+"the :class:`discord.Interaction` and return a value that is used as a key to "
+"the internal cooldown mapping."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9197,8 +9200,9 @@ msgstr ""
 #: discord.app_commands.checks.cooldown:12
 #: discord.app_commands.checks.dynamic_cooldown:17
 msgid ""
-"If a cooldown is triggered, then :exc:`~discord.app_commands."
-"CommandOnCooldown` is raised to the error handlers."
+"If a cooldown is triggered, "
+"then :exc:`~discord.app_commands.CommandOnCooldown` is raised to the error "
+"handlers."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9210,8 +9214,8 @@ msgstr ""
 #: discord.app_commands.checks.cooldown:19
 msgid ""
 "@tree.command()\n"
-"@app_commands.checks.cooldown(1, 5.0, key=lambda i: (i.guild_id, i.user."
-"id))\n"
+"@app_commands.checks.cooldown(1, 5.0, key=lambda i: (i.guild_id, "
+"i.user.id))\n"
 "async def test(interaction: discord.Interaction):\n"
 "    await interaction.response.send_message('Hello')\n"
 "\n"
@@ -9251,9 +9255,9 @@ msgstr ""
 #: discord.app_commands.checks.dynamic_cooldown:10
 msgid ""
 "If a ``factory`` function is given, it must be a function that accepts a "
-"single parameter of type :class:`discord.Interaction` and must return a :"
-"class:`~discord.app_commands.Cooldown` or ``None``. If ``None`` is returned "
-"then that cooldown is effectively bypassed."
+"single parameter of type :class:`discord.Interaction` and must return "
+"a :class:`~discord.app_commands.Cooldown` or ``None``. If ``None`` is "
+"returned then that cooldown is effectively bypassed."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9350,8 +9354,8 @@ msgstr ""
 #: ../../../../discord/app_commands/checks.py:docstring of
 #: discord.app_commands.checks.Cooldown.get_retry_after:3
 msgid ""
-"The current time in seconds since Unix epoch. If not supplied, then :func:"
-"`time.time()` is used."
+"The current time in seconds since Unix epoch. If not supplied, "
+"then :func:`time.time()` is used."
 msgstr ""
 
 #: ../../../../discord/app_commands/checks.py:docstring of
@@ -9581,9 +9585,9 @@ msgstr ""
 #: discord.app_commands.transformers.Transformer:5
 msgid ""
 "This class is customisable through the overriding of methods and properties "
-"in the class and by using it as the second type parameter of the :class:"
-"`~discord.app_commands.Transform` class. For example, to convert a string "
-"into a custom pair type:"
+"in the class and by using it as the second type parameter of "
+"the :class:`~discord.app_commands.Transform` class. For example, to convert "
+"a string into a custom pair type:"
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9594,8 +9598,8 @@ msgid ""
 "    y: int\n"
 "\n"
 "class PointTransformer(app_commands.Transformer):\n"
-"    async def transform(self, interaction: discord.Interaction, value: str) -"
-"> Point:\n"
+"    async def transform(self, interaction: discord.Interaction, value: str) "
+"-> Point:\n"
 "        (x, _, y) = value.partition(',')\n"
 "        return Point(x=int(x.strip()), y=int(y.strip()))\n"
 "\n"
@@ -9643,8 +9647,8 @@ msgstr ""
 #: ../../../../discord/app_commands/transformers.py:docstring of
 #: discord.app_commands.Transformer.channel_types:3
 msgid ""
-"Only valid if the :meth:`type` returns :attr:`~discord.AppCommandOptionType."
-"channel`."
+"Only valid if the :meth:`type` "
+"returns :attr:`~discord.AppCommandOptionType.channel`."
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9657,9 +9661,9 @@ msgstr ""
 #: discord.app_commands.Transformer.max_value:3
 #: discord.app_commands.Transformer.choices:3
 msgid ""
-"Only valid if the :meth:`type` returns :attr:`~discord.AppCommandOptionType."
-"number` :attr:`~discord.AppCommandOptionType.integer`, or :attr:`~discord."
-"AppCommandOptionType.string`."
+"Only valid if the :meth:`type` "
+"returns :attr:`~discord.AppCommandOptionType.number` :attr:`~discord.AppCommandOptionType.integer`, "
+"or :attr:`~discord.AppCommandOptionType.string`."
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9695,8 +9699,8 @@ msgstr ""
 #: discord.app_commands.transformers.Transformer.transform:5
 #: discord.app_commands.transformers.Timestamp.transform:5
 msgid ""
-"The value passed into this transform function is the same as the one in the :"
-"class:`conversion table <discord.app_commands.Namespace>`."
+"The value passed into this transform function is the same as the one in "
+"the :class:`conversion table <discord.app_commands.Namespace>`."
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9709,9 +9713,9 @@ msgstr ""
 #: discord.app_commands.transformers.Transformer.transform:10
 #: discord.app_commands.transformers.Timestamp.transform:10
 msgid ""
-"The value of the given argument after being resolved. See the :class:"
-"`conversion table <discord.app_commands.Namespace>` for how certain option "
-"types correspond to certain values."
+"The value of the given argument after being resolved. See "
+"the :class:`conversion table <discord.app_commands.Namespace>` for how "
+"certain option types correspond to certain values."
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9724,10 +9728,10 @@ msgstr ""
 #: ../../../../discord/app_commands/transformers.py:docstring of
 #: discord.app_commands.transformers.Transformer.autocomplete:7
 msgid ""
-"Autocomplete is only supported for options with a :meth:`~discord."
-"app_commands.Transformer.type` of :attr:`~discord.AppCommandOptionType."
-"string`, :attr:`~discord.AppCommandOptionType.integer`, or :attr:`~discord."
-"AppCommandOptionType.number`."
+"Autocomplete is only supported for options with "
+"a :meth:`~discord.app_commands.Transformer.type` "
+"of :attr:`~discord.AppCommandOptionType.string`, :attr:`~discord.AppCommandOptionType.integer`, "
+"or :attr:`~discord.AppCommandOptionType.number`."
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9753,10 +9757,11 @@ msgstr ""
 #: discord.app_commands.transformers.Transform:1
 msgid ""
 "A type annotation that can be applied to a parameter to customise the "
-"behaviour of an option type by transforming with the given :class:"
-"`Transformer`. This requires the usage of two generic parameters, the first "
-"one is the type you're converting to and the second one is the type of the :"
-"class:`Transformer` actually doing the transformation."
+"behaviour of an option type by transforming with the "
+"given :class:`Transformer`. This requires the usage of two generic "
+"parameters, the first one is the type you're converting to and the second "
+"one is the type of the :class:`Transformer` actually doing the "
+"transformation."
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9820,8 +9825,8 @@ msgstr ""
 #: discord.app_commands.transformers.Range:19
 msgid ""
 "@app_commands.command()\n"
-"async def range(interaction: discord.Interaction, value: app_commands."
-"Range[int, 10, 12]):\n"
+"async def range(interaction: discord.Interaction, value: "
+"app_commands.Range[int, 10, 12]):\n"
 "    await interaction.response.send_message(f'Your value is {value}', "
 "ephemeral=True)"
 msgstr ""
@@ -9833,9 +9838,9 @@ msgstr ""
 #: ../../../../discord/app_commands/transformers.py:docstring of
 #: discord.app_commands.transformers.Timestamp:1
 msgid ""
-"A type annotation that can be applied to a parameter for transforming a :"
-"ddocs:`Discord style timestamp <reference#message-formatting>` input to a :"
-"class:`datetime.datetime`."
+"A type annotation that can be applied to a parameter for transforming "
+"a :ddocs:`Discord style timestamp <reference#message-formatting>` input to "
+"a :class:`datetime.datetime`."
 msgstr ""
 
 #: ../../../../discord/app_commands/transformers.py:docstring of
@@ -9849,8 +9854,8 @@ msgstr ""
 #: discord.app_commands.transformers.Timestamp:12
 msgid ""
 "@app_commands.command()\n"
-"async def datetime(interaction: discord.Interaction, value: app_commands."
-"Timestamp):\n"
+"async def datetime(interaction: discord.Interaction, value: "
+"app_commands.Timestamp):\n"
 "    await interaction.response.send_message(value.isoformat())"
 msgstr ""
 
@@ -9879,9 +9884,9 @@ msgstr ""
 #: ../../../../discord/app_commands/translator.py:docstring of
 #: discord.app_commands.translator.Translator:7
 msgid ""
-"In order for a translator to be used, it must be set using the :meth:"
-"`CommandTree.set_translator` method. The translation flow for a string is as "
-"follows:"
+"In order for a translator to be used, it must be set using "
+"the :meth:`CommandTree.set_translator` method. The translation flow for a "
+"string is as follows:"
 msgstr ""
 
 #: ../../../../discord/app_commands/translator.py:docstring of
@@ -9964,9 +9969,9 @@ msgstr ""
 #: ../../../../discord/app_commands/translator.py:docstring of
 #: discord.app_commands.translator.Translator.translate:9
 msgid ""
-"If an exception is raised in this method, it should inherit from :exc:"
-"`TranslationError`. If it doesn't, then when this is called the exception "
-"will be chained with it instead."
+"If an exception is raised in this method, it should inherit "
+"from :exc:`TranslationError`. If it doesn't, then when this is called the "
+"exception will be chained with it instead."
 msgstr ""
 
 #: ../../../../discord/app_commands/translator.py:docstring of
@@ -9984,8 +9989,8 @@ msgstr ""
 msgid ""
 "The translation context where the string originated from. For better type "
 "checking ergonomics, the ``TranslationContextTypes`` type can be used "
-"instead to aid with type narrowing. It is functionally equivalent to :class:"
-"`TranslationContext`."
+"instead to aid with type narrowing. It is functionally equivalent "
+"to :class:`TranslationContext`."
 msgstr ""
 
 #: ../../../interactions/api.rst:1192
@@ -10000,8 +10005,8 @@ msgstr ""
 #: ../../../../discord/app_commands/translator.py:docstring of
 #: discord.app_commands.translator.locale_str:3
 msgid ""
-"This is done lazily and is not actually translated until :meth:`CommandTree."
-"sync` is called."
+"This is done lazily and is not actually translated "
+"until :meth:`CommandTree.sync` is called."
 msgstr ""
 
 #: ../../../../discord/app_commands/translator.py:docstring of
@@ -10227,11 +10232,11 @@ msgstr ""
 #: ../../../../discord/app_commands/errors.py:docstring of
 #: discord.app_commands.errors.TransformerError:6
 msgid ""
-"If an exception occurs while converting that does not subclass :exc:"
-"`AppCommandError` then the exception is wrapped into this exception. The "
-"original exception can be retrieved using the ``__cause__`` attribute. "
-"Otherwise if the exception derives from :exc:`AppCommandError` then it will "
-"be propagated as-is."
+"If an exception occurs while converting that does not "
+"subclass :exc:`AppCommandError` then the exception is wrapped into this "
+"exception. The original exception can be retrieved using the ``__cause__`` "
+"attribute. Otherwise if the exception derives from :exc:`AppCommandError` "
+"then it will be propagated as-is."
 msgstr ""
 
 #: ../../../../discord/app_commands/errors.py:docstring of
@@ -10326,8 +10331,8 @@ msgstr ""
 #: ../../../../discord/app_commands/errors.py:docstring of
 #: discord.app_commands.errors.MissingRole:9
 msgid ""
-"The required role that is missing. This is the parameter passed to :func:"
-"`~discord.app_commands.checks.has_role`."
+"The required role that is missing. This is the parameter passed "
+"to :func:`~discord.app_commands.checks.has_role`."
 msgstr ""
 
 #: ../../../../discord/app_commands/errors.py:docstring of
@@ -10345,8 +10350,8 @@ msgstr ""
 #: ../../../../discord/app_commands/errors.py:docstring of
 #: discord.app_commands.errors.MissingAnyRole:10
 msgid ""
-"The roles that the invoker is missing. These are the parameters passed to :"
-"func:`~discord.app_commands.checks.has_any_role`."
+"The roles that the invoker is missing. These are the parameters passed "
+"to :func:`~discord.app_commands.checks.has_any_role`."
 msgstr ""
 
 #: ../../../../discord/app_commands/errors.py:docstring of
@@ -10448,9 +10453,7 @@ msgstr ""
 
 #: ../../../../discord/app_commands/errors.py:docstring of
 #: discord.app_commands.errors.CommandSignatureMismatch:14
-msgid ""
-"Union[:class:`~.app_commands.Command`, :class:`~.app_commands.ContextMenu`, :"
-"class:`~.app_commands.Group`]"
+msgid "Union[:class:`~.app_commands.Command`, :class:`~.app_commands.ContextMenu`, :class:`~.app_commands.Group`]"
 msgstr ""
 
 #: ../../../../discord/app_commands/errors.py:docstring of
@@ -10488,8 +10491,8 @@ msgstr ""
 #: ../../../../discord/app_commands/errors.py:docstring of
 #: discord.app_commands.errors.CommandSyncFailure:5
 msgid ""
-"This inherits from :exc:`~discord.app_commands.AppCommandError` and :exc:"
-"`~discord.HTTPException`."
+"This inherits from :exc:`~discord.app_commands.AppCommandError` "
+"and :exc:`~discord.HTTPException`."
 msgstr ""
 
 #: ../../../interactions/api.rst:1296

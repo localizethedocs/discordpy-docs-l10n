@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -84,8 +85,7 @@ msgid ""
 "    def __init__(self, bot):\n"
 "        self.bot = bot\n"
 "        self.data = []\n"
-"        self.batch_update.add_exception_type(asyncpg."
-"PostgresConnectionError)\n"
+"        self.batch_update.add_exception_type(asyncpg.PostgresConnectionError)\n"
 "        self.batch_update.start()\n"
 "\n"
 "    def cog_unload(self):\n"
@@ -275,8 +275,8 @@ msgstr ""
 #: discord.ext.tasks.Loop.after_loop:7
 msgid ""
 "This coroutine is called even during cancellation. If it is desirable to "
-"tell apart whether something was cancelled or not, check to see whether :"
-"meth:`is_being_cancelled` is ``True`` or not."
+"tell apart whether something was cancelled or not, check to see "
+"whether :meth:`is_being_cancelled` is ``True`` or not."
 msgstr ""
 
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
@@ -527,8 +527,8 @@ msgstr ""
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
 #: discord.ext.tasks.Loop.restart:5
 msgid ""
-"Due to the way this function works, the task is not returned like :meth:"
-"`start`."
+"Due to the way this function works, the task is not returned "
+"like :meth:`start`."
 msgstr ""
 
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
@@ -539,8 +539,9 @@ msgstr ""
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
 #: discord.ext.tasks.Loop.add_exception_type:3
 msgid ""
-"By default the exception types handled are those handled by :meth:`discord."
-"Client.connect`\\, which includes a lot of internet disconnection errors."
+"By default the exception types handled are those handled "
+"by :meth:`discord.Client.connect`\\, which includes a lot of internet "
+"disconnection errors."
 msgstr ""
 
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
@@ -559,8 +560,8 @@ msgstr ""
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
 #: discord.ext.tasks.Loop.add_exception_type:13
 msgid ""
-"An exception passed is either not a class or not inherited from :class:"
-"`BaseException`."
+"An exception passed is either not a class or not inherited "
+"from :class:`BaseException`."
 msgstr ""
 
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
