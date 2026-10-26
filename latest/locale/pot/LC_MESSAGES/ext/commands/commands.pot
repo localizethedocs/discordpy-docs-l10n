@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -68,16 +69,16 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:35
 msgid ""
-"A command must always have at least one parameter, ``ctx``, which is the :"
-"class:`.Context` as the first one."
+"A command must always have at least one parameter, ``ctx``, which is "
+"the :class:`.Context` as the first one."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:37
 msgid ""
-"There are two ways of registering a command. The first one is by using :meth:"
-"`.Bot.command` decorator, as seen in the example above. The second is using "
-"the :func:`~ext.commands.command` decorator followed by :meth:`.Bot."
-"add_command` on the instance."
+"There are two ways of registering a command. The first one is by "
+"using :meth:`.Bot.command` decorator, as seen in the example above. The "
+"second is using the :func:`~ext.commands.command` decorator followed "
+"by :meth:`.Bot.add_command` on the instance."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:41
@@ -271,8 +272,8 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:172
 msgid ""
 "By default, the keyword-only arguments are stripped of white space to make "
-"it easier to work with. This behaviour can be toggled by the :attr:`.Command."
-"rest_is_raw` argument in the decorator."
+"it easier to work with. This behaviour can be toggled by "
+"the :attr:`.Command.rest_is_raw` argument in the decorator."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:178
@@ -316,8 +317,8 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:190
 msgid ""
 "The context implements the :class:`abc.Messageable` interface, so anything "
-"you can do on a :class:`abc.Messageable` you can do on the :class:`~ext."
-"commands.Context`."
+"you can do on a :class:`abc.Messageable` you can do on "
+"the :class:`~ext.commands.Context`."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:194
@@ -344,8 +345,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:204
 msgid ""
-"These range from your own function, to something like :class:`bool` or :"
-"class:`int`."
+"These range from your own function, to something like :class:`bool` "
+"or :class:`int`."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:206
@@ -424,9 +425,9 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:255
 msgid ""
 "Sometimes a basic converter doesn't have enough information that we need. "
-"For example, sometimes we want to get some information from the :class:"
-"`Message` that called the command or we want to do some asynchronous "
-"processing."
+"For example, sometimes we want to get some information from "
+"the :class:`Message` that called the command or we want to do some "
+"asynchronous processing."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:258
@@ -478,8 +479,8 @@ msgstr ""
 msgid ""
 "Having the possibility of the converter be constructed allows you to set up "
 "some state in the converter's ``__init__`` for fine tuning the converter. An "
-"example of this is actually in the library, :class:`~ext.commands."
-"clean_content`."
+"example of this is actually in the "
+"library, :class:`~ext.commands.clean_content`."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:294
@@ -491,8 +492,8 @@ msgid ""
 "# or for fine-tuning\n"
 "\n"
 "@bot.command()\n"
-"async def clean(ctx, *, content: commands."
-"clean_content(use_nicknames=False)):\n"
+"async def clean(ctx, *, content: "
+"commands.clean_content(use_nicknames=False)):\n"
 "    await ctx.send(content)"
 msgstr ""
 
@@ -546,8 +547,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:342
 msgid ""
-"This can get tedious, so an inline advanced converter is possible through a :"
-"func:`classmethod` inside the type:"
+"This can get tedious, so an inline advanced converter is possible through "
+"a :func:`classmethod` inside the type:"
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:344
@@ -714,9 +715,9 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:413
 msgid ""
-"Under the hood, these are implemented by the :ref:"
-"`ext_commands_adv_converters` interface. A table of the equivalent converter "
-"is given below:"
+"Under the hood, these are implemented by "
+"the :ref:`ext_commands_adv_converters` interface. A table of the equivalent "
+"converter is given below:"
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:417
@@ -899,8 +900,8 @@ msgid ""
 "import typing\n"
 "\n"
 "@bot.command()\n"
-"async def union(ctx, what: typing.Union[discord.TextChannel, discord."
-"Member]):\n"
+"async def union(ctx, what: typing.Union[discord.TextChannel, "
+"discord.Member]):\n"
 "    await ctx.send(what)"
 msgstr ""
 
@@ -908,9 +909,9 @@ msgstr ""
 msgid ""
 "The ``what`` parameter would either take a :class:`discord.TextChannel` "
 "converter or a :class:`discord.Member` converter. The way this works is "
-"through a left-to-right order. It first attempts to convert the input to a :"
-"class:`discord.TextChannel`, and if it fails it tries to convert it to a :"
-"class:`discord.Member`. If all converters fail, then a special error is "
+"through a left-to-right order. It first attempts to convert the input to "
+"a :class:`discord.TextChannel`, and if it fails it tries to convert it to "
+"a :class:`discord.Member`. If all converters fail, then a special error is "
 "raised, :exc:`~ext.commands.BadUnionArgument`."
 msgstr ""
 
@@ -1042,10 +1043,10 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:584
 msgid ""
-"The :class:`~ext.commands.Greedy` converter is a generalisation of the :obj:"
-"`typing.Optional` converter, except applied to a list of arguments. In "
-"simple terms, this means that it tries to convert as much as it can until it "
-"can't convert any further."
+"The :class:`~ext.commands.Greedy` converter is a generalisation of "
+"the :obj:`typing.Optional` converter, except applied to a list of arguments. "
+"In simple terms, this means that it tries to convert as much as it can until "
+"it can't convert any further."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:590
@@ -1069,8 +1070,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:603
 msgid ""
-"Positional parameter types will receive either the default parameter or a :"
-"class:`list` of the converted values."
+"Positional parameter types will receive either the default parameter or "
+"a :class:`list` of the converted values."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:604
@@ -1079,8 +1080,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:605
 msgid ""
-"Keyword-only parameter types will be the same as if :class:`~ext.commands."
-"Greedy` was not passed at all."
+"Keyword-only parameter types will be the same as "
+"if :class:`~ext.commands.Greedy` was not passed at all."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:607
@@ -1130,20 +1131,20 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:638
 msgid ""
-"For example, a signature expecting a :obj:`typing.Optional` of a :class:"
-"`discord.Member` followed by a :class:`int` could catch a member named after "
-"a number due to the different ways a :class:`~ext.commands.MemberConverter` "
-"decides to fetch members. You should take care to not introduce unintended "
-"parsing ambiguities in your code. One technique would be to clamp down the "
-"expected syntaxes allowed through custom converters or reordering the "
-"parameters to minimise clashes."
+"For example, a signature expecting a :obj:`typing.Optional` of "
+"a :class:`discord.Member` followed by a :class:`int` could catch a member "
+"named after a number due to the different ways "
+"a :class:`~ext.commands.MemberConverter` decides to fetch members. You "
+"should take care to not introduce unintended parsing ambiguities in your "
+"code. One technique would be to clamp down the expected syntaxes allowed "
+"through custom converters or reordering the parameters to minimise clashes."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:644
 msgid ""
-"To help aid with some parsing ambiguities, :class:`str`, ``None``, :obj:"
-"`typing.Optional` and :class:`~ext.commands.Greedy` are forbidden as "
-"parameters for the :class:`~ext.commands.Greedy` converter."
+"To help aid with some parsing ambiguities, :class:`str`, "
+"``None``, :obj:`typing.Optional` and :class:`~ext.commands.Greedy` are "
+"forbidden as parameters for the :class:`~ext.commands.Greedy` converter."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:649
@@ -1240,15 +1241,16 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:722
 msgid ""
-"Note that using a :class:`discord.Attachment` converter after a :class:`~ext."
-"commands.Greedy` of :class:`discord.Attachment` will always fail since the "
-"greedy had already consumed the remaining attachments."
+"Note that using a :class:`discord.Attachment` converter after "
+"a :class:`~ext.commands.Greedy` of :class:`discord.Attachment` will always "
+"fail since the greedy had already consumed the remaining attachments."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:724
 msgid ""
-"If an attachment is expected but not given, then :exc:`~ext.commands."
-"MissingRequiredAttachment` is raised to the error handlers."
+"If an attachment is expected but not given, "
+"then :exc:`~ext.commands.MissingRequiredAttachment` is raised to the error "
+"handlers."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:729
@@ -1303,9 +1305,9 @@ msgstr ""
 msgid ""
 "Internally, the :class:`~ext.commands.FlagConverter` class examines the "
 "class to find flags. A flag can either be a class variable with a type "
-"annotation or a class variable that's been assigned the result of the :func:"
-"`~ext.commands.flag` function. These flags are then used to define the "
-"interface that your users will use. The annotations correspond to the "
+"annotation or a class variable that's been assigned the result of "
+"the :func:`~ext.commands.flag` function. These flags are then used to define "
+"the interface that your users will use. The annotations correspond to the "
 "converters that the flag arguments must adhere to."
 msgstr ""
 
@@ -1336,11 +1338,11 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:781
 msgid ""
-"A positional flag can be defined by setting the :attr:`~ext.commands.Flag."
-"positional` attribute to ``True``. This tells the parser that the content "
-"provided before the parsing occurs is part of the flag. This is useful for "
-"commands that require a parameter to be used first and the flags are "
-"optional, such as the following:"
+"A positional flag can be defined by setting "
+"the :attr:`~ext.commands.Flag.positional` attribute to ``True``. This tells "
+"the parser that the content provided before the parsing occurs is part of "
+"the flag. This is useful for commands that require a parameter to be used "
+"first and the flags are optional, such as the following:"
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:785
@@ -1395,10 +1397,10 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:824
 msgid ""
 "Flag converters will only raise :exc:`~ext.commands.FlagError` derived "
-"exceptions. If an error is raised while converting a flag, :exc:`~ext."
-"commands.BadFlagArgument` is raised instead and the original exception can "
-"be accessed with the :attr:`~ext.commands.BadFlagArgument.original` "
-"attribute."
+"exceptions. If an error is raised while converting a "
+"flag, :exc:`~ext.commands.BadFlagArgument` is raised instead and the "
+"original exception can be accessed with "
+"the :attr:`~ext.commands.BadFlagArgument.original` attribute."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:828
@@ -1437,8 +1439,8 @@ msgid ""
 "@commands.command()\n"
 "async def ban(ctx, *, flags: BanFlags):\n"
 "    for member in flags.members:\n"
-"        await member.ban(reason=flags.reason, delete_message_days=flags."
-"days)\n"
+"        await member.ban(reason=flags.reason, "
+"delete_message_days=flags.days)\n"
 "\n"
 "    members = ', '.join(str(member) for member in flags.members)\n"
 "    plural = f'{flags.days} days' if flags.days != 1 else f'{flags.days} "
@@ -1494,9 +1496,9 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:895
 msgid ""
 "Due to potential parsing ambiguities, the parser expects tuple arguments to "
-"be quoted if they require spaces. So if one of the inner types is :class:"
-"`str` and the argument requires spaces then quotes should be used to "
-"disambiguate it from the other element of the tuple."
+"be quoted if they require spaces. So if one of the inner types "
+"is :class:`str` and the argument requires spaces then quotes should be used "
+"to disambiguate it from the other element of the tuple."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:900
@@ -1506,8 +1508,8 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:902
 msgid ""
 "A :class:`dict` annotation is functionally equivalent to ``List[Tuple[K, "
-"V]]`` except with the return type given as a :class:`dict` rather than a :"
-"class:`list`."
+"V]]`` except with the return type given as a :class:`dict` rather than "
+"a :class:`list`."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:907
@@ -1626,8 +1628,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:982
 msgid ""
-":func:`~ext.commands.parameter` assigns custom metadata to a :class:`~ext."
-"commands.Command`'s parameter."
+":func:`~ext.commands.parameter` assigns custom metadata to "
+"a :class:`~ext.commands.Command`'s parameter."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:984
@@ -1664,8 +1666,8 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:1003
 msgid ""
 "@bot.command()\n"
-"async def bar(ctx, cool_value: SomeType = commands."
-"parameter(converter=MyVeryCoolConverter)):\n"
+"async def bar(ctx, cool_value: SomeType = "
+"commands.parameter(converter=MyVeryCoolConverter)):\n"
 "    cool_value.foo  # no error (hurray)"
 msgstr ""
 
@@ -1683,9 +1685,10 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:1017
 msgid ""
-"Because this is such a common use-case, the library provides :obj:`~.ext."
-"commands.Author`, :obj:`~.ext.commands.CurrentChannel` and :obj:`~.ext."
-"commands.CurrentGuild`, armed with this we can simplify ``wave`` to:"
+"Because this is such a common use-case, the library "
+"provides :obj:`~.ext.commands.Author`, :obj:`~.ext.commands.CurrentChannel` "
+"and :obj:`~.ext.commands.CurrentGuild`, armed with this we can simplify "
+"``wave`` to:"
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1020
@@ -1724,8 +1727,8 @@ msgstr ""
 msgid ""
 "Most of the time however, we want to handle an error local to the command "
 "itself. Luckily, commands come with local error handlers that allow us to do "
-"just that. First we decorate an error handler function with :meth:`~discord."
-"ext.commands.Command.error`:"
+"just that. First we decorate an error handler function "
+"with :meth:`~discord.ext.commands.Command.error`:"
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1044
@@ -1733,8 +1736,8 @@ msgid ""
 "@bot.command()\n"
 "async def info(ctx, *, member: discord.Member):\n"
 "    \"\"\"Tells you some info about the member.\"\"\"\n"
-"    msg = f'{member} joined on {member.joined_at} and has {len(member."
-"roles)} roles.'\n"
+"    msg = f'{member} joined on {member.joined_at} and has "
+"{len(member.roles)} roles.'\n"
 "    await ctx.send(msg)\n"
 "\n"
 "@info.error\n"
@@ -1746,9 +1749,9 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:1057
 msgid ""
 "The first parameter of the error handler is the :class:`.Context` while the "
-"second one is an exception that is derived from :exc:`~ext.commands."
-"CommandError`. A list of errors is found in the :ref:"
-"`ext_commands_api_errors` page of the documentation."
+"second one is an exception that is derived "
+"from :exc:`~ext.commands.CommandError`. A list of errors is found in "
+"the :ref:`ext_commands_api_errors` page of the documentation."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1061
@@ -1785,8 +1788,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:1074
 msgid ""
-"This allows you to have custom error messages for you to handle in the :ref:"
-"`error handlers <ext_commands_error_handler>`."
+"This allows you to have custom error messages for you to handle in "
+"the :ref:`error handlers <ext_commands_error_handler>`."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1077
@@ -1830,8 +1833,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:1108
 msgid ""
-"Since an owner check is so common, the library provides it for you (:func:"
-"`~ext.commands.is_owner`):"
+"Since an owner check is so common, the library provides it for you "
+"(:func:`~ext.commands.is_owner`):"
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1110
@@ -1871,9 +1874,9 @@ msgstr ""
 #: ../../../ext/commands/commands.rst:1136
 msgid ""
 "When an error happens, the error is propagated to the :ref:`error handlers "
-"<ext_commands_error_handler>`. If you do not raise a custom :exc:`~ext."
-"commands.CommandError` derived exception, then it will get wrapped up into "
-"a :exc:`~ext.commands.CheckFailure` exception as so:"
+"<ext_commands_error_handler>`. If you do not raise a "
+"custom :exc:`~ext.commands.CommandError` derived exception, then it will get "
+"wrapped up into a :exc:`~ext.commands.CheckFailure` exception as so:"
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1140
@@ -1993,8 +1996,8 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:1231
 msgid ""
-"You can create hybrid command groups and sub-commands using the :meth:`.Bot."
-"hybrid_group` decorator."
+"You can create hybrid command groups and sub-commands using "
+"the :meth:`.Bot.hybrid_group` decorator."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1234
@@ -2054,9 +2057,9 @@ msgstr ""
 msgid ""
 "Apart from that, all other features such as converters, checks, "
 "autocomplete, flags etc. are supported on hybrid commands. Note that due to "
-"a design constraint, decorators related to application commands such as :"
-"func:`discord.app_commands.autocomplete` should be placed below the :func:"
-"`~ext.commands.hybrid_command` decorator."
+"a design constraint, decorators related to application commands such "
+"as :func:`discord.app_commands.autocomplete` should be placed below "
+"the :func:`~ext.commands.hybrid_command` decorator."
 msgstr ""
 
 #: ../../../ext/commands/commands.rst:1267

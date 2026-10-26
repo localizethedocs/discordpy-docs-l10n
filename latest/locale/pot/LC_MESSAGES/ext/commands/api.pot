@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -91,8 +92,8 @@ msgstr ""
 msgid ""
 "The command prefix could also be an iterable of strings indicating that "
 "multiple checks for the prefix should be used and the first one to match "
-"will be the invocation prefix. You can get this prefix via :attr:`.Context."
-"prefix`."
+"will be the invocation prefix. You can get this prefix "
+"via :attr:`.Context.prefix`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -157,9 +158,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.Bot:76
 msgid ""
-"The user ID that owns the bot. If this is not set and is then queried via :"
-"meth:`.is_owner` then it is fetched automatically using :meth:`~.Bot."
-"application_info`."
+"The user ID that owns the bot. If this is not set and is then queried "
+"via :meth:`.is_owner` then it is fetched automatically "
+"using :meth:`~.Bot.application_info`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -196,8 +197,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.Bot:106
 msgid ""
-"The type of application command tree to use. Defaults to :class:`~discord."
-"app_commands.CommandTree`."
+"The type of application command tree to use. Defaults "
+"to :class:`~discord.app_commands.CommandTree`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -263,8 +264,9 @@ msgstr ""
 msgid ""
 "Similar to :meth:`~.Bot.before_invoke`\\, this is not called unless checks "
 "and argument parsing procedures succeed. This hook is, however, **always** "
-"called regardless of the internal command callback raising an error (i.e. :"
-"exc:`.CommandInvokeError`\\). This makes it ideal for clean-up scenarios."
+"called regardless of the internal command callback raising an error "
+"(i.e. :exc:`.CommandInvokeError`\\). This makes it ideal for clean-up "
+"scenarios."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -376,8 +378,8 @@ msgstr ""
 #: discord.ext.commands.bot.BotBase.check_once:21
 msgid ""
 "Similar to a command :func:`.check`\\, this takes a single parameter of "
-"type :class:`.Context` and can only raise exceptions inherited from :exc:`."
-"CommandError`."
+"type :class:`.Context` and can only raise exceptions inherited "
+"from :exc:`.CommandError`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -414,16 +416,16 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.check_once:3
 msgid ""
-"Unlike regular global checks, this one is called only once per :meth:`."
-"invoke` call."
+"Unlike regular global checks, this one is called only once "
+"per :meth:`.invoke` call."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.check_once:6
 msgid ""
-"Regular global checks are called whenever a command is called or :meth:`."
-"Command.can_run` is called. This type of check bypasses that and ensures "
-"that it's called only once, even inside the default help command."
+"Regular global checks are called whenever a command is called "
+"or :meth:`.Command.can_run` is called. This type of check bypasses that and "
+"ensures that it's called only once, even inside the default help command."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -536,9 +538,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/hybrid.py:docstring
 #: discord.ext.commands.hybrid.HybridGroup.command:1
 msgid ""
-"A shortcut decorator that invokes :func:`~discord.ext.commands."
-"hybrid_command` and adds it to the internal command list via :meth:"
-"`add_command`."
+"A shortcut decorator that "
+"invokes :func:`~discord.ext.commands.hybrid_command` and adds it to the "
+"internal command list via :meth:`add_command`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -617,8 +619,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.add_check:3
 msgid ""
-"This is the non-decorator interface to :meth:`.check` and :meth:`."
-"check_once`."
+"This is the non-decorator interface to :meth:`.check` "
+"and :meth:`.check_once`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -663,8 +665,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.add_cog:7
 msgid ""
-"If the cog is a :class:`.app_commands.Group` then it is added to the bot's :"
-"class:`~discord.app_commands.CommandTree` as well."
+"If the cog is a :class:`.app_commands.Group` then it is added to the "
+"bot's :class:`~discord.app_commands.CommandTree` as well."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -753,8 +755,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/hybrid.py:docstring
 #: discord.ext.commands.hybrid.HybridGroup.add_command:3
 msgid ""
-"This is usually not called, instead the :meth:`~.GroupMixin.command` or :"
-"meth:`~.GroupMixin.group` shortcut decorators are used instead."
+"This is usually not called, instead the :meth:`~.GroupMixin.command` "
+"or :meth:`~.GroupMixin.group` shortcut decorators are used instead."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -762,8 +764,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring
 #: discord.ext.commands.core.GroupMixin.add_command:6
 msgid ""
-"Raise :exc:`.CommandRegistrationError` instead of generic :exc:`."
-"ClientException`"
+"Raise :exc:`.CommandRegistrationError` instead of "
+"generic :exc:`.ClientException`"
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -944,8 +946,9 @@ msgstr ""
 #: discord.ext.commands.Bot.application_id:3
 msgid ""
 "If this is not passed via ``__init__`` then this is retrieved through the "
-"gateway when an event contains the data or after a call to :meth:`~discord."
-"Client.login`. Usually after :func:`~discord.on_connect` is called."
+"gateway when an event contains the data or after a call "
+"to :meth:`~discord.Client.login`. Usually after :func:`~discord.on_connect` "
+"is called."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1255,8 +1258,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.create_guild:19
 msgid ""
-"The :term:`py:bytes-like object` representing the icon. See :meth:`."
-"ClientUser.edit` for more details on what is expected."
+"The :term:`py:bytes-like object` representing the icon. "
+"See :meth:`.ClientUser.edit` for more details on what is expected."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1334,8 +1337,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.Bot.emojis:5
 msgid ""
-"This does not include the emojis that are owned by the application. Use :"
-"meth:`.fetch_application_emoji` to get those."
+"This does not include the emojis that are owned by the application. "
+"Use :meth:`.fetch_application_emoji` to get those."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1380,8 +1383,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.entitlements:14
 msgid ""
-"entitlements = [entitlement async for entitlement in client."
-"entitlements(limit=100)]\n"
+"entitlements = [entitlement async for entitlement in "
+"client.entitlements(limit=100)]\n"
 "# entitlements is now a list of Entitlement..."
 msgstr ""
 
@@ -1519,8 +1522,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_channel:3
 msgid ""
-"Retrieves a :class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, or :"
-"class:`.Thread` with the specified ID."
+"Retrieves a :class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, "
+"or :class:`.Thread` with the specified ID."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1562,9 +1565,7 @@ msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_channel:21
-msgid ""
-"Union[:class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, :class:`."
-"Thread`]"
+msgid "Union[:class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, :class:`.Thread`]"
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1605,9 +1606,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_guild:7
 msgid ""
-"Using this, you will **not** receive :attr:`.Guild.channels`, :attr:`.Guild."
-"members`, :attr:`.Member.activity` and :attr:`.Member.voice` per :class:`."
-"Member`."
+"Using this, you will **not** "
+"receive :attr:`.Guild.channels`, :attr:`.Guild.members`, :attr:`.Member.activity` "
+"and :attr:`.Member.voice` per :class:`.Member`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1630,10 +1631,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_guild:21
 msgid ""
-"Whether to include count information in the guild. This fills the :attr:`."
-"Guild.approximate_member_count` and :attr:`.Guild."
-"approximate_presence_count` attributes without needing any privileged "
-"intents. Defaults to ``True``."
+"Whether to include count information in the guild. This fills "
+"the :attr:`.Guild.approximate_member_count` "
+"and :attr:`.Guild.approximate_presence_count` attributes without needing any "
+"privileged intents. Defaults to ``True``."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1684,10 +1685,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_guilds:5
 msgid ""
-"Using this, you will only receive :attr:`.Guild.owner`, :attr:`.Guild."
-"icon`, :attr:`.Guild.id`, :attr:`.Guild.name`, :attr:`.Guild."
-"approximate_member_count`, and :attr:`.Guild.approximate_presence_count` "
-"per :class:`.Guild`."
+"Using this, you will only "
+"receive :attr:`.Guild.owner`, :attr:`.Guild.icon`, :attr:`.Guild.id`, :attr:`.Guild.name`, :attr:`.Guild.approximate_member_count`, "
+"and :attr:`.Guild.approximate_presence_count` per :class:`.Guild`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1743,10 +1743,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_guilds:44
 msgid ""
-"Whether to include count information in the guilds. This fills the :attr:`."
-"Guild.approximate_member_count` and :attr:`.Guild."
-"approximate_presence_count` attributes without needing any privileged "
-"intents. Defaults to ``True``."
+"Whether to include count information in the guilds. This fills "
+"the :attr:`.Guild.approximate_member_count` "
+"and :attr:`.Guild.approximate_presence_count` attributes without needing any "
+"privileged intents. Defaults to ``True``."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1768,8 +1768,9 @@ msgstr ""
 #: discord.client.Client.fetch_invite:7
 msgid ""
 "If the invite is for a guild you have not joined, the guild and channel "
-"attributes of the returned :class:`.Invite` will be :class:`."
-"PartialInviteGuild` and :class:`.PartialInviteChannel` respectively."
+"attributes of the returned :class:`.Invite` will "
+"be :class:`.PartialInviteGuild` and :class:`.PartialInviteChannel` "
+"respectively."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -1780,16 +1781,16 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_invite:13
 msgid ""
-"Whether to include count information in the invite. This fills the :attr:`."
-"Invite.approximate_member_count` and :attr:`.Invite."
-"approximate_presence_count` fields."
+"Whether to include count information in the invite. This fills "
+"the :attr:`.Invite.approximate_member_count` "
+"and :attr:`.Invite.approximate_presence_count` fields."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.fetch_invite:17
 msgid ""
-"Whether to include the expiration date of the invite. This fills the :attr:`."
-"Invite.expires_at` field."
+"Whether to include the expiration date of the invite. This fills "
+"the :attr:`.Invite.expires_at` field."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2206,9 +2207,7 @@ msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.get_channel:11
-msgid ""
-"Optional[Union[:class:`.abc.GuildChannel`, :class:`.Thread`, :class:`.abc."
-"PrivateChannel`]]"
+msgid "Optional[Union[:class:`.abc.GuildChannel`, :class:`.Thread`, :class:`.abc.PrivateChannel`]]"
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2313,10 +2312,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.get_context:8
 msgid ""
-"The returned context is not guaranteed to be a valid invocation context, :"
-"attr:`.Context.valid` must be checked to make sure it is. If the context is "
-"not valid then it is not a valid candidate to be invoked under :meth:`~.Bot."
-"invoke`."
+"The returned context is not guaranteed to be a valid invocation "
+"context, :attr:`.Context.valid` must be checked to make sure it is. If the "
+"context is not valid then it is not a valid candidate to be invoked "
+"under :meth:`~.Bot.invoke`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2409,9 +2408,10 @@ msgstr ""
 #: discord.client.Client.get_partial_messageable:10
 msgid ""
 "The optional guild ID to create a partial messageable for.  This is not "
-"required to actually send messages, but it does allow the :meth:`~discord."
-"PartialMessageable.jump_url` and :attr:`~discord.PartialMessageable.guild` "
-"properties to function properly."
+"required to actually send messages, but it does allow "
+"the :meth:`~discord.PartialMessageable.jump_url` "
+"and :attr:`~discord.PartialMessageable.guild` properties to function "
+"properly."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2422,9 +2422,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.get_partial_messageable:12
 msgid ""
-"This is not required to actually send messages, but it does allow the :meth:"
-"`~discord.PartialMessageable.jump_url` and :attr:`~discord."
-"PartialMessageable.guild` properties to function properly."
+"This is not required to actually send messages, but it does allow "
+"the :meth:`~discord.PartialMessageable.jump_url` "
+"and :attr:`~discord.PartialMessageable.guild` properties to function "
+"properly."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2507,8 +2508,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.get_sticker:7
 msgid ""
-"To retrieve standard stickers, use :meth:`.fetch_sticker`. or :meth:`."
-"fetch_premium_sticker_packs`."
+"To retrieve standard stickers, use :meth:`.fetch_sticker`. "
+"or :meth:`.fetch_premium_sticker_packs`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2600,8 +2601,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.is_owner:9
 msgid ""
-"The function also checks if the application is team-owned if :attr:"
-"`owner_ids` is not set."
+"The function also checks if the application is team-owned "
+"if :attr:`owner_ids` is not set."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2728,8 +2729,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.login:3
 msgid ""
-"Logs in the client with the specified credentials and calls the :meth:"
-"`setup_hook`."
+"Logs in the client with the specified credentials and calls "
+"the :meth:`setup_hook`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2842,15 +2843,15 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.process_commands:11
 msgid ""
-"This is built using other low level tools, and is equivalent to a call to :"
-"meth:`~.Bot.get_context` followed by a call to :meth:`~.Bot.invoke`."
+"This is built using other low level tools, and is equivalent to a call "
+"to :meth:`~.Bot.get_context` followed by a call to :meth:`~.Bot.invoke`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.process_commands:14
 msgid ""
-"This also checks if the message's author is a bot and doesn't call :meth:`~."
-"Bot.get_context` or :meth:`~.Bot.invoke` if so."
+"This also checks if the message's author is a bot and doesn't "
+"call :meth:`~.Bot.get_context` or :meth:`~.Bot.invoke` if so."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2867,9 +2868,10 @@ msgstr ""
 #: discord.ext.commands.bot.BotBase.reload_extension:5
 msgid ""
 "This replaces the extension with the same extension, only refreshed. This is "
-"equivalent to a :meth:`unload_extension` followed by a :meth:"
-"`load_extension` except done in an atomic way. That is, if an operation "
-"fails mid-reload then the bot will roll-back to the prior working state."
+"equivalent to a :meth:`unload_extension` followed by "
+"a :meth:`load_extension` except done in an atomic way. That is, if an "
+"operation fails mid-reload then the bot will roll-back to the prior working "
+"state."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -2919,8 +2921,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.remove_check:11
 msgid ""
-"If the function was added with ``call_once=True`` in the :meth:`.Bot."
-"add_check` call or using :meth:`.check_once`."
+"If the function was added with ``call_once=True`` in "
+"the :meth:`.Bot.add_check` call or using :meth:`.check_once`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -3286,9 +3288,9 @@ msgstr ""
 #: discord.client.Client.wait_for:9
 msgid ""
 "The ``timeout`` parameter is passed onto :func:`asyncio.wait_for`. By "
-"default, it does not timeout. Note that this does propagate the :exc:"
-"`asyncio.TimeoutError` for you in case of timeout and is provided for ease "
-"of use."
+"default, it does not timeout. Note that this does propagate "
+"the :exc:`asyncio.TimeoutError` for you in case of timeout and is provided "
+"for ease of use."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -3373,8 +3375,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.client.Client.wait_for:65
 msgid ""
-"The number of seconds to wait before timing out and raising :exc:`asyncio."
-"TimeoutError`."
+"The number of seconds to wait before timing out and "
+"raising :exc:`asyncio.TimeoutError`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -3431,8 +3433,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.AutoShardedBot:1
 msgid ""
-"This is similar to :class:`.Bot` except that it is inherited from :class:"
-"`discord.AutoShardedClient` instead."
+"This is similar to :class:`.Bot` except that it is inherited "
+"from :class:`discord.AutoShardedClient` instead."
 msgstr ""
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
@@ -3566,9 +3568,9 @@ msgstr ""
 #: discord.ext.commands.core.command:4
 msgid ""
 "By default the ``help`` attribute is received automatically from the "
-"docstring of the function and is cleaned up with the use of ``inspect."
-"cleandoc``. If the docstring is ``bytes``, then it is decoded into :class:"
-"`str` using utf-8 encoding."
+"docstring of the function and is cleaned up with the use of "
+"``inspect.cleandoc``. If the docstring is ``bytes``, then it is decoded "
+"into :class:`str` using utf-8 encoding."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -3638,17 +3640,17 @@ msgstr ""
 #: discord.ext.commands.hybrid.hybrid_command:3
 msgid ""
 "A hybrid command is one that functions both as a regular :class:`.Command` "
-"and one that is also a :class:`app_commands.Command <discord.app_commands."
-"Command>`."
+"and one that is also a :class:`app_commands.Command "
+"<discord.app_commands.Command>`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
 #: discord.ext.commands.hybrid.hybrid_command:6
 msgid ""
 "The callback being attached to the command must be representable as an "
-"application command callback. Converters are silently converted into a :"
-"class:`~discord.app_commands.Transformer` with a :attr:`discord."
-"AppCommandOptionType.string` type."
+"application command callback. Converters are silently converted into "
+"a :class:`~discord.app_commands.Transformer` with "
+"a :attr:`discord.AppCommandOptionType.string` type."
 msgstr ""
 
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
@@ -4265,8 +4267,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.Group:4
 msgid ""
-"This class is a subclass of :class:`.Command` and thus all options valid in :"
-"class:`.Command` are valid in here as well."
+"This class is a subclass of :class:`.Command` and thus all options valid "
+"in :class:`.Command` are valid in here as well."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -4339,11 +4341,11 @@ msgstr ""
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
 #: discord.ext.commands.hybrid.HybridCommand:3
 msgid ""
-"This has the same parameters and attributes as a regular :class:`~discord."
-"ext.commands.Command`. However, it also doubles as an :class:`application "
-"command <discord.app_commands.Command>`. In order for this to work, the "
-"callbacks must have the same subset that is supported by application "
-"commands."
+"This has the same parameters and attributes as a "
+"regular :class:`~discord.ext.commands.Command`. However, it also doubles as "
+"an :class:`application command <discord.app_commands.Command>`. In order for "
+"this to work, the callbacks must have the same subset that is supported by "
+"application commands."
 msgstr ""
 
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
@@ -4368,8 +4370,8 @@ msgstr ""
 #: discord.ext.commands.hybrid.HybridGroup.autocomplete:11
 msgid ""
 "Similar to the :meth:`~discord.app_commands.Command.autocomplete` method, "
-"this takes :class:`~discord.Interaction` as a parameter rather than a :class:"
-"`Context`."
+"this takes :class:`~discord.Interaction` as a parameter rather than "
+"a :class:`Context`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
@@ -4399,11 +4401,11 @@ msgstr ""
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
 #: discord.ext.commands.hybrid.HybridGroup:3
 msgid ""
-"This has the same parameters and attributes as a regular :class:`~discord."
-"ext.commands.Group`. However, it also doubles as an :class:`application "
-"command group <discord.app_commands.Group>`. Note that application commands "
-"groups cannot have callbacks associated with them, so the callback is only "
-"called if it's not invoked as an application command."
+"This has the same parameters and attributes as a "
+"regular :class:`~discord.ext.commands.Group`. However, it also doubles as "
+"an :class:`application command group <discord.app_commands.Group>`. Note "
+"that application commands groups cannot have callbacks associated with them, "
+"so the callback is only called if it's not invoked as an application command."
 msgstr ""
 
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
@@ -4443,8 +4445,8 @@ msgstr ""
 #: discord.ext.commands.hybrid.HybridGroup.group:1
 msgid ""
 "A shortcut decorator that invokes :func:`~discord.ext.commands.hybrid_group` "
-"and adds it to the internal command list via :meth:`~.GroupMixin."
-"add_command`."
+"and adds it to the internal command list "
+"via :meth:`~.GroupMixin.add_command`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/hybrid.py:docstring of
@@ -4474,8 +4476,8 @@ msgstr ""
 #: discord.ext.commands.cog.Cog:3
 msgid ""
 "A cog is a collection of commands, listeners, and optional state to help "
-"group commands together. More information on them can be found on the :ref:"
-"`ext_commands_cogs` page."
+"group commands together. More information on them can be found on "
+"the :ref:`ext_commands_cogs` page."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
@@ -4493,8 +4495,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.Cog.get_commands:3
 msgid ""
-"This does *not* include :class:`discord.app_commands.Command` or :class:"
-"`discord.app_commands.Group` instances."
+"This does *not* include :class:`discord.app_commands.Command` "
+"or :class:`discord.app_commands.Group` instances."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
@@ -4517,16 +4519,14 @@ msgstr ""
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.Cog.get_app_commands:3
 msgid ""
-"A :class:`list` of :class:`discord.app_commands.Command`\\s and :class:"
-"`discord.app_commands.Group`\\s that are defined inside this cog, not "
-"including subcommands."
+"A :class:`list` of :class:`discord.app_commands.Command`\\s "
+"and :class:`discord.app_commands.Group`\\s that are defined inside this cog, "
+"not including subcommands."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.Cog.get_app_commands:5
-msgid ""
-"List[Union[:class:`discord.app_commands.Command`, :class:`discord."
-"app_commands.Group`]]"
+msgid "List[Union[:class:`discord.app_commands.Command`, :class:`discord.app_commands.Group`]]"
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
@@ -4562,8 +4562,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.Cog.walk_app_commands:3
 msgid ""
-"Union[:class:`discord.app_commands.Command`, :class:`discord.app_commands."
-"Group`] -- An app command or group from the cog."
+"Union[:class:`discord.app_commands.Command`, :class:`discord.app_commands.Group`] "
+"-- An app command or group from the cog."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
@@ -4799,8 +4799,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.GroupCog:1
 msgid ""
-"Represents a cog that also doubles as a parent :class:`discord.app_commands."
-"Group` for the application commands defined within it."
+"Represents a cog that also doubles as a "
+"parent :class:`discord.app_commands.Group` for the application commands "
+"defined within it."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
@@ -4813,9 +4814,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.GroupCog:7
 msgid ""
-"Decorators such as :func:`~discord.app_commands.guild_only`, :func:`~discord."
-"app_commands.guilds`, and :func:`~discord.app_commands.default_permissions` "
-"will apply to the group if used on top of the cog."
+"Decorators such "
+"as :func:`~discord.app_commands.guild_only`, :func:`~discord.app_commands.guilds`, "
+"and :func:`~discord.app_commands.default_permissions` will apply to the "
+"group if used on top of the cog."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
@@ -4945,23 +4947,24 @@ msgstr ""
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.CogMeta:78
 msgid ""
-"The group description of a cog. This is only applicable for :class:"
-"`GroupCog` instances. By default, it's the same value as :attr:`description`."
+"The group description of a cog. This is only applicable "
+"for :class:`GroupCog` instances. By default, it's the same value "
+"as :attr:`description`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.CogMeta:87
 msgid ""
-"Whether the application command group is NSFW. This is only applicable for :"
-"class:`GroupCog` instances. By default, it's ``False``."
+"Whether the application command group is NSFW. This is only applicable "
+"for :class:`GroupCog` instances. By default, it's ``False``."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
 #: discord.ext.commands.cog.CogMeta:96
 msgid ""
 "If this is set to ``True``, then all translatable strings will implicitly be "
-"wrapped into :class:`~discord.app_commands.locale_str` rather than :class:"
-"`str`. Defaults to ``True``."
+"wrapped into :class:`~discord.app_commands.locale_str` rather "
+"than :class:`str`. Defaults to ``True``."
 msgstr ""
 
 #: ../../../../discord/ext/commands/cog.py:docstring of
@@ -5068,10 +5071,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.HelpCommand.invoked_with:4
 msgid ""
-"If the help command was used regularly then this returns the :attr:`Context."
-"invoked_with` attribute. Otherwise, if it the help command was called using :"
-"meth:`Context.send_help` then it returns the internal command name of the "
-"help command."
+"If the help command was used regularly then this returns "
+"the :attr:`Context.invoked_with` attribute. Otherwise, if it the help "
+"command was called using :meth:`Context.send_help` then it returns the "
+"internal command name of the help command."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5258,9 +5261,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.HelpCommand.filter_commands:16
 msgid ""
-"An optional key function to pass to :func:`py:sorted` that takes a :class:"
-"`Command` as its sole parameter. If ``sort`` is passed as ``True`` then this "
-"will default as the command name."
+"An optional key function to pass to :func:`py:sorted` that takes "
+"a :class:`Command` as its sole parameter. If ``sort`` is passed as ``True`` "
+"then this will default as the command name."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5347,8 +5350,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.HelpCommand.send_error_message:8
 msgid ""
-"By default, this sends the error message to the destination specified by :"
-"meth:`get_destination`."
+"By default, this sends the error message to the destination specified "
+"by :meth:`get_destination`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5375,8 +5378,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.HelpCommand.on_help_command_error:3
 msgid ""
-"The help command's error handler, as specified by :ref:"
-"`ext_commands_error_handler`."
+"The help command's error handler, as specified "
+"by :ref:`ext_commands_error_handler`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5470,9 +5473,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.HelpCommand.send_group_help:17
 msgid ""
-"To get the commands that belong to this group without aliases see :attr:"
-"`Group.commands`. The commands returned not filtered. To do the filtering "
-"you will have to call :meth:`filter_commands` yourself."
+"To get the commands that belong to this group without aliases "
+"see :attr:`Group.commands`. The commands returned not filtered. To do the "
+"filtering you will have to call :meth:`filter_commands` yourself."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5704,8 +5707,8 @@ msgstr ""
 #: discord.ext.commands.help.DefaultHelpCommand:56
 msgid ""
 "Whether to show the parameter descriptions. Defaults to ``True``. Setting "
-"this to ``False`` will revert to showing the :attr:`~.commands.Command."
-"signature` instead."
+"this to ``False`` will revert to showing "
+"the :attr:`~.commands.Command.signature` instead."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5718,9 +5721,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.DefaultHelpCommand:72
 msgid ""
-"The default argument description string used when the argument's :attr:`~."
-"commands.Parameter.description` is ``None``. Useful for i18n. Defaults to "
-"``\"No description given.\"``"
+"The default argument description string used when the "
+"argument's :attr:`~.commands.Parameter.description` is ``None``. Useful for "
+"i18n. Defaults to ``\"No description given.\"``"
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5763,9 +5766,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.DefaultHelpCommand.get_command_signature:3
 msgid ""
-"Calls :meth:`~.HelpCommand.get_command_signature` if :attr:"
-"`show_parameter_descriptions` is ``False`` else returns a modified signature "
-"where the command parameters are not shown."
+"Calls :meth:`~.HelpCommand.get_command_signature` "
+"if :attr:`show_parameter_descriptions` is ``False`` else returns a modified "
+"signature where the command parameters are not shown."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5782,8 +5785,9 @@ msgstr ""
 #: discord.ext.commands.help.DefaultHelpCommand.add_indented_commands:5
 msgid ""
 "The default implementation is the command name indented by :attr:`indent` "
-"spaces, padded to ``max_size`` followed by the command's :attr:`Command."
-"short_doc` and then shortened to fit into the :attr:`width`."
+"spaces, padded to ``max_size`` followed by the "
+"command's :attr:`Command.short_doc` and then shortened to fit into "
+"the :attr:`width`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5801,8 +5805,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.DefaultHelpCommand.add_indented_commands:18
 msgid ""
-"The max size to use for the gap between indents. If unspecified, calls :meth:"
-"`~HelpCommand.get_max_size` on the commands parameter."
+"The max size to use for the gap between indents. If unspecified, "
+"calls :meth:`~HelpCommand.get_max_size` on the commands parameter."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5815,11 +5819,12 @@ msgstr ""
 #: discord.ext.commands.help.DefaultHelpCommand.add_command_arguments:3
 msgid ""
 "The default implementation is the argument :attr:`~.commands.Parameter.name` "
-"indented by :attr:`indent` spaces, padded to ``max_size`` using :meth:"
-"`~HelpCommand.get_max_size` followed by the argument's :attr:`~.commands."
-"Parameter.description` or :attr:`.default_argument_description` and then "
-"shortened to fit into the :attr:`width` and then :attr:`~.commands.Parameter."
-"displayed_default` between () if one is present after that."
+"indented by :attr:`indent` spaces, padded to ``max_size`` "
+"using :meth:`~HelpCommand.get_max_size` followed by the "
+"argument's :attr:`~.commands.Parameter.description` "
+"or :attr:`.default_argument_description` and then shortened to fit into "
+"the :attr:`width` and then :attr:`~.commands.Parameter.displayed_default` "
+"between () if one is present after that."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5844,8 +5849,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.DefaultHelpCommand.add_command_formatting:7
 msgid ""
-":meth:`.add_command_arguments` is now called if :attr:`."
-"show_parameter_descriptions` is ``True``."
+":meth:`.add_command_arguments` is now called "
+"if :attr:`.show_parameter_descriptions` is ``True``."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -5956,9 +5961,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/help.py:docstring of
 #: discord.ext.commands.help.MinimalHelpCommand.add_subcommand_formatting:5
 msgid ""
-"The default implementation is the prefix and the :attr:`Command."
-"qualified_name` optionally followed by an En dash and the command's :attr:"
-"`Command.short_doc`."
+"The default implementation is the prefix and "
+"the :attr:`Command.qualified_name` optionally followed by an En dash and the "
+"command's :attr:`Command.short_doc`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/help.py:docstring of
@@ -6135,10 +6140,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.check:4
 msgid ""
-"These checks should be predicates that take in a single parameter taking a :"
-"class:`.Context`. If the check returns a ``False``\\-like value then during "
-"invocation a :exc:`.CheckFailure` exception is raised and sent to the :func:"
-"`.on_command_error` event."
+"These checks should be predicates that take in a single parameter taking "
+"a :class:`.Context`. If the check returns a ``False``\\-like value then "
+"during invocation a :exc:`.CheckFailure` exception is raised and sent to "
+"the :func:`.on_command_error` event."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6146,8 +6151,8 @@ msgstr ""
 msgid ""
 "If an exception should be thrown in the predicate then it should be a "
 "subclass of :exc:`.CommandError`. Any exception not subclassed from it will "
-"be propagated while those subclassed will be sent to :func:`."
-"on_command_error`."
+"be propagated while those subclassed will be sent "
+"to :func:`.on_command_error`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6271,8 +6276,8 @@ msgstr ""
 msgid ""
 "def is_guild_owner():\n"
 "    def predicate(ctx):\n"
-"        return ctx.guild is not None and ctx.guild.owner_id == ctx.author."
-"id\n"
+"        return ctx.guild is not None and ctx.guild.owner_id == "
+"ctx.author.id\n"
 "    return commands.check(predicate)\n"
 "\n"
 "@bot.command()\n"
@@ -6319,8 +6324,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.has_role:18
 msgid ""
-"Raise :exc:`.MissingRole` or :exc:`.NoPrivateMessage` instead of generic :"
-"exc:`.CheckFailure`"
+"Raise :exc:`.MissingRole` or :exc:`.NoPrivateMessage` instead of "
+"generic :exc:`.CheckFailure`"
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6351,8 +6356,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.has_permissions:7
 msgid ""
-"The permissions passed in must be exactly like the properties shown under :"
-"class:`.discord.Permissions`."
+"The permissions passed in must be exactly like the properties shown "
+"under :class:`.discord.Permissions`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6386,8 +6391,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.has_guild_permissions:4
 msgid ""
-"If this check is called in a DM context, it will raise an exception, :exc:`."
-"NoPrivateMessage`."
+"If this check is called in a DM context, it will raise an "
+"exception, :exc:`.NoPrivateMessage`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6415,8 +6420,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.has_any_role:13
 msgid ""
-"Raise :exc:`.MissingAnyRole` or :exc:`.NoPrivateMessage` instead of generic :"
-"exc:`.CheckFailure`"
+"Raise :exc:`.MissingAnyRole` or :exc:`.NoPrivateMessage` instead of "
+"generic :exc:`.CheckFailure`"
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6451,8 +6456,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.bot_has_role:10
 msgid ""
-"Raise :exc:`.BotMissingRole` or :exc:`.NoPrivateMessage` instead of generic :"
-"exc:`.CheckFailure`"
+"Raise :exc:`.BotMissingRole` or :exc:`.NoPrivateMessage` instead of "
+"generic :exc:`.CheckFailure`"
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6517,8 +6522,8 @@ msgstr ""
 #: discord.ext.commands.core.cooldown:9
 #: discord.ext.commands.core.dynamic_cooldown:14
 msgid ""
-"If a cooldown is triggered, then :exc:`.CommandOnCooldown` is triggered in :"
-"func:`.on_command_error` and the local error handler."
+"If a cooldown is triggered, then :exc:`.CommandOnCooldown` is triggered "
+"in :func:`.on_command_error` and the local error handler."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6565,9 +6570,9 @@ msgstr ""
 #: discord.ext.commands.core.dynamic_cooldown:3
 msgid ""
 "This differs from :func:`.cooldown` in that it takes a function that accepts "
-"a single parameter of type :class:`.Context` and must return a :class:"
-"`~discord.app_commands.Cooldown` or ``None``. If ``None`` is returned then "
-"that cooldown is effectively bypassed."
+"a single parameter of type :class:`.Context` and must return "
+"a :class:`~discord.app_commands.Cooldown` or ``None``. If ``None`` is "
+"returned then that cooldown is effectively bypassed."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6645,8 +6650,8 @@ msgid ""
 "    @commands.before_invoke(record_usage)\n"
 "    @commands.command()\n"
 "    async def when(self, ctx): # Output: <User> used when at <Time>\n"
-"        await ctx.send(f'and i have existed since {ctx.bot.user."
-"created_at}')\n"
+"        await ctx.send(f'and i have existed since "
+"{ctx.bot.user.created_at}')\n"
 "\n"
 "    @commands.command()\n"
 "    async def where(self, ctx): # Output: <Nothing>\n"
@@ -6682,9 +6687,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/core.py:docstring of
 #: discord.ext.commands.core.guild_only:8
 msgid ""
-"If used on hybrid commands, this will be equivalent to the :func:`discord."
-"app_commands.guild_only` decorator. In an unsupported context, such as a "
-"subcommand, this will still fallback to applying the check."
+"If used on hybrid commands, this will be equivalent to "
+"the :func:`discord.app_commands.guild_only` decorator. In an unsupported "
+"context, such as a subcommand, this will still fallback to applying the "
+"check."
 msgstr ""
 
 #: ../../../../discord/ext/commands/core.py:docstring of
@@ -6815,8 +6821,8 @@ msgstr ""
 #: discord.ext.commands.context.Context:37
 msgid ""
 "A dictionary of transformed arguments that were passed into the command. "
-"Similar to :attr:`args`\\, if this is accessed in the :func:`."
-"on_command_error` event then this dict could be incomplete."
+"Similar to :attr:`args`\\, if this is accessed in "
+"the :func:`.on_command_error` event then this dict could be incomplete."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -6976,10 +6982,10 @@ msgstr ""
 #: ../../../../discord/ext/commands/context.py:docstring of
 #: discord.ext.commands.context.Context.from_interaction:7
 msgid ""
-"On slash command based interactions this creates a synthetic :class:"
-"`~discord.Message` that points to an ephemeral message that the command "
-"invoker has executed. This means that :attr:`Context.author` returns the "
-"member that invoked the command."
+"On slash command based interactions this creates a "
+"synthetic :class:`~discord.Message` that points to an ephemeral message that "
+"the command invoker has executed. This means that :attr:`Context.author` "
+"returns the member that invoked the command."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -6988,8 +6994,8 @@ msgid ""
 "In a message context menu based interaction, the :attr:`Context.message` "
 "attribute is the message that the command is being executed on. This means "
 "that :attr:`Context.author` returns the author of the message being "
-"targetted. To get the member that invoked the command then :attr:`discord."
-"Interaction.user` should be used instead."
+"targetted. To get the member that invoked the command "
+"then :attr:`discord.Interaction.user` should be used instead."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -7005,8 +7011,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/context.py:docstring of
 #: discord.ext.commands.context.Context.from_interaction:22
 msgid ""
-"The interaction client is not derived from :class:`Bot` or :class:"
-"`AutoShardedBot`."
+"The interaction client is not derived from :class:`Bot` "
+"or :class:`AutoShardedBot`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -7017,8 +7023,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/context.py:docstring of
 #: discord.ext.commands.context.Context.invoke:5
 msgid ""
-"This is useful if you want to just call the callback that a :class:`."
-"Command` holds internally."
+"This is useful if you want to just call the callback that "
+"a :class:`.Command` holds internally."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -7128,8 +7134,8 @@ msgstr ""
 
 #: ../../../docstring of discord.ext.commands.Context.channel:1
 msgid ""
-"Returns the channel associated with this context's command. Shorthand for :"
-"attr:`.Message.channel`."
+"Returns the channel associated with this context's command. Shorthand "
+"for :attr:`.Message.channel`."
 msgstr ""
 
 #: ../../../docstring of discord.ext.commands.Context.channel:4
@@ -7151,8 +7157,8 @@ msgstr ""
 #: ../../../docstring of discord.ext.commands.Context.permissions:1
 msgid ""
 "Returns the resolved permissions for the invoking user in this channel. "
-"Shorthand for :meth:`.abc.GuildChannel.permissions_for` or :attr:`."
-"Interaction.permissions`."
+"Shorthand for :meth:`.abc.GuildChannel.permissions_for` "
+"or :attr:`.Interaction.permissions`."
 msgstr ""
 
 #: ../../../docstring of discord.ext.commands.Context.permissions:6
@@ -7162,16 +7168,16 @@ msgstr ""
 
 #: ../../../docstring of discord.ext.commands.Context.bot_permissions:1
 msgid ""
-"Returns the resolved permissions for the bot in this channel. Shorthand for :"
-"meth:`.abc.GuildChannel.permissions_for` or :attr:`.Interaction."
-"app_permissions`."
+"Returns the resolved permissions for the bot in this channel. Shorthand "
+"for :meth:`.abc.GuildChannel.permissions_for` "
+"or :attr:`.Interaction.app_permissions`."
 msgstr ""
 
 #: ../../../docstring of discord.ext.commands.Context.bot_permissions:4
 msgid ""
 "For interaction-based commands, this will reflect the effective permissions "
-"for :class:`Context` calls, which may differ from calls through other :class:"
-"`.abc.Messageable` endpoints, like :attr:`channel`."
+"for :class:`Context` calls, which may differ from calls through "
+"other :class:`.abc.Messageable` endpoints, like :attr:`channel`."
 msgstr ""
 
 #: ../../../docstring of discord.ext.commands.Context.bot_permissions:8
@@ -7363,8 +7369,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/context.py:docstring of
 #: discord.abc.Messageable.pins:3
 msgid ""
-"You must have :attr:`~discord.Permissions.view_channel` and :attr:`~discord."
-"Permissions.read_message_history` in order to use this."
+"You must have :attr:`~discord.Permissions.view_channel` "
+"and :attr:`~discord.Permissions.read_message_history` in order to use this."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -7441,8 +7447,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/context.py:docstring of
 #: discord.abc.Messageable.pins:56
 msgid ""
-":class:`~discord.Message` -- The pinned message with :attr:`.Message."
-"pinned_at` set."
+":class:`~discord.Message` -- The pinned message "
+"with :attr:`.Message.pinned_at` set."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -7604,9 +7610,10 @@ msgid ""
 "Controls the mentions being processed in this message. If this is passed, "
 "then the object is merged with :attr:`~discord.Client.allowed_mentions`. The "
 "merging behaviour only overrides attributes that have been explicitly passed "
-"to the object, otherwise it uses the attributes set in :attr:`~discord."
-"Client.allowed_mentions`. If no object is passed at all then the defaults "
-"given by :attr:`~discord.Client.allowed_mentions` are used instead."
+"to the object, otherwise it uses the attributes set "
+"in :attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
+"then the defaults given by :attr:`~discord.Client.allowed_mentions` are used "
+"instead."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -7615,9 +7622,9 @@ msgid ""
 "A reference to the :class:`~discord.Message` to which you are replying, this "
 "can be created using :meth:`~discord.Message.to_reference` or passed "
 "directly as a :class:`~discord.Message`. You can control whether this "
-"mentions the author of the referenced message using the :attr:`~discord."
-"AllowedMentions.replied_user` attribute of ``allowed_mentions`` or by "
-"setting ``mention_author``."
+"mentions the author of the referenced message using "
+"the :attr:`~discord.AllowedMentions.replied_user` attribute of "
+"``allowed_mentions`` or by setting ``mention_author``."
 msgstr ""
 
 #: ../../../../discord/ext/commands/context.py:docstring of
@@ -7694,9 +7701,9 @@ msgstr ""
 #: discord.ext.commands.context.Context.send:94
 msgid ""
 "You specified both ``file`` and ``files``,     or you specified both "
-"``embed`` and ``embeds``,     or the ``reference`` object is not a :class:"
-"`~discord.Message`,     :class:`~discord.MessageReference` or :class:"
-"`~discord.PartialMessage`."
+"``embed`` and ``embeds``,     or the ``reference`` object is not "
+"a :class:`~discord.Message`,     :class:`~discord.MessageReference` "
+"or :class:`~discord.PartialMessage`."
 msgstr ""
 
 #: ../../../ext/commands/api.rst:422
@@ -7720,9 +7727,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/converter.py:docstring of
 #: discord.ext.commands.converter.Converter:7
 msgid ""
-"Classes that derive from this should override the :meth:`~.Converter."
-"convert` method to do its conversion logic. This method must be a :ref:"
-"`coroutine <coroutine>`."
+"Classes that derive from this should override "
+"the :meth:`~.Converter.convert` method to do its conversion logic. This "
+"method must be a :ref:`coroutine <coroutine>`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/converter.py:docstring of
@@ -7741,9 +7748,9 @@ msgstr ""
 #: discord.ext.commands.converter.UserConverter.convert:5
 #: discord.ext.commands.converter.MessageConverter.convert:5
 msgid ""
-"If an error is found while converting, it is recommended to raise a :exc:`."
-"CommandError` derived exception as it will properly propagate to the error "
-"handlers."
+"If an error is found while converting, it is recommended to raise "
+"a :exc:`.CommandError` derived exception as it will properly propagate to "
+"the error handlers."
 msgstr ""
 
 #: ../../../../discord/ext/commands/converter.py:docstring of
@@ -7952,8 +7959,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/converter.py:docstring of
 #: discord.ext.commands.converter.MessageConverter:11
 msgid ""
-"Raise :exc:`.ChannelNotFound`, :exc:`.MessageNotFound` or :exc:`."
-"ChannelNotReadable` instead of generic :exc:`.BadArgument`"
+"Raise :exc:`.ChannelNotFound`, :exc:`.MessageNotFound` "
+"or :exc:`.ChannelNotReadable` instead of generic :exc:`.BadArgument`"
 msgstr ""
 
 #: ../../../../discord/ext/commands/converter.py:docstring of
@@ -8205,8 +8212,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/converter.py:docstring of
 #: discord.ext.commands.converter.PartialEmojiConverter:5
 msgid ""
-"Raise :exc:`.PartialEmojiConversionFailure` instead of generic :exc:`."
-"BadArgument`"
+"Raise :exc:`.PartialEmojiConversionFailure` instead of "
+"generic :exc:`.BadArgument`"
 msgstr ""
 
 #: ../../../../discord/ext/commands/converter.py:docstring of
@@ -8396,16 +8403,17 @@ msgstr ""
 #: ../../../../discord/ext/commands/converter.py:docstring of
 #: discord.ext.commands.converter.Range:15
 msgid ""
-"Inside a :class:`HybridCommand` this functions equivalently to :class:"
-"`discord.app_commands.Range`."
+"Inside a :class:`HybridCommand` this functions equivalently "
+"to :class:`discord.app_commands.Range`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/converter.py:docstring of
 #: discord.ext.commands.converter.Range:17
 msgid ""
 "If the value cannot be converted to the provided type or is outside the "
-"given range, :class:`~.ext.commands.BadArgument` or :class:`~.ext.commands."
-"RangeError` is raised to the appropriate error handlers respectively."
+"given range, :class:`~.ext.commands.BadArgument` "
+"or :class:`~.ext.commands.RangeError` is raised to the appropriate error "
+"handlers respectively."
 msgstr ""
 
 #: ../../../../discord/ext/commands/converter.py:docstring of
@@ -8469,9 +8477,9 @@ msgstr ""
 #: ../../../../discord/ext/commands/flags.py:docstring of
 #: discord.ext.commands.flags.FlagConverter:3
 msgid ""
-"The flags are defined using :pep:`526` type annotations similar to the :mod:"
-"`dataclasses` Python module. For more information on how this converter "
-"works, check the appropriate :ref:`documentation "
+"The flags are defined using :pep:`526` type annotations similar to "
+"the :mod:`dataclasses` Python module. For more information on how this "
+"converter works, check the appropriate :ref:`documentation "
 "<ext_commands_flag_converter>`."
 msgstr ""
 
@@ -8618,8 +8626,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/flags.py:docstring of
 #: discord.ext.commands.flags.flag:1
 msgid ""
-"Override default functionality and parameters of the underlying :class:"
-"`FlagConverter` class attributes."
+"Override default functionality and parameters of the "
+"underlying :class:`FlagConverter` class attributes."
 msgstr ""
 
 #: ../../../../discord/ext/commands/flags.py:docstring of
@@ -8826,8 +8834,8 @@ msgstr ""
 #: discord.ext.commands.errors.CommandError:5
 msgid ""
 "This exception and exceptions inherited from it are handled in a special way "
-"as they are caught and passed into a special event from :class:`.Bot`\\, :"
-"func:`.on_command_error`."
+"as they are caught and passed into a special event "
+"from :class:`.Bot`\\, :func:`.on_command_error`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/errors.py:docstring of
@@ -9134,8 +9142,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/errors.py:docstring of
 #: discord.ext.commands.errors.TooManyArguments:1
 msgid ""
-"Exception raised when the command was passed too many arguments and its :"
-"attr:`.Command.ignore_extra` attribute was not set to ``True``."
+"Exception raised when the command was passed too many arguments and "
+"its :attr:`.Command.ignore_extra` attribute was not set to ``True``."
 msgstr ""
 
 #: ../../../../discord/ext/commands/errors.py:docstring of
@@ -9152,8 +9160,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/errors.py:docstring of
 #: discord.ext.commands.errors.CommandOnCooldown:7
 msgid ""
-"A class with attributes ``rate`` and ``per`` similar to the :func:`."
-"cooldown` decorator."
+"A class with attributes ``rate`` and ``per`` similar to "
+"the :func:`.cooldown` decorator."
 msgstr ""
 
 #: ../../../../discord/ext/commands/errors.py:docstring of
@@ -9451,8 +9459,8 @@ msgstr ""
 #: discord.ext.commands.errors.MissingRole:9
 #: discord.ext.commands.errors.BotMissingRole:9
 msgid ""
-"The required role that is missing. This is the parameter passed to :func:`~."
-"commands.has_role`."
+"The required role that is missing. This is the parameter passed "
+"to :func:`~.commands.has_role`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/errors.py:docstring of
@@ -9476,8 +9484,8 @@ msgstr ""
 #: ../../../../discord/ext/commands/errors.py:docstring of
 #: discord.ext.commands.errors.MissingAnyRole:10
 msgid ""
-"The roles that the invoker is missing. These are the parameters passed to :"
-"func:`~.commands.has_any_role`."
+"The roles that the invoker is missing. These are the parameters passed "
+"to :func:`~.commands.has_any_role`."
 msgstr ""
 
 #: ../../../../discord/ext/commands/errors.py:docstring of
@@ -9688,8 +9696,8 @@ msgstr ""
 msgid ""
 "An exception raised when a :class:`~discord.ext.commands.HybridCommand` "
 "raises an :exc:`~discord.app_commands.AppCommandError` derived exception "
-"that could not be sufficiently converted to an equivalent :exc:"
-"`CommandError` exception."
+"that could not be sufficiently converted to an "
+"equivalent :exc:`CommandError` exception."
 msgstr ""
 
 #: ../../../../discord/ext/commands/errors.py:docstring of

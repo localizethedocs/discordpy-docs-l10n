@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -75,8 +76,8 @@ msgstr ""
 
 #: ../../../_templates/layout.html:152
 msgid ""
-"Created using <a href=\"https://www.sphinx-doc.org/\">Sphinx</a> "
-"%(sphinx_version)s."
+"Created using <a href=\"https://www.sphinx-doc.org/\">Sphinx</a> %"
+"(sphinx_version)s."
 msgstr ""
 
 #: ../../../_templates/layout.html:173
@@ -1358,8 +1359,8 @@ msgstr ""
 
 #: sphinx/cmd/build.py:146
 msgid ""
-"path for the cached environment and doctree files (default: OUTPUTDIR/."
-"doctrees)"
+"path for the cached environment and doctree files (default: "
+"OUTPUTDIR/.doctrees)"
 msgstr ""
 
 #: sphinx/cmd/build.py:149
@@ -2564,8 +2565,8 @@ msgstr ""
 
 #: sphinx/ext/apidoc.py:339
 msgid ""
-"follow symbolic links. Powerful when combined with collective.recipe."
-"omelette."
+"follow symbolic links. Powerful when combined with "
+"collective.recipe.omelette."
 msgstr ""
 
 #: sphinx/ext/apidoc.py:342

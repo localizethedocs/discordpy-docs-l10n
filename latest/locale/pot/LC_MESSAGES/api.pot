@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -188,10 +189,10 @@ msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client:79
 msgid ""
-"Right now this involves :func:`on_socket_raw_receive` and :func:"
-"`on_socket_raw_send`. If this is ``False`` then those events will not be "
-"dispatched (due to performance considerations). To enable these events, this "
-"must be set to ``True``. Defaults to ``False``."
+"Right now this involves :func:`on_socket_raw_receive` "
+"and :func:`on_socket_raw_send`. If this is ``False`` then those events will "
+"not be dispatched (due to performance considerations). To enable these "
+"events, this must be set to ``True``. Defaults to ``False``."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client:85
@@ -217,8 +218,8 @@ msgstr ""
 msgid ""
 "The trace configuration to use for tracking HTTP requests the library does "
 "using ``aiohttp``. This allows you to check requests the library is using. "
-"For more information, check the `aiohttp documentation <https://docs.aiohttp."
-"org/en/stable/client_advanced.html#client-tracing>`_."
+"For more information, check the `aiohttp documentation <https://"
+"docs.aiohttp.org/en/stable/client_advanced.html#client-tracing>`_."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client:100
@@ -348,8 +349,8 @@ msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.Client.emojis:5
 msgid ""
-"This does not include the emojis that are owned by the application. Use :"
-"meth:`.fetch_application_emoji` to get those."
+"This does not include the emojis that are owned by the application. "
+"Use :meth:`.fetch_application_emoji` to get those."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.Client.emojis:8
@@ -411,8 +412,9 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of discord.Client.application_id:3
 msgid ""
 "If this is not passed via ``__init__`` then this is retrieved through the "
-"gateway when an event contains the data or after a call to :meth:`~discord."
-"Client.login`. Usually after :func:`~discord.on_connect` is called."
+"gateway when an event contains the data or after a call "
+"to :meth:`~discord.Client.login`. Usually after :func:`~discord.on_connect` "
+"is called."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.Client.application_id:10
@@ -539,8 +541,8 @@ msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client.login:3
 msgid ""
-"Logs in the client with the specified credentials and calls the :meth:"
-"`setup_hook`."
+"Logs in the client with the specified credentials and calls "
+"the :meth:`setup_hook`."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client.login:7
@@ -764,9 +766,7 @@ msgstr ""
 
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.get_channel:11
-msgid ""
-"Optional[Union[:class:`.abc.GuildChannel`, :class:`.Thread`, :class:`.abc."
-"PrivateChannel`]]"
+msgid "Optional[Union[:class:`.abc.GuildChannel`, :class:`.Thread`, :class:`.abc.PrivateChannel`]]"
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -790,9 +790,10 @@ msgstr ""
 #: discord.client.Client.get_partial_messageable:10
 msgid ""
 "The optional guild ID to create a partial messageable for.  This is not "
-"required to actually send messages, but it does allow the :meth:`~discord."
-"PartialMessageable.jump_url` and :attr:`~discord.PartialMessageable.guild` "
-"properties to function properly."
+"required to actually send messages, but it does allow "
+"the :meth:`~discord.PartialMessageable.jump_url` "
+"and :attr:`~discord.PartialMessageable.guild` properties to function "
+"properly."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -803,9 +804,10 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.get_partial_messageable:12
 msgid ""
-"This is not required to actually send messages, but it does allow the :meth:"
-"`~discord.PartialMessageable.jump_url` and :attr:`~discord."
-"PartialMessageable.guild` properties to function properly."
+"This is not required to actually send messages, but it does allow "
+"the :meth:`~discord.PartialMessageable.jump_url` "
+"and :attr:`~discord.PartialMessageable.guild` properties to function "
+"properly."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -889,8 +891,8 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.get_sticker:7
 msgid ""
-"To retrieve standard stickers, use :meth:`.fetch_sticker`. or :meth:`."
-"fetch_premium_sticker_packs`."
+"To retrieve standard stickers, use :meth:`.fetch_sticker`. "
+"or :meth:`.fetch_premium_sticker_packs`."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1005,9 +1007,9 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of discord.client.Client.wait_for:9
 msgid ""
 "The ``timeout`` parameter is passed onto :func:`asyncio.wait_for`. By "
-"default, it does not timeout. Note that this does propagate the :exc:"
-"`asyncio.TimeoutError` for you in case of timeout and is provided for ease "
-"of use."
+"default, it does not timeout. Note that this does propagate "
+"the :exc:`asyncio.TimeoutError` for you in case of timeout and is provided "
+"for ease of use."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client.wait_for:14
@@ -1090,8 +1092,8 @@ msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client.wait_for:65
 msgid ""
-"The number of seconds to wait before timing out and raising :exc:`asyncio."
-"TimeoutError`."
+"The number of seconds to wait before timing out and "
+"raising :exc:`asyncio.TimeoutError`."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of discord.client.Client.wait_for:69
@@ -1170,10 +1172,9 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_guilds:5
 msgid ""
-"Using this, you will only receive :attr:`.Guild.owner`, :attr:`.Guild."
-"icon`, :attr:`.Guild.id`, :attr:`.Guild.name`, :attr:`.Guild."
-"approximate_member_count`, and :attr:`.Guild.approximate_presence_count` "
-"per :class:`.Guild`."
+"Using this, you will only "
+"receive :attr:`.Guild.owner`, :attr:`.Guild.icon`, :attr:`.Guild.id`, :attr:`.Guild.name`, :attr:`.Guild.approximate_member_count`, "
+"and :attr:`.Guild.approximate_presence_count` per :class:`.Guild`."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1250,10 +1251,10 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_guilds:44
 msgid ""
-"Whether to include count information in the guilds. This fills the :attr:`."
-"Guild.approximate_member_count` and :attr:`.Guild."
-"approximate_presence_count` attributes without needing any privileged "
-"intents. Defaults to ``True``."
+"Whether to include count information in the guilds. This fills "
+"the :attr:`.Guild.approximate_member_count` "
+"and :attr:`.Guild.approximate_presence_count` attributes without needing any "
+"privileged intents. Defaults to ``True``."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1304,9 +1305,9 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_guild:7
 msgid ""
-"Using this, you will **not** receive :attr:`.Guild.channels`, :attr:`.Guild."
-"members`, :attr:`.Member.activity` and :attr:`.Member.voice` per :class:`."
-"Member`."
+"Using this, you will **not** "
+"receive :attr:`.Guild.channels`, :attr:`.Guild.members`, :attr:`.Member.activity` "
+"and :attr:`.Member.voice` per :class:`.Member`."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1329,10 +1330,10 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_guild:21
 msgid ""
-"Whether to include count information in the guild. This fills the :attr:`."
-"Guild.approximate_member_count` and :attr:`.Guild."
-"approximate_presence_count` attributes without needing any privileged "
-"intents. Defaults to ``True``."
+"Whether to include count information in the guild. This fills "
+"the :attr:`.Guild.approximate_member_count` "
+"and :attr:`.Guild.approximate_presence_count` attributes without needing any "
+"privileged intents. Defaults to ``True``."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1429,8 +1430,8 @@ msgstr ""
 #: ../../../../discord/template.py:docstring
 #: discord.template.Template.create_guild:19
 msgid ""
-"The :term:`py:bytes-like object` representing the icon. See :meth:`."
-"ClientUser.edit` for more details on what is expected."
+"The :term:`py:bytes-like object` representing the icon. "
+"See :meth:`.ClientUser.edit` for more details on what is expected."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1502,8 +1503,9 @@ msgstr ""
 #: discord.client.Client.fetch_invite:7
 msgid ""
 "If the invite is for a guild you have not joined, the guild and channel "
-"attributes of the returned :class:`.Invite` will be :class:`."
-"PartialInviteGuild` and :class:`.PartialInviteChannel` respectively."
+"attributes of the returned :class:`.Invite` will "
+"be :class:`.PartialInviteGuild` and :class:`.PartialInviteChannel` "
+"respectively."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1514,16 +1516,16 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_invite:13
 msgid ""
-"Whether to include count information in the invite. This fills the :attr:`."
-"Invite.approximate_member_count` and :attr:`.Invite."
-"approximate_presence_count` fields."
+"Whether to include count information in the invite. This fills "
+"the :attr:`.Invite.approximate_member_count` "
+"and :attr:`.Invite.approximate_presence_count` fields."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_invite:17
 msgid ""
-"Whether to include the expiration date of the invite. This fills the :attr:`."
-"Invite.expires_at` field."
+"Whether to include the expiration date of the invite. This fills "
+"the :attr:`.Invite.expires_at` field."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1726,8 +1728,8 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_channel:3
 msgid ""
-"Retrieves a :class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, or :"
-"class:`.Thread` with the specified ID."
+"Retrieves a :class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, "
+"or :class:`.Thread` with the specified ID."
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1778,9 +1780,7 @@ msgstr ""
 
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.fetch_channel:21
-msgid ""
-"Union[:class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, :class:`."
-"Thread`]"
+msgid "Union[:class:`.abc.GuildChannel`, :class:`.abc.PrivateChannel`, :class:`.Thread`]"
 msgstr ""
 
 #: ../../../../discord/client.py:docstring of
@@ -1920,8 +1920,8 @@ msgstr ""
 #: ../../../../discord/client.py:docstring of
 #: discord.client.Client.entitlements:14
 msgid ""
-"entitlements = [entitlement async for entitlement in client."
-"entitlements(limit=100)]\n"
+"entitlements = [entitlement async for entitlement in "
+"client.entitlements(limit=100)]\n"
 "# entitlements is now a list of Entitlement..."
 msgstr ""
 
@@ -2291,10 +2291,10 @@ msgstr ""
 
 #: ../../../../discord/shard.py:docstring of discord.shard.AutoShardedClient:5
 msgid ""
-"When using this client, you will be able to use it as-if it was a regular :"
-"class:`Client` with a single shard when implementation wise internally it is "
-"split up into multiple shards. This allows you to not have to deal with IPC "
-"or other complicated infrastructure."
+"When using this client, you will be able to use it as-if it was a "
+"regular :class:`Client` with a single shard when implementation wise "
+"internally it is split up into multiple shards. This allows you to not have "
+"to deal with IPC or other complicated infrastructure."
 msgstr ""
 
 #: ../../../../discord/shard.py:docstring of discord.shard.AutoShardedClient:10
@@ -2340,8 +2340,8 @@ msgstr ""
 #: discord.AutoShardedClient.latency:3
 msgid ""
 "This operates similarly to :meth:`Client.latency` except it uses the average "
-"latency of every shard's latency. To get a list of shard latency, check the :"
-"attr:`latencies` property. Returns ``nan`` if there are no shards ready."
+"latency of every shard's latency. To get a list of shard latency, check "
+"the :attr:`latencies` property. Returns ``nan`` if there are no shards ready."
 msgstr ""
 
 #: ../../../../discord/shard.py:docstring of
@@ -2546,8 +2546,8 @@ msgstr ""
 #: ../../../../discord/appinfo.py:docstring of discord.appinfo.AppInfo:58
 #: discord.appinfo.PartialAppInfo:31
 msgid ""
-"The hex encoded key for verification in interactions and the GameSDK's :"
-"ddocs:`GetTicket <game-sdk/applications#getticket>`."
+"The hex encoded key for verification in interactions and the "
+"GameSDK's :ddocs:`GetTicket <game-sdk/applications#getticket>`."
 msgstr ""
 
 #: ../../../../discord/appinfo.py:docstring of discord.appinfo.AppInfo:67
@@ -2737,11 +2737,9 @@ msgstr ""
 
 #: ../../../../discord/appinfo.py:docstring of discord.appinfo.AppInfo.edit:19
 msgid ""
-"The new application’s flags. Only limited intent flags (:attr:"
-"`~ApplicationFlags.gateway_presence_limited`, :attr:`~ApplicationFlags."
-"gateway_guild_members_limited`, :attr:`~ApplicationFlags."
-"gateway_message_content_limited`) can be edited. Can be ``None`` to remove "
-"the flags."
+"The new application’s flags. Only limited intent flags "
+"(:attr:`~ApplicationFlags.gateway_presence_limited`, :attr:`~ApplicationFlags.gateway_guild_members_limited`, :attr:`~ApplicationFlags.gateway_message_content_limited`) "
+"can be edited. Can be ``None`` to remove the flags."
 msgstr ""
 
 #: ../../../../discord/appinfo.py:docstring of discord.appinfo.AppInfo.edit:25
@@ -2857,8 +2855,8 @@ msgstr ""
 
 #: ../../../../discord/appinfo.py:docstring of discord.appinfo.PartialAppInfo:1
 msgid ""
-"Represents a partial AppInfo given by :func:`~discord.abc.GuildChannel."
-"create_invite`"
+"Represents a partial AppInfo given "
+"by :func:`~discord.abc.GuildChannel.create_invite`"
 msgstr ""
 
 #: ../../../../discord/appinfo.py:docstring of
@@ -3338,8 +3336,8 @@ msgstr ""
 #: ../../../../discord/voice_client.py:docstring of
 #: discord.voice_client.VoiceClient:3
 msgid ""
-"You do not create these, you typically get them from e.g. :meth:"
-"`VoiceChannel.connect`."
+"You do not create these, you typically get them from "
+"e.g. :meth:`VoiceChannel.connect`."
 msgstr ""
 
 #: ../../../../discord/voice_client.py:docstring of
@@ -3347,8 +3345,9 @@ msgstr ""
 msgid ""
 "In order to use PCM based AudioSources, you must have the opus library "
 "installed on your system and loaded through :func:`opus.load_opus`. "
-"Otherwise, your AudioSources must be opus encoded (e.g. using :class:"
-"`FFmpegOpusAudio`) or the library will not be able to transmit audio."
+"Otherwise, your AudioSources must be opus encoded (e.g. "
+"using :class:`FFmpegOpusAudio`) or the library will not be able to transmit "
+"audio."
 msgstr ""
 
 #: ../../../../discord/voice_client.py:docstring of
@@ -3670,8 +3669,8 @@ msgstr ""
 #: ../../../../discord/voice_client.py:docstring of
 #: discord.voice_client.VoiceProtocol:9
 msgid ""
-"These classes are passed to :meth:`abc.Connectable.connect <VoiceChannel."
-"connect>`."
+"These classes are passed to :meth:`abc.Connectable.connect "
+"<VoiceChannel.connect>`."
 msgstr ""
 
 #: ../../../../discord/voice_client.py:docstring of
@@ -3735,9 +3734,9 @@ msgstr ""
 #: discord.voice_client.VoiceProtocol.connect:9
 msgid ""
 "Within this method, to start the voice connection flow it is recommended to "
-"use :meth:`Guild.change_voice_state` to start the flow. After which, :meth:"
-"`on_voice_server_update` and :meth:`on_voice_state_update` will be called. "
-"The order that these two are called is unspecified."
+"use :meth:`Guild.change_voice_state` to start the flow. After "
+"which, :meth:`on_voice_server_update` and :meth:`on_voice_state_update` will "
+"be called. The order that these two are called is unspecified."
 msgstr ""
 
 #: ../../../../discord/voice_client.py:docstring of
@@ -3914,8 +3913,9 @@ msgstr ""
 
 #: ../../../../discord/player.py:docstring of discord.player.FFmpegAudio:3
 msgid ""
-"User created AudioSources using FFmpeg differently from how :class:"
-"`FFmpegPCMAudio` and :class:`FFmpegOpusAudio` work should subclass this."
+"User created AudioSources using FFmpeg differently from "
+"how :class:`FFmpegPCMAudio` and :class:`FFmpegOpusAudio` work should "
+"subclass this."
 msgstr ""
 
 #: ../../../api.rst:153
@@ -3998,8 +3998,8 @@ msgstr ""
 
 #: ../../../../discord/player.py:docstring of discord.player.FFmpegOpusAudio:7
 msgid ""
-"Alternatively, instead of instantiating this class directly, you can use :"
-"meth:`FFmpegOpusAudio.from_probe` to probe for bitrate and codec "
+"Alternatively, instead of instantiating this class directly, you can "
+"use :meth:`FFmpegOpusAudio.from_probe` to probe for bitrate and codec "
 "information.  This can be used to opportunistically skip pointless re-"
 "encoding of existing Opus audio data for a boost in performance at the cost "
 "of a short initial delay to gather the information. The same can be achieved "
@@ -4217,8 +4217,9 @@ msgstr ""
 
 #: ../../../../discord/opus.py:docstring of discord.opus.load_opus:3
 msgid ""
-"If this function is not called then the library uses the function :func:"
-"`ctypes.util.find_library` and then loads that one if available."
+"If this function is not called then the library uses the "
+"function :func:`ctypes.util.find_library` and then loads that one if "
+"available."
 msgstr ""
 
 #: ../../../../discord/opus.py:docstring of discord.opus.load_opus:6
@@ -4259,8 +4260,8 @@ msgstr ""
 
 #: ../../../../discord/opus.py:docstring of discord.opus.is_loaded:1
 msgid ""
-"Function to check if opus lib is successfully loaded either via the :func:"
-"`ctypes.util.find_library` call of :func:`load_opus`."
+"Function to check if opus lib is successfully loaded either via "
+"the :func:`ctypes.util.find_library` call of :func:`load_opus`."
 msgstr ""
 
 #: ../../../../discord/opus.py:docstring of discord.opus.is_loaded:4
@@ -4277,15 +4278,16 @@ msgstr ""
 
 #: ../../../api.rst:188
 msgid ""
-"This section outlines the different types of events listened by :class:"
-"`Client`."
+"This section outlines the different types of events listened "
+"by :class:`Client`."
 msgstr ""
 
 #: ../../../api.rst:190
 msgid ""
 "There are two ways to register an event, the first way is through the use "
-"of :meth:`Client.event`. The second way is through subclassing :class:"
-"`Client` and overriding the specific events. For example: ::"
+"of :meth:`Client.event`. The second way is through "
+"subclassing :class:`Client` and overriding the specific events. For "
+"example: ::"
 msgstr ""
 
 #: ../../../api.rst:194
@@ -4330,8 +4332,9 @@ msgstr ""
 
 #: ../../../api.rst:228
 msgid ""
-"Called when a :class:`app_commands.Command` or :class:`app_commands."
-"ContextMenu` has successfully completed without error."
+"Called when a :class:`app_commands.Command` "
+"or :class:`app_commands.ContextMenu` has successfully completed without "
+"error."
 msgstr ""
 
 #: ../../../api.rst:233
@@ -4348,8 +4351,8 @@ msgstr ""
 
 #: ../../../api.rst:243
 msgid ""
-"Called when a :class:`AutoModRule` is created. You must have :attr:"
-"`~Permissions.manage_guild` to receive this."
+"Called when an :class:`AutoModRule` is created. You must "
+"have :attr:`~Permissions.manage_guild` to receive this."
 msgstr ""
 
 #: ../../../api.rst:246 ../../../api.rst:258 ../../../api.rst:270
@@ -4363,8 +4366,8 @@ msgstr ""
 
 #: ../../../api.rst:255
 msgid ""
-"Called when a :class:`AutoModRule` is updated. You must have :attr:"
-"`~Permissions.manage_guild` to receive this."
+"Called when an :class:`AutoModRule` is updated. You must "
+"have :attr:`~Permissions.manage_guild` to receive this."
 msgstr ""
 
 #: ../../../api.rst:262
@@ -4373,8 +4376,8 @@ msgstr ""
 
 #: ../../../api.rst:267
 msgid ""
-"Called when a :class:`AutoModRule` is deleted. You must have :attr:"
-"`~Permissions.manage_guild` to receive this."
+"Called when an :class:`AutoModRule` is deleted. You must "
+"have :attr:`~Permissions.manage_guild` to receive this."
 msgstr ""
 
 #: ../../../api.rst:274
@@ -4383,8 +4386,8 @@ msgstr ""
 
 #: ../../../api.rst:279
 msgid ""
-"Called when a :class:`AutoModAction` is created/performed. You must have :"
-"attr:`~Permissions.manage_guild` to receive this."
+"Called when an :class:`AutoModAction` is created/performed. You must "
+"have :attr:`~Permissions.manage_guild` to receive this."
 msgstr ""
 
 #: ../../../api.rst:282
@@ -4477,8 +4480,8 @@ msgstr ""
 #: ../../../api.rst:350
 msgid ""
 "The ``channel`` parameter can be a :class:`abc.Messageable` instance. Which "
-"could either be :class:`TextChannel`, :class:`GroupChannel`, or :class:"
-"`DMChannel`."
+"could either be :class:`TextChannel`, :class:`GroupChannel`, "
+"or :class:`DMChannel`."
 msgstr ""
 
 #: ../../../api.rst:354
@@ -4540,8 +4543,8 @@ msgstr ""
 
 #: ../../../api.rst:397
 msgid ""
-"This function can be called many times without a corresponding :func:"
-"`on_connect` call."
+"This function can be called many times without a "
+"corresponding :func:`on_connect` call."
 msgstr ""
 
 #: ../../../api.rst:401
@@ -4589,9 +4592,9 @@ msgstr ""
 
 #: ../../../api.rst:438
 msgid ""
-"It will not be received by :meth:`Client.wait_for`, or, if used, :ref:"
-"`ext_commands_api_bot` listeners such as :meth:`~ext.commands.Bot.listen` "
-"or :meth:`~ext.commands.Cog.listener`."
+"It will not be received by :meth:`Client.wait_for`, or, if "
+"used, :ref:`ext_commands_api_bot` listeners such "
+"as :meth:`~ext.commands.Bot.listen` or :meth:`~ext.commands.Cog.listener`."
 msgstr ""
 
 #: ../../../api.rst:444
@@ -4639,8 +4642,8 @@ msgstr ""
 
 #: ../../../api.rst:475 ../../../api.rst:494
 msgid ""
-"This requires setting the ``enable_debug_events`` setting in the :class:"
-"`Client`."
+"This requires setting the ``enable_debug_events`` setting in "
+"the :class:`Client`."
 msgstr ""
 
 #: ../../../api.rst:479
@@ -4712,8 +4715,9 @@ msgstr ""
 #: ../../../api.rst:538
 msgid ""
 "This event won't be called if the user cancels their subscription manually, "
-"instead :func:`on_entitlement_update` will be called with :attr:`Entitlement."
-"ends_at` set to the end of the current billing period."
+"instead :func:`on_entitlement_update` will be called "
+"with :attr:`Entitlement.ends_at` set to the end of the current billing "
+"period."
 msgstr ""
 
 #: ../../../api.rst:544
@@ -4814,8 +4818,8 @@ msgstr ""
 #: ../../../api.rst:620
 msgid ""
 "In order for this event to be invoked then the :class:`Client` must have "
-"been part of the guild to begin with. (i.e. it is part of :attr:`Client."
-"guilds`)"
+"been part of the guild to begin with. (i.e. it is part "
+"of :attr:`Client.guilds`)"
 msgstr ""
 
 #: ../../../api.rst:625
@@ -4888,8 +4892,8 @@ msgstr ""
 
 #: ../../../api.rst:674
 msgid ""
-"Called when a :class:`Guild` gets a new audit log entry. You must have :attr:"
-"`~Permissions.view_audit_log` to receive this."
+"Called when a :class:`Guild` gets a new audit log entry. You must "
+"have :attr:`~Permissions.view_audit_log` to receive this."
 msgstr ""
 
 #: ../../../api.rst:677 ../../../api.rst:890 ../../../api.rst:903
@@ -4901,8 +4905,9 @@ msgid ""
 "Audit log entries received through the gateway are subject to data retrieval "
 "from cache rather than REST. This means that some data might not be present "
 "when you expect it to be. For example, the :attr:`AuditLogEntry.target` "
-"attribute will usually be a :class:`discord.Object` and the :attr:"
-"`AuditLogEntry.user` attribute will depend on user and member cache."
+"attribute will usually be a :class:`discord.Object` and "
+"the :attr:`AuditLogEntry.user` attribute will depend on user and member "
+"cache."
 msgstr ""
 
 #: ../../../api.rst:689
@@ -4917,15 +4922,15 @@ msgstr ""
 
 #: ../../../api.rst:696
 msgid ""
-"Called when an :class:`Invite` is created. You must have :attr:`~Permissions."
-"manage_channels` to receive this."
+"Called when an :class:`Invite` is created. You must "
+"have :attr:`~Permissions.manage_channels` to receive this."
 msgstr ""
 
 #: ../../../api.rst:703 ../../../api.rst:720
 msgid ""
-"There is a rare possibility that the :attr:`Invite.guild` and :attr:`Invite."
-"channel` attributes will be of :class:`Object` rather than the respective "
-"models."
+"There is a rare possibility that the :attr:`Invite.guild` "
+"and :attr:`Invite.channel` attributes will be of :class:`Object` rather than "
+"the respective models."
 msgstr ""
 
 #: ../../../api.rst:706 ../../../api.rst:726
@@ -4940,8 +4945,8 @@ msgstr ""
 
 #: ../../../api.rst:713
 msgid ""
-"Called when an :class:`Invite` is deleted. You must have :attr:`~Permissions."
-"manage_channels` to receive this."
+"Called when an :class:`Invite` is deleted. You must "
+"have :attr:`~Permissions.manage_channels` to receive this."
 msgstr ""
 
 #: ../../../api.rst:723
@@ -5207,8 +5212,8 @@ msgstr ""
 #: ../../../api.rst:942
 msgid ""
 "You can manually override this behaviour by setting the "
-"**enable_raw_presences** flag in the :class:`Client`, however :attr:`Intents."
-"presences` is always required for this event to work."
+"**enable_raw_presences** flag in the :class:`Client`, "
+"however :attr:`Intents.presences` is always required for this event to work."
 msgstr ""
 
 #: ../../../api.rst:947
@@ -5334,12 +5339,14 @@ msgstr ""
 
 #: ../../../api.rst:1036
 msgid ""
-"If the message is found in the message cache, it can be accessed via :attr:"
-"`RawMessageUpdateEvent.cached_message`. The cached message represents the "
-"message before it has been edited. For example, if the content of a message "
-"is modified and triggers the :func:`on_raw_message_edit` coroutine, the :"
-"attr:`RawMessageUpdateEvent.cached_message` will return a :class:`Message` "
-"object that represents the message before the content was modified."
+"If the message is found in the message cache, it can be accessed "
+"via :attr:`RawMessageUpdateEvent.cached_message`. The cached message "
+"represents the message before it has been edited. For example, if the "
+"content of a message is modified and triggers "
+"the :func:`on_raw_message_edit` coroutine, "
+"the :attr:`RawMessageUpdateEvent.cached_message` will return "
+"a :class:`Message` object that represents the message before the content was "
+"modified."
 msgstr ""
 
 #: ../../../api.rst:1042
@@ -5366,21 +5373,21 @@ msgstr ""
 
 #: ../../../api.rst:1061
 msgid ""
-"If the message is found in the message cache, it can be accessed via :attr:"
-"`RawMessageDeleteEvent.cached_message`"
+"If the message is found in the message cache, it can be accessed "
+"via :attr:`RawMessageDeleteEvent.cached_message`"
 msgstr ""
 
 #: ../../../api.rst:1071
 msgid ""
-"Called when a bulk delete is triggered. Unlike :func:"
-"`on_bulk_message_delete`, this is called regardless of the messages being in "
-"the internal message cache or not."
+"Called when a bulk delete is triggered. "
+"Unlike :func:`on_bulk_message_delete`, this is called regardless of the "
+"messages being in the internal message cache or not."
 msgstr ""
 
 #: ../../../api.rst:1074
 msgid ""
-"If the messages are found in the message cache, they can be accessed via :"
-"attr:`RawBulkMessageDeleteEvent.cached_messages`"
+"If the messages are found in the message cache, they can be accessed "
+"via :attr:`RawBulkMessageDeleteEvent.cached_messages`"
 msgstr ""
 
 #: ../../../api.rst:1083
@@ -5417,9 +5424,9 @@ msgstr ""
 
 #: ../../../api.rst:1108
 msgid ""
-"Called when a :class:`Poll` gains or loses a vote. Unlike :func:"
-"`on_poll_vote_add` and :func:`on_poll_vote_remove` this is called regardless "
-"of the state of the internal user and message cache."
+"Called when a :class:`Poll` gains or loses a vote. "
+"Unlike :func:`on_poll_vote_add` and :func:`on_poll_vote_remove` this is "
+"called regardless of the state of the internal user and message cache."
 msgstr ""
 
 #: ../../../api.rst:1124
@@ -5428,16 +5435,16 @@ msgstr ""
 
 #: ../../../api.rst:1128
 msgid ""
-"Called when a message has a reaction added to it. Similar to :func:"
-"`on_message_edit`, if the message is not found in the internal message "
-"cache, then this event will not be called. Consider using :func:"
-"`on_raw_reaction_add` instead."
+"Called when a message has a reaction added to it. Similar "
+"to :func:`on_message_edit`, if the message is not found in the internal "
+"message cache, then this event will not be called. Consider "
+"using :func:`on_raw_reaction_add` instead."
 msgstr ""
 
 #: ../../../api.rst:1134
 msgid ""
-"To get the :class:`Message` being reacted, access it via :attr:`Reaction."
-"message`."
+"To get the :class:`Message` being reacted, access it "
+"via :attr:`Reaction.message`."
 msgstr ""
 
 #: ../../../api.rst:1136 ../../../api.rst:1191 ../../../api.rst:1204
@@ -5449,9 +5456,9 @@ msgstr ""
 msgid ""
 "This doesn't require :attr:`Intents.members` within a guild context, but due "
 "to Discord not providing updated user information in a direct message it's "
-"required for direct messages to receive this event. Consider using :func:"
-"`on_raw_reaction_add` if you need this and do not otherwise want to enable "
-"the members intent."
+"required for direct messages to receive this event. Consider "
+"using :func:`on_raw_reaction_add` if you need this and do not otherwise want "
+"to enable the members intent."
 msgstr ""
 
 #: ../../../api.rst:1148
@@ -5506,10 +5513,10 @@ msgstr ""
 
 #: ../../../api.rst:1187
 msgid ""
-"Called when a message has all its reactions removed from it. Similar to :"
-"func:`on_message_edit`, if the message is not found in the internal message "
-"cache, then this event will not be called. Consider using :func:"
-"`on_raw_reaction_clear` instead."
+"Called when a message has all its reactions removed from it. Similar "
+"to :func:`on_message_edit`, if the message is not found in the internal "
+"message cache, then this event will not be called. Consider "
+"using :func:`on_raw_reaction_clear` instead."
 msgstr ""
 
 #: ../../../api.rst:1193
@@ -5522,10 +5529,10 @@ msgstr ""
 
 #: ../../../api.rst:1200
 msgid ""
-"Called when a message has a specific reaction removed from it. Similar to :"
-"func:`on_message_edit`, if the message is not found in the internal message "
-"cache, then this event will not be called. Consider using :func:"
-"`on_raw_reaction_clear_emoji` instead."
+"Called when a message has a specific reaction removed from it. Similar "
+"to :func:`on_message_edit`, if the message is not found in the internal "
+"message cache, then this event will not be called. Consider "
+"using :func:`on_raw_reaction_clear_emoji` instead."
 msgstr ""
 
 #: ../../../api.rst:1208
@@ -5540,23 +5547,23 @@ msgstr ""
 
 #: ../../../api.rst:1224
 msgid ""
-"Called when a message has a reaction removed. Unlike :func:"
-"`on_reaction_remove`, this is called regardless of the state of the internal "
-"message cache."
+"Called when a message has a reaction removed. "
+"Unlike :func:`on_reaction_remove`, this is called regardless of the state of "
+"the internal message cache."
 msgstr ""
 
 #: ../../../api.rst:1234
 msgid ""
-"Called when a message has all its reactions removed. Unlike :func:"
-"`on_reaction_clear`, this is called regardless of the state of the internal "
-"message cache."
+"Called when a message has all its reactions removed. "
+"Unlike :func:`on_reaction_clear`, this is called regardless of the state of "
+"the internal message cache."
 msgstr ""
 
 #: ../../../api.rst:1244
 msgid ""
-"Called when a message has a specific reaction removed from it. Unlike :func:"
-"`on_reaction_clear_emoji` this is called regardless of the state of the "
-"internal message cache."
+"Called when a message has a specific reaction removed from it. "
+"Unlike :func:`on_reaction_clear_emoji` this is called regardless of the "
+"state of the internal message cache."
 msgstr ""
 
 #: ../../../api.rst:1256
@@ -5699,8 +5706,8 @@ msgstr ""
 
 #: ../../../api.rst:1370
 msgid ""
-"Called when a :class:`StageInstance` is created or deleted for a :class:"
-"`StageChannel`."
+"Called when a :class:`StageInstance` is created or deleted for "
+"a :class:`StageChannel`."
 msgstr ""
 
 #: ../../../api.rst:1374
@@ -5849,8 +5856,8 @@ msgstr ""
 
 #: ../../../api.rst:1536
 msgid ""
-"You can get the thread a member belongs in by accessing :attr:`ThreadMember."
-"thread`."
+"You can get the thread a member belongs in by "
+"accessing :attr:`ThreadMember.thread`."
 msgstr ""
 
 #: ../../../api.rst:1542
@@ -5859,9 +5866,9 @@ msgstr ""
 
 #: ../../../api.rst:1547
 msgid ""
-"Called when a :class:`ThreadMember` leaves a :class:`Thread`. Unlike :func:"
-"`on_thread_member_remove` this is called regardless of the member being in "
-"the internal thread's members cache or not."
+"Called when a :class:`ThreadMember` leaves a :class:`Thread`. "
+"Unlike :func:`on_thread_member_remove` this is called regardless of the "
+"member being in the internal thread's members cache or not."
 msgstr ""
 
 #: ../../../api.rst:1558
@@ -5926,8 +5933,8 @@ msgstr ""
 
 #: ../../../../discord/utils.py:docstring of discord.utils.find:4
 msgid ""
-"member = discord.utils.find(lambda m: m.name == 'Mighty', channel.guild."
-"members)"
+"member = discord.utils.find(lambda m: m.name == 'Mighty', "
+"channel.guild.members)"
 msgstr ""
 
 #: ../../../../discord/utils.py:docstring of discord.utils.find:6
@@ -5958,15 +5965,16 @@ msgstr ""
 #: ../../../../discord/utils.py:docstring of discord.utils.find:21
 #: discord.utils.get:49
 msgid ""
-"The iterable to search through. Using a :class:`collections.abc."
-"AsyncIterable`, makes this function return a :term:`coroutine`."
+"The iterable to search through. Using "
+"a :class:`collections.abc.AsyncIterable`, makes this function return "
+"a :term:`coroutine`."
 msgstr ""
 
 #: ../../../../discord/utils.py:docstring of discord.utils.get:1
 msgid ""
 "A helper that returns the first element in the iterable that meets all the "
-"traits passed in ``attrs``. This is an alternative for :func:`~discord.utils."
-"find`."
+"traits passed in ``attrs``. This is an alternative "
+"for :func:`~discord.utils.find`."
 msgstr ""
 
 #: ../../../../discord/utils.py:docstring of discord.utils.get:5
@@ -6186,8 +6194,8 @@ msgstr ""
 
 #: ../../../../discord/utils.py:docstring of discord.utils.oauth_url:18
 msgid ""
-"An optional valid list of scopes. Defaults to ``('bot', 'applications."
-"commands')``."
+"An optional valid list of scopes. Defaults to ``('bot', "
+"'applications.commands')``."
 msgstr ""
 
 #: ../../../../discord/utils.py:docstring of discord.utils.oauth_url:22
@@ -6280,8 +6288,8 @@ msgstr ""
 
 #: ../../../api.rst:1618
 msgid ""
-"A data class which represents a resolved invite returned from :func:`discord."
-"utils.resolve_invite`."
+"A data class which represents a resolved invite returned "
+"from :func:`discord.utils.resolve_invite`."
 msgstr ""
 
 #: ../../../api.rst:1622
@@ -7168,8 +7176,8 @@ msgstr ""
 
 #: ../../../api.rst:2209
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Guild`."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Guild`."
 msgstr ""
 
 #: ../../../api.rst:2212 ../../../api.rst:2248 ../../../api.rst:2267
@@ -7283,8 +7291,8 @@ msgstr ""
 
 #: ../../../api.rst:2245
 msgid ""
-"A more filled out object in the :class:`Object` case can be found by using :"
-"attr:`~AuditLogEntry.after`."
+"A more filled out object in the :class:`Object` case can be found by "
+"using :attr:`~AuditLogEntry.after`."
 msgstr ""
 
 #: ../../../api.rst:2251 ../../../api.rst:2270 ../../../api.rst:2295
@@ -7310,14 +7318,14 @@ msgstr ""
 
 #: ../../../api.rst:2261 ../../../api.rst:2305
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`abc.GuildChannel` or :class:`Object` with an ID."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`abc.GuildChannel` or :class:`Object` with an ID."
 msgstr ""
 
 #: ../../../api.rst:2264
 msgid ""
-"A more filled out object in the :class:`Object` case can be found by using :"
-"attr:`~AuditLogEntry.after` or :attr:`~AuditLogEntry.before`."
+"A more filled out object in the :class:`Object` case can be found by "
+"using :attr:`~AuditLogEntry.after` or :attr:`~AuditLogEntry.before`."
 msgstr ""
 
 #: ../../../api.rst:2271
@@ -7362,14 +7370,14 @@ msgstr ""
 
 #: ../../../api.rst:2286
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is an :"
-"class:`Object` with an ID."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"an :class:`Object` with an ID."
 msgstr ""
 
 #: ../../../api.rst:2289
 msgid ""
-"A more filled out object can be found by using the :attr:`~AuditLogEntry."
-"before` object."
+"A more filled out object can be found by using "
+"the :attr:`~AuditLogEntry.before` object."
 msgstr ""
 
 #: ../../../api.rst:2297 ../../../api.rst:2544 ../../../api.rst:2569
@@ -7383,9 +7391,10 @@ msgstr ""
 #: ../../../api.rst:2308
 msgid ""
 "When this is the action, the type of :attr:`~AuditLogEntry.extra` is either "
-"a :class:`Role` or :class:`Member`. If the object is not found then it is a :"
-"class:`Object` with an ID being filled, a name, and a ``type`` attribute set "
-"to either ``'role'`` or ``'member'`` to help dictate what type of ID it is."
+"a :class:`Role` or :class:`Member`. If the object is not found then it is "
+"a :class:`Object` with an ID being filled, a name, and a ``type`` attribute "
+"set to either ``'role'`` or ``'member'`` to help dictate what type of ID it "
+"is."
 msgstr ""
 
 #: ../../../api.rst:2316 ../../../api.rst:2332 ../../../api.rst:2347
@@ -7408,8 +7417,9 @@ msgstr ""
 
 #: ../../../api.rst:2326 ../../../api.rst:2341
 msgid ""
-"See :attr:`overwrite_create` for more information on how the :attr:"
-"`~AuditLogEntry.target` and :attr:`~AuditLogEntry.extra` fields are set."
+"See :attr:`overwrite_create` for more information on how "
+"the :attr:`~AuditLogEntry.target` and :attr:`~AuditLogEntry.extra` fields "
+"are set."
 msgstr ""
 
 #: ../../../api.rst:2339
@@ -7422,8 +7432,8 @@ msgstr ""
 
 #: ../../../api.rst:2356
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`User` or :class:`Object` who got kicked."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`User` or :class:`Object` who got kicked."
 msgstr ""
 
 #: ../../../api.rst:2359 ../../../api.rst:2424 ../../../api.rst:2451
@@ -7476,8 +7486,8 @@ msgstr ""
 
 #: ../../../api.rst:2385
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`User` or :class:`Object` who got banned."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`User` or :class:`Object` who got banned."
 msgstr ""
 
 #: ../../../api.rst:2392
@@ -7486,8 +7496,8 @@ msgstr ""
 
 #: ../../../api.rst:2394
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`User` or :class:`Object` who got unbanned."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`User` or :class:`Object` who got unbanned."
 msgstr ""
 
 #: ../../../api.rst:2401
@@ -7504,8 +7514,8 @@ msgstr ""
 
 #: ../../../api.rst:2406
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Member`, :class:`User`, or :class:`Object` who got updated."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Member`, :class:`User`, or :class:`Object` who got updated."
 msgstr ""
 
 #: ../../../api.rst:2411
@@ -7532,8 +7542,8 @@ msgstr ""
 
 #: ../../../api.rst:2421
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Member`, :class:`User`, or :class:`Object` who got the role."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Member`, :class:`User`, or :class:`Object` who got the role."
 msgstr ""
 
 #: ../../../api.rst:2431
@@ -7572,9 +7582,9 @@ msgstr ""
 
 #: ../../../api.rst:2462
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Member`, :class:`User`, or :class:`Object` which was added to the "
-"guild."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Member`, :class:`User`, or :class:`Object` which was added to "
+"the guild."
 msgstr ""
 
 #: ../../../api.rst:2469
@@ -7583,8 +7593,8 @@ msgstr ""
 
 #: ../../../api.rst:2471 ../../../api.rst:2496 ../../../api.rst:2515
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Role` or a :class:`Object` with the ID."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Role` or a :class:`Object` with the ID."
 msgstr ""
 
 #: ../../../api.rst:2476 ../../../api.rst:2501 ../../../api.rst:2520
@@ -7649,8 +7659,8 @@ msgstr ""
 
 #: ../../../api.rst:2532
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Invite` that was created."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Invite` that was created."
 msgstr ""
 
 #: ../../../api.rst:2537 ../../../api.rst:2562
@@ -7688,8 +7698,8 @@ msgstr ""
 
 #: ../../../api.rst:2550
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Invite` that was updated."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Invite` that was updated."
 msgstr ""
 
 #: ../../../api.rst:2555
@@ -7698,8 +7708,8 @@ msgstr ""
 
 #: ../../../api.rst:2557
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Invite` that was deleted."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Invite` that was deleted."
 msgstr ""
 
 #: ../../../api.rst:2573
@@ -7708,8 +7718,8 @@ msgstr ""
 
 #: ../../../api.rst:2575 ../../../api.rst:2591 ../../../api.rst:2604
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Object` with the webhook ID."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Object` with the webhook ID."
 msgstr ""
 
 #: ../../../api.rst:2582 ../../../api.rst:2611
@@ -7742,8 +7752,8 @@ msgstr ""
 
 #: ../../../api.rst:2617 ../../../api.rst:2628
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Emoji` or :class:`Object` with the emoji ID."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Emoji` or :class:`Object` with the emoji ID."
 msgstr ""
 
 #: ../../../api.rst:2626
@@ -7756,8 +7766,8 @@ msgstr ""
 
 #: ../../../api.rst:2639
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Object` with the emoji ID."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Object` with the emoji ID."
 msgstr ""
 
 #: ../../../api.rst:2648
@@ -7768,8 +7778,8 @@ msgstr ""
 
 #: ../../../api.rst:2651
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Member`, :class:`User`, or :class:`Object` who had their message "
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Member`, :class:`User`, or :class:`Object` who had their message "
 "deleted."
 msgstr ""
 
@@ -7789,9 +7799,9 @@ msgstr ""
 
 #: ../../../api.rst:2664
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`TextChannel` or :class:`Object` with the ID of the channel that was "
-"purged."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`TextChannel` or :class:`Object` with the ID of the channel that "
+"was purged."
 msgstr ""
 
 #: ../../../api.rst:2676
@@ -7800,8 +7810,8 @@ msgstr ""
 
 #: ../../../api.rst:2678
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Member`, :class:`User`, or :class:`Object` who had their message "
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Member`, :class:`User`, or :class:`Object` who had their message "
 "pinned."
 msgstr ""
 
@@ -7821,8 +7831,8 @@ msgstr ""
 
 #: ../../../api.rst:2693
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Member`, :class:`User`, or :class:`Object` who had their message "
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Member`, :class:`User`, or :class:`Object` who had their message "
 "unpinned."
 msgstr ""
 
@@ -7842,9 +7852,9 @@ msgstr ""
 
 #: ../../../api.rst:2708
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is a :"
-"class:`PartialIntegration` or :class:`Object` with the integration ID of the "
-"integration which was created."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"a :class:`PartialIntegration` or :class:`Object` with the integration ID of "
+"the integration which was created."
 msgstr ""
 
 #: ../../../api.rst:2716
@@ -7853,9 +7863,9 @@ msgstr ""
 
 #: ../../../api.rst:2718
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is a :"
-"class:`PartialIntegration` or :class:`Object` with the integration ID of the "
-"integration which was updated."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"a :class:`PartialIntegration` or :class:`Object` with the integration ID of "
+"the integration which was updated."
 msgstr ""
 
 #: ../../../api.rst:2726
@@ -7864,9 +7874,9 @@ msgstr ""
 
 #: ../../../api.rst:2728
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is a :"
-"class:`PartialIntegration` or :class:`Object` with the integration ID of the "
-"integration which was deleted."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"a :class:`PartialIntegration` or :class:`Object` with the integration ID of "
+"the integration which was deleted."
 msgstr ""
 
 #: ../../../api.rst:2736
@@ -7875,9 +7885,9 @@ msgstr ""
 
 #: ../../../api.rst:2738
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`StageInstance` or :class:`Object` with the ID of the stage instance "
-"which was created."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`StageInstance` or :class:`Object` with the ID of the stage "
+"instance which was created."
 msgstr ""
 
 #: ../../../api.rst:2745 ../../../api.rst:2760 ../../../api.rst:2840
@@ -7891,9 +7901,9 @@ msgstr ""
 
 #: ../../../api.rst:2753
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`StageInstance` or :class:`Object` with the ID of the stage instance "
-"which was updated."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`StageInstance` or :class:`Object` with the ID of the stage "
+"instance which was updated."
 msgstr ""
 
 #: ../../../api.rst:2766
@@ -7906,9 +7916,9 @@ msgstr ""
 
 #: ../../../api.rst:2774
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`GuildSticker` or :class:`Object` with the ID of the sticker which was "
-"created."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`GuildSticker` or :class:`Object` with the ID of the sticker "
+"which was created."
 msgstr ""
 
 #: ../../../api.rst:2781 ../../../api.rst:2800 ../../../api.rst:2819
@@ -7930,9 +7940,9 @@ msgstr ""
 
 #: ../../../api.rst:2793 ../../../api.rst:2812
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`GuildSticker` or :class:`Object` with the ID of the sticker which was "
-"updated."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`GuildSticker` or :class:`Object` with the ID of the sticker "
+"which was updated."
 msgstr ""
 
 #: ../../../api.rst:2810
@@ -7945,9 +7955,9 @@ msgstr ""
 
 #: ../../../api.rst:2831
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`ScheduledEvent` or :class:`Object` with the ID of the event which was "
-"created."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`ScheduledEvent` or :class:`Object` with the ID of the event "
+"which was created."
 msgstr ""
 
 #: ../../../api.rst:2841 ../../../api.rst:2861 ../../../api.rst:2881
@@ -7968,9 +7978,9 @@ msgstr ""
 
 #: ../../../api.rst:2851
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`ScheduledEvent` or :class:`Object` with the ID of the event which was "
-"updated."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`ScheduledEvent` or :class:`Object` with the ID of the event "
+"which was updated."
 msgstr ""
 
 #: ../../../api.rst:2869
@@ -7979,9 +7989,9 @@ msgstr ""
 
 #: ../../../api.rst:2871
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`ScheduledEvent` or :class:`Object` with the ID of the event which was "
-"deleted."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`ScheduledEvent` or :class:`Object` with the ID of the event "
+"which was deleted."
 msgstr ""
 
 #: ../../../api.rst:2889
@@ -7990,8 +8000,8 @@ msgstr ""
 
 #: ../../../api.rst:2891
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Thread` or :class:`Object` with the ID of the thread which was "
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Thread` or :class:`Object` with the ID of the thread which was "
 "created."
 msgstr ""
 
@@ -8017,8 +8027,8 @@ msgstr ""
 
 #: ../../../api.rst:2909
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Thread` or :class:`Object` with the ID of the thread which was "
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Thread` or :class:`Object` with the ID of the thread which was "
 "updated."
 msgstr ""
 
@@ -8028,8 +8038,8 @@ msgstr ""
 
 #: ../../../api.rst:2927
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is the :"
-"class:`Thread` or :class:`Object` with the ID of the thread which was "
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"the :class:`Thread` or :class:`Object` with the ID of the thread which was "
 "deleted."
 msgstr ""
 
@@ -8041,10 +8051,11 @@ msgstr ""
 
 #: ../../../api.rst:2946
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is a :"
-"class:`PartialIntegration` for an integrations general permissions, :class:"
-"`~discord.app_commands.AppCommand` for a specific commands permissions, or :"
-"class:`Object` with the ID of the command or integration which was updated."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"a :class:`PartialIntegration` for an integrations general "
+"permissions, :class:`~discord.app_commands.AppCommand` for a specific "
+"commands permissions, or :class:`Object` with the ID of the command or "
+"integration which was updated."
 msgstr ""
 
 #: ../../../api.rst:2952
@@ -8064,9 +8075,9 @@ msgstr ""
 
 #: ../../../api.rst:2966 ../../../api.rst:2987 ../../../api.rst:3008
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is a :"
-"class:`AutoModRule` or :class:`Object` with the ID of the automod rule that "
-"was created."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"a :class:`AutoModRule` or :class:`Object` with the ID of the automod rule "
+"that was created."
 msgstr ""
 
 #: ../../../api.rst:2973 ../../../api.rst:2994 ../../../api.rst:3015
@@ -8113,8 +8124,8 @@ msgstr ""
 #: ../../../api.rst:3029 ../../../api.rst:3047 ../../../api.rst:3065
 #: ../../../api.rst:3083
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is a :"
-"class:`Member` with the ID of the person who triggered the automod rule."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"a :class:`Member` with the ID of the person who triggered the automod rule."
 msgstr ""
 
 #: ../../../api.rst:3032 ../../../api.rst:3050 ../../../api.rst:3068
@@ -8194,8 +8205,8 @@ msgstr ""
 
 #: ../../../api.rst:3149 ../../../api.rst:3167 ../../../api.rst:3185
 msgid ""
-"When this is the action, the type of :attr:`~AuditLogEntry.target` is a :"
-"class:`Object` with the ID of the prompt that the options belong to."
+"When this is the action, the type of :attr:`~AuditLogEntry.target` is "
+"a :class:`Object` with the ID of the prompt that the options belong to."
 msgstr ""
 
 #: ../../../api.rst:3155 ../../../api.rst:3173 ../../../api.rst:3191
@@ -8282,8 +8293,8 @@ msgstr ""
 
 #: ../../../api.rst:3263
 msgid ""
-"Represents the membership state of a team member retrieved through :func:"
-"`Client.application_info`."
+"Represents the membership state of a team member retrieved "
+"through :func:`Client.application_info`."
 msgstr ""
 
 #: ../../../api.rst:3269
@@ -8296,8 +8307,8 @@ msgstr ""
 
 #: ../../../api.rst:3277
 msgid ""
-"Represents the type of role of a team member retrieved through :func:`Client."
-"application_info`."
+"Represents the type of role of a team member retrieved "
+"through :func:`Client.application_info`."
 msgstr ""
 
 #: ../../../api.rst:3283
@@ -8365,14 +8376,14 @@ msgstr ""
 
 #: ../../../api.rst:3340
 msgid ""
-"Represents the default avatar with the colour blurple. See also :attr:"
-"`Colour.blurple`"
+"Represents the default avatar with the colour blurple. See "
+"also :attr:`Colour.blurple`"
 msgstr ""
 
 #: ../../../api.rst:3344
 msgid ""
-"Represents the default avatar with the colour grey. See also :attr:`Colour."
-"greyple`"
+"Represents the default avatar with the colour grey. See "
+"also :attr:`Colour.greyple`"
 msgstr ""
 
 #: ../../../api.rst:3348
@@ -8381,26 +8392,26 @@ msgstr ""
 
 #: ../../../api.rst:3351
 msgid ""
-"Represents the default avatar with the colour green. See also :attr:`Colour."
-"green`"
+"Represents the default avatar with the colour green. See "
+"also :attr:`Colour.green`"
 msgstr ""
 
 #: ../../../api.rst:3355
 msgid ""
-"Represents the default avatar with the colour orange. See also :attr:`Colour."
-"orange`"
+"Represents the default avatar with the colour orange. See "
+"also :attr:`Colour.orange`"
 msgstr ""
 
 #: ../../../api.rst:3359
 msgid ""
-"Represents the default avatar with the colour red. See also :attr:`Colour."
-"red`"
+"Represents the default avatar with the colour red. See "
+"also :attr:`Colour.red`"
 msgstr ""
 
 #: ../../../api.rst:3363
 msgid ""
-"Represents the default avatar with the colour pink. See also :attr:`Colour."
-"pink`"
+"Represents the default avatar with the colour pink. See "
+"also :attr:`Colour.pink`"
 msgstr ""
 
 #: ../../../api.rst:3370
@@ -8874,8 +8885,8 @@ msgstr ""
 
 #: ../../../api.rst:3868
 msgid ""
-"The SKU is a system-generated group which is created for each :attr:`SKUType."
-"subscription`."
+"The SKU is a system-generated group which is created for "
+"each :attr:`SKUType.subscription`."
 msgstr ""
 
 #: ../../../api.rst:3873
@@ -8975,7 +8986,7 @@ msgid "The standard animation."
 msgstr ""
 
 #: ../../../api.rst:3987
-msgid "Represents the status of an subscription."
+msgid "Represents the status of a subscription."
 msgstr ""
 
 #: ../../../api.rst:3993
@@ -9317,8 +9328,9 @@ msgstr ""
 
 #: ../../../api.rst:4187 ../../../api.rst:4207
 msgid ""
-"Depending on the :class:`AuditLogActionCategory` retrieved by :attr:"
-"`~AuditLogEntry.category`\\, the data retrieved by this attribute differs:"
+"Depending on the :class:`AuditLogActionCategory` retrieved "
+"by :attr:`~AuditLogEntry.category`\\, the data retrieved by this attribute "
+"differs:"
 msgstr ""
 
 #: ../../../api.rst:4192 ../../../api.rst:4212
@@ -9568,9 +9580,7 @@ msgid ""
 msgstr ""
 
 #: ../../../api.rst:4405
-msgid ""
-"Union[:class:`ChannelType`, :class:`StickerType`, :class:`WebhookType`, :"
-"class:`str`, :class:`OnboardingPromptType`]"
+msgid "Union[:class:`ChannelType`, :class:`StickerType`, :class:`WebhookType`, :class:`str`, :class:`OnboardingPromptType`]"
 msgstr ""
 
 #: ../../../api.rst:4409
@@ -9591,16 +9601,17 @@ msgstr ""
 
 #: ../../../api.rst:4425
 msgid ""
-"A list of permission overwrite tuples that represents a target and a :class:"
-"`PermissionOverwrite` for said target."
+"A list of permission overwrite tuples that represents a target and "
+"a :class:`PermissionOverwrite` for said target."
 msgstr ""
 
 #: ../../../api.rst:4428
 msgid ""
-"The first element is the object being targeted, which can either be a :class:"
-"`Member` or :class:`User` or :class:`Role`. If this object is not found then "
-"it is a :class:`Object` with an ID being filled and a ``type`` attribute set "
-"to either ``'role'`` or ``'member'`` to help decide what type of ID it is."
+"The first element is the object being targeted, which can either be "
+"a :class:`Member` or :class:`User` or :class:`Role`. If this object is not "
+"found then it is a :class:`Object` with an ID being filled and a ``type`` "
+"attribute set to either ``'role'`` or ``'member'`` to help decide what type "
+"of ID it is."
 msgstr ""
 
 #: ../../../api.rst:4434
@@ -9873,8 +9884,8 @@ msgstr ""
 
 #: ../../../api.rst:4659
 msgid ""
-"See also :attr:`Guild.description`, :attr:`GuildSticker.description`, or :"
-"attr:`ScheduledEvent.description`."
+"See also :attr:`Guild.description`, :attr:`GuildSticker.description`, "
+"or :attr:`ScheduledEvent.description`."
 msgstr ""
 
 #: ../../../api.rst:4666
@@ -10040,9 +10051,10 @@ msgstr ""
 #: ../../../api.rst:4800
 msgid ""
 "The :attr:`~AutoModTrigger.type` of the trigger may be incorrect. Some "
-"attributes such as :attr:`~AutoModTrigger.keyword_filter`, :attr:"
-"`~AutoModTrigger.regex_patterns`, and :attr:`~AutoModTrigger.allow_list` "
-"will only have the added or removed values."
+"attributes such "
+"as :attr:`~AutoModTrigger.keyword_filter`, :attr:`~AutoModTrigger.regex_patterns`, "
+"and :attr:`~AutoModTrigger.allow_list` will only have the added or removed "
+"values."
 msgstr ""
 
 #: ../../../api.rst:4804 ../../../../discord/automod.py:docstring of
@@ -10109,8 +10121,8 @@ msgstr ""
 
 #: ../../../api.rst:4856
 msgid ""
-"See also :attr:`ForumChannel.flags`, :attr:`Thread.flags` and :attr:`Invite."
-"flags`"
+"See also :attr:`ForumChannel.flags`, :attr:`Thread.flags` "
+"and :attr:`Invite.flags`"
 msgstr ""
 
 #: ../../../api.rst:4858
@@ -10124,8 +10136,8 @@ msgstr ""
 
 #: ../../../api.rst:4864
 msgid ""
-"See also :attr:`TextChannel.default_thread_slowmode_delay` and :attr:"
-"`ForumChannel.default_thread_slowmode_delay`"
+"See also :attr:`TextChannel.default_thread_slowmode_delay` "
+"and :attr:`ForumChannel.default_thread_slowmode_delay`"
 msgstr ""
 
 #: ../../../api.rst:4870
@@ -10298,24 +10310,24 @@ msgstr ""
 #: discord.webhook.async_.Webhook:6
 msgid ""
 "There are two main ways to use Webhooks. The first is through the ones "
-"received by the library such as :meth:`.Guild.webhooks`, :meth:`.TextChannel."
-"webhooks`, :meth:`.VoiceChannel.webhooks` and :meth:`.ForumChannel."
-"webhooks`. The ones received by the library will automatically be bound "
-"using the library's internal HTTP session."
+"received by the library such "
+"as :meth:`.Guild.webhooks`, :meth:`.TextChannel.webhooks`, :meth:`.VoiceChannel.webhooks` "
+"and :meth:`.ForumChannel.webhooks`. The ones received by the library will "
+"automatically be bound using the library's internal HTTP session."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
 #: discord.webhook.async_.Webhook:13
 msgid ""
-"The second form involves creating a webhook object manually using the :meth:"
-"`~.Webhook.from_url` or :meth:`~.Webhook.partial` classmethods."
+"The second form involves creating a webhook object manually using "
+"the :meth:`~.Webhook.from_url` or :meth:`~.Webhook.partial` classmethods."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
 #: discord.webhook.async_.Webhook:16
 msgid ""
-"For example, creating a webhook from a URL and using :doc:`aiohttp <aio:"
-"index>`:"
+"For example, creating a webhook from a URL and using :doc:`aiohttp "
+"<aio:index>`:"
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -10428,8 +10440,8 @@ msgstr ""
 #: ../../../../discord/webhook/sync.py:docstring
 #: discord.webhook.sync.SyncWebhook:70
 msgid ""
-"The guild of the channel that this webhook is following. Only given if :attr:"
-"`type` is :attr:`WebhookType.channel_follower`."
+"The guild of the channel that this webhook is following. Only given "
+"if :attr:`type` is :attr:`WebhookType.channel_follower`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -10444,8 +10456,8 @@ msgstr ""
 #: ../../../../discord/webhook/sync.py:docstring
 #: discord.webhook.sync.SyncWebhook:79
 msgid ""
-"The channel that this webhook is following. Only given if :attr:`type` is :"
-"attr:`WebhookType.channel_follower`."
+"The channel that this webhook is following. Only given if :attr:`type` "
+"is :attr:`WebhookType.channel_follower`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -10719,8 +10731,8 @@ msgstr ""
 #: ../../../../discord/webhook/sync.py:docstring discord.SyncWebhook.avatar:3
 msgid ""
 "If the webhook does not have a traditional avatar, ``None`` is returned. If "
-"you want the avatar that a webhook has displayed, consider :attr:"
-"`display_avatar`."
+"you want the avatar that a webhook has displayed, "
+"consider :attr:`display_avatar`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of discord.Webhook.channel:1
@@ -10736,9 +10748,7 @@ msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of discord.Webhook.channel:5
 #: ../../../../discord/webhook/sync.py:docstring discord.SyncWebhook.channel:5
-msgid ""
-"Optional[Union[:class:`ForumChannel`, :class:`VoiceChannel`, :class:"
-"`TextChannel`]]"
+msgid "Optional[Union[:class:`ForumChannel`, :class:`VoiceChannel`, :class:`TextChannel`]]"
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -10817,8 +10827,8 @@ msgstr ""
 msgid ""
 "If the ``embed`` parameter is provided, it must be of type :class:`Embed` "
 "and it must be a rich embed type. You cannot mix the ``embed`` parameter "
-"with the ``embeds`` parameter, which must be a :class:`list` of :class:"
-"`Embed` objects to send."
+"with the ``embeds`` parameter, which must be a :class:`list` "
+"of :class:`Embed` objects to send."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -10835,9 +10845,9 @@ msgstr ""
 #: discord.webhook.async_.Webhook.send:20
 msgid ""
 "Whether the server should wait before sending a response. This essentially "
-"means that the return type of this function changes from ``None`` to a :"
-"class:`WebhookMessage` if set to ``True``. If the type of webhook is :attr:"
-"`WebhookType.application` then this is always set to ``True``."
+"means that the return type of this function changes from ``None`` to "
+"a :class:`WebhookMessage` if set to ``True``. If the type of webhook "
+"is :attr:`WebhookType.application` then this is always set to ``True``."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -10937,9 +10947,10 @@ msgstr ""
 #: ../../../../discord/webhook/sync.py:docstring
 #: discord.webhook.sync.SyncWebhook.send:46
 msgid ""
-"The thread name to create with this webhook if the webhook belongs to a :"
-"class:`~discord.ForumChannel`. Note that this is mutually exclusive with the "
-"``thread`` parameter, as this will create a new thread with the given name."
+"The thread name to create with this webhook if the webhook belongs to "
+"a :class:`~discord.ForumChannel`. Note that this is mutually exclusive with "
+"the ``thread`` parameter, as this will create a new thread with the given "
+"name."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -10970,8 +10981,8 @@ msgstr ""
 #: ../../../../discord/webhook/async_.py:docstring of
 #: discord.webhook.async_.Webhook.send:82
 msgid ""
-"Tags to apply to the thread if the webhook belongs to a :class:`~discord."
-"ForumChannel`."
+"Tags to apply to the thread if the webhook belongs to "
+"a :class:`~discord.ForumChannel`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -11201,8 +11212,8 @@ msgstr ""
 #: discord.webhook.sync.SyncWebhook.edit_message:35
 #: discord.webhook.sync.SyncWebhookMessage.edit:23
 msgid ""
-"Controls the mentions being processed in this message. See :meth:`.abc."
-"Messageable.send` for more information."
+"Controls the mentions being processed in this message. "
+"See :meth:`.abc.Messageable.send` for more information."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -11495,8 +11506,8 @@ msgstr ""
 #: ../../../../discord/message.py:docstring
 msgid ""
 "You must have :attr:`~Permissions.read_message_history` to do this. If "
-"nobody else has reacted to the message using this emoji, :attr:`~Permissions."
-"add_reactions` is required."
+"nobody else has reacted to the message using this "
+"emoji, :attr:`~Permissions.add_reactions` is required."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -11545,7 +11556,7 @@ msgstr ""
 msgid ""
 "A property that returns the content in a \"cleaned up\" manner. This "
 "basically means that mentions are transformed into the way the client shows "
-"it. e.g. ``<#id>`` will transform into ``#name``."
+"them. e.g. ``<#id>`` will transform into ``#name``."
 msgstr ""
 
 #: ../../../docstring of discord.WebhookMessage.clean_content:6
@@ -11760,8 +11771,8 @@ msgstr ""
 #: discord.message.PartialMessage.end_poll:7
 #: ../../../../discord/message.py:docstring
 msgid ""
-"If the poll was successfully ended, then it returns the updated :class:"
-"`Message`."
+"If the poll was successfully ended, then it returns the "
+"updated :class:`Message`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -11869,9 +11880,9 @@ msgstr ""
 #: discord.message.PartialMessage.forward:9
 #: ../../../../discord/message.py:docstring
 msgid ""
-"Whether replying using the message reference should raise :class:"
-"`HTTPException` if the message no longer exists or Discord could not fetch "
-"the message."
+"Whether replying using the message reference should "
+"raise :class:`HTTPException` if the message no longer exists or Discord "
+"could not fetch the message."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -11896,8 +11907,8 @@ msgstr ""
 #: discord.WebhookMessage.interaction:4
 #: ../../../../discord/message.py:docstring discord.Message.interaction:4
 msgid ""
-"This attribute is deprecated and will be removed in a future version. Use :"
-"attr:`.interaction_metadata` instead."
+"This attribute is deprecated and will be removed in a future version. "
+"Use :attr:`.interaction_metadata` instead."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -11910,8 +11921,8 @@ msgstr ""
 #: discord.message.Message.is_forwardable:1
 #: ../../../../discord/message.py:docstring
 msgid ""
-":class:`bool`: Whether the message can be forwarded using :meth:`Message."
-"forward`."
+":class:`bool`: Whether the message can be forwarded "
+"using :meth:`Message.forward`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -11992,8 +12003,8 @@ msgstr ""
 #: discord.WebhookMessage.pinned_at:5 ../../../../discord/message.py:docstring
 #: discord.Message.pinned_at:5
 msgid ""
-"This is only set for messages that are returned by :meth:`abc.Messageable."
-"pins`."
+"This is only set for messages that are returned "
+"by :meth:`abc.Messageable.pins`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -12006,8 +12017,8 @@ msgstr ""
 #: discord.message.PartialMessage.publish:5
 #: ../../../../discord/message.py:docstring
 msgid ""
-"The message must have been sent in a news channel. You must have :attr:"
-"`~Permissions.send_messages` to do this."
+"The message must have been sent in a news channel. You must "
+"have :attr:`~Permissions.send_messages` to do this."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -12079,16 +12090,16 @@ msgstr ""
 #: discord.message.PartialMessage.remove_reaction:7
 #: ../../../../discord/message.py:docstring
 msgid ""
-"If the reaction is not your own (i.e. ``member`` parameter is not you) then :"
-"attr:`~Permissions.manage_messages` is needed."
+"If the reaction is not your own (i.e. ``member`` parameter is not you) "
+"then :attr:`~Permissions.manage_messages` is needed."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
 #: discord.message.PartialMessage.remove_reaction:10
 #: ../../../../discord/message.py:docstring
 msgid ""
-"The ``member`` parameter must represent a member and meet the :class:`abc."
-"Snowflake` abc."
+"The ``member`` parameter must represent a member and meet "
+"the :class:`abc.Snowflake` abc."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -12129,8 +12140,8 @@ msgstr ""
 #: discord.message.PartialMessage.reply:3
 #: ../../../../discord/message.py:docstring
 msgid ""
-"A shortcut method to :meth:`.abc.Messageable.send` to reply to the :class:`."
-"Message`."
+"A shortcut method to :meth:`.abc.Messageable.send` to reply to "
+"the :class:`.Message`."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -12175,8 +12186,8 @@ msgstr ""
 #: ../../../docstring of discord.WebhookMessage.system_content:1
 #: discord.Message.system_content:1
 msgid ""
-"A property that returns the content that is rendered regardless of the :attr:"
-"`Message.type`."
+"A property that returns the content that is rendered regardless of "
+"the :attr:`Message.type`."
 msgstr ""
 
 #: ../../../docstring of discord.WebhookMessage.system_content:4
@@ -12198,8 +12209,8 @@ msgstr ""
 #: discord.Message.thread:5
 msgid ""
 "For messages received via the gateway this does not retrieve archived "
-"threads, as they are not retained in the internal cache. Use :meth:"
-"`fetch_thread` instead."
+"threads, as they are not retained in the internal cache. "
+"Use :meth:`fetch_thread` instead."
 msgstr ""
 
 #: ../../../../discord/webhook/async_.py:docstring of
@@ -12295,8 +12306,8 @@ msgstr ""
 #: discord.webhook.sync.SyncWebhook.partial:16
 #: discord.webhook.sync.SyncWebhook.from_url:16
 msgid ""
-"A partial :class:`SyncWebhook`. A partial :class:`SyncWebhook` is just a :"
-"class:`SyncWebhook` object with an ID and a token."
+"A partial :class:`SyncWebhook`. A partial :class:`SyncWebhook` is just "
+"a :class:`SyncWebhook` object with an ID and a token."
 msgstr ""
 
 #: ../../../../discord/webhook/sync.py:docstring of
@@ -12316,8 +12327,8 @@ msgstr ""
 #: discord.webhook.sync.SyncWebhook.send:14
 msgid ""
 "Whether the server should wait before sending a response. This essentially "
-"means that the return type of this function changes from ``None`` to a :"
-"class:`WebhookMessage` if set to ``True``."
+"means that the return type of this function changes from ``None`` to "
+"a :class:`WebhookMessage` if set to ``True``."
 msgstr ""
 
 #: ../../../../discord/webhook/sync.py:docstring of
@@ -12335,8 +12346,8 @@ msgstr ""
 #: ../../../../discord/webhook/sync.py:docstring of
 #: discord.webhook.sync.SyncWebhook.send:73
 msgid ""
-"If you want to send a view with any component attached to it, check :meth:"
-"`Webhook.send`."
+"If you want to send a view with any component attached to it, "
+"check :meth:`Webhook.send`."
 msgstr ""
 
 #: ../../../../discord/webhook/sync.py:docstring of
@@ -12412,8 +12423,8 @@ msgstr ""
 msgid ""
 "An :term:`abstract base class` (also known as an ``abc``) is a class that "
 "models can inherit to get their behaviour. **Abstract base classes should "
-"not be instantiated**. They are mainly there for usage with :func:"
-"`isinstance` and :func:`issubclass`\\."
+"not be instantiated**. They are mainly there for usage "
+"with :func:`isinstance` and :func:`issubclass`\\."
 msgstr ""
 
 #: ../../../api.rst:5025
@@ -12438,8 +12449,8 @@ msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Snowflake:6
 msgid ""
-"If you want to create a snowflake on your own, consider using :class:`."
-"Object`."
+"If you want to create a snowflake on your own, consider "
+"using :class:`.Object`."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Snowflake:11
@@ -12716,9 +12727,7 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring discord.TextChannel.overwrites:11
 #: discord.ForumChannel.overwrites:11 discord.VoiceChannel.overwrites:11
 #: discord.StageChannel.overwrites:11
-msgid ""
-"Dict[Union[:class:`~discord.Role`, :class:`~discord.Member`, :class:"
-"`~discord.Object`], :class:`~discord.PermissionOverwrite`]"
+msgid "Dict[Union[:class:`~discord.Role`, :class:`~discord.Member`, :class:`~discord.Object`], :class:`~discord.PermissionOverwrite`]"
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.GuildChannel.category:1
@@ -12773,8 +12782,8 @@ msgstr ""
 #: discord.threads.Thread.permissions_for:1
 #: discord.channel.VocalGuildChannel.permissions_for:1
 msgid ""
-"Handles permission resolution for the :class:`~discord.Member` or :class:"
-"`~discord.Role`."
+"Handles permission resolution for the :class:`~discord.Member` "
+"or :class:`~discord.Role`."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of
@@ -12922,9 +12931,9 @@ msgstr ""
 #: discord.channel.VocalGuildChannel.permissions_for:28
 msgid ""
 "User installed apps are now taken into account. The permissions returned for "
-"a user installed app mirrors the permissions Discord returns in :attr:"
-"`~discord.Interaction.app_permissions`, though it is recommended to use that "
-"attribute instead."
+"a user installed app mirrors the permissions Discord returns "
+"in :attr:`~discord.Interaction.app_permissions`, though it is recommended to "
+"use that attribute instead."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of
@@ -13004,18 +13013,18 @@ msgstr ""
 #: discord.abc.GuildChannel.set_permissions:6
 #: ../../../../discord/channel.py:docstring
 msgid ""
-"The ``target`` parameter should either be a :class:`~discord.Member` or a :"
-"class:`~discord.Role` that belongs to guild."
+"The ``target`` parameter should either be a :class:`~discord.Member` or "
+"a :class:`~discord.Role` that belongs to guild."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of
 #: discord.abc.GuildChannel.set_permissions:9
 #: ../../../../discord/channel.py:docstring
 msgid ""
-"The ``overwrite`` parameter, if given, must either be ``None`` or :class:"
-"`~discord.PermissionOverwrite`. For convenience, you can pass in keyword "
-"arguments denoting :class:`~discord.Permissions` attributes. If this is "
-"done, then you cannot mix the keyword arguments with the ``overwrite`` "
+"The ``overwrite`` parameter, if given, must either be ``None`` "
+"or :class:`~discord.PermissionOverwrite`. For convenience, you can pass in "
+"keyword arguments denoting :class:`~discord.Permissions` attributes. If this "
+"is done, then you cannot mix the keyword arguments with the ``overwrite`` "
 "parameter."
 msgstr ""
 
@@ -13133,8 +13142,8 @@ msgstr ""
 #: discord.abc.GuildChannel.set_permissions:59
 #: ../../../../discord/channel.py:docstring
 msgid ""
-"The ``overwrite`` parameter was invalid or the target type was not     :"
-"class:`~discord.Role` or :class:`~discord.Member`."
+"The ``overwrite`` parameter was invalid or the target type was "
+"not     :class:`~discord.Role` or :class:`~discord.Member`."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of
@@ -13528,8 +13537,9 @@ msgstr ""
 msgid ""
 "To upload a single file, the ``file`` parameter should be used with a "
 "single :class:`~discord.File` object. To upload multiple files, the "
-"``files`` parameter should be used with a :class:`list` of :class:`~discord."
-"File` objects. **Specifying both parameters will lead to an exception**."
+"``files`` parameter should be used with a :class:`list` "
+"of :class:`~discord.File` objects. **Specifying both parameters will lead to "
+"an exception**."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Messageable.send:14
@@ -13539,8 +13549,9 @@ msgstr ""
 msgid ""
 "To upload a single embed, the ``embed`` parameter should be used with a "
 "single :class:`~discord.Embed` object. To upload multiple embeds, the "
-"``embeds`` parameter should be used with a :class:`list` of :class:`~discord."
-"Embed` objects. **Specifying both parameters will lead to an exception**."
+"``embeds`` parameter should be used with a :class:`list` "
+"of :class:`~discord.Embed` objects. **Specifying both parameters will lead "
+"to an exception**."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Messageable.send:27
@@ -13598,9 +13609,10 @@ msgid ""
 "Controls the mentions being processed in this message. If this is passed, "
 "then the object is merged with :attr:`~discord.Client.allowed_mentions`. The "
 "merging behaviour only overrides attributes that have been explicitly passed "
-"to the object, otherwise it uses the attributes set in :attr:`~discord."
-"Client.allowed_mentions`. If no object is passed at all then the defaults "
-"given by :attr:`~discord.Client.allowed_mentions` are used instead."
+"to the object, otherwise it uses the attributes set "
+"in :attr:`~discord.Client.allowed_mentions`. If no object is passed at all "
+"then the defaults given by :attr:`~discord.Client.allowed_mentions` are used "
+"instead."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Messageable.send:53
@@ -13661,9 +13673,9 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring
 msgid ""
 "You specified both ``file`` and ``files``,     or you specified both "
-"``embed`` and ``embeds``,     or the ``reference`` object is not a :class:"
-"`~discord.Message`,     :class:`~discord.MessageReference` or :class:"
-"`~discord.PartialMessage`."
+"``embed`` and ``embeds``,     or the ``reference`` object is not "
+"a :class:`~discord.Message`,     :class:`~discord.MessageReference` "
+"or :class:`~discord.PartialMessage`."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Messageable.send:94
@@ -13695,8 +13707,8 @@ msgstr ""
 #: ../../../../discord/member.py:docstring
 #: ../../../../discord/channel.py:docstring
 msgid ""
-"You must have :attr:`~discord.Permissions.view_channel` and :attr:`~discord."
-"Permissions.read_message_history` in order to use this."
+"You must have :attr:`~discord.Permissions.view_channel` "
+"and :attr:`~discord.Permissions.read_message_history` in order to use this."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Messageable.pins:8
@@ -13801,8 +13813,8 @@ msgstr ""
 #: ../../../../discord/member.py:docstring
 #: ../../../../discord/channel.py:docstring
 msgid ""
-":class:`~discord.Message` -- The pinned message with :attr:`.Message."
-"pinned_at` set."
+":class:`~discord.Message` -- The pinned message "
+"with :attr:`.Message.pinned_at` set."
 msgstr ""
 
 #: ../../../../discord/abc.py:docstring of discord.abc.Messageable.history:1
@@ -14004,9 +14016,9 @@ msgstr ""
 #: ../../../api.rst:5096
 msgid ""
 "If you want to get one of these model classes instances they'd have to be "
-"through the cache, and a common way of doing so is through the :func:`utils."
-"find` function or attributes of model classes that you receive from the "
-"events specified in the :ref:`discord-api-events`."
+"through the cache, and a common way of doing so is through "
+"the :func:`utils.find` function or attributes of model classes that you "
+"receive from the events specified in the :ref:`discord-api-events`."
 msgstr ""
 
 #: ../../../api.rst:5103 ../../../api.rst:5880
@@ -14080,8 +14092,8 @@ msgstr ""
 msgid ""
 "To upload an avatar, a :term:`py:bytes-like object` must be passed in that "
 "represents the image being uploaded. If this is done through a file then the "
-"file must be opened via ``open('some_filename', 'rb')`` and the :term:`py:"
-"bytes-like object` is given through the use of ``fp.read()``."
+"file must be opened via ``open('some_filename', 'rb')`` and "
+"the :term:`py:bytes-like object` is given through the use of ``fp.read()``."
 msgstr ""
 
 #: ../../../../discord/user.py:docstring of discord.user.ClientUser.edit:13
@@ -14145,8 +14157,8 @@ msgstr ""
 
 #: ../../../../discord/user.py:docstring of discord.User.dm_channel:3
 msgid ""
-"If this returns ``None``, you can create a DM channel by calling the :meth:"
-"`create_dm` coroutine function."
+"If this returns ``None``, you can create a DM channel by calling "
+"the :meth:`create_dm` coroutine function."
 msgstr ""
 
 #: ../../../../discord/user.py:docstring of discord.User.dm_channel:6
@@ -14406,8 +14418,8 @@ msgstr ""
 
 #: ../../../../discord/automod.py:docstring of discord.automod.AutoModAction:56
 msgid ""
-"The content of the message that triggered the rule. Requires the :attr:"
-"`Intents.message_content` or it will always return an empty string."
+"The content of the message that triggered the rule. Requires "
+"the :attr:`Intents.message_content` or it will always return an empty string."
 msgstr ""
 
 #: ../../../../discord/automod.py:docstring of discord.automod.AutoModAction:63
@@ -14416,8 +14428,8 @@ msgstr ""
 
 #: ../../../../discord/automod.py:docstring of discord.automod.AutoModAction:69
 msgid ""
-"The matched content from the triggering message. Requires the :attr:`Intents."
-"message_content` or it will always return ``None``."
+"The matched content from the triggering message. Requires "
+"the :attr:`Intents.message_content` or it will always return ``None``."
 msgstr ""
 
 #: ../../../../discord/automod.py:docstring of discord.AutoModAction.guild:1
@@ -14656,8 +14668,8 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.message.Attachment.to_file:3
 msgid ""
-"Converts the attachment into a :class:`File` suitable for sending via :meth:"
-"`abc.Messageable.send`."
+"Converts the attachment into a :class:`File` suitable for sending "
+"via :meth:`abc.Messageable.send`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of
@@ -14870,8 +14882,8 @@ msgstr ""
 #: ../../../../discord/partial_emoji.py:docstring
 #: ../../../../discord/channel.py:docstring
 msgid ""
-"Converts the asset into a :class:`File` suitable for sending via :meth:`abc."
-"Messageable.send`."
+"Converts the asset into a :class:`File` suitable for sending "
+"via :meth:`abc.Messageable.send`."
 msgstr ""
 
 #: ../../../../discord/asset.py:docstring of discord.asset.AssetMixin.to_file:8
@@ -14939,8 +14951,8 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of discord.message.Message:27
 msgid ""
 "The type of message. In most cases this should not be checked, but it is "
-"helpful in cases where it might be a system message for :attr:"
-"`system_content`."
+"helpful in cases where it might be a system message "
+"for :attr:`system_content`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message:30
@@ -14997,10 +15009,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message:67
-msgid ""
-"Union[:class:`TextChannel`, :class:`StageChannel`, :class:`VoiceChannel`, :"
-"class:`Thread`, :class:`DMChannel`, :class:`GroupChannel`, :class:"
-"`PartialMessageable`]"
+msgid "Union[:class:`TextChannel`, :class:`StageChannel`, :class:`VoiceChannel`, :class:`Thread`, :class:`DMChannel`, :class:`GroupChannel`, :class:`PartialMessageable`]"
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message:71
@@ -15160,8 +15169,8 @@ msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message:208
 msgid ""
-"The data of the role subscription purchase or renewal that prompted this :"
-"attr:`MessageType.role_subscription_purchase` message."
+"The data of the role subscription purchase or renewal that prompted "
+"this :attr:`MessageType.role_subscription_purchase` message."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message:213
@@ -15210,8 +15219,8 @@ msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message:265
 msgid ""
-"The data of the purchase notification that prompted this :attr:`MessageType."
-"purchase_notification` message."
+"The data of the purchase notification that prompted "
+"this :attr:`MessageType.purchase_notification` message."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message:269
@@ -15230,8 +15239,8 @@ msgstr ""
 #: discord.message.PartialMessage.delete:5
 msgid ""
 "Your own messages could be deleted without any proper permissions. However "
-"to delete other people's messages, you must have :attr:`~Permissions."
-"manage_messages`."
+"to delete other people's messages, you must "
+"have :attr:`~Permissions.manage_messages`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of
@@ -15293,8 +15302,8 @@ msgstr ""
 msgid ""
 "Whether to suppress embeds for the message. This removes all the embeds if "
 "set to ``True``. If set to ``False`` this brings the embeds back if they "
-"were suppressed. Using this parameter requires :attr:`~.Permissions."
-"manage_messages`."
+"were suppressed. Using this parameter "
+"requires :attr:`~.Permissions.manage_messages`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.Message.edit:42
@@ -15411,8 +15420,8 @@ msgstr ""
 
 #: ../../../../discord/reaction.py:docstring of discord.reaction.Reaction:34
 msgid ""
-"Number of times this reaction was made. This is a sum of :attr:"
-"`normal_count` and :attr:`burst_count`."
+"Number of times this reaction was made. This is a sum "
+"of :attr:`normal_count` and :attr:`burst_count`."
 msgstr ""
 
 #: ../../../../discord/reaction.py:docstring of discord.reaction.Reaction:40
@@ -15430,15 +15439,15 @@ msgstr ""
 #: ../../../../discord/reaction.py:docstring of discord.reaction.Reaction:60
 msgid ""
 "The number of times this reaction was made using normal reactions. This is "
-"not available in the gateway events such as :func:`on_reaction_add` or :func:"
-"`on_reaction_remove`."
+"not available in the gateway events such as :func:`on_reaction_add` "
+"or :func:`on_reaction_remove`."
 msgstr ""
 
 #: ../../../../discord/reaction.py:docstring of discord.reaction.Reaction:70
 msgid ""
 "The number of times this reaction was made using super reactions. This is "
-"not available in the gateway events such as :func:`on_reaction_add` or :func:"
-"`on_reaction_remove`."
+"not available in the gateway events such as :func:`on_reaction_add` "
+"or :func:`on_reaction_remove`."
 msgstr ""
 
 #: ../../../../discord/reaction.py:docstring of
@@ -15454,15 +15463,15 @@ msgstr ""
 #: ../../../../discord/reaction.py:docstring of
 #: discord.reaction.Reaction.remove:5
 msgid ""
-"If the reaction is not your own (i.e. ``user`` parameter is not you) then :"
-"attr:`~Permissions.manage_messages` is needed."
+"If the reaction is not your own (i.e. ``user`` parameter is not you) "
+"then :attr:`~Permissions.manage_messages` is needed."
 msgstr ""
 
 #: ../../../../discord/reaction.py:docstring of
 #: discord.reaction.Reaction.remove:8
 msgid ""
-"The ``user`` parameter must represent a user or member and meet the :class:"
-"`abc.Snowflake` abc."
+"The ``user`` parameter must represent a user or member and meet "
+"the :class:`abc.Snowflake` abc."
 msgstr ""
 
 #: ../../../../discord/reaction.py:docstring of
@@ -15490,8 +15499,8 @@ msgstr ""
 #: ../../../../discord/reaction.py:docstring of
 #: discord.reaction.Reaction.users:3
 msgid ""
-"The ``after`` parameter must represent a member and meet the :class:`abc."
-"Snowflake` abc."
+"The ``after`` parameter must represent a member and meet "
+"the :class:`abc.Snowflake` abc."
 msgstr ""
 
 #: ../../../../discord/reaction.py:docstring of
@@ -15544,9 +15553,9 @@ msgstr ""
 #: discord.reaction.Reaction.users:39
 msgid ""
 "Union[:class:`User`, :class:`Member`] -- The member (if retrievable) or the "
-"user that has reacted to this message. The case where it can be a :class:"
-"`Member` is in a guild message context. Sometimes it can be a :class:`User` "
-"if the member has left the guild."
+"user that has reacted to this message. The case where it can be "
+"a :class:`Member` is in a guild message context. Sometimes it can be "
+"a :class:`User` if the member has left the guild."
 msgstr ""
 
 #: ../../../api.rst:5186
@@ -15710,15 +15719,15 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild:177
 msgid ""
 "The approximate number of members in the guild. This is ``None`` unless the "
-"guild is obtained using :meth:`Client.fetch_guild` or :meth:`Client."
-"fetch_guilds` with ``with_counts=True``."
+"guild is obtained using :meth:`Client.fetch_guild` "
+"or :meth:`Client.fetch_guilds` with ``with_counts=True``."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild:186
 msgid ""
 "The approximate number of members currently active in the guild. Offline "
-"members are excluded. This is ``None`` unless the guild is obtained using :"
-"meth:`Client.fetch_guild` or :meth:`Client.fetch_guilds` with "
+"members are excluded. This is ``None`` unless the guild is obtained "
+"using :meth:`Client.fetch_guild` or :meth:`Client.fetch_guilds` with "
 "``with_counts=True``."
 msgstr ""
 
@@ -15856,8 +15865,8 @@ msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.by_category:9
 msgid ""
-"List[Tuple[Optional[:class:`CategoryChannel`], List[:class:`abc."
-"GuildChannel`]]]"
+"List[Tuple[Optional[:class:`CategoryChannel`], "
+"List[:class:`abc.GuildChannel`]]]"
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -15972,9 +15981,7 @@ msgid "Returns the widget channel of the guild."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.Guild.widget_channel:8
-msgid ""
-"Optional[Union[:class:`TextChannel`, :class:`ForumChannel`, :class:"
-"`VoiceChannel`, :class:`StageChannel`]]"
+msgid "Optional[Union[:class:`TextChannel`, :class:`ForumChannel`, :class:`VoiceChannel`, :class:`StageChannel`]]"
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.Guild.emoji_limit:1
@@ -16279,8 +16286,8 @@ msgstr ""
 msgid ""
 "The ``overwrites`` parameter can be used to create a 'secret' channel upon "
 "creation. This parameter expects a :class:`dict` of overwrites with the "
-"target (either a :class:`Member` or a :class:`Role`) as the key and a :class:"
-"`PermissionOverwrite` as the value."
+"target (either a :class:`Member` or a :class:`Role`) as the key and "
+"a :class:`PermissionOverwrite` as the value."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -16332,9 +16339,9 @@ msgstr ""
 #: discord.guild.Guild.create_stage_channel:13
 #: discord.guild.Guild.create_forum:14
 msgid ""
-"A :class:`dict` of target (either a role or a member) to :class:"
-"`PermissionOverwrite` to apply upon creation of a channel. Useful for "
-"creating secret channels."
+"A :class:`dict` of target (either a role or a member) "
+"to :class:`PermissionOverwrite` to apply upon creation of a channel. Useful "
+"for creating secret channels."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -16421,8 +16428,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_voice_channel:3
 msgid ""
-"This is similar to :meth:`create_text_channel` except makes a :class:"
-"`VoiceChannel` instead."
+"This is similar to :meth:`create_text_channel` except makes "
+"a :class:`VoiceChannel` instead."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -16461,8 +16468,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_stage_channel:3
 msgid ""
-"This is similar to :meth:`create_text_channel` except makes a :class:"
-"`StageChannel` instead."
+"This is similar to :meth:`create_text_channel` except makes "
+"a :class:`StageChannel` instead."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -16612,8 +16619,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.edit:19
 msgid ""
 "The new description of the guild. Could be ``None`` for no description. This "
-"is only available to guilds that contain ``COMMUNITY`` in :attr:`Guild."
-"features`."
+"is only available to guilds that contain ``COMMUNITY`` "
+"in :attr:`Guild.features`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.edit:22
@@ -16641,8 +16648,8 @@ msgstr ""
 msgid ""
 "A :term:`py:bytes-like object` representing the discovery splash. Only PNG/"
 "JPEG supported. Could be ``None`` to denote removing the splash. This is "
-"only available to guilds that contain ``DISCOVERABLE`` in :attr:`Guild."
-"features`."
+"only available to guilds that contain ``DISCOVERABLE`` "
+"in :attr:`Guild.features`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.edit:42
@@ -16775,8 +16782,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.edit:129
 msgid ""
 "The time when invites should be enabled again, or ``None`` to disable the "
-"action. This must be a timezone-aware datetime object. Consider using :func:"
-"`utils.utcnow`."
+"action. This must be a timezone-aware datetime object. Consider "
+"using :func:`utils.utcnow`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.edit:134
@@ -16994,8 +17001,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.fetch_channel:7
 msgid ""
-"This method is an API call. For general usage, consider :meth:"
-"`get_channel_or_thread` instead."
+"This method is an API call. For general usage, "
+"consider :meth:`get_channel_or_thread` instead."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -17068,15 +17075,15 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.prune_members:8
 msgid ""
-"You must have both :attr:`~Permissions.kick_members` and :attr:`~Permissions."
-"manage_guild` to do this."
+"You must have both :attr:`~Permissions.kick_members` "
+"and :attr:`~Permissions.manage_guild` to do this."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.prune_members:10
 msgid ""
-"To check how many members you would prune without actually pruning, see the :"
-"meth:`estimate_pruned_members` function."
+"To check how many members you would prune without actually pruning, see "
+"the :meth:`estimate_pruned_members` function."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -17352,8 +17359,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.fetch_sticker:9
 msgid ""
-"This method is an API call. For general usage, consider iterating over :attr:"
-"`stickers` instead."
+"This method is an API call. For general usage, consider iterating "
+"over :attr:`stickers` instead."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -17576,25 +17583,25 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_scheduled_event:13
 msgid ""
-"The channel to send the scheduled event to. If the channel is a :class:"
-"`StageInstance` or :class:`VoiceChannel` then it automatically sets the "
-"entity type.  Required if ``entity_type`` is either :attr:`EntityType.voice` "
-"or :attr:`EntityType.stage_instance`."
+"The channel to send the scheduled event to. If the channel is "
+"a :class:`StageInstance` or :class:`VoiceChannel` then it automatically sets "
+"the entity type.  Required if ``entity_type`` is "
+"either :attr:`EntityType.voice` or :attr:`EntityType.stage_instance`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_scheduled_event:13
 msgid ""
-"The channel to send the scheduled event to. If the channel is a :class:"
-"`StageInstance` or :class:`VoiceChannel` then it automatically sets the "
-"entity type."
+"The channel to send the scheduled event to. If the channel is "
+"a :class:`StageInstance` or :class:`VoiceChannel` then it automatically sets "
+"the entity type."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_scheduled_event:17
 msgid ""
-"Required if ``entity_type`` is either :attr:`EntityType.voice` or :attr:"
-"`EntityType.stage_instance`."
+"Required if ``entity_type`` is either :attr:`EntityType.voice` "
+"or :attr:`EntityType.stage_instance`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -17638,10 +17645,10 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_scheduled_event:30
 msgid ""
-"The entity type of the scheduled event. If the channel is a :class:"
-"`StageInstance` or :class:`VoiceChannel` then this is automatically set to "
-"the appropriate entity type. If no channel is passed then the entity type is "
-"assumed to be :attr:`EntityType.external`"
+"The entity type of the scheduled event. If the channel is "
+"a :class:`StageInstance` or :class:`VoiceChannel` then this is automatically "
+"set to the appropriate entity type. If no channel is passed then the entity "
+"type is assumed to be :attr:`EntityType.external`"
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -17652,8 +17659,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_scheduled_event:38
 msgid ""
-"The location of the scheduled event.  Required if the ``entity_type`` is :"
-"attr:`EntityType.external`."
+"The location of the scheduled event.  Required if the ``entity_type`` "
+"is :attr:`EntityType.external`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -17678,9 +17685,10 @@ msgstr ""
 #: discord.guild.Guild.create_scheduled_event:45
 msgid ""
 "``image`` was not a :term:`py:bytes-like object`, or ``privacy_level``     "
-"was not a :class:`PrivacyLevel`, or ``entity_type`` was not an     :class:"
-"`EntityType`, ``status`` was not an :class:`EventStatus`,     or an argument "
-"was provided that was incompatible with the provided     ``entity_type``."
+"was not a :class:`PrivacyLevel`, or ``entity_type`` was not "
+"an     :class:`EntityType`, ``status`` was not an :class:`EventStatus`,     "
+"or an argument was provided that was incompatible with the provided     "
+"``entity_type``."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -17736,8 +17744,8 @@ msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.fetch_emoji:7
 msgid ""
-"This method is an API call. For general usage, consider iterating over :attr:"
-"`emojis` instead."
+"This method is an API call. For general usage, consider iterating "
+"over :attr:`emojis` instead."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.fetch_emoji:12
@@ -17901,7 +17909,6 @@ msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.create_role:7
 #: discord.guild.Guild.edit_role_positions:5
-#: discord.guild.Guild.role_member_counts:5
 #: ../../../../discord/role.py:docstring discord.role.Role.edit:5
 #: discord.role.Role.delete:5
 msgid "You must have :attr:`~Permissions.manage_roles` to do this."
@@ -18038,17 +18045,12 @@ msgid "Retrieves a mapping of roles to the number of members that have it."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
-#: discord.guild.Guild.role_member_counts:9
-msgid "You do not have permissions to view the role member counts."
-msgstr ""
-
-#: ../../../../discord/guild.py:docstring of
-#: discord.guild.Guild.role_member_counts:10
+#: discord.guild.Guild.role_member_counts:7
 msgid "Retrieving the role member counts failed."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
-#: discord.guild.Guild.role_member_counts:12
+#: discord.guild.Guild.role_member_counts:9
 msgid ""
 "A mapping of roles to the number of members that have it. If a role is not "
 "found in the cache, it will be represented as an :class:`Object` instead of "
@@ -18056,7 +18058,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
-#: discord.guild.Guild.role_member_counts:15
+#: discord.guild.Guild.role_member_counts:12
 msgid "Dict[Union[:class:`Object`, :class:`Role`], :class:`int`]"
 msgstr ""
 
@@ -18225,8 +18227,8 @@ msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.bulk_ban:7
 msgid ""
-"You must have :attr:`~Permissions.ban_members` and :attr:`~Permissions."
-"manage_guild` to do this."
+"You must have :attr:`~Permissions.ban_members` "
+"and :attr:`~Permissions.manage_guild` to do this."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.bulk_ban:11
@@ -18320,8 +18322,8 @@ msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.audit_logs:19
 msgid ""
-"entries = [entry async for entry in guild.audit_logs(limit=None, user=guild."
-"me)]\n"
+"entries = [entry async for entry in guild.audit_logs(limit=None, "
+"user=guild.me)]\n"
 "await channel.send(f'I made {len(entries)} moderation actions.')"
 msgstr ""
 
@@ -18379,8 +18381,8 @@ msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.edit_widget:3
 msgid ""
-"Edits the widget of the guild. This can also be done with :attr:`~Guild."
-"edit`."
+"Edits the widget of the guild. This can also be done "
+"with :attr:`~Guild.edit`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.edit_widget:13
@@ -18397,8 +18399,8 @@ msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.chunk:3
 msgid ""
-"Requests all members that belong to this guild. In order to use this, :meth:"
-"`Intents.members` must be enabled."
+"Requests all members that belong to this guild. In order to use "
+"this, :meth:`Intents.members` must be enabled."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of discord.guild.Guild.chunk:6
@@ -18441,8 +18443,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.query_members:18
 msgid ""
-"Whether to cache the members internally. This makes operations such as :meth:"
-"`get_member` work for those that matched."
+"Whether to cache the members internally. This makes operations such "
+"as :meth:`get_member` work for those that matched."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -18638,16 +18640,16 @@ msgstr ""
 #: discord.guild.Guild.fetch_soundboard_sound:9
 #: discord.guild.Guild.fetch_soundboard_sounds:9
 msgid ""
-"Using this, in order to receive :attr:`SoundboardSound.user`, you must have :"
-"attr:`~Permissions.create_expressions` or :attr:`~Permissions."
-"manage_expressions`."
+"Using this, in order to receive :attr:`SoundboardSound.user`, you must "
+"have :attr:`~Permissions.create_expressions` "
+"or :attr:`~Permissions.manage_expressions`."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.fetch_soundboard_sound:14
 msgid ""
-"This method is an API call. For general usage, consider :attr:"
-"`get_soundboard_sound` instead."
+"This method is an API call. For general usage, "
+"consider :attr:`get_soundboard_sound` instead."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -18682,8 +18684,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.fetch_soundboard_sounds:14
 msgid ""
-"This method is an API call. For general usage, consider :attr:"
-"`soundboard_sounds` instead."
+"This method is an API call. For general usage, "
+"consider :attr:`soundboard_sounds` instead."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -18704,8 +18706,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.create_soundboard_sound:3
 msgid ""
-"Creates a :class:`SoundboardSound` for the guild. You must have :attr:"
-"`Permissions.create_expressions` to do this."
+"Creates a :class:`SoundboardSound` for the guild. You must "
+"have :attr:`Permissions.create_expressions` to do this."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -18773,8 +18775,8 @@ msgstr ""
 #: ../../../../discord/guild.py:docstring of
 #: discord.guild.Guild.edit_onboarding:5
 msgid ""
-"You must have :attr:`Permissions.manage_guild` and :attr:`Permissions."
-"manage_roles` to do this."
+"You must have :attr:`Permissions.manage_guild` "
+"and :attr:`Permissions.manage_roles` to do this."
 msgstr ""
 
 #: ../../../../discord/guild.py:docstring of
@@ -18839,8 +18841,8 @@ msgstr ""
 
 #: ../../../api.rst:5210
 msgid ""
-"A namedtuple which represents the result returned from :meth:`~Guild."
-"bulk_ban`."
+"A namedtuple which represents the result returned "
+"from :meth:`~Guild.bulk_ban`."
 msgstr ""
 
 #: ../../../api.rst:5216
@@ -19104,25 +19106,25 @@ msgstr ""
 #: ../../../../discord/scheduled_event.py:docstring of
 #: discord.scheduled_event.ScheduledEvent.edit:11
 msgid ""
-"The channel to put the scheduled event in. If the channel is a :class:"
-"`StageInstance` or :class:`VoiceChannel` then it automatically sets the "
-"entity type.  Required if the entity type is either :attr:`EntityType.voice` "
-"or :attr:`EntityType.stage_instance`."
+"The channel to put the scheduled event in. If the channel is "
+"a :class:`StageInstance` or :class:`VoiceChannel` then it automatically sets "
+"the entity type.  Required if the entity type is "
+"either :attr:`EntityType.voice` or :attr:`EntityType.stage_instance`."
 msgstr ""
 
 #: ../../../../discord/scheduled_event.py:docstring of
 #: discord.scheduled_event.ScheduledEvent.edit:11
 msgid ""
-"The channel to put the scheduled event in. If the channel is a :class:"
-"`StageInstance` or :class:`VoiceChannel` then it automatically sets the "
-"entity type."
+"The channel to put the scheduled event in. If the channel is "
+"a :class:`StageInstance` or :class:`VoiceChannel` then it automatically sets "
+"the entity type."
 msgstr ""
 
 #: ../../../../discord/scheduled_event.py:docstring of
 #: discord.scheduled_event.ScheduledEvent.edit:15
 msgid ""
-"Required if the entity type is either :attr:`EntityType.voice` or :attr:"
-"`EntityType.stage_instance`."
+"Required if the entity type is either :attr:`EntityType.voice` "
+"or :attr:`EntityType.stage_instance`."
 msgstr ""
 
 #: ../../../../discord/scheduled_event.py:docstring of
@@ -19152,15 +19154,17 @@ msgstr ""
 #: ../../../../discord/scheduled_event.py:docstring of
 #: discord.scheduled_event.ScheduledEvent.edit:24
 msgid ""
-"If the entity type is either :attr:`EntityType.voice` or :attr:`EntityType."
-"stage_instance`, the end_time can be cleared by passing ``None``."
+"If the entity type is either :attr:`EntityType.voice` "
+"or :attr:`EntityType.stage_instance`, the end_time can be cleared by passing "
+"``None``."
 msgstr ""
 
 #: ../../../../discord/scheduled_event.py:docstring of
 #: discord.scheduled_event.ScheduledEvent.edit:32
 msgid ""
-"The new entity type. If the channel is a :class:`StageInstance` or :class:"
-"`VoiceChannel` then this is automatically set to the appropriate entity type."
+"The new entity type. If the channel is a :class:`StageInstance` "
+"or :class:`VoiceChannel` then this is automatically set to the appropriate "
+"entity type."
 msgstr ""
 
 #: ../../../../discord/scheduled_event.py:docstring of
@@ -19176,8 +19180,8 @@ msgstr ""
 #: ../../../../discord/scheduled_event.py:docstring of
 #: discord.scheduled_event.ScheduledEvent.edit:40
 msgid ""
-"The new location of the scheduled event.  Required if the entity type is :"
-"attr:`EntityType.external`."
+"The new location of the scheduled event.  Required if the entity type "
+"is :attr:`EntityType.external`."
 msgstr ""
 
 #: ../../../../discord/scheduled_event.py:docstring of
@@ -19194,10 +19198,10 @@ msgstr ""
 #: discord.scheduled_event.ScheduledEvent.edit:47
 msgid ""
 "``image`` was not a :term:`py:bytes-like object`, or ``privacy_level``     "
-"was not a :class:`PrivacyLevel`, or ``entity_type`` was not an     :class:"
-"`EntityType`, ``status`` was not an :class:`EventStatus`, or     an argument "
-"was provided that was incompatible with the scheduled event's     entity "
-"type."
+"was not a :class:`PrivacyLevel`, or ``entity_type`` was not "
+"an     :class:`EntityType`, ``status`` was not an :class:`EventStatus`, "
+"or     an argument was provided that was incompatible with the scheduled "
+"event's     entity type."
 msgstr ""
 
 #: ../../../../discord/scheduled_event.py:docstring of
@@ -19589,8 +19593,8 @@ msgstr ""
 #: ../../../../discord/member.py:docstring of discord.member.Member:39
 msgid ""
 "Due to a Discord API limitation, a user's Spotify activity may not appear if "
-"they are listening to a song with a title longer than 128 characters. See :"
-"issue:`1738` for more information."
+"they are listening to a song with a title longer than 128 characters. "
+"See :issue:`1738` for more information."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.member.Member:43
@@ -19723,8 +19727,8 @@ msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.Member.status:1
 msgid ""
-"The member's overall status. If the value is unknown, then it will be a :"
-"class:`str` instead."
+"The member's overall status. If the value is unknown, then it will be "
+"a :class:`str` instead."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.Member.status:3
@@ -19755,15 +19759,15 @@ msgstr ""
 #: ../../../../discord/member.py:docstring of discord.Member.colour:1
 msgid ""
 "A property that returns a colour denoting the rendered colour for the "
-"member. If the default colour is the one rendered then an instance of :meth:"
-"`Colour.default` is returned."
+"member. If the default colour is the one rendered then an instance "
+"of :meth:`Colour.default` is returned."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.Member.color:1
 msgid ""
 "A property that returns a color denoting the rendered color for the member. "
-"If the default color is the one rendered then an instance of :meth:`Colour."
-"default` is returned."
+"If the default color is the one rendered then an instance "
+"of :meth:`Colour.default` is returned."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.Member.roles:1
@@ -19831,14 +19835,14 @@ msgstr ""
 #: ../../../../discord/member.py:docstring of discord.Member.activity:6
 msgid ""
 "Due to a Discord API limitation, this may be ``None`` if the user is "
-"listening to a song on Spotify with a title longer than 128 characters. See :"
-"issue:`1738` for more information."
+"listening to a song on Spotify with a title longer than 128 characters. "
+"See :issue:`1738` for more information."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.Member.activity:12
 msgid ""
-"A user may have multiple activities, these can be accessed under :attr:"
-"`activities`."
+"A user may have multiple activities, these can be accessed "
+"under :attr:`activities`."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.Member.activity:14
@@ -19876,8 +19880,8 @@ msgstr ""
 msgid ""
 "This only takes into consideration the guild permissions and not most of the "
 "implied permissions or any of the channel permission overwrites. For 100% "
-"accurate permission calculation, please use :meth:`abc.GuildChannel."
-"permissions_for`."
+"accurate permission calculation, please "
+"use :meth:`abc.GuildChannel.permissions_for`."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of
@@ -19902,9 +19906,9 @@ msgstr ""
 msgid ""
 "This is only available in interaction contexts and represents the resolved "
 "permissions of the member in the channel the interaction was executed in. "
-"This is more or less equivalent to calling :meth:`abc.GuildChannel."
-"permissions_for` but stored and returned as an attribute by the Discord API "
-"rather than computed."
+"This is more or less equivalent to "
+"calling :meth:`abc.GuildChannel.permissions_for` but stored and returned as "
+"an attribute by the Discord API rather than computed."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of
@@ -19948,8 +19952,8 @@ msgstr ""
 msgid ""
 "To upload an avatar or banner, a :term:`py:bytes-like object` must be passed "
 "in that represents the image being uploaded. If this is done through a file "
-"then the file must be opened via ``open('some_filename', 'rb')`` and the :"
-"term:`py:bytes-like object` is given through the use of ``fp.read()``."
+"then the file must be opened via ``open('some_filename', 'rb')`` and "
+"the :term:`py:bytes-like object` is given through the use of ``fp.read()``."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.member.Member.edit:12
@@ -20052,8 +20056,8 @@ msgstr ""
 #: ../../../../discord/member.py:docstring of discord.member.Member.edit:55
 msgid ""
 "The date the member's timeout should expire, or ``None`` to remove the "
-"timeout. This must be a timezone-aware datetime object. Consider using :func:"
-"`utils.utcnow`."
+"timeout. This must be a timezone-aware datetime object. Consider "
+"using :func:`utils.utcnow`."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.member.Member.edit:60
@@ -20178,10 +20182,10 @@ msgstr ""
 #: ../../../../discord/member.py:docstring of discord.member.Member.timeout:10
 msgid ""
 "If this is a :class:`datetime.timedelta` then it represents the amount of "
-"time the member should be timed out for. If this is a :class:`datetime."
-"datetime` then it's when the member's timeout should expire. If ``None`` is "
-"passed then the timeout is removed. Note that the API only allows for "
-"timeouts up to 28 days."
+"time the member should be timed out for. If this is "
+"a :class:`datetime.datetime` then it's when the member's timeout should "
+"expire. If ``None`` is passed then the timeout is removed. Note that the API "
+"only allows for timeouts up to 28 days."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.member.Member.timeout:18
@@ -20196,9 +20200,9 @@ msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.member.Member.add_roles:5
 msgid ""
-"You must have :attr:`~Permissions.manage_roles` to use this, and the added :"
-"class:`Role`\\s must appear lower in the list of roles than the highest role "
-"of the client."
+"You must have :attr:`~Permissions.manage_roles` to use this, and the "
+"added :class:`Role`\\s must appear lower in the list of roles than the "
+"highest role of the client."
 msgstr ""
 
 #: ../../../../discord/member.py:docstring of discord.member.Member.add_roles:9
@@ -20353,8 +20357,8 @@ msgstr ""
 #: ../../../../discord/activity.py:docstring of discord.Spotify.type:1
 #: discord.CustomActivity.type:1
 msgid ""
-"Returns the activity's type. This is for compatibility with :class:"
-"`Activity`."
+"Returns the activity's type. This is for compatibility "
+"with :class:`Activity`."
 msgstr ""
 
 #: ../../../../discord/activity.py:docstring of discord.Spotify.type:3
@@ -20567,16 +20571,18 @@ msgstr ""
 
 #: ../../../../discord/emoji.py:docstring of discord.emoji.Emoji:73
 msgid ""
-"The user that created the emoji. This can only be retrieved using :meth:"
-"`Guild.fetch_emoji` and having :attr:`~Permissions.manage_emojis`."
+"The user that created the emoji. This can only be retrieved "
+"using :meth:`Guild.fetch_emoji` and "
+"having :attr:`~Permissions.manage_emojis`."
 msgstr ""
 
 #: ../../../../discord/emoji.py:docstring of discord.emoji.Emoji:76
 msgid ""
 "Or if :meth:`.is_application_owned` is ``True``, this is the team member "
 "that uploaded the emoji, or the bot user if it was uploaded using the API "
-"and this can only be retrieved using :meth:`~discord.Client."
-"fetch_application_emoji` or :meth:`~discord.Client.fetch_application_emojis`."
+"and this can only be retrieved "
+"using :meth:`~discord.Client.fetch_application_emoji` "
+"or :meth:`~discord.Client.fetch_application_emojis`."
 msgstr ""
 
 #: ../../../../discord/emoji.py:docstring of discord.Emoji.created_at:1
@@ -20609,8 +20615,8 @@ msgstr ""
 
 #: ../../../../discord/emoji.py:docstring of discord.emoji.Emoji.delete:5
 msgid ""
-"You must have :attr:`~Permissions.manage_emojis` to do this if :meth:`."
-"is_application_owned` is ``False``."
+"You must have :attr:`~Permissions.manage_emojis` to do this "
+"if :meth:`.is_application_owned` is ``False``."
 msgstr ""
 
 #: ../../../../discord/emoji.py:docstring of discord.emoji.Emoji.delete:8
@@ -20643,8 +20649,8 @@ msgstr ""
 #: ../../../../discord/emoji.py:docstring of discord.emoji.Emoji.edit:12
 msgid ""
 "A list of roles that can use this emoji. An empty list can be passed to make "
-"it available to everyone.  This does not apply if :meth:`."
-"is_application_owned` is ``True``."
+"it available to everyone.  This does not apply "
+"if :meth:`.is_application_owned` is ``True``."
 msgstr ""
 
 #: ../../../../discord/emoji.py:docstring of discord.emoji.Emoji.edit:12
@@ -20730,8 +20736,8 @@ msgstr ""
 #: ../../../../discord/partial_emoji.py:docstring of
 #: discord.partial_emoji.PartialEmoji.from_str:1
 msgid ""
-"Converts a Discord string representation of an emoji to a :class:"
-"`PartialEmoji`."
+"Converts a Discord string representation of an emoji to "
+"a :class:`PartialEmoji`."
 msgstr ""
 
 #: ../../../../discord/partial_emoji.py:docstring of
@@ -20902,8 +20908,8 @@ msgstr ""
 #: ../../../../discord/role.py:docstring of discord.role.Role:85
 #: discord.Role.icon:7
 msgid ""
-"If you want the icon that a role has displayed, consider using :attr:"
-"`display_icon`."
+"If you want the icon that a role has displayed, consider "
+"using :attr:`display_icon`."
 msgstr ""
 
 #: ../../../../discord/role.py:docstring of discord.role.Role:93
@@ -21057,8 +21063,8 @@ msgid ""
 "A :term:`py:bytes-like object` representing the icon or :class:`str` "
 "representing unicode emoji that should be used as a role icon. Could be "
 "``None`` to denote removal of the icon. Only PNG/JPEG is supported. This is "
-"only available to guilds that contain ``ROLE_ICONS`` in :attr:`Guild."
-"features`."
+"only available to guilds that contain ``ROLE_ICONS`` "
+"in :attr:`Guild.features`."
 msgstr ""
 
 #: ../../../../discord/role.py:docstring of discord.role.Role.edit:48
@@ -21180,8 +21186,8 @@ msgstr ""
 
 #: ../../../../discord/role.py:docstring of discord.role.RoleTags:6
 msgid ""
-"While this can be accessed, a useful interface is also provided in the :"
-"class:`Role` and :class:`Guild` classes as well."
+"While this can be accessed, a useful interface is also provided in "
+"the :class:`Role` and :class:`Guild` classes as well."
 msgstr ""
 
 #: ../../../../discord/role.py:docstring of discord.role.RoleTags:13
@@ -21220,8 +21226,8 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.PartialMessageable:4
 msgid ""
-"The only way to construct this class is through :meth:`Client."
-"get_partial_messageable`."
+"The only way to construct this class is "
+"through :meth:`Client.get_partial_messageable`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -21413,8 +21419,8 @@ msgstr ""
 #: discord.channel.VoiceChannel:103 discord.channel.StageChannel:106
 msgid ""
 "The number of seconds a member must wait between sending messages in this "
-"channel. A value of ``0`` denotes that it is disabled. Bots and users with :"
-"attr:`~Permissions.bypass_slowmode` bypass slowmode."
+"channel. A value of ``0`` denotes that it is disabled. Bots and users "
+"with :attr:`~Permissions.bypass_slowmode` bypass slowmode."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.TextChannel:75
@@ -21495,8 +21501,8 @@ msgstr ""
 #: discord.StageChannel.last_message:10
 msgid ""
 "For a slightly more reliable method of fetching the last message, consider "
-"using either :meth:`history` or :meth:`fetch_message` with the :attr:"
-"`last_message_id` attribute."
+"using either :meth:`history` or :meth:`fetch_message` with "
+"the :attr:`last_message_id` attribute."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -21582,9 +21588,10 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.TextChannel.edit:37
 msgid ""
-"Change the type of this text channel. Currently, only conversion between :"
-"attr:`ChannelType.text` and :attr:`ChannelType.news` is supported. This is "
-"only available to guilds that contain ``NEWS`` in :attr:`Guild.features`."
+"Change the type of this text channel. Currently, only conversion "
+"between :attr:`ChannelType.text` and :attr:`ChannelType.news` is supported. "
+"This is only available to guilds that contain ``NEWS`` "
+"in :attr:`Guild.features`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -21597,8 +21604,8 @@ msgstr ""
 #: discord.channel.TextChannel.edit:43 discord.channel.VoiceChannel.edit:41
 #: discord.channel.StageChannel.edit:41 discord.channel.CategoryChannel.edit:25
 msgid ""
-"A :class:`Mapping` of target (either a role or a member) to :class:"
-"`PermissionOverwrite` to apply to the channel."
+"A :class:`Mapping` of target (either a role or a member) "
+"to :class:`PermissionOverwrite` to apply to the channel."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -21783,8 +21790,8 @@ msgstr ""
 #: ../../../../discord/threads.py:docstring discord.threads.Thread.purge:25
 #: discord.channel.VocalGuildChannel.purge:27
 msgid ""
-"The function used to check if a message should be deleted. It must take a :"
-"class:`Message` as its sole parameter."
+"The function used to check if a message should be deleted. It must take "
+"a :class:`Message` as its sole parameter."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -21997,9 +22004,10 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.TextChannel.create_thread:5
 msgid ""
-"To create a public thread, you must have :attr:`~discord.Permissions."
-"create_public_threads`. For a private thread, :attr:`~discord.Permissions."
-"create_private_threads` is needed instead."
+"To create a public thread, you must "
+"have :attr:`~discord.Permissions.create_public_threads`. For a private "
+"thread, :attr:`~discord.Permissions.create_private_threads` is needed "
+"instead."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -22166,8 +22174,8 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumChannel:71
 msgid ""
 "The number of seconds a member must wait between creating threads in this "
-"forum. A value of ``0`` denotes that it is disabled. Bots and users with :"
-"attr:`~Permissions.bypass_slowmode` bypass slowmode."
+"forum. A value of ``0`` denotes that it is disabled. Bots and users "
+"with :attr:`~Permissions.bypass_slowmode` bypass slowmode."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumChannel:79
@@ -22182,8 +22190,8 @@ msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumChannel:108
 msgid ""
-"The default layout for posts in this forum channel. Defaults to :attr:"
-"`ForumLayoutType.not_set`."
+"The default layout for posts in this forum channel. Defaults "
+"to :attr:`ForumLayoutType.not_set`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumChannel:113
@@ -22195,8 +22203,7 @@ msgid "Optional[:class:`ForumOrderType`]"
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.ForumChannel.flags:1
-#: ../../../../discord/threads.py:docstring discord.Thread.flags:1
-msgid "The flags associated with this thread."
+msgid "The flags associated with this forum."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.ForumChannel.flags:5
@@ -22282,9 +22289,10 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.ForumChannel.edit:24
 msgid ""
-"Change the type of this text forum. Currently, only conversion between :attr:"
-"`ChannelType.text` and :attr:`ChannelType.news` is supported. This is only "
-"available to guilds that contain ``NEWS`` in :attr:`Guild.features`."
+"Change the type of this text forum. Currently, only conversion "
+"between :attr:`ChannelType.text` and :attr:`ChannelType.news` is supported. "
+"This is only available to guilds that contain ``NEWS`` "
+"in :attr:`Guild.features`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -22295,8 +22303,8 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.ForumChannel.edit:30
 msgid ""
-"A :class:`Mapping` of target (either a role or a member) to :class:"
-"`PermissionOverwrite` to apply to the forum."
+"A :class:`Mapping` of target (either a role or a member) "
+"to :class:`PermissionOverwrite` to apply to the forum."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -22412,8 +22420,8 @@ msgstr ""
 #: discord.channel.ForumChannel.create_thread:5
 msgid ""
 "This thread is a public thread with the initial message given. Currently in "
-"order to start a thread in this forum, the user needs :attr:`~discord."
-"Permissions.send_messages`."
+"order to start a thread in this forum, the user "
+"needs :attr:`~discord.Permissions.send_messages`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -22457,8 +22465,8 @@ msgstr ""
 #: discord.channel.ForumChannel.archived_threads:1
 msgid ""
 "Returns an :term:`asynchronous iterator` that iterates over all archived "
-"threads in this forum in order of decreasing :attr:`Thread."
-"archive_timestamp`."
+"threads in this forum in order of "
+"decreasing :attr:`Thread.archive_timestamp`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -22521,8 +22529,8 @@ msgstr ""
 #: ../../../../discord/threads.py:docstring of discord.threads.Thread:62
 msgid ""
 "The number of seconds a member must wait between sending messages in this "
-"thread. A value of ``0`` denotes that it is disabled. Bots and users with :"
-"attr:`~Permissions.bypass_slowmode` bypass slowmode."
+"thread. A value of ``0`` denotes that it is disabled. Bots and users "
+"with :attr:`~Permissions.bypass_slowmode` bypass slowmode."
 msgstr ""
 
 #: ../../../../discord/threads.py:docstring of discord.threads.Thread:70
@@ -22591,6 +22599,10 @@ msgstr ""
 msgid "Optional[Union[:class:`ForumChannel`, :class:`TextChannel`]]"
 msgstr ""
 
+#: ../../../../discord/threads.py:docstring of discord.Thread.flags:1
+msgid "The flags associated with this thread."
+msgstr ""
+
 #: ../../../../discord/threads.py:docstring of discord.Thread.owner:1
 msgid "The member this thread belongs to."
 msgstr ""
@@ -22610,8 +22622,8 @@ msgstr ""
 #: ../../../../discord/threads.py:docstring of discord.Thread.members:3
 msgid ""
 "This requires :attr:`Intents.members` to be properly filled. Most of the "
-"time however, this data is not provided by the gateway and a call to :meth:"
-"`fetch_members` is needed."
+"time however, this data is not provided by the gateway and a call "
+"to :meth:`fetch_members` is needed."
 msgstr ""
 
 #: ../../../../discord/threads.py:docstring of discord.Thread.members:7
@@ -22701,8 +22713,8 @@ msgstr ""
 
 #: ../../../../discord/threads.py:docstring of discord.threads.Thread.is_news:3
 msgid ""
-"A news thread is a thread that has a parent that is a news channel, i.e. :"
-"meth:`.TextChannel.is_news` is ``True``."
+"A news thread is a thread that has a parent that is a news channel, "
+"i.e. :meth:`.TextChannel.is_news` is ``True``."
 msgstr ""
 
 #: ../../../../discord/threads.py:docstring of discord.threads.Thread.is_nsfw:1
@@ -22711,8 +22723,8 @@ msgstr ""
 
 #: ../../../../discord/threads.py:docstring of discord.threads.Thread.is_nsfw:3
 msgid ""
-"An NSFW thread is a thread that has a parent that is an NSFW channel, i.e. :"
-"meth:`.TextChannel.is_nsfw` is ``True``."
+"An NSFW thread is a thread that has a parent that is an NSFW channel, "
+"i.e. :meth:`.TextChannel.is_nsfw` is ``True``."
 msgstr ""
 
 #: ../../../../discord/threads.py:docstring of
@@ -22751,8 +22763,8 @@ msgstr ""
 msgid ""
 "Editing the thread requires :attr:`.Permissions.manage_threads`. The thread "
 "creator can also edit ``name``, ``archived`` or ``auto_archive_duration``. "
-"Note that if the thread is locked then only those with :attr:`.Permissions."
-"manage_threads` can unarchive a thread."
+"Note that if the thread is locked then only those "
+"with :attr:`.Permissions.manage_threads` can unarchive a thread."
 msgstr ""
 
 #: ../../../../discord/threads.py:docstring of discord.threads.Thread.edit:10
@@ -22832,8 +22844,8 @@ msgstr ""
 #: ../../../../discord/threads.py:docstring of
 #: discord.threads.Thread.add_tags:8
 msgid ""
-"Tags that have :attr:`ForumTag.moderated` set to ``True`` require :attr:"
-"`~Permissions.manage_threads` to be added."
+"Tags that have :attr:`ForumTag.moderated` set to ``True`` "
+"require :attr:`~Permissions.manage_threads` to be added."
 msgstr ""
 
 #: ../../../../discord/threads.py:docstring of
@@ -22931,8 +22943,9 @@ msgstr ""
 #: discord.threads.Thread.add_user:5
 msgid ""
 "You must have :attr:`~Permissions.send_messages_in_threads` to add a user to "
-"a thread. If the thread is private and :attr:`invitable` is ``False`` then :"
-"attr:`~Permissions.manage_messages` is required to add a user to the thread."
+"a thread. If the thread is private and :attr:`invitable` is ``False`` "
+"then :attr:`~Permissions.manage_messages` is required to add a user to the "
+"thread."
 msgstr ""
 
 #: ../../../../discord/threads.py:docstring of
@@ -23143,9 +23156,10 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.VoiceChannel.send_sound:5
 msgid ""
-"You must have :attr:`~Permissions.speak` and :attr:`~Permissions."
-"use_soundboard` to do this. Additionally, you must have :attr:`~Permissions."
-"use_external_sounds` if the sound is from a different guild."
+"You must have :attr:`~Permissions.speak` "
+"and :attr:`~Permissions.use_soundboard` to do this. Additionally, you must "
+"have :attr:`~Permissions.use_external_sounds` if the sound is from a "
+"different guild."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -23381,16 +23395,16 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.StageChannel.create_instance:11
 msgid ""
-"The stage instance's privacy level. Defaults to :attr:`PrivacyLevel."
-"guild_only`."
+"The stage instance's privacy level. Defaults "
+"to :attr:`PrivacyLevel.guild_only`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.StageChannel.create_instance:13
 msgid ""
 "Whether to send a start notification. This sends a push notification to "
-"@everyone if ``True``. Defaults to ``False``. You must have :attr:"
-"`~Permissions.mention_everyone` to do this."
+"@everyone if ``True``. Defaults to ``False``. You must "
+"have :attr:`~Permissions.mention_everyone` to do this."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
@@ -23740,29 +23754,29 @@ msgstr ""
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.CategoryChannel.create_text_channel:3
 msgid ""
-"A shortcut method to :meth:`Guild.create_text_channel` to create a :class:"
-"`TextChannel` in the category."
+"A shortcut method to :meth:`Guild.create_text_channel` to create "
+"a :class:`TextChannel` in the category."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.CategoryChannel.create_voice_channel:3
 msgid ""
-"A shortcut method to :meth:`Guild.create_voice_channel` to create a :class:"
-"`VoiceChannel` in the category."
+"A shortcut method to :meth:`Guild.create_voice_channel` to create "
+"a :class:`VoiceChannel` in the category."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.CategoryChannel.create_stage_channel:3
 msgid ""
-"A shortcut method to :meth:`Guild.create_stage_channel` to create a :class:"
-"`StageChannel` in the category."
+"A shortcut method to :meth:`Guild.create_stage_channel` to create "
+"a :class:`StageChannel` in the category."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of
 #: discord.channel.CategoryChannel.create_forum:3
 msgid ""
-"A shortcut method to :meth:`Guild.create_forum` to create a :class:"
-"`ForumChannel` in the category."
+"A shortcut method to :meth:`Guild.create_forum` to create "
+"a :class:`ForumChannel` in the category."
 msgstr ""
 
 #: ../../../api.rst:5459
@@ -23944,8 +23958,8 @@ msgstr ""
 #: ../../../../discord/invite.py:docstring of
 #: discord.invite.PartialInviteGuild:3 discord.invite.PartialInviteChannel:3
 msgid ""
-"This model will be given when the user is not part of the guild the :class:"
-"`Invite` resolves to."
+"This model will be given when the user is not part of the guild "
+"the :class:`Invite` resolves to."
 msgstr ""
 
 #: ../../../../discord/invite.py:docstring of
@@ -24170,8 +24184,7 @@ msgid ""
 msgstr ""
 
 #: ../../../../discord/invite.py:docstring of discord.invite.Invite:71
-msgid ""
-"Optional[Union[:class:`Guild`, :class:`Object`, :class:`PartialInviteGuild`]]"
+msgid "Optional[Union[:class:`Guild`, :class:`Object`, :class:`PartialInviteGuild`]]"
 msgstr ""
 
 #: ../../../../discord/invite.py:docstring of discord.invite.Invite:75
@@ -24223,9 +24236,7 @@ msgid "The channel the invite is for."
 msgstr ""
 
 #: ../../../../discord/invite.py:docstring of discord.invite.Invite:140
-msgid ""
-"Optional[Union[:class:`abc.GuildChannel`, :class:`Object`, :class:"
-"`PartialInviteChannel`]]"
+msgid "Optional[Union[:class:`abc.GuildChannel`, :class:`Object`, :class:`PartialInviteChannel`]]"
 msgstr ""
 
 #: ../../../../discord/invite.py:docstring of discord.invite.Invite:144
@@ -24443,8 +24454,8 @@ msgstr ""
 #: ../../../../discord/welcome_screen.py:docstring of
 #: discord.WelcomeScreen.enabled:3
 msgid ""
-"This is equivalent to checking if ``WELCOME_SCREEN_ENABLED`` is present in :"
-"attr:`Guild.features`."
+"This is equivalent to checking if ``WELCOME_SCREEN_ENABLED`` is present "
+"in :attr:`Guild.features`."
 msgstr ""
 
 #: ../../../../discord/welcome_screen.py:docstring of
@@ -24739,9 +24750,9 @@ msgstr ""
 #: ../../../../discord/widget.py:docstring of
 #: discord.widget.Widget.fetch_invite:7
 msgid ""
-"Whether to include count information in the invite. This fills the :attr:"
-"`Invite.approximate_member_count` and :attr:`Invite."
-"approximate_presence_count` fields."
+"Whether to include count information in the invite. This fills "
+"the :attr:`Invite.approximate_member_count` "
+"and :attr:`Invite.approximate_presence_count` fields."
 msgstr ""
 
 #: ../../../../discord/widget.py:docstring of
@@ -24961,9 +24972,9 @@ msgstr ""
 
 #: ../../../../discord/sticker.py:docstring of discord.sticker.GuildSticker:57
 msgid ""
-"The user that created this sticker. This can only be retrieved using :meth:"
-"`Guild.fetch_sticker` and having :attr:`~Permissions."
-"manage_emojis_and_stickers`."
+"The user that created this sticker. This can only be retrieved "
+"using :meth:`Guild.fetch_sticker` and "
+"having :attr:`~Permissions.manage_emojis_and_stickers`."
 msgstr ""
 
 #: ../../../../discord/sticker.py:docstring of discord.sticker.GuildSticker:64
@@ -25341,8 +25352,9 @@ msgstr ""
 #: discord.soundboard.SoundboardSound.edit:5
 msgid ""
 "You must have :attr:`~Permissions.manage_expressions` to edit the sound. If "
-"the sound was created by the client, you must have either :attr:"
-"`~Permissions.manage_expressions` or :attr:`~Permissions.create_expressions`."
+"the sound was created by the client, you must have "
+"either :attr:`~Permissions.manage_expressions` "
+"or :attr:`~Permissions.create_expressions`."
 msgstr ""
 
 #: ../../../../discord/soundboard.py:docstring of
@@ -25389,8 +25401,9 @@ msgstr ""
 #: discord.soundboard.SoundboardSound.delete:5
 msgid ""
 "You must have :attr:`~Permissions.manage_expressions` to delete the sound. "
-"If the sound was created by the client, you must have either :attr:"
-"`~Permissions.manage_expressions` or :attr:`~Permissions.create_expressions`."
+"If the sound was created by the client, you must have "
+"either :attr:`~Permissions.manage_expressions` "
+"or :attr:`~Permissions.create_expressions`."
 msgstr ""
 
 #: ../../../../discord/soundboard.py:docstring of
@@ -25418,8 +25431,8 @@ msgstr ""
 
 #: ../../../../discord/shard.py:docstring of discord.shard.ShardInfo:3
 msgid ""
-"You can retrieve this object via :meth:`AutoShardedClient.get_shard` or :"
-"attr:`AutoShardedClient.shards`."
+"You can retrieve this object via :meth:`AutoShardedClient.get_shard` "
+"or :attr:`AutoShardedClient.shards`."
 msgstr ""
 
 #: ../../../../discord/shard.py:docstring of discord.shard.ShardInfo:10
@@ -25478,8 +25491,7 @@ msgstr ""
 
 #: ../../../../discord/shard.py:docstring of
 #: discord.shard.SessionStartLimits:13
-msgid ""
-"Remaining remaining number of session starts the current user is allowed"
+msgid "Remaining number of session starts the current user is allowed"
 msgstr ""
 
 #: ../../../../discord/shard.py:docstring of
@@ -25546,7 +25558,7 @@ msgstr ""
 
 #: ../../../../discord/sku.py:docstring of
 #: discord.sku.SKU.fetch_subscription:10
-msgid "An subscription with this ID does not exist."
+msgid "A subscription with this ID does not exist."
 msgstr ""
 
 #: ../../../../discord/sku.py:docstring of
@@ -25578,8 +25590,8 @@ msgstr ""
 
 #: ../../../../discord/sku.py:docstring of discord.sku.SKU.subscriptions:14
 msgid ""
-"subscriptions = [subscription async for subscription in sku."
-"subscriptions(limit=100, user=user)]\n"
+"subscriptions = [subscription async for subscription in "
+"sku.subscriptions(limit=100, user=user)]\n"
 "# subscriptions is now a list of Subscription..."
 msgstr ""
 
@@ -25890,8 +25902,8 @@ msgstr ""
 #: discord.raw_models.RawMessageUpdateEvent:33
 msgid ""
 "The cached message, if found in the internal message cache. Represents the "
-"message before it is modified by the data in :attr:`RawMessageUpdateEvent."
-"data`."
+"message before it is modified by the data "
+"in :attr:`RawMessageUpdateEvent.data`."
 msgstr ""
 
 #: ../../../api.rst:5711
@@ -25901,8 +25913,8 @@ msgstr ""
 #: ../../../../discord/raw_models.py:docstring of
 #: discord.raw_models.RawReactionActionEvent:1
 msgid ""
-"Represents the payload for a :func:`on_raw_reaction_add` or :func:"
-"`on_raw_reaction_remove` event."
+"Represents the payload for a :func:`on_raw_reaction_add` "
+"or :func:`on_raw_reaction_remove` event."
 msgstr ""
 
 #: ../../../../discord/raw_models.py:docstring of
@@ -26256,8 +26268,8 @@ msgstr ""
 #: ../../../../discord/raw_models.py:docstring of
 #: discord.raw_models.RawPollVoteActionEvent:1
 msgid ""
-"Represents the payload for a :func:`on_raw_poll_vote_add` or :func:"
-"`on_raw_poll_vote_remove` event."
+"Represents the payload for a :func:`on_raw_poll_vote_add` "
+"or :func:`on_raw_poll_vote_remove` event."
 msgstr ""
 
 #: ../../../../discord/raw_models.py:docstring of
@@ -26430,8 +26442,8 @@ msgstr ""
 
 #: ../../../../discord/poll.py:docstring of discord.poll.PollAnswer.voters:3
 msgid ""
-"The ``after`` parameter must represent a user and meet the :class:`abc."
-"Snowflake` abc."
+"The ``after`` parameter must represent a user and meet "
+"the :class:`abc.Snowflake` abc."
 msgstr ""
 
 #: ../../../../discord/poll.py:docstring of discord.poll.PollAnswer.voters:6
@@ -26467,9 +26479,10 @@ msgstr ""
 #: ../../../../discord/poll.py:docstring of discord.poll.PollAnswer.voters:29
 msgid ""
 "Union[:class:`User`, :class:`Member`] -- The member (if retrievable) or the "
-"user that has voted on this poll answer. The case where it can be a :class:"
-"`Member` is in a guild message context. Sometimes it can be a :class:`User` "
-"if the member has left the guild or if the member is not cached."
+"user that has voted on this poll answer. The case where it can be "
+"a :class:`Member` is in a guild message context. Sometimes it can be "
+"a :class:`User` if the member has left the guild or if the member is not "
+"cached."
 msgstr ""
 
 #: ../../../api.rst:5831
@@ -26546,8 +26559,8 @@ msgstr ""
 
 #: ../../../../discord/presences.py:docstring of discord.ClientStatus.status:1
 msgid ""
-"The user's overall status. If the value is unknown, then it will be a :class:"
-"`str` instead."
+"The user's overall status. If the value is unknown, then it will be "
+"a :class:`str` instead."
 msgstr ""
 
 #: ../../../../discord/presences.py:docstring of
@@ -26607,8 +26620,8 @@ msgstr ""
 #: ../../../../discord/primary_guild.py:docstring of
 #: discord.primary_guild.PrimaryGuild:23
 msgid ""
-"Users can have their primary guild publicly displayed while still having an :"
-"attr:`id` of ``None``. Be careful when checking this attribute!"
+"Users can have their primary guild publicly displayed while still having "
+"an :attr:`id` of ``None``. Be careful when checking this attribute!"
 msgstr ""
 
 #: ../../../../discord/primary_guild.py:docstring of
@@ -26638,8 +26651,8 @@ msgstr ""
 #: ../../../../discord/collectible.py:docstring of
 #: discord.collectible.Collectible:13
 msgid ""
-"The palette of the collectible. This is only available if ``type`` is :class:"
-"`CollectibleType.nameplate`."
+"The palette of the collectible. This is only available if ``type`` "
+"is :class:`CollectibleType.nameplate`."
 msgstr ""
 
 #: ../../../../discord/collectible.py:docstring of
@@ -26682,8 +26695,8 @@ msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.CallMessage:1
 msgid ""
-"Represents a message's call data in a private channel from a :class:"
-"`~discord.Message`."
+"Represents a message's call data in a private channel from "
+"a :class:`~discord.Message`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of discord.message.CallMessage:7
@@ -26742,9 +26755,10 @@ msgstr ""
 
 #: ../../../../discord/object.py:docstring of discord.object.Object:9
 msgid ""
-"There are also some cases where some websocket events are received in :issue:"
-"`strange order <21>` and when such events happened you would receive this "
-"class rather than the actual data class. These cases are extremely rare."
+"There are also some cases where some websocket events are received "
+"in :issue:`strange order <21>` and when such events happened you would "
+"receive this class rather than the actual data class. These cases are "
+"extremely rare."
 msgstr ""
 
 #: ../../../../discord/object.py:docstring of discord.object.Object:18
@@ -27186,8 +27200,8 @@ msgstr ""
 #: discord.mentions.AllowedMentions:3
 msgid ""
 "This class can be set during :class:`Client` initialisation to apply to "
-"every message sent. It can also be applied on a per message basis via :meth:"
-"`abc.Messageable.send` for more fine-grained control."
+"every message sent. It can also be applied on a per message basis "
+"via :meth:`abc.Messageable.send` for more fine-grained control."
 msgstr ""
 
 #: ../../../../discord/mentions.py:docstring of
@@ -27295,8 +27309,8 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.message.MessageReference.from_message:1
 msgid ""
-"Creates a :class:`MessageReference` from an existing :class:`~discord."
-"Message`."
+"Creates a :class:`MessageReference` from an "
+"existing :class:`~discord.Message`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of
@@ -27389,9 +27403,7 @@ msgstr ""
 
 #: ../../../../discord/message.py:docstring of
 #: discord.message.PartialMessage:35
-msgid ""
-"Union[:class:`PartialMessageable`, :class:`TextChannel`, :class:"
-"`StageChannel`, :class:`VoiceChannel`, :class:`Thread`, :class:`DMChannel`]"
+msgid "Union[:class:`PartialMessageable`, :class:`TextChannel`, :class:`StageChannel`, :class:`VoiceChannel`, :class:`Thread`, :class:`DMChannel`]"
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of
@@ -27442,8 +27454,8 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.message.RoleSubscriptionInfo:3
 msgid ""
-"This is currently only attached to messages of type :attr:`MessageType."
-"role_subscription_purchase`."
+"This is currently only attached to messages of "
+"type :attr:`MessageType.role_subscription_purchase`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of
@@ -27478,8 +27490,8 @@ msgstr ""
 #: ../../../../discord/message.py:docstring of
 #: discord.message.PurchaseNotification:3
 msgid ""
-"This is currently only attached to messages of type :attr:`MessageType."
-"purchase_notification`."
+"This is currently only attached to messages of "
+"type :attr:`MessageType.purchase_notification`."
 msgstr ""
 
 #: ../../../../discord/message.py:docstring of
@@ -27988,8 +28000,8 @@ msgstr ""
 
 #: ../../../docstring of discord.Intents.messages:3
 msgid ""
-"This is a shortcut to set or get both :attr:`guild_messages` and :attr:"
-"`dm_messages`."
+"This is a shortcut to set or get both :attr:`guild_messages` "
+"and :attr:`dm_messages`."
 msgstr ""
 
 #: ../../../docstring of discord.Intents.messages:7
@@ -28139,8 +28151,8 @@ msgstr ""
 
 #: ../../../docstring of discord.Intents.reactions:3
 msgid ""
-"This is a shortcut to set or get both :attr:`guild_reactions` and :attr:"
-"`dm_reactions`."
+"This is a shortcut to set or get both :attr:`guild_reactions` "
+"and :attr:`dm_reactions`."
 msgstr ""
 
 #: ../../../docstring of discord.Intents.reactions:10
@@ -28215,8 +28227,8 @@ msgstr ""
 
 #: ../../../docstring of discord.Intents.typing:3
 msgid ""
-"This is a shortcut to set or get both :attr:`guild_typing` and :attr:"
-"`dm_typing`."
+"This is a shortcut to set or get both :attr:`guild_typing` "
+"and :attr:`dm_typing`."
 msgstr ""
 
 #: ../../../docstring of discord.Intents.typing:7
@@ -28354,8 +28366,8 @@ msgstr ""
 
 #: ../../../docstring of discord.Intents.polls:3
 msgid ""
-"This is a shortcut to set or get both :attr:`guild_polls` and :attr:"
-"`dm_polls`."
+"This is a shortcut to set or get both :attr:`guild_polls` "
+"and :attr:`dm_polls`."
 msgstr ""
 
 #: ../../../docstring of discord.Intents.polls:7
@@ -28701,8 +28713,8 @@ msgstr ""
 
 #: ../../../docstring of discord.ChannelFlags.hide_media_download_options:1
 msgid ""
-"Returns ``True`` if the client hides embedded media download options in a :"
-"class:`ForumChannel`. Only available in media channels."
+"Returns ``True`` if the client hides embedded media download options in "
+"a :class:`ForumChannel`. Only available in media channels."
 msgstr ""
 
 #: ../../../api.rst:5992
@@ -28771,8 +28783,8 @@ msgstr ""
 #: ../../../../discord/automod.py:docstring of
 #: discord.automod.AutoModRuleAction:10
 msgid ""
-"The type of action to take. Defaults to :attr:`~AutoModRuleActionType."
-"block_message`."
+"The type of action to take. Defaults "
+"to :attr:`~AutoModRuleActionType.block_message`."
 msgstr ""
 
 #: ../../../../discord/automod.py:docstring of
@@ -28784,8 +28796,8 @@ msgstr ""
 #: discord.automod.AutoModRuleAction:17
 msgid ""
 "The ID of the channel or thread to send the alert message to, if any. "
-"Passing this sets :attr:`type` to :attr:`~AutoModRuleActionType."
-"send_alert_message`."
+"Passing this sets :attr:`type` "
+"to :attr:`~AutoModRuleActionType.send_alert_message`."
 msgstr ""
 
 #: ../../../../discord/automod.py:docstring of
@@ -28804,8 +28816,8 @@ msgstr ""
 #: discord.automod.AutoModRuleAction:32
 msgid ""
 "A custom message which will be shown to a user when their message is "
-"blocked. Passing this sets :attr:`type` to :attr:`~AutoModRuleActionType."
-"block_message`."
+"blocked. Passing this sets :attr:`type` "
+"to :attr:`~AutoModRuleActionType.block_message`."
 msgstr ""
 
 #: ../../../api.rst:6008
@@ -28818,8 +28830,8 @@ msgstr ""
 
 #: ../../../../discord/automod.py:docstring of discord.automod.AutoModTrigger:3
 msgid ""
-"The following table illustrates relevant attributes for each :class:"
-"`AutoModRuleTriggerType`:"
+"The following table illustrates relevant attributes for "
+"each :class:`AutoModRuleTriggerType`:"
 msgstr ""
 
 #: ../../../../discord/automod.py:docstring of discord.automod.AutoModTrigger:6
@@ -28941,8 +28953,8 @@ msgstr ""
 
 #: ../../../../discord/file.py:docstring of discord.file.File:6
 msgid ""
-"File objects are single use and are not meant to be reused in multiple :meth:"
-"`abc.Messageable.send`\\s."
+"File objects are single use and are not meant to be reused in "
+"multiple :meth:`abc.Messageable.send`\\s."
 msgstr ""
 
 #: ../../../../discord/file.py:docstring of discord.file.File:11
@@ -28967,8 +28979,8 @@ msgstr ""
 
 #: ../../../../discord/file.py:docstring of discord.file.File:26
 msgid ""
-"Whether the attachment is a spoiler. If left unspecified, the :attr:`~File."
-"filename` is used to determine if the file is a spoiler."
+"Whether the attachment is a spoiler. If left unspecified, "
+"the :attr:`~File.filename` is used to determine if the file is a spoiler."
 msgstr ""
 
 #: ../../../../discord/file.py:docstring of discord.file.File:33
@@ -28991,8 +29003,8 @@ msgstr ""
 
 #: ../../../../discord/file.py:docstring of discord.File.uri:6
 msgid ""
-"Due to Discord's filename processing, the filename must be ASCII aphanumeric "
-"with underscores, dashes, and periods."
+"Due to Discord's filename processing, the filename must be ASCII "
+"alphanumeric with underscores, dashes, and periods."
 msgstr ""
 
 #: ../../../api.rst:6024
@@ -29703,8 +29715,8 @@ msgstr ""
 
 #: ../../../../discord/activity.py:docstring of discord.activity.Streaming:59
 msgid ""
-"A dictionary comprising of similar keys than those in :attr:`Activity."
-"assets`."
+"A dictionary comprising of similar keys than those "
+"in :attr:`Activity.assets`."
 msgstr ""
 
 #: ../../../../discord/activity.py:docstring of discord.Streaming.type:3
@@ -29980,16 +29992,15 @@ msgstr ""
 #: ../../../../discord/permissions.py:docstring of
 #: discord.permissions.Permissions.all_channel:20
 msgid ""
-"Added :attr:`stream`, :attr:`priority_speaker` and :attr:"
-"`use_application_commands` permissions."
+"Added :attr:`stream`, :attr:`priority_speaker` "
+"and :attr:`use_application_commands` permissions."
 msgstr ""
 
 #: ../../../../discord/permissions.py:docstring of
 #: discord.permissions.Permissions.all_channel:23
 msgid ""
-"Added :attr:`create_public_threads`, :attr:`create_private_threads`, :attr:"
-"`manage_threads`, :attr:`use_external_stickers`, :attr:"
-"`send_messages_in_threads` and :attr:`request_to_speak` permissions."
+"Added :attr:`create_public_threads`, :attr:`create_private_threads`, :attr:`manage_threads`, :attr:`use_external_stickers`, :attr:`send_messages_in_threads` "
+"and :attr:`request_to_speak` permissions."
 msgstr ""
 
 #: ../../../../discord/permissions.py:docstring of
@@ -30000,9 +30011,9 @@ msgstr ""
 #: ../../../../discord/permissions.py:docstring of
 #: discord.permissions.Permissions.all_channel:31
 msgid ""
-"Added :attr:`send_polls`, :attr:`send_voice_messages`, attr:"
-"`use_external_sounds`, :attr:`use_embedded_activities`, and :attr:"
-"`use_external_apps` permissions."
+"Added :attr:`send_polls`, :attr:`send_voice_messages`, "
+"attr:`use_external_sounds`, :attr:`use_embedded_activities`, "
+"and :attr:`use_external_apps` permissions."
 msgstr ""
 
 #: ../../../../discord/permissions.py:docstring of
@@ -30022,9 +30033,9 @@ msgstr ""
 #: discord.permissions.Permissions.general:4
 msgid ""
 "Permission :attr:`read_messages` is now included in the general permissions, "
-"but permissions :attr:`administrator`, :attr:`create_instant_invite`, :attr:"
-"`kick_members`, :attr:`ban_members`, :attr:`change_nickname` and :attr:"
-"`manage_nicknames` are no longer part of the general permissions."
+"but "
+"permissions :attr:`administrator`, :attr:`create_instant_invite`, :attr:`kick_members`, :attr:`ban_members`, :attr:`change_nickname` "
+"and :attr:`manage_nicknames` are no longer part of the general permissions."
 msgstr ""
 
 #: ../../../../discord/permissions.py:docstring of
@@ -30061,9 +30072,8 @@ msgstr ""
 #: ../../../../discord/permissions.py:docstring of
 #: discord.permissions.Permissions.text:8
 msgid ""
-"Added :attr:`create_public_threads`, :attr:`create_private_threads`, :attr:"
-"`manage_threads`, :attr:`send_messages_in_threads` and :attr:"
-"`use_external_stickers` permissions."
+"Added :attr:`create_public_threads`, :attr:`create_private_threads`, :attr:`manage_threads`, :attr:`send_messages_in_threads` "
+"and :attr:`use_external_stickers` permissions."
 msgstr ""
 
 #: ../../../../discord/permissions.py:docstring of
@@ -30121,8 +30131,8 @@ msgstr ""
 #: ../../../../discord/permissions.py:docstring of
 #: discord.permissions.Permissions.stage_moderator:10
 msgid ""
-"Added :attr:`manage_channels` permission and removed :attr:"
-"`request_to_speak` permission."
+"Added :attr:`manage_channels` permission and "
+"removed :attr:`request_to_speak` permission."
 msgstr ""
 
 #: ../../../../discord/permissions.py:docstring of
@@ -30899,8 +30909,8 @@ msgstr ""
 
 #: ../../../docstring of discord.MemberFlags.did_rejoin:1
 msgid ""
-"Returns ``True`` if the member left and rejoined the :attr:`~discord.Member."
-"guild`."
+"Returns ``True`` if the member left and rejoined "
+"the :attr:`~discord.Member.guild`."
 msgstr ""
 
 #: ../../../docstring of discord.MemberFlags.completed_onboarding:1
@@ -31181,8 +31191,8 @@ msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumTag:1
 msgid ""
-"Represents a forum tag that can be applied to a thread within a :class:"
-"`ForumChannel`."
+"Represents a forum tag that can be applied to a thread within "
+"a :class:`ForumChannel`."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumTag:9
@@ -31208,8 +31218,8 @@ msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumTag:38
 msgid ""
-"Whether this tag can only be added or removed by a moderator with the :attr:"
-"`~Permissions.manage_threads` permission."
+"Whether this tag can only be added or removed by a moderator with "
+"the :attr:`~Permissions.manage_threads` permission."
 msgstr ""
 
 #: ../../../../discord/channel.py:docstring of discord.channel.ForumTag:45
@@ -31445,9 +31455,9 @@ msgstr ""
 
 #: ../../../../discord/errors.py:docstring of discord.errors.HTTPException:5
 msgid ""
-"The response of the failed HTTP request. This is an instance of :class:"
-"`aiohttp.ClientResponse`. In some cases this could also be a :class:"
-"`requests.Response`."
+"The response of the failed HTTP request. This is an instance "
+"of :class:`aiohttp.ClientResponse`. In some cases this could also be "
+"a :class:`requests.Response`."
 msgstr ""
 
 #: ../../../../discord/errors.py:docstring of discord.errors.HTTPException:9
@@ -31576,8 +31586,8 @@ msgstr ""
 #: ../../../../discord/errors.py:docstring of
 #: discord.errors.InteractionResponded:1
 msgid ""
-"Exception that's raised when sending another interaction response using :"
-"class:`InteractionResponse` when one has already been done before."
+"Exception that's raised when sending another interaction response "
+"using :class:`InteractionResponse` when one has already been done before."
 msgstr ""
 
 #: ../../../../discord/errors.py:docstring of
@@ -31611,15 +31621,15 @@ msgstr ""
 #: ../../../../discord/errors.py:docstring of
 #: discord.errors.MissingApplicationID:6
 msgid ""
-"This inherits from :exc:`~discord.app_commands.AppCommandError` and :class:"
-"`~discord.ClientException`."
+"This inherits from :exc:`~discord.app_commands.AppCommandError` "
+"and :class:`~discord.ClientException`."
 msgstr ""
 
 #: ../../../../discord/errors.py:docstring of
 #: discord.errors.MissingApplicationID:11
 msgid ""
-"This is now exported to the ``discord`` namespace and now inherits from :"
-"class:`~discord.ClientException`."
+"This is now exported to the ``discord`` namespace and now inherits "
+"from :class:`~discord.ClientException`."
 msgstr ""
 
 #: ../../../../discord/errors.py:docstring of

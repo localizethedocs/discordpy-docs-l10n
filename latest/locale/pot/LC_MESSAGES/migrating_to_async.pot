@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -88,8 +89,9 @@ msgstr ""
 
 #: ../../../migrating_to_async.rst:51
 msgid ""
-"Because there is a lot of typing, a utility decorator (:meth:`Client."
-"async_event`) is provided for easier registration. For example:"
+"Because there is a lot of typing, a utility decorator "
+"(:meth:`Client.async_event`) is provided for easier registration. For "
+"example:"
 msgstr ""
 
 #: ../../../migrating_to_async.rst:54
@@ -138,10 +140,10 @@ msgstr ""
 
 #: ../../../migrating_to_async.rst:93
 msgid ""
-"Note that ``on_status`` was removed. If you want its functionality, use :"
-"func:`on_member_update`. See :ref:`discord-api-events` for more information. "
-"Other removed events include ``on_socket_closed``, ``on_socket_receive``, "
-"and ``on_socket_opened``."
+"Note that ``on_status`` was removed. If you want its functionality, "
+"use :func:`on_member_update`. See :ref:`discord-api-events` for more "
+"information. Other removed events include ``on_socket_closed``, "
+"``on_socket_receive``, and ``on_socket_opened``."
 msgstr ""
 
 #: ../../../migrating_to_async.rst:98

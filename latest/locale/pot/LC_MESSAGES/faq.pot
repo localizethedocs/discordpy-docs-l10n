@@ -8,10 +8,11 @@ msgid ""
 msgstr ""
 "Project-Id-Version: discord.py latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-17 13:14+0000\n"
+"POT-Creation-Date: 2026-10-26 14:53+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -85,15 +86,15 @@ msgstr ""
 #: ../../../faq.rst:43
 msgid ""
 "If logging is enabled, this library will attempt to warn you that blocking "
-"is occurring with the message: ``Heartbeat blocked for more than N seconds."
-"`` See :ref:`logging_setup` for details on enabling logging."
+"is occurring with the message: ``Heartbeat blocked for more than N "
+"seconds.`` See :ref:`logging_setup` for details on enabling logging."
 msgstr ""
 
 #: ../../../faq.rst:47
 msgid ""
-"A common source of blocking for too long is something like :func:`time."
-"sleep`. Don't do that. Use :func:`asyncio.sleep` instead. Similar to this "
-"example: ::"
+"A common source of blocking for too long is something "
+"like :func:`time.sleep`. Don't do that. Use :func:`asyncio.sleep` instead. "
+"Similar to this example: ::"
 msgstr ""
 
 #: ../../../faq.rst:50
@@ -109,10 +110,10 @@ msgstr ""
 msgid ""
 "Another common source of blocking for too long is using HTTP requests with "
 "the famous module :doc:`req:index`. While :doc:`req:index` is an amazing "
-"module for non-asynchronous programming, it is not a good choice for :mod:"
-"`asyncio` because certain requests can block the event loop too long. "
-"Instead, use the :doc:`aiohttp <aio:index>` library which is installed on "
-"the side with this library."
+"module for non-asynchronous programming, it is not a good choice "
+"for :mod:`asyncio` because certain requests can block the event loop too "
+"long. Instead, use the :doc:`aiohttp <aio:index>` library which is installed "
+"on the side with this library."
 msgstr ""
 
 #: ../../../faq.rst:61
@@ -166,8 +167,9 @@ msgstr ""
 
 #: ../../../faq.rst:92
 msgid ""
-"The constructor may be used for static activities, while :meth:`Client."
-"change_presence` may be used to update the activity at runtime."
+"The constructor may be used for static activities, "
+"while :meth:`Client.change_presence` may be used to update the activity at "
+"runtime."
 msgstr ""
 
 #: ../../../faq.rst:96
@@ -208,8 +210,8 @@ msgid ""
 "client = discord.Client(activity=discord.Game(name='my game'))\n"
 "\n"
 "# or, for watching:\n"
-"activity = discord.Activity(name='my activity', type=discord.ActivityType."
-"watching)\n"
+"activity = discord.Activity(name='my activity', "
+"type=discord.ActivityType.watching)\n"
 "client = discord.Client(activity=activity)"
 msgstr ""
 
@@ -235,8 +237,8 @@ msgstr ""
 
 #: ../../../faq.rst:125
 msgid ""
-"Get the :class:`User` or :class:`Member` object and call :meth:`abc."
-"Messageable.send`. For example: ::"
+"Get the :class:`User` or :class:`Member` object and "
+"call :meth:`abc.Messageable.send`. For example: ::"
 msgstr ""
 
 #: ../../../faq.rst:127
@@ -322,8 +324,8 @@ msgstr ""
 #: ../../../faq.rst:168
 msgid ""
 "If you want to upload something from a URL, you will have to use an HTTP "
-"request using :doc:`aiohttp <aio:index>` and then pass an :class:`io."
-"BytesIO` instance to :class:`File` like so:"
+"request using :doc:`aiohttp <aio:index>` and then pass "
+"an :class:`io.BytesIO` instance to :class:`File` like so:"
 msgstr ""
 
 #: ../../../faq.rst:171
@@ -389,15 +391,16 @@ msgid ""
 "For custom emoji, you should pass an instance of :class:`Emoji`. You can "
 "also pass a ``'<:name:id>'`` string, but if you can use said emoji, you "
 "should be able to use :meth:`Client.get_emoji` to get an emoji via ID or "
-"use :func:`utils.find`/ :func:`utils.get` on :attr:`Client.emojis` or :attr:"
-"`Guild.emojis` collections."
+"use :func:`utils.find`/ :func:`utils.get` on :attr:`Client.emojis` "
+"or :attr:`Guild.emojis` collections."
 msgstr ""
 
 #: ../../../faq.rst:210
 msgid ""
 "The name and ID of a custom emoji can be found with the client by prefixing "
-"``:custom_emoji:`` with a backslash. For example, sending the message ``\\:"
-"python3:`` with the client will result in ``<:python3:232720527448342530>``."
+"``:custom_emoji:`` with a backslash. For example, sending the message "
+"``\\:python3:`` with the client will result in "
+"``<:python3:232720527448342530>``."
 msgstr ""
 
 #: ../../../faq.rst:215
@@ -433,9 +436,9 @@ msgid ""
 "The first gotcha that you must be aware of is that calling a coroutine is "
 "not a thread-safe operation. Since we are technically in another thread, we "
 "must take caution in calling thread-safe operations so things do not bug "
-"out. Luckily for us, :mod:`asyncio` comes with a :func:`asyncio."
-"run_coroutine_threadsafe` function that allows us to call a coroutine from "
-"another thread."
+"out. Luckily for us, :mod:`asyncio` comes with "
+"a :func:`asyncio.run_coroutine_threadsafe` function that allows us to call a "
+"coroutine from another thread."
 msgstr ""
 
 #: ../../../faq.rst:243
@@ -541,8 +544,8 @@ msgstr ""
 
 #: ../../../faq.rst:289
 msgid ""
-"If the functions above do not help you, then use of :func:`utils.find` or :"
-"func:`utils.get` would serve some use in finding specific models."
+"If the functions above do not help you, then use of :func:`utils.find` "
+"or :func:`utils.get` would serve some use in finding specific models."
 msgstr ""
 
 #: ../../../faq.rst:294
@@ -563,8 +566,8 @@ msgstr ""
 #: ../../../faq.rst:307
 msgid ""
 "To make a request, you should use a non-blocking library. This library "
-"already uses and requires a 3rd party library for making requests, :doc:"
-"`aiohttp <aio:index>`."
+"already uses and requires a 3rd party library for making "
+"requests, :doc:`aiohttp <aio:index>`."
 msgstr ""
 
 #: ../../../faq.rst:312
@@ -700,8 +703,8 @@ msgstr ""
 
 #: ../../../faq.rst:400
 msgid ""
-"The :class:`~ext.commands.Context` contains an attribute, :attr:`~.Context."
-"message` to get the original message."
+"The :class:`~ext.commands.Context` contains an "
+"attribute, :attr:`~.Context.message` to get the original message."
 msgstr ""
 
 #: ../../../faq.rst:403 ../../../faq.rst:417
@@ -765,8 +768,8 @@ msgstr ""
 #: ../../../faq.rst:442
 msgid ""
 "Attach a message to the :class:`~discord.ui.View` using either the return "
-"type of :meth:`~abc.Messageable.send` or retrieving it via :attr:"
-"`InteractionCallbackResponse.resource`."
+"type of :meth:`~abc.Messageable.send` or retrieving it "
+"via :attr:`InteractionCallbackResponse.resource`."
 msgstr ""
 
 #: ../../../faq.rst:443
@@ -809,10 +812,10 @@ msgstr ""
 
 #: ../../../faq.rst:470
 msgid ""
-"Application commands, when you respond with :meth:`InteractionResponse."
-"send_message`, return an instance of :class:`InteractionCallbackResponse` "
-"which contains the message you sent. This is the message you should attach "
-"to the view."
+"Application commands, when you respond "
+"with :meth:`InteractionResponse.send_message`, return an instance "
+"of :class:`InteractionCallbackResponse` which contains the message you sent. "
+"This is the message you should attach to the view."
 msgstr ""
 
 #: ../../../faq.rst:472
@@ -859,11 +862,11 @@ msgstr ""
 msgid ""
 "Did you invite your bot with the correct permissions? Bots need to be "
 "invited with the ``applications.commands`` scope in addition to the ``bot`` "
-"scope. For example, invite the bot with the following URL: ``https://discord."
-"com/oauth2/authorize?client_id=<client id>&scope=applications."
-"commands+bot``. Alternatively, if you use :func:`utils.oauth_url`, you can "
-"call the function as such: ``oauth_url(<other options>, scopes=(\"bot\", "
-"\"applications.commands\"))``."
+"scope. For example, invite the bot with the following URL: ``https://"
+"discord.com/oauth2/authorize?client_id=<client "
+"id>&scope=applications.commands+bot``. Alternatively, if you "
+"use :func:`utils.oauth_url`, you can call the function as such: "
+"``oauth_url(<other options>, scopes=(\"bot\", \"applications.commands\"))``."
 msgstr ""
 
 #: ../../../faq.rst:505
@@ -892,8 +895,8 @@ msgstr ""
 #: ../../../faq.rst:514
 msgid ""
 "@app_commands.command()  # or @tree.command()\n"
-"@app_commands.guilds(123456789012345678)  # or @app_commands.guilds(discord."
-"Object(123456789012345678))\n"
+"@app_commands.guilds(123456789012345678)  # or "
+"@app_commands.guilds(discord.Object(123456789012345678))\n"
 "async def ping(interaction: Interaction):\n"
 "    await interaction.response.send_message(\"Pong!\")\n"
 "\n"
@@ -922,8 +925,8 @@ msgstr ""
 
 #: ../../../faq.rst:537
 msgid ""
-"Using the ``guild`` or ``guilds`` argument in the :meth:`~app_commands."
-"CommandTree.command` decorator:"
+"Using the ``guild`` or ``guilds`` argument in "
+"the :meth:`~app_commands.CommandTree.command` decorator:"
 msgstr ""
 
 #: ../../../faq.rst:539
@@ -950,8 +953,9 @@ msgstr ""
 
 #: ../../../faq.rst:557
 msgid ""
-"Do not combine this method with the :meth:`~app_commands.CommandTree."
-"command` decorator, as it will cause duplicate commands."
+"Do not combine this method with "
+"the :meth:`~app_commands.CommandTree.command` decorator, as it will cause "
+"duplicate commands."
 msgstr ""
 
 #: ../../../faq.rst:560
