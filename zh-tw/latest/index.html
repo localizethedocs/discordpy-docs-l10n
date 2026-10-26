@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>歡迎使用 discord.py</title>
+ 
+<script type="text/javascript" src="ltd-provenance.js"></script>
+<script type="text/javascript" src="ltd-current.js"></script>
+<script type="text/javascript" src="../../ltd-config.js"></script>
+<script type="text/javascript" src="../../ltd-flyout.js"></script>
+
+  <!-- end extra head -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+  <link rel="stylesheet" type="text/css" href="_static/basic.css" />
+  <link rel="stylesheet" type="text/css" href="_static/tabs.css" />
+  <link rel="stylesheet" href="_static/style.css" type="text/css" />
+  <link rel="stylesheet" href="_static/codeblocks.css" type="text/css" />
+  <link rel="stylesheet" href="_static/icons.css" type="text/css" />
+  <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+  <script type="text/javascript">
+    var DPY_TRANSLATIONS = {
+      copy_code: "複製程式碼",
+      copy_code_error: "Could not copy codeblock:",
+    }
+  </script>
+  <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+  <script src="_static/jquery.js"></script>
+  <script src="_static/underscore.js"></script>
+  <script src="_static/doctools.js"></script>
+  <script src="_static/tabs.js"></script>
+  <script src="_static/translations.js"></script>
+  <script src="_static/custom.js"></script>
+  <script src="_static/settings.js"></script>
+  <script src="_static/copy.js"></script>
+  <script src="_static/sidebar.js"></script>
+  <link rel="canonical" href="https://projects.localizethedocs.org/discordpy-docs-l10n/index.html" />
+  <link rel="shortcut icon" href="_static/discord_py_logo.ico"/>
+  <link rel="index" title="索引" href="genindex.html" />
+  <link rel="search" title="搜尋" href="search.html" />
+  <link rel="next" title="discord.ext.commands – Bot commands framework" href="ext/commands/index.html" />
+</head>
+<body>
+  <div class="main-grid">
+    <header class="grid-item">
+      <nav>
+        <a href="#" class="main-heading">discord.py</a>
+        <a href="https://github.com/Rapptz/discord.py" title="GitHub"><span class="material-icons custom-icons">github</span></a>
+        <a href="https://discord.gg/r3sSKJJ" title="Discord"><span class="material-icons custom-icons">discord</span></a>
+        <a href="faq.html" title="常見問題"><span class="material-icons">help_center</span></a>
+        <a onclick="mobileSearch.open();" title="搜尋" id="open-search" class="mobile-only"><span class="material-icons">search</span></a>
+        <a onclick="mobileSearch.close();" title="關閉" id="close-search" class="mobile-only" hidden><span class="material-icons">close</span></a>
+      </nav>
+      <nav class="mobile-only">
+        <form role="search" class="search" action="search.html" method="get">
+          <div class="search-wrapper">
+            <input type="search" name="q" placeholder="搜尋文件" />
+            <button type="submit">
+              <span class="material-icons">search</span>
+            </button>
+          </div>
+        </form>
+      </nav>
+    </header>
+    <div class="sub-header grid-item">
+      <label for="documentation_select">View Documentation For</label>
+      <select id="documentation_select" onchange="window.location = this.value;">
+        <option value="#" selected>discord</option>
+        <option value="ext/commands/index.html" >discord.ext.commands</option>
+        <option value="ext/tasks/index.html" >discord.ext.tasks</option>
+      </select>
+      <form id="search-form" role="search" class="search" action="search.html" method="get">
+        <div class="search-wrapper">
+          <input type="search" name="q" placeholder="搜尋文件" />
+          <button type="submit" onmousedown="searchBarClick(event, document.getElementById('search-form'));">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+      </form>
+      <a accesskey="S" class="settings" onclick="settingsModal.open();"><span class="material-icons">settings</span></a>
+    </div>
+    <aside class="grid-item">
+      <span id="hamburger-toggle">
+        <span class="material-icons">menu</span>
+      </span>
+      <span id="settings-toggle" class="settings" onclick="settingsModal.open();">
+        <span class="material-icons">settings</span>
+      </span>
+      <div id="sidebar">
+        <form id="sidebar-form" role="search" class="search" action="search.html" method="get">
+        <div class="search-wrapper search-sidebar">
+          <input type="search" name="q" placeholder="搜尋文件" />
+          <button type="submit" onmousedown="searchBarClick(event, document.getElementById('sidebar-form'));">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+      </form>
+  <div>
+    <h3><a href="#">目錄</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">歡迎使用 discord.py</a><ul>
+<li><a class="reference internal" href="#getting-started">開始使用</a></li>
+<li><a class="reference internal" href="#getting-help">取得幫助</a></li>
+<li><a class="reference internal" href="#extensions">擴充功能</a></li>
+<li><a class="reference internal" href="#manuals">手冊</a></li>
+<li><a class="reference internal" href="#meta">其他資訊</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+      </div>
+    </aside>
+    <main class="grid-item" role="main">
+      
+  <section id="welcome-to-discord-py">
+<h1>歡迎使用 discord.py<a class="headerlink" href="#welcome-to-discord-py" title="本標題的永久連結">¶</a></h1>
+<img alt="_images/snake.svg" src="_images/snake.svg" /><img alt="_images/snake_dark.svg" src="_images/snake_dark.svg" /><p>discord.py 是一個現代、易於使用、功能豐富且支援異步的 Discord API 包裝器。</p>
+<p><strong>功能：</strong></p>
+<ul class="simple">
+<li><p>使用 <code class="docutils literal notranslate"><span class="pre">async</span></code>/<code class="docutils literal notranslate"><span class="pre">await</span></code> 語法的現代 Pythonic API</p></li>
+<li><p>合理的速率限制處理機制，防止 429 錯誤</p></li>
+<li><p>用於協助機器人開發的命令擴充功能</p></li>
+<li><p>物件導向設計，易於使用</p></li>
+<li><p>在速度與記憶體使用上皆經過最佳化</p></li>
+</ul>
+<section id="getting-started">
+<h2>開始使用<a class="headerlink" href="#getting-started" title="本標題的永久連結">¶</a></h2>
+<p>這是您第一次使用這個程式庫嗎？這裡是您開始著手的最佳起點！</p>
+<ul class="simple">
+<li><p><strong>起步走：</strong> <a class="reference internal" href="intro.html"><span class="doc">介紹</span></a> | <a class="reference internal" href="quickstart.html"><span class="doc">快速入門</span></a> | <a class="reference internal" href="logging.html"><span class="doc">設定日誌記錄</span></a></p></li>
+<li><p><strong>與 Discord 協作：</strong> <a class="reference internal" href="discord.html"><span class="doc">建立機器人帳號</span></a> | <a class="reference internal" href="intents.html"><span class="doc">A Primer to Gateway Intents</span></a></p></li>
+<li><p><strong>範例：</strong> 在 <a class="reference external" href="https://github.com/Rapptz/discord.py/tree/master/examples">儲存庫</a> 中有許多範例可供參考。</p></li>
+</ul>
+</section>
+<section id="getting-help">
+<h2>取得幫助<a class="headerlink" href="#getting-help" title="本標題的永久連結">¶</a></h2>
+<p>如果您遇到任何問題，這些資源或許能幫上忙。</p>
+<ul class="simple">
+<li><p>先試試 <a class="reference internal" href="faq.html"><span class="doc">常見問題</span></a>，裡面有所有常見問題的解答。</p></li>
+<li><p>在我們的 <a class="reference external" href="https://discord.gg/r3sSKJJ">Discord</a> 伺服器中向我們提問或與我們閒聊。</p></li>
+<li><p>如果您在尋找特定內容，請試試 <a class="reference internal" href="genindex.html"><span class="std std-ref">索引</span></a> 或 <a class="reference internal" href="search.html"><span class="std std-ref">搜尋</span></a>。</p></li>
+<li><p>在 <a class="reference external" href="https://github.com/Rapptz/discord.py/issues">議題追蹤器</a> 中回報錯誤。</p></li>
+<li><p>在我們的 <a class="reference external" href="https://github.com/Rapptz/discord.py/discussions">GitHub 討論頁面</a>中發問。</p></li>
+</ul>
+</section>
+<section id="extensions">
+<h2>擴充功能<a class="headerlink" href="#extensions" title="本標題的永久連結">¶</a></h2>
+<p>這些擴充功能可在開發過程中協助您處理常見任務。</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ext/commands/index.html"><code class="docutils literal notranslate"><span class="pre">discord.ext.commands</span></code> – Bot commands framework</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext/tasks/index.html"><code class="docutils literal notranslate"><span class="pre">discord.ext.tasks</span></code> – asyncio.Task helpers</a></li>
+</ul>
+</div>
+</section>
+<section id="manuals">
+<h2>手冊<a class="headerlink" href="#manuals" title="本標題的永久連結">¶</a></h2>
+<p>這些頁面詳細介紹了 API 所能做到的一切。</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API 參考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interactions/api.html">Interactions API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext/commands/api.html">discord.ext.commands API 參考</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ext/tasks/index.html">discord.ext.tasks API 參考</a></li>
+</ul>
+</div>
+</section>
+<section id="meta">
+<h2>其他資訊<a class="headerlink" href="#meta" title="本標題的永久連結">¶</a></h2>
+<p>如果您在尋找與專案本身相關的資訊，這裡應有盡有。</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="whats_new.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="version_guarantees.html">版本保證</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating.html">遷移至 v2.0</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating.html#migrating-to-v1-0">遷移至 v1.0</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+    </main>
+    <footer class="grid-item">
+        &#169; 版權所有 2015-present, Rapptz。
+      使用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0 建立。
+    </footer>
+  </div>
+
+  <div id="settings" class="modal" onclick="if (event.target == this){ settingsModal.close(); }" hidden>
+    <div class="modal-content">
+      <span class="close" onclick="settingsModal.close();" title="關閉">
+        <span class="material-icons">close</span>
+      </span>
+      <h1>設定</h1>
+
+      <h2>Font</h2>
+      <div class="setting">
+        <h3>Use a serif font:
+          <label class="toggle"
+            title="Use a serif font? Your system font will be used, falling back to serif.">
+            <input type="checkbox" name="useSerifFont" onclick="updateSetting(this);">
+            <span class="toggle-slider"></span>
+          </label>
+        </h3>
+      </div>
+
+      <h2>主題</h2>
+      <div class="setting">
+        <h3>
+          <label class="toggle" title="Set your theme based on your system preferences">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="automatic" checked>
+          </label>
+          Automatic
+        </h3>
+        <h3>
+          <label class="toggle" title="Set your theme to light theme">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="light">
+          </label>
+          淺色
+        </h3>
+        <h3>
+          <label class="toggle" title="Set your theme to dark theme">
+            <input type="radio" name="setTheme" onclick="updateSetting(this);" value="dark">
+          </label>
+          深色
+        </h3>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="to-top" onclick="scrollToTop()" hidden>
+    <span><span class="material-icons">arrow_upward</span>to top</span>
+  </div>
+
+</body>
+</html>
