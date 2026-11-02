@@ -195,8 +195,8 @@ msgstr "新增機器人的人需要擁有「Manage Server」權限才能執行�
 #: ../../../discord.rst:90
 msgid ""
 "If you want to generate this URL dynamically at run-time inside your bot and "
-"using the :class:`discord.Permissions` interface, you can use :func:`discord."
-"utils.oauth_url`."
+"using the :class:`discord.Permissions` interface, you can "
+"use :func:`discord.utils.oauth_url`."
 msgstr ""
 "如果您想要在機器人執行期間使用 :class:`discord.Permissions` 介面動態產生此網"
 "址，可以使用 :func:`discord.utils.oauth_url`。"

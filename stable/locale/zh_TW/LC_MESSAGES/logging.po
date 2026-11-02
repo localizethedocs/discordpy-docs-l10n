@@ -35,10 +35,10 @@ msgstr ""
 
 #: ../../../logging.rst:13
 msgid ""
-"The default logging configuration provided by the library will print to :"
-"data:`sys.stderr` using coloured output. You can configure it to send to a "
-"file instead by using one of the built-in :mod:`logging.handlers`, such as :"
-"class:`logging.FileHandler`."
+"The default logging configuration provided by the library will print "
+"to :data:`sys.stderr` using coloured output. You can configure it to send to "
+"a file instead by using one of the built-in :mod:`logging.handlers`, such "
+"as :class:`logging.FileHandler`."
 msgstr ""
 "程式庫提供的預設日誌設定會使用彩色輸出將內容列印到 :data:`sys.stderr`。您也可"
 "以改用內建的 :mod:`logging.handlers`（例如 :class:`logging.FileHandler`）將其"
@@ -124,8 +124,8 @@ msgstr ""
 #: ../../../logging.rst:52
 msgid ""
 "If you want to setup logging using the library provided configuration "
-"without using :meth:`Client.run`, you can use :func:`discord.utils."
-"setup_logging`:"
+"without using :meth:`Client.run`, you can "
+"use :func:`discord.utils.setup_logging`:"
 msgstr ""
 "如果您想在不使用 :meth:`Client.run` 的情況下使用程式庫提供的設定來設置日誌，"
 "可以使用 :func:`discord.utils.setup_logging`："
@@ -207,8 +207,8 @@ msgstr ""
 
 #: ../../../logging.rst:91
 msgid ""
-"For more information, check the documentation and tutorial of the :mod:"
-"`logging` module."
+"For more information, check the documentation and tutorial of "
+"the :mod:`logging` module."
 msgstr "如需更多資訊，請查閱 :mod:`logging` 模組的文件與教學。"
 
 #: ../../../logging.rst:95

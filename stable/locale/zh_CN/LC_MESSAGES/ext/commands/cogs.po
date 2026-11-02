@@ -61,8 +61,8 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:19
 msgid ""
-"It should be noted that cogs are typically used alongside with :ref:"
-"`ext_commands_extensions`."
+"It should be noted that cogs are typically used alongside "
+"with :ref:`ext_commands_extensions`."
 msgstr ""
 
 #: ../../../ext/commands/cogs.rst:22
@@ -106,8 +106,8 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:51
 msgid ""
-"All listeners must be explicitly marked via decorator, :meth:`~.commands.Cog."
-"listener`."
+"All listeners must be explicitly marked via "
+"decorator, :meth:`~.commands.Cog.listener`."
 msgstr ""
 
 #: ../../../ext/commands/cogs.rst:52
@@ -144,9 +144,9 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:66
 msgid ""
-"Note that we reference the cog by name, which we can override through :ref:"
-"`ext_commands_cogs_meta_options`. So if we ever want to remove the cog "
-"eventually, we would have to do the following."
+"Note that we reference the cog by name, which we can override "
+"through :ref:`ext_commands_cogs_meta_options`. So if we ever want to remove "
+"the cog eventually, we would have to do the following."
 msgstr ""
 
 #: ../../../ext/commands/cogs.rst:68
@@ -264,8 +264,8 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:139
 msgid ""
-"To see more options that you can set, see the documentation of :class:`."
-"commands.CogMeta`."
+"To see more options that you can set, see the documentation "
+"of :class:`.commands.CogMeta`."
 msgstr ""
 
 #: ../../../ext/commands/cogs.rst:142
@@ -292,8 +292,8 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:153
 msgid ""
-"If we want to get the subcommands as well, we can use the :meth:`.Cog."
-"walk_commands` generator. ::"
+"If we want to get the subcommands as well, we can use "
+"the :meth:`.Cog.walk_commands` generator. ::"
 msgstr ""
 
 #: ../../../ext/commands/cogs.rst:155
@@ -302,9 +302,10 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:157
 msgid ""
-"To do the same with listeners, we can query them with :meth:`.Cog."
-"get_listeners`. This returns a list of tuples -- the first element being the "
-"listener name and the second one being the actual function itself. ::"
+"To do the same with listeners, we can query them "
+"with :meth:`.Cog.get_listeners`. This returns a list of tuples -- the first "
+"element being the listener name and the second one being the actual function "
+"itself. ::"
 msgstr ""
 
 #: ../../../ext/commands/cogs.rst:159

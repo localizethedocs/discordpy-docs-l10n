@@ -32,10 +32,10 @@ msgstr ""
 
 #: ../../../logging.rst:13
 msgid ""
-"The default logging configuration provided by the library will print to :"
-"data:`sys.stderr` using coloured output. You can configure it to send to a "
-"file instead by using one of the built-in :mod:`logging.handlers`, such as :"
-"class:`logging.FileHandler`."
+"The default logging configuration provided by the library will print "
+"to :data:`sys.stderr` using coloured output. You can configure it to send to "
+"a file instead by using one of the built-in :mod:`logging.handlers`, such "
+"as :class:`logging.FileHandler`."
 msgstr ""
 
 #: ../../../logging.rst:15
@@ -100,8 +100,8 @@ msgstr ""
 #: ../../../logging.rst:52
 msgid ""
 "If you want to setup logging using the library provided configuration "
-"without using :meth:`Client.run`, you can use :func:`discord.utils."
-"setup_logging`:"
+"without using :meth:`Client.run`, you can "
+"use :func:`discord.utils.setup_logging`:"
 msgstr ""
 
 #: ../../../logging.rst:54
@@ -150,8 +150,8 @@ msgstr ""
 
 #: ../../../logging.rst:91
 msgid ""
-"For more information, check the documentation and tutorial of the :mod:"
-"`logging` module."
+"For more information, check the documentation and tutorial of "
+"the :mod:`logging` module."
 msgstr ""
 
 #: ../../../logging.rst:95
