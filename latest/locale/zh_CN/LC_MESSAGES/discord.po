@@ -181,6 +181,6 @@ msgstr ""
 #: ../../../discord.rst:90
 msgid ""
 "If you want to generate this URL dynamically at run-time inside your bot and "
-"using the :class:`discord.Permissions` interface, you can use :func:`discord."
-"utils.oauth_url`."
+"using the :class:`discord.Permissions` interface, you can "
+"use :func:`discord.utils.oauth_url`."
 msgstr ""

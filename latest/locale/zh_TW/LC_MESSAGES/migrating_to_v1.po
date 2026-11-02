@@ -73,8 +73,8 @@ msgid ""
 "Before v1.0, all snowflakes (the ``id`` attribute) were strings. This has "
 "been changed to :class:`int`."
 msgstr ""
-"在 v1.0 之前，所有 snowflake（``id`` 屬性）都是字串。現已變更為 :class:"
-"`int`。"
+"在 v1.0 之前，所有 snowflake（``id`` 屬性）都是字串。現已變更"
+"為 :class:`int`。"
 
 #: ../../../migrating_to_v1.rst:36 ../../../migrating_to_v1.rst:256
 msgid "Quick example: ::"
@@ -223,8 +223,9 @@ msgstr "模型具有狀態"
 
 #: ../../../migrating_to_v1.rst:91
 msgid ""
-"As mentioned earlier, a lot of functionality was moved out of :class:"
-"`Client` and put into their respective :ref:`model <discord_api_models>`."
+"As mentioned earlier, a lot of functionality was moved out "
+"of :class:`Client` and put into their respective :ref:`model "
+"<discord_api_models>`."
 msgstr ""
 "如前所述，許多功能已從 :class:`Client` 移出，放入各自的 :ref:`模型 "
 "<discord_api_models>` 中。"
@@ -793,17 +794,17 @@ msgid ""
 "In v1.0 to save memory, :class:`User` and :class:`Member` are no longer "
 "inherited. Instead, they are \"flattened\" by having equivalent properties "
 "that map out to the functional underlying :class:`User`. Thus, there is no "
-"functional change in how they are used. However this breaks :func:"
-"`isinstance` checks and thus is something to keep in mind."
+"functional change in how they are used. However this "
+"breaks :func:`isinstance` checks and thus is something to keep in mind."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:275
 msgid ""
 "These memory savings were accomplished by having a global :class:`User` "
-"cache, and as a positive consequence you can now easily fetch a :class:"
-"`User` by their ID by using the new :meth:`Client.get_user`. You can also "
-"get a list of all :class:`User` your client can see with :attr:`Client."
-"users`."
+"cache, and as a positive consequence you can now easily fetch "
+"a :class:`User` by their ID by using the new :meth:`Client.get_user`. You "
+"can also get a list of all :class:`User` your client can see "
+"with :attr:`Client.users`."
 msgstr ""
 "這些記憶體節省是通過全域 :class:`User` 快取實現的，作為正面的附帶效果，您現在"
 "可以使用新的:meth:`Client.get_user` 透過 ID 輕鬆取得 :class:`User`。您還可以"
@@ -890,8 +891,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:313
 msgid ""
-"With this type split also came event changes, which are enumerated in :ref:"
-"`migrating_1_0_event_changes`."
+"With this type split also came event changes, which are enumerated "
+"in :ref:`migrating_1_0_event_changes`."
 msgstr ""
 "隨著此類型拆分，事件也發生了變更，詳見 :ref:`migrating_1_0_event_changes`。"
 
@@ -975,11 +976,11 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:354
 msgid ""
-"``Guild.default_channel`` / ``Server.default_channel`` and ``Channel."
-"is_default``"
+"``Guild.default_channel`` / ``Server.default_channel`` and "
+"``Channel.is_default``"
 msgstr ""
-"``Guild.default_channel`` / ``Server.default_channel`` 和 ``Channel."
-"is_default``"
+"``Guild.default_channel`` / ``Server.default_channel`` 和 "
+"``Channel.is_default``"
 
 #: ../../../migrating_to_v1.rst:356
 msgid ""
@@ -1049,14 +1050,14 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:387
 msgid ""
-":attr:`Message.embeds` is now a list of :class:`Embed` instead of :class:"
-"`dict` objects."
+":attr:`Message.embeds` is now a list of :class:`Embed` instead "
+"of :class:`dict` objects."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:388
 msgid ""
-":attr:`Message.attachments` is now a list of :class:`Attachment` instead of :"
-"class:`dict` object."
+":attr:`Message.attachments` is now a list of :class:`Attachment` instead "
+"of :class:`dict` object."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:389
@@ -1175,9 +1176,9 @@ msgstr "發送訊息"
 
 #: ../../../migrating_to_v1.rst:422
 msgid ""
-"One of the changes that were done was the merger of the previous ``Client."
-"send_message`` and ``Client.send_file`` functionality into a single method, :"
-"meth:`~abc.Messageable.send`."
+"One of the changes that were done was the merger of the previous "
+"``Client.send_message`` and ``Client.send_file`` functionality into a single "
+"method, :meth:`~abc.Messageable.send`."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:425 ../../../migrating_to_v1.rst:1079
@@ -1208,8 +1209,8 @@ msgstr ""
 #: ../../../migrating_to_v1.rst:438
 msgid ""
 "There is a caveat with sending files however, as this functionality was "
-"expanded to support multiple file attachments, you must now use a :class:"
-"`File` pseudo-namedtuple to upload a single file. ::"
+"expanded to support multiple file attachments, you must now use "
+"a :class:`File` pseudo-namedtuple to upload a single file. ::"
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:441
@@ -1276,28 +1277,29 @@ msgstr ""
 #: ../../../migrating_to_v1.rst:477
 msgid ""
 "A handy aspect of returning :class:`AsyncIterator` is that it allows you to "
-"chain functions together such as :meth:`AsyncIterator.map` or :meth:"
-"`AsyncIterator.filter`: ::"
+"chain functions together such as :meth:`AsyncIterator.map` "
+"or :meth:`AsyncIterator.filter`: ::"
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:480
 msgid ""
-"async for m_id in channel.history().filter(lambda m: m.author == client."
-"user).map(lambda m: m.id):\n"
+"async for m_id in channel.history().filter(lambda m: m.author == "
+"client.user).map(lambda m: m.id):\n"
 "    print(m_id)"
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:483
 msgid ""
-"The functions passed to :meth:`AsyncIterator.map` or :meth:`AsyncIterator."
-"filter` can be either coroutines or regular functions."
+"The functions passed to :meth:`AsyncIterator.map` "
+"or :meth:`AsyncIterator.filter` can be either coroutines or regular "
+"functions."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:486
 msgid ""
-"You can also get single elements a la :func:`discord.utils.find` or :func:"
-"`discord.utils.get` via :meth:`AsyncIterator.get` or :meth:`AsyncIterator."
-"find`: ::"
+"You can also get single elements a la :func:`discord.utils.find` "
+"or :func:`discord.utils.get` via :meth:`AsyncIterator.get` "
+"or :meth:`AsyncIterator.find`: ::"
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:489
@@ -1437,8 +1439,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:541
 msgid ""
-"Instead of two :class:`Member` objects, the new event takes one :class:"
-"`Member` object and two :class:`VoiceState` objects."
+"Instead of two :class:`Member` objects, the new event takes "
+"one :class:`Member` object and two :class:`VoiceState` objects."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:543
@@ -1475,15 +1477,15 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:565
 msgid ""
-"As part of the change, the event can either receive a :class:`User` or :"
-"class:`Member`. To help in the cases that have :class:`User`, the :class:"
-"`Guild` is provided as the first parameter."
+"As part of the change, the event can either receive a :class:`User` "
+"or :class:`Member`. To help in the cases that have :class:`User`, "
+"the :class:`Guild` is provided as the first parameter."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:568
 msgid ""
-"The ``on_channel_`` events have received a type level split (see :ref:"
-"`migrating_1_0_channel_split`)."
+"The ``on_channel_`` events have received a type level split "
+"(see :ref:`migrating_1_0_channel_split`)."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:572
@@ -1544,8 +1546,8 @@ msgstr "特別是："
 
 #: ../../../migrating_to_v1.rst:598
 msgid ""
-"Connection is done through :meth:`VoiceChannel.connect` instead of ``Client."
-"join_voice_channel``."
+"Connection is done through :meth:`VoiceChannel.connect` instead of "
+"``Client.join_voice_channel``."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:599
@@ -1622,8 +1624,8 @@ msgstr ""
 #: ../../../migrating_to_v1.rst:639
 msgid ""
 "With the changed :class:`AudioSource` design, you can now change the source "
-"that the :class:`VoiceClient` is playing at runtime via :attr:`VoiceClient."
-"source`."
+"that the :class:`VoiceClient` is playing at runtime "
+"via :attr:`VoiceClient.source`."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:642
@@ -1690,8 +1692,8 @@ msgstr ""
 #: ../../../migrating_to_v1.rst:669
 msgid ""
 "# before\n"
-"msg = await client.wait_for_message(author=message.author, channel=message."
-"channel)\n"
+"msg = await client.wait_for_message(author=message.author, "
+"channel=message.channel)\n"
 "\n"
 "# after\n"
 "def pred(m):\n"
@@ -1712,8 +1714,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:683
 msgid ""
-"reaction, user = await client.wait_for('reaction_add', check=lambda r, u: u."
-"id == 176995180300206080)\n"
+"reaction, user = await client.wait_for('reaction_add', check=lambda r, u: "
+"u.id == 176995180300206080)\n"
 "\n"
 "# use user and reaction"
 msgstr ""
@@ -1745,16 +1747,16 @@ msgstr "依賴升級"
 
 #: ../../../migrating_to_v1.rst:706
 msgid ""
-"Following v1.0 of the library, we've updated our requirements to :doc:"
-"`aiohttp <aio:index>` v2.0 or higher."
+"Following v1.0 of the library, we've updated our requirements "
+"to :doc:`aiohttp <aio:index>` v2.0 or higher."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:708
 msgid ""
 "Since this is a backwards incompatible change, it is recommended that you "
-"see the `changes <http://aiohttp.readthedocs.io/en/stable/changes."
-"html#rc1-2017-03-15>`_ and the :doc:`aio:migration_to_2xx` pages for details "
-"on the breaking changes in :doc:`aiohttp <aio:index>`."
+"see the `changes <http://aiohttp.readthedocs.io/en/stable/"
+"changes.html#rc1-2017-03-15>`_ and the :doc:`aio:migration_to_2xx` pages for "
+"details on the breaking changes in :doc:`aiohttp <aio:index>`."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:713
@@ -1873,8 +1875,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:761
 msgid ""
-"For users of the command extension, there is also :class:`~ext.commands."
-"AutoShardedBot` which behaves similarly."
+"For users of the command extension, there is "
+"also :class:`~ext.commands.AutoShardedBot` which behaves similarly."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:764
@@ -1922,8 +1924,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:788
 msgid ""
-"The biggest change is that ``pass_context=True`` no longer exists, :class:`."
-"Context` is always passed. Ergo:"
+"The biggest change is that ``pass_context=True`` no longer "
+"exists, :class:`.Context` is always passed. Ergo:"
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:790
@@ -1943,11 +1945,12 @@ msgstr ""
 msgid ""
 "The reason for this is because :class:`~ext.commands.Context` now meets the "
 "requirements of :class:`abc.Messageable`. This makes it have similar "
-"functionality to :class:`TextChannel` or :class:`DMChannel`. Using :meth:`~."
-"Context.send` will either DM the user in a DM context or send a message in "
-"the channel it was in, similar to the old ``bot.say`` functionality. The old "
-"helpers have been removed in favour of the new :class:`abc.Messageable` "
-"interface. See :ref:`migrating_1_0_removed_helpers` for more information."
+"functionality to :class:`TextChannel` or :class:`DMChannel`. "
+"Using :meth:`~.Context.send` will either DM the user in a DM context or send "
+"a message in the channel it was in, similar to the old ``bot.say`` "
+"functionality. The old helpers have been removed in favour of the "
+"new :class:`abc.Messageable` interface. "
+"See :ref:`migrating_1_0_removed_helpers` for more information."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:808
@@ -1962,26 +1965,26 @@ msgstr "**新捷徑**"
 
 #: ../../../migrating_to_v1.rst:812
 msgid ""
-":attr:`ctx.author <ext.commands.Context.author>` is a shortcut for ``ctx."
-"message.author``."
+":attr:`ctx.author <ext.commands.Context.author>` is a shortcut for "
+"``ctx.message.author``."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:813
 msgid ""
-":attr:`ctx.guild <ext.commands.Context.guild>` is a shortcut for ``ctx."
-"message.guild``."
+":attr:`ctx.guild <ext.commands.Context.guild>` is a shortcut for "
+"``ctx.message.guild``."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:814
 msgid ""
-":attr:`ctx.channel <ext.commands.Context.channel>` is a shortcut for ``ctx."
-"message.channel``."
+":attr:`ctx.channel <ext.commands.Context.channel>` is a shortcut for "
+"``ctx.message.channel``."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:815
 msgid ""
-":attr:`ctx.me <ext.commands.Context.me>` is a shortcut for ``ctx.message."
-"guild.me`` or ``ctx.bot.user``."
+":attr:`ctx.me <ext.commands.Context.me>` is a shortcut for "
+"``ctx.message.guild.me`` or ``ctx.bot.user``."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:816
@@ -2004,8 +2007,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:823
 msgid ""
-":attr:`.Context.valid` to check if a context can be invoked with :meth:`.Bot."
-"invoke`."
+":attr:`.Context.valid` to check if a context can be invoked "
+"with :meth:`.Bot.invoke`."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:824
@@ -2043,9 +2046,9 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:843
 msgid ""
-"Then you can use :meth:`~ext.commands.Bot.get_context` inside :func:"
-"`on_message` with combination with :meth:`~ext.commands.Bot.invoke` to use "
-"your custom context:"
+"Then you can use :meth:`~ext.commands.Bot.get_context` "
+"inside :func:`on_message` with combination "
+"with :meth:`~ext.commands.Bot.invoke` to use your custom context:"
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:846
@@ -2129,16 +2132,16 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:890
 msgid ""
-"Another change is the removal of ``no_pm=True``. Instead, use the new :func:"
-"`~ext.commands.guild_only` built-in check."
+"Another change is the removal of ``no_pm=True``. Instead, use the "
+"new :func:`~ext.commands.guild_only` built-in check."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:893
 msgid ""
-"The ``commands`` attribute of :class:`~ext.commands.Bot` and :class:`~ext."
-"commands.Group` have been changed from a dictionary to a set that does not "
-"have aliases. To retrieve the previous dictionary behaviour, use "
-"``all_commands`` instead."
+"The ``commands`` attribute of :class:`~ext.commands.Bot` "
+"and :class:`~ext.commands.Group` have been changed from a dictionary to a "
+"set that does not have aliases. To retrieve the previous dictionary "
+"behaviour, use ``all_commands`` instead."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:896
@@ -2207,8 +2210,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:918
 msgid ""
-"This is actually powered by a different function, :meth:`~ext.commands.Bot."
-"is_owner`."
+"This is actually powered by a different "
+"function, :meth:`~ext.commands.Bot.is_owner`."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:919
@@ -2245,19 +2248,19 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:942
 msgid ""
-"The extraneous ``command`` parameter in :func:`.on_command` and :func:`."
-"on_command_completion` have been removed. The :class:`~ext.commands.Command` "
-"instance was not kept up-to date so it was incorrect. In order to get the up "
-"to date :class:`~ext.commands.Command` instance, use the :attr:`.Context."
-"command` attribute."
+"The extraneous ``command`` parameter in :func:`.on_command` "
+"and :func:`.on_command_completion` have been removed. "
+"The :class:`~ext.commands.Command` instance was not kept up-to date so it "
+"was incorrect. In order to get the up to date :class:`~ext.commands.Command` "
+"instance, use the :attr:`.Context.command` attribute."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:947
 msgid ""
-"The error handlers, either :meth:`~ext.commands.Command.error` or :func:`."
-"on_command_error`, have been re-ordered to use the :class:`~ext.commands."
-"Context` as its first parameter to be consistent with other events and "
-"commands."
+"The error handlers, either :meth:`~ext.commands.Command.error` "
+"or :func:`.on_command_error`, have been re-ordered to use "
+"the :class:`~ext.commands.Context` as its first parameter to be consistent "
+"with other events and commands."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:952
@@ -2266,9 +2269,9 @@ msgstr "HelpFormatter 與 Help 命令變更"
 
 #: ../../../migrating_to_v1.rst:954
 msgid ""
-"The ``HelpFormatter`` class has been removed. It has been replaced with a :"
-"class:`~.commands.HelpCommand` class. This class now stores all the command "
-"handling and processing of the help command."
+"The ``HelpFormatter`` class has been removed. It has been replaced with "
+"a :class:`~.commands.HelpCommand` class. This class now stores all the "
+"command handling and processing of the help command."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:956
@@ -2354,8 +2357,9 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:975
 msgid ""
-"A coroutine that gets passed the result of :meth:`.HelpCommand."
-"command_not_found` and :meth:`.HelpCommand.subcommand_not_found`."
+"A coroutine that gets passed the result "
+"of :meth:`.HelpCommand.command_not_found` "
+"and :meth:`.HelpCommand.subcommand_not_found`."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:976
@@ -2389,28 +2393,28 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:984
 msgid ""
-"The old ``HelpFormatter`` was replaced with :class:`~.commands."
-"DefaultHelpCommand`\\, which implements all of the logic of the old help "
-"command. The customisable methods can be found in the accompanying "
-"documentation."
+"The old ``HelpFormatter`` was replaced "
+"with :class:`~.commands.DefaultHelpCommand`\\, which implements all of the "
+"logic of the old help command. The customisable methods can be found in the "
+"accompanying documentation."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:986
 msgid ""
-"The library now provides a new more minimalistic :class:`~.commands."
-"HelpCommand` implementation that doesn't take as much space, :class:`~."
-"commands.MinimalHelpCommand`. The customisable methods can also be found in "
-"the accompanying documentation."
+"The library now provides a new more "
+"minimalistic :class:`~.commands.HelpCommand` implementation that doesn't "
+"take as much space, :class:`~.commands.MinimalHelpCommand`. The customisable "
+"methods can also be found in the accompanying documentation."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:988
 msgid ""
 "A frequent request was if you could associate a help command with a cog. The "
-"new design allows for dynamically changing of cog through binding it to the :"
-"attr:`.HelpCommand.cog` attribute. After this assignment the help command "
-"will pretend to be part of the cog and everything should work as expected. "
-"When the cog is unloaded then the help command will be \"unbound\" from the "
-"cog."
+"new design allows for dynamically changing of cog through binding it to "
+"the :attr:`.HelpCommand.cog` attribute. After this assignment the help "
+"command will pretend to be part of the cog and everything should work as "
+"expected. When the cog is unloaded then the help command will be \"unbound\" "
+"from the cog."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:990
@@ -2423,8 +2427,8 @@ msgstr ""
 msgid ""
 "class MyHelpCommand(commands.MinimalHelpCommand):\n"
 "    def get_command_signature(self, command):\n"
-"        return '{0.clean_prefix}{1.qualified_name} {1.signature}'."
-"format(self, command)\n"
+"        return '{0.clean_prefix}{1.qualified_name} "
+"{1.signature}'.format(self, command)\n"
 "\n"
 "class MyCog(commands.Cog):\n"
 "    def __init__(self, bot):\n"
@@ -2448,8 +2452,8 @@ msgstr "Cog 變更"
 
 #: ../../../migrating_to_v1.rst:1012
 msgid ""
-"Cogs have completely been revamped. They are documented in :ref:"
-"`ext_commands_cogs` as well."
+"Cogs have completely been revamped. They are documented "
+"in :ref:`ext_commands_cogs` as well."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1014
@@ -2516,8 +2520,8 @@ msgstr ""
 #: ../../../migrating_to_v1.rst:1029
 msgid ""
 "Those that were using listeners, such as ``on_message`` inside a cog will "
-"now have to explicitly mark them as such using the :meth:`.commands.Cog."
-"listener` decorator."
+"now have to explicitly mark them as such using "
+"the :meth:`.commands.Cog.listener` decorator."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1031
@@ -2631,8 +2635,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1113
 msgid ""
-"The special cog method for these is :meth:`.Cog.cog_before_invoke` and :meth:"
-"`.Cog.cog_after_invoke`, e.g.:"
+"The special cog method for these is :meth:`.Cog.cog_before_invoke` "
+"and :meth:`.Cog.cog_after_invoke`, e.g.:"
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1115
@@ -2651,8 +2655,8 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1128
 msgid ""
-"To check if a command failed in the after invocation hook, you can use :attr:"
-"`.Context.command_failed`."
+"To check if a command failed in the after invocation hook, you can "
+"use :attr:`.Context.command_failed`."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1131
@@ -2700,18 +2704,18 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1147
 msgid ""
-"This system was eventually expanded to support a :class:`~ext.commands."
-"Converter` system to allow plugging in the :class:`~ext.commands.Context` "
-"and do more complicated conversions such as the built-in \"discord\" "
-"converters."
+"This system was eventually expanded to support "
+"a :class:`~ext.commands.Converter` system to allow plugging in "
+"the :class:`~ext.commands.Context` and do more complicated conversions such "
+"as the built-in \"discord\" converters."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1151
 msgid ""
-"In v1.0 this converter system was revamped to allow instances of :class:"
-"`~ext.commands.Converter` derived classes to be passed. For consistency, "
-"the :meth:`~ext.commands.Converter.convert` method was changed to always be "
-"a coroutine and will now take the two arguments as parameters."
+"In v1.0 this converter system was revamped to allow instances "
+"of :class:`~ext.commands.Converter` derived classes to be passed. For "
+"consistency, the :meth:`~ext.commands.Converter.convert` method was changed "
+"to always be a coroutine and will now take the two arguments as parameters."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1155
@@ -2738,14 +2742,14 @@ msgstr ""
 
 #: ../../../migrating_to_v1.rst:1169
 msgid ""
-":class:`~ext.commands.clean_content` this is akin to :attr:`Message."
-"clean_content` which scrubs mentions."
+":class:`~ext.commands.clean_content` this is akin "
+"to :attr:`Message.clean_content` which scrubs mentions."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1170
 msgid ""
-":class:`~ext.commands.UserConverter` will now appropriately convert :class:"
-"`User` only."
+":class:`~ext.commands.UserConverter` will now appropriately "
+"convert :class:`User` only."
 msgstr ""
 
 #: ../../../migrating_to_v1.rst:1171

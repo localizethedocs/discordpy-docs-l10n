@@ -68,8 +68,8 @@ msgstr ""
 
 #: ../../../quickstart.rst:45
 msgid ""
-"Let's name this file ``example_bot.py``. Make sure not to name it ``discord."
-"py`` as that'll conflict with the library."
+"Let's name this file ``example_bot.py``. Make sure not to name it "
+"``discord.py`` as that'll conflict with the library."
 msgstr ""
 
 #: ../../../quickstart.rst:48
@@ -78,9 +78,9 @@ msgstr ""
 
 #: ../../../quickstart.rst:50
 msgid ""
-"The first line just imports the library, if this raises a :exc:"
-"`ModuleNotFoundError` or :exc:`ImportError` then head on over to :ref:"
-"`installing` section to properly install."
+"The first line just imports the library, if this raises "
+"a :exc:`ModuleNotFoundError` or :exc:`ImportError` then head on over "
+"to :ref:`installing` section to properly install."
 msgstr ""
 
 #: ../../../quickstart.rst:52
@@ -108,8 +108,8 @@ msgstr ""
 msgid ""
 "Since the :func:`on_message` event triggers for *every* message received, we "
 "have to make sure that we ignore messages from ourselves. We do this by "
-"checking if the :attr:`Message.author` is the same as the :attr:`Client."
-"user`."
+"checking if the :attr:`Message.author` is the same as "
+"the :attr:`Client.user`."
 msgstr ""
 
 #: ../../../quickstart.rst:62

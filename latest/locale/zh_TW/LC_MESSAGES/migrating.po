@@ -53,9 +53,9 @@ msgid ""
 "<https://support.discord.com/hc/en-us/articles/115002192352>`_ and as such "
 "all support for user-only endpoints has been removed."
 msgstr ""
-"使用使用者 token 登入違反了 Discord 的 `服務條款 <https://support.discord."
-"com/hc/en-us/articles/115002192352>`_，因此已移除所有僅限使用者的 API 端點支"
-"援。"
+"使用使用者 token 登入違反了 Discord 的 `服務條款 <https://"
+"support.discord.com/hc/en-us/articles/115002192352>`_，因此已移除所有僅限使用"
+"者的 API 端點支援。"
 
 #: ../../../migrating.rst:24 ../../../migrating.rst:1165
 msgid "The following have been removed:"
@@ -71,8 +71,8 @@ msgstr ""
 
 #: ../../../migrating.rst:28
 msgid ""
-"``password``, ``new_password``, ``email``, and ``house`` parameters to :meth:"
-"`ClientUser.edit`"
+"``password``, ``new_password``, ``email``, and ``house`` parameters "
+"to :meth:`ClientUser.edit`"
 msgstr ""
 ":meth:`ClientUser.edit` 的 ``password``、``new_password``、``email`` 和 "
 "``house`` 參數"
@@ -253,8 +253,8 @@ msgid ""
 "This allows you to rather than using :meth:`Client.run` create your own "
 "asynchronous loop to setup other asynchronous code as needed."
 msgstr ""
-"這讓您可以使用自己的異步迴圈來設置其他異步程式碼，而不依賴 :meth:`Client."
-"run`。"
+"這讓您可以使用自己的異步迴圈來設置其他異步程式碼，而不依"
+"賴 :meth:`Client.run`。"
 
 #: ../../../migrating.rst:79 ../../../migrating.rst:102
 #: ../../../migrating.rst:184 ../../../migrating.rst:618
@@ -279,9 +279,9 @@ msgstr ""
 
 #: ../../../migrating.rst:95
 msgid ""
-"A new :meth:`~Client.setup_hook` method has also been added to the :class:"
-"`Client` class. This method is called after login but before connecting to "
-"the discord gateway."
+"A new :meth:`~Client.setup_hook` method has also been added to "
+"the :class:`Client` class. This method is called after login but before "
+"connecting to the discord gateway."
 msgstr ""
 ":class:`Client` 類別中還新增了 :meth:`~Client.setup_hook` 方法。此方法會在登"
 "入後、連接到 Discord 閘道前被呼叫。"
@@ -319,8 +319,8 @@ msgstr ""
 #: ../../../migrating.rst:115
 msgid ""
 "In parallel with this change, changes were made to loading and unloading of "
-"commands extension extensions and cogs, see :ref:"
-"`migrating_2_0_commands_extension_cog_async` for more information."
+"commands extension extensions and cogs, "
+"see :ref:`migrating_2_0_commands_extension_cog_async` for more information."
 msgstr ""
 "與此變更同步，命令擴充功能的擴充套件與 cog 的載入和卸載也做了調整，詳情請參"
 "閱 :ref:`migrating_2_0_commands_extension_cog_async`。"
@@ -336,9 +336,9 @@ msgid ""
 "their intents and to also make it more explicit, this parameter is now "
 "required to pass in."
 msgstr ""
-"在較早版本中，``intents`` 關鍵字引數是選用的，並預設為 :meth:`Intents."
-"default`。為了更好地教育使用者關於意圖的知識，並使其更加明確，此參數現在必須"
-"傳入。"
+"在較早版本中，``intents`` 關鍵字引數是選用的，並預設"
+"為 :meth:`Intents.default`。為了更好地教育使用者關於意圖的知識，並使其更加明"
+"確，此參數現在必須傳入。"
 
 #: ../../../migrating.rst:123
 msgid "For example:"
@@ -379,8 +379,8 @@ msgid ""
 ":ref:`discord_api_abcs` that inherited from :class:`abc.ABCMeta` now inherit "
 "from :class:`typing.Protocol`."
 msgstr ""
-"原先繼承自 :class:`abc.ABCMeta` 的 :ref:`discord_api_abcs`，現在改為繼承自 :"
-"class:`typing.Protocol`。"
+"原先繼承自 :class:`abc.ABCMeta` 的 :ref:`discord_api_abcs`，現在改為繼承"
+"自 :class:`typing.Protocol`。"
 
 #: ../../../migrating.rst:146
 msgid ""
@@ -391,9 +391,9 @@ msgstr ""
 
 #: ../../../migrating.rst:149
 msgid ""
-"All of the classes are either :func:`runtime-checkable <typing."
-"runtime_checkable>` protocols or explicitly inherited from and as such usage "
-"with :func:`isinstance` and :func:`issubclass` is not affected."
+"All of the classes are either :func:`runtime-checkable "
+"<typing.runtime_checkable>` protocols or explicitly inherited from and as "
+"such usage with :func:`isinstance` and :func:`issubclass` is not affected."
 msgstr ""
 "所有類別要麼是 :func:`runtime-checkable <typing.runtime_checkable>` 協定，要"
 "麼是明確繼承自這些協定，因此使用 :func:`isinstance` 和 :func:`issubclass` 不"
@@ -401,8 +401,8 @@ msgstr ""
 
 #: ../../../migrating.rst:152
 msgid ""
-"The following have been changed to :func:`runtime-checkable <typing."
-"runtime_checkable>` :class:`~typing.Protocol`\\s:"
+"The following have been changed to :func:`runtime-checkable "
+"<typing.runtime_checkable>` :class:`~typing.Protocol`\\s:"
 msgstr ""
 
 #: ../../../migrating.rst:154
@@ -427,8 +427,8 @@ msgstr ""
 
 #: ../../../migrating.rst:162
 msgid ""
-"The following have been changed to use the default metaclass instead of :"
-"class:`abc.ABCMeta`:"
+"The following have been changed to use the default metaclass instead "
+"of :class:`abc.ABCMeta`:"
 msgstr "以下項目已變更為使用預設元類別，而非 :class:`abc.ABCMeta`："
 
 #: ../../../migrating.rst:164
@@ -450,8 +450,8 @@ msgid ""
 "naive :class:`~datetime.datetime` objects now also accept timezone-aware "
 "objects. To keep behavior inline with :class:`~datetime.datetime`'s methods, "
 "this library's methods now assume that naive :class:`~datetime.datetime` "
-"objects are local time (note that some of the methods may not accept naive :"
-"class:`~datetime.datetime`, such exceptions are listed below)."
+"objects are local time (note that some of the methods may not accept "
+"naive :class:`~datetime.datetime`, such exceptions are listed below)."
 msgstr ""
 "程式庫中所有使用原生（naive）:class:`datetime.datetime` 物件的地方，都已替換"
 "為使用 UTC 時區的感知（aware）物件。原先接受原生 :class:`~datetime.datetime` "
@@ -493,16 +493,16 @@ msgid ""
 "# The new helper function can be used here:\n"
 "week_ago = discord.utils.utcnow() - datetime.timedelta(days=7)\n"
 "# ...or the equivalent result can be achieved with datetime.datetime.now():\n"
-"week_ago = datetime.datetime.now(datetime.timezone.utc) - datetime."
-"timedelta(days=7)\n"
+"week_ago = datetime.datetime.now(datetime.timezone.utc) - "
+"datetime.timedelta(days=7)\n"
 "if member.created_at > week_ago:\n"
 "    print(f'Member account {member} was created less than a week ago!')"
 msgstr ""
 
 #: ../../../migrating.rst:201
 msgid ""
-"The following have been changed from naive to aware :class:`~datetime."
-"datetime` objects in UTC:"
+"The following have been changed from naive to "
+"aware :class:`~datetime.datetime` objects in UTC:"
 msgstr ""
 "以下項目已從原生變更為具有 UTC 時區感知的 :class:`~datetime.datetime` 物件："
 
@@ -687,8 +687,8 @@ msgid ""
 "The following now accept aware :class:`~datetime.datetime` and assume that "
 "if the passed :class:`~datetime.datetime` is naive, it is a local time:"
 msgstr ""
-"以下項目現在接受感知 :class:`~datetime.datetime`，並假設傳入的 :class:"
-"`~datetime.datetime` 若為原生，則為本地時間："
+"以下項目現在接受感知 :class:`~datetime.datetime`，並假設傳入"
+"的 :class:`~datetime.datetime` 若為原生，則為本地時間："
 
 #: ../../../migrating.rst:250
 msgid ":meth:`abc.Messageable.history` method"
@@ -728,8 +728,8 @@ msgstr ""
 
 #: ../../../migrating.rst:260
 msgid ""
-"Currently, there's only one place in this library that doesn't accept naive :"
-"class:`datetime.datetime` objects:"
+"Currently, there's only one place in this library that doesn't accept "
+"naive :class:`datetime.datetime` objects:"
 msgstr ""
 "目前，此程式庫中只有一個地方不接受原生 :class:`datetime.datetime` 物件："
 
@@ -766,8 +766,8 @@ msgstr ""
 msgid ""
 "# before\n"
 "async with aiohttp.ClientSession() as session:\n"
-"    webhook = discord.Webhook.from_url('url-here', adapter=discord."
-"AsyncWebhookAdapter(session))\n"
+"    webhook = discord.Webhook.from_url('url-here', "
+"adapter=discord.AsyncWebhookAdapter(session))\n"
 "    await webhook.send('Hello World', username='Foo')\n"
 "\n"
 "# after\n"
@@ -783,8 +783,8 @@ msgstr ""
 #: ../../../migrating.rst:289
 msgid ""
 "# before\n"
-"webhook = discord.Webhook.partial(123456, 'token-here', adapter=discord."
-"RequestsWebhookAdapter())\n"
+"webhook = discord.Webhook.partial(123456, 'token-here', "
+"adapter=discord.RequestsWebhookAdapter())\n"
 "webhook.send('Hello World', username='Foo')\n"
 "\n"
 "# after\n"
@@ -802,8 +802,8 @@ msgid ""
 "Synchronous functionality of :class:`Webhook` and :class:`WebhookMessage` "
 "has been split to :class:`SyncWebhook` and :class:`SyncWebhookMessage`."
 msgstr ""
-":class:`Webhook` 和 :class:`WebhookMessage` 的同步功能已拆分至 :class:"
-"`SyncWebhook` 和 :class:`SyncWebhookMessage`。"
+":class:`Webhook` 和 :class:`WebhookMessage` 的同步功能已拆分"
+"至 :class:`SyncWebhook` 和 :class:`SyncWebhookMessage`。"
 
 #: ../../../migrating.rst:303
 msgid ""
@@ -837,24 +837,24 @@ msgid ""
 "been transformed to use this new design. As an example, here's how these "
 "changes look for :attr:`Guild.icon` (of :class:`Asset` type):"
 msgstr ""
-"這表示所有具有資產相關屬性和方法的模型都已轉換為使用此新設計。以下以 :attr:"
-"`Guild.icon`（類型為 :class:`Asset`）為例，展示這些變更的樣貌："
+"這表示所有具有資產相關屬性和方法的模型都已轉換為使用此新設計。以下"
+"以 :attr:`Guild.icon`（類型為 :class:`Asset`）為例，展示這些變更的樣貌："
 
 #: ../../../migrating.rst:315
 msgid ""
-"``Guild.icon`` (of :class:`str` type) has been replaced with :attr:`Guild."
-"icon.key <Asset.key>`."
+"``Guild.icon`` (of :class:`str` type) has been replaced "
+"with :attr:`Guild.icon.key <Asset.key>`."
 msgstr ""
-"``Guild.icon``（類型為 :class:`str`）已被替換為 :attr:`Guild.icon.key <Asset."
-"key>`。"
+"``Guild.icon``（類型為 :class:`str`）已被替換為 :attr:`Guild.icon.key "
+"<Asset.key>`。"
 
 #: ../../../migrating.rst:316
 msgid ""
-"``Guild.is_icon_animated`` has been replaced with :meth:`Guild.icon."
-"is_animated <Asset.is_animated>`."
+"``Guild.is_icon_animated`` has been replaced "
+"with :meth:`Guild.icon.is_animated <Asset.is_animated>`."
 msgstr ""
-"``Guild.is_icon_animated`` 已被替換為 :meth:`Guild.icon.is_animated <Asset."
-"is_animated>`。"
+"``Guild.is_icon_animated`` 已被替換為 :meth:`Guild.icon.is_animated "
+"<Asset.is_animated>`。"
 
 #: ../../../migrating.rst:317
 msgid "``Guild.icon_url`` has been replaced with :attr:`Guild.icon`."
@@ -869,19 +869,19 @@ msgstr ""
 
 #: ../../../migrating.rst:320
 msgid ""
-"Helper methods :meth:`Asset.with_size`, :meth:`Asset.with_format`, and :meth:"
-"`Asset.with_static_format` have also been added."
+"Helper methods :meth:`Asset.with_size`, :meth:`Asset.with_format`, "
+"and :meth:`Asset.with_static_format` have also been added."
 msgstr ""
-"也新增了輔助方法 :meth:`Asset.with_size`、:meth:`Asset.with_format` 和 :meth:"
-"`Asset.with_static_format`。"
+"也新增了輔助方法 :meth:`Asset.with_size`、:meth:`Asset.with_format` "
+"和 :meth:`Asset.with_static_format`。"
 
 #: ../../../migrating.rst:322
 msgid ""
 "In addition to this, :class:`Emoji` and :class:`PartialEmoji` now also share "
 "an interface similar to :class:`Asset`'s:"
 msgstr ""
-"除此之外，:class:`Emoji` 和 :class:`PartialEmoji` 現在也共用類似 :class:"
-"`Asset` 的介面："
+"除此之外，:class:`Emoji` 和 :class:`PartialEmoji` 現在也共用類"
+"似 :class:`Asset` 的介面："
 
 #: ../../../migrating.rst:324 ../../../migrating.rst:363
 msgid ":attr:`Emoji.url` is now of :class:`str` type."
@@ -927,8 +927,8 @@ msgstr ""
 
 #: ../../../migrating.rst:339
 msgid ""
-"``AppInfo.cover_image`` (replaced by :attr:`AppInfo.cover_image.key <Asset."
-"key>`)"
+"``AppInfo.cover_image`` (replaced by :attr:`AppInfo.cover_image.key "
+"<Asset.key>`)"
 msgstr ""
 
 #: ../../../migrating.rst:340
@@ -943,8 +943,8 @@ msgstr "新屬性現在可能是 ``None``。"
 
 #: ../../../migrating.rst:344
 msgid ""
-"``AppInfo.cover_image_url_as`` (replaced by :meth:`AppInfo.cover_image."
-"replace <Asset.replace>`)"
+"``AppInfo.cover_image_url_as`` (replaced "
+"by :meth:`AppInfo.cover_image.replace <Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:346
@@ -961,8 +961,8 @@ msgstr ""
 
 #: ../../../migrating.rst:353
 msgid ""
-"``AppInfo.icon_url_as`` (replaced by :meth:`AppInfo.icon.replace <Asset."
-"replace>`)"
+"``AppInfo.icon_url_as`` (replaced by :meth:`AppInfo.icon.replace "
+"<Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:355
@@ -1026,8 +1026,8 @@ msgstr ""
 
 #: ../../../migrating.rst:384
 msgid ""
-"``Guild.banner_url_as`` (replaced by :meth:`Guild.banner.replace <Asset."
-"replace>`)"
+"``Guild.banner_url_as`` (replaced by :meth:`Guild.banner.replace "
+"<Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:386
@@ -1047,8 +1047,8 @@ msgstr ""
 
 #: ../../../migrating.rst:393
 msgid ""
-"``Guild.discovery_splash_url_as`` (replaced by :meth:`Guild.discovery_splash."
-"replace <Asset.replace>`)"
+"``Guild.discovery_splash_url_as`` (replaced "
+"by :meth:`Guild.discovery_splash.replace <Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:395
@@ -1061,8 +1061,8 @@ msgstr ""
 
 #: ../../../migrating.rst:398
 msgid ""
-"``Guild.is_icon_animated`` (replaced by :meth:`Guild.icon.is_animated <Asset."
-"is_animated>`)"
+"``Guild.is_icon_animated`` (replaced by :meth:`Guild.icon.is_animated "
+"<Asset.is_animated>`)"
 msgstr ""
 
 #: ../../../migrating.rst:399
@@ -1071,8 +1071,8 @@ msgstr ""
 
 #: ../../../migrating.rst:403
 msgid ""
-"``Guild.icon_url_as`` (replaced by :meth:`Guild.icon.replace <Asset."
-"replace>`)"
+"``Guild.icon_url_as`` (replaced by :meth:`Guild.icon.replace "
+"<Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:405
@@ -1089,8 +1089,8 @@ msgstr ""
 
 #: ../../../migrating.rst:412
 msgid ""
-"``Guild.splash_url_as`` (replaced by :meth:`Guild.splash.replace <Asset."
-"replace>`)"
+"``Guild.splash_url_as`` (replaced by :meth:`Guild.splash.replace "
+"<Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:414
@@ -1113,8 +1113,8 @@ msgstr ""
 
 #: ../../../migrating.rst:422
 msgid ""
-"``Member.avatar_url_as`` (replaced by :meth:`Member.avatar.replace <Asset."
-"replace>`)"
+"``Member.avatar_url_as`` (replaced by :meth:`Member.avatar.replace "
+"<Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:424
@@ -1134,8 +1134,8 @@ msgstr ""
 
 #: ../../../migrating.rst:428
 msgid ""
-"``Member.default_avatar_url_as`` (replaced by :meth:`Member.default_avatar."
-"replace <Asset.replace>`)"
+"``Member.default_avatar_url_as`` (replaced "
+"by :meth:`Member.default_avatar.replace <Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:430
@@ -1164,20 +1164,20 @@ msgstr ""
 
 #: ../../../migrating.rst:439
 msgid ""
-"``PartialInviteGuild.banner`` (replaced by :attr:`PartialInviteGuild.banner."
-"key <Asset.key>`)"
+"``PartialInviteGuild.banner`` (replaced "
+"by :attr:`PartialInviteGuild.banner.key <Asset.key>`)"
 msgstr ""
 
 #: ../../../migrating.rst:440
 msgid ""
-"``PartialInviteGuild.banner_url`` (replaced by :attr:`PartialInviteGuild."
-"banner`)"
+"``PartialInviteGuild.banner_url`` (replaced "
+"by :attr:`PartialInviteGuild.banner`)"
 msgstr ""
 
 #: ../../../migrating.rst:444
 msgid ""
-"``PartialInviteGuild.banner_url_as`` (replaced by :meth:`PartialInviteGuild."
-"banner.replace <Asset.replace>`)"
+"``PartialInviteGuild.banner_url_as`` (replaced "
+"by :meth:`PartialInviteGuild.banner.replace <Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:446
@@ -1192,8 +1192,8 @@ msgstr ""
 
 #: ../../../migrating.rst:449
 msgid ""
-"``PartialInviteGuild.is_icon_animated`` (replaced by :meth:"
-"`PartialInviteGuild.icon.is_animated <Asset.is_animated>`)"
+"``PartialInviteGuild.is_icon_animated`` (replaced "
+"by :meth:`PartialInviteGuild.icon.is_animated <Asset.is_animated>`)"
 msgstr ""
 
 #: ../../../migrating.rst:450
@@ -1203,8 +1203,8 @@ msgstr ""
 
 #: ../../../migrating.rst:454
 msgid ""
-"``PartialInviteGuild.icon_url_as`` (replaced by :meth:`PartialInviteGuild."
-"icon.replace <Asset.replace>`)"
+"``PartialInviteGuild.icon_url_as`` (replaced "
+"by :meth:`PartialInviteGuild.icon.replace <Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:456
@@ -1213,20 +1213,20 @@ msgstr ""
 
 #: ../../../migrating.rst:458
 msgid ""
-"``PartialInviteGuild.splash`` (replaced by :attr:`PartialInviteGuild.splash."
-"key <Asset.key>`)"
+"``PartialInviteGuild.splash`` (replaced "
+"by :attr:`PartialInviteGuild.splash.key <Asset.key>`)"
 msgstr ""
 
 #: ../../../migrating.rst:459
 msgid ""
-"``PartialInviteGuild.splash_url`` (replaced by :attr:`PartialInviteGuild."
-"splash`)"
+"``PartialInviteGuild.splash_url`` (replaced "
+"by :attr:`PartialInviteGuild.splash`)"
 msgstr ""
 
 #: ../../../migrating.rst:463
 msgid ""
-"``PartialInviteGuild.splash_url_as`` (replaced by :meth:`PartialInviteGuild."
-"splash.replace <Asset.replace>`)"
+"``PartialInviteGuild.splash_url_as`` (replaced "
+"by :meth:`PartialInviteGuild.splash.replace <Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:465
@@ -1266,8 +1266,8 @@ msgstr ""
 
 #: ../../../migrating.rst:482
 msgid ""
-"``User.avatar_url_as`` (replaced by :meth:`User.avatar.replace <Asset."
-"replace>`)"
+"``User.avatar_url_as`` (replaced by :meth:`User.avatar.replace "
+"<Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:484
@@ -1276,8 +1276,8 @@ msgstr ""
 
 #: ../../../migrating.rst:486
 msgid ""
-"``User.default_avatar`` (replaced by :attr:`User.default_avatar.key <Asset."
-"key>`)"
+"``User.default_avatar`` (replaced by :attr:`User.default_avatar.key "
+"<Asset.key>`)"
 msgstr ""
 
 #: ../../../migrating.rst:487
@@ -1286,8 +1286,8 @@ msgstr ""
 
 #: ../../../migrating.rst:488
 msgid ""
-"``User.default_avatar_url_as`` (replaced by :meth:`User.default_avatar."
-"replace <Asset.replace>`)"
+"``User.default_avatar_url_as`` (replaced "
+"by :meth:`User.default_avatar.replace <Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:490
@@ -1304,8 +1304,8 @@ msgstr ""
 
 #: ../../../migrating.rst:497
 msgid ""
-"``Webhook.avatar_url_as`` (replaced by :meth:`Webhook.avatar.replace <Asset."
-"replace>`)"
+"``Webhook.avatar_url_as`` (replaced by :meth:`Webhook.avatar.replace "
+"<Asset.replace>`)"
 msgstr ""
 
 #: ../../../migrating.rst:502
@@ -1406,8 +1406,8 @@ msgstr ""
 
 #: ../../../migrating.rst:540
 msgid ""
-"Most of the time, this data is not provided and a call to :meth:`Thread."
-"fetch_members` is needed."
+"Most of the time, this data is not provided and a call "
+"to :meth:`Thread.fetch_members` is needed."
 msgstr ""
 
 #: ../../../migrating.rst:542
@@ -1449,8 +1449,8 @@ msgstr "以下是一些值得注意的範例："
 
 #: ../../../migrating.rst:555
 msgid ""
-"A guild member can send messages in a text channel if they have :attr:"
-"`~Permissions.send_messages` permission in it."
+"A guild member can send messages in a text channel if they "
+"have :attr:`~Permissions.send_messages` permission in it."
 msgstr ""
 
 #: ../../../migrating.rst:559
@@ -1473,27 +1473,27 @@ msgstr ""
 
 #: ../../../migrating.rst:563 ../../../migrating.rst:589
 msgid ""
-"They're either already a member of the thread or have a :attr:`~Permissions."
-"manage_threads` permission in its parent channel."
+"They're either already a member of the thread or have "
+"a :attr:`~Permissions.manage_threads` permission in its parent channel."
 msgstr ""
 
 #: ../../../migrating.rst:567
 msgid ""
-"A guild member can edit a text channel if they have :attr:`~Permissions."
-"manage_channels` permission in it."
+"A guild member can edit a text channel if they "
+"have :attr:`~Permissions.manage_channels` permission in it."
 msgstr ""
 
 #: ../../../migrating.rst:569
 msgid ""
-"A guild member can edit a thread if they have :attr:`~Permissions."
-"manage_threads` permission in its parent channel."
+"A guild member can edit a thread if they "
+"have :attr:`~Permissions.manage_threads` permission in its parent channel."
 msgstr ""
 
 #: ../../../migrating.rst:573
 msgid ""
 "A thread's :attr:`~Thread.owner` can archive a (not-locked) thread and edit "
-"its :attr:`~Thread.name` and :attr:`~Thread.auto_archive_duration` without :"
-"attr:`~Permissions.manage_threads` permission."
+"its :attr:`~Thread.name` and :attr:`~Thread.auto_archive_duration` "
+"without :attr:`~Permissions.manage_threads` permission."
 msgstr ""
 
 #: ../../../migrating.rst:578
@@ -1568,20 +1568,20 @@ msgstr ""
 
 #: ../../../migrating.rst:602
 msgid ""
-"If you're looking to get a channel or thread, use :attr:`Guild."
-"get_channel_or_thread` instead."
+"If you're looking to get a channel or thread, "
+"use :attr:`Guild.get_channel_or_thread` instead."
 msgstr ""
 
 #: ../../../migrating.rst:603
 msgid ""
-"If you're only looking to get threads, use :attr:`Guild.get_thread` or :attr:"
-"`TextChannel.get_thread` instead."
+"If you're only looking to get threads, use :attr:`Guild.get_thread` "
+"or :attr:`TextChannel.get_thread` instead."
 msgstr ""
 
 #: ../../../migrating.rst:605
 msgid ""
-"``channel`` parameter in :func:`on_guild_channel_pins_update` may now be a :"
-"class:`Thread`."
+"``channel`` parameter in :func:`on_guild_channel_pins_update` may now be "
+"a :class:`Thread`."
 msgstr ""
 
 #: ../../../migrating.rst:606
@@ -1635,8 +1635,8 @@ msgstr ""
 
 #: ../../../migrating.rst:634
 msgid ""
-"Note that this method will return ``None`` instead of :class:"
-"`CategoryChannel` if the edit was only positional."
+"Note that this method will return ``None`` instead "
+"of :class:`CategoryChannel` if the edit was only positional."
 msgstr ""
 
 #: ../../../migrating.rst:636
@@ -1735,9 +1735,9 @@ msgstr ""
 
 #: ../../../migrating.rst:672
 msgid ""
-"To get the :class:`Sticker` from :class:`StickerItem`, use :meth:"
-"`StickerItem.fetch` or (only for stickers from guilds the bot is in) :meth:"
-"`Client.get_sticker`."
+"To get the :class:`Sticker` from :class:`StickerItem`, "
+"use :meth:`StickerItem.fetch` or (only for stickers from guilds the bot is "
+"in) :meth:`Client.get_sticker`."
 msgstr ""
 
 #: ../../../migrating.rst:675
@@ -1750,8 +1750,8 @@ msgstr ""
 
 #: ../../../migrating.rst:678
 msgid ""
-"Depending on type of the sticker, :attr:`StandardSticker.tags` or :attr:"
-"`GuildSticker.emoji` can be used instead."
+"Depending on type of the sticker, :attr:`StandardSticker.tags` "
+"or :attr:`GuildSticker.emoji` can be used instead."
 msgstr ""
 
 #: ../../../migrating.rst:680
@@ -1764,8 +1764,8 @@ msgstr ""
 
 #: ../../../migrating.rst:682
 msgid ""
-":attr:`AuditLogDiff.type` is now of Union[:class:`ChannelType`, :class:"
-"`StickerType`] type."
+":attr:`AuditLogDiff.type` is now of "
+"Union[:class:`ChannelType`, :class:`StickerType`] type."
 msgstr ""
 
 #: ../../../migrating.rst:683
@@ -1795,8 +1795,8 @@ msgstr ""
 
 #: ../../../migrating.rst:695
 msgid ""
-":meth:`Guild.integrations` now returns subclasses of the new :class:"
-"`Integration` class."
+":meth:`Guild.integrations` now returns subclasses of the "
+"new :class:`Integration` class."
 msgstr ""
 
 #: ../../../migrating.rst:698
@@ -1883,8 +1883,8 @@ msgstr ""
 
 #: ../../../migrating.rst:757
 msgid ""
-"If you need to get next item from an iterator without a loop, you can use :"
-"func:`anext` (new in Python 3.10) or :meth:`~object.__anext__` instead:"
+"If you need to get next item from an iterator without a loop, you can "
+"use :func:`anext` (new in Python 3.10) or :meth:`~object.__anext__` instead:"
 msgstr ""
 
 #: ../../../migrating.rst:760
@@ -1975,8 +1975,8 @@ msgid ""
 "    content_of_messages.append(content)\n"
 "\n"
 "# after\n"
-"content_of_messages = [message.content async for message in channel."
-"history()]"
+"content_of_messages = [message.content async for message in "
+"channel.history()]"
 msgstr ""
 
 #: ../../../migrating.rst:835
@@ -1994,8 +1994,8 @@ msgid ""
 "    user_messages.append(message)\n"
 "\n"
 "# after\n"
-"user_messages = [message async for message in channel.history() if not m."
-"author.bot]"
+"user_messages = [message async for message in channel.history() if not "
+"m.author.bot]"
 msgstr ""
 
 #: ../../../migrating.rst:850
@@ -2017,8 +2017,8 @@ msgstr ""
 
 #: ../../../migrating.rst:856
 msgid ""
-"The return type of the following methods has been changed to an :term:"
-"`asynchronous iterator`:"
+"The return type of the following methods has been changed to "
+"an :term:`asynchronous iterator`:"
 msgstr ""
 
 #: ../../../migrating.rst:858
@@ -2043,9 +2043,9 @@ msgstr ""
 
 #: ../../../migrating.rst:864
 msgid ""
-"The ``NoMoreItems`` exception was removed as calling :func:`anext` or :meth:"
-"`~object.__anext__` on an :term:`asynchronous iterator` will now raise :"
-"class:`StopAsyncIteration`."
+"The ``NoMoreItems`` exception was removed as calling :func:`anext` "
+"or :meth:`~object.__anext__` on an :term:`asynchronous iterator` will now "
+"raise :class:`StopAsyncIteration`."
 msgstr ""
 
 #: ../../../migrating.rst:868
@@ -2055,8 +2055,8 @@ msgstr "將特定列表改為延遲序列"
 #: ../../../migrating.rst:870
 msgid ""
 "In order to improve performance when calculating the length of certain "
-"lists, certain attributes were changed to return a sequence rather than a :"
-"class:`list`."
+"lists, certain attributes were changed to return a sequence rather than "
+"a :class:`list`."
 msgstr ""
 
 #: ../../../migrating.rst:872
@@ -2143,8 +2143,8 @@ msgstr "移除 ``InvalidArgument`` 例外"
 #: ../../../migrating.rst:913
 msgid ""
 "The custom ``InvalidArgument`` exception has been removed and functions and "
-"methods that raised it are now raising :class:`TypeError` and/or :class:"
-"`ValueError` instead."
+"methods that raised it are now raising :class:`TypeError` and/"
+"or :class:`ValueError` instead."
 msgstr ""
 
 #: ../../../migrating.rst:916
@@ -2281,11 +2281,11 @@ msgstr "日誌變更"
 
 #: ../../../migrating.rst:964
 msgid ""
-"The library now provides a default logging configuration if using :meth:"
-"`Client.run`. To disable it, pass ``None`` to the ``log_handler`` keyword "
-"parameter. Since the library now provides a default logging configuration, "
-"certain methods were changed to no longer print to :data:`sys.stderr` but "
-"use the logger instead:"
+"The library now provides a default logging configuration if "
+"using :meth:`Client.run`. To disable it, pass ``None`` to the "
+"``log_handler`` keyword parameter. Since the library now provides a default "
+"logging configuration, certain methods were changed to no longer print "
+"to :data:`sys.stderr` but use the logger instead:"
 msgstr ""
 
 #: ../../../migrating.rst:966 ../../../migrating.rst:1048
@@ -2566,8 +2566,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1069
 msgid ""
-"``permissions``, ``guild``, ``redirect_uri``, and ``scopes`` parameters in :"
-"func:`utils.oauth_url`"
+"``permissions``, ``guild``, ``redirect_uri``, and ``scopes`` parameters "
+"in :func:`utils.oauth_url`"
 msgstr ""
 
 #: ../../../migrating.rst:1070
@@ -2602,8 +2602,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1080
 msgid ""
-"``topic``, ``position`` and ``overwrites`` in :meth:`Guild."
-"create_text_channel`"
+"``topic``, ``position`` and ``overwrites`` "
+"in :meth:`Guild.create_text_channel`"
 msgstr ""
 
 #: ../../../migrating.rst:1081
@@ -2612,8 +2612,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1082
 msgid ""
-"``topic``, ``position`` and ``overwrites`` in :meth:`Guild."
-"create_stage_channel`"
+"``topic``, ``position`` and ``overwrites`` "
+"in :meth:`Guild.create_stage_channel`"
 msgstr ""
 
 #: ../../../migrating.rst:1083
@@ -2638,8 +2638,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1088
 msgid ""
-"``before``, ``after``, ``oldest_first``, ``user``, and ``action`` in :meth:"
-"`Guild.audit_logs`"
+"``before``, ``after``, ``oldest_first``, ``user``, and ``action`` "
+"in :meth:`Guild.audit_logs`"
 msgstr ""
 
 #: ../../../migrating.rst:1089
@@ -2665,8 +2665,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1094
 msgid ""
-"``permissions``, ``guild``, ``redirect_uri``, ``scopes`` in :meth:`utils."
-"oauth_url`"
+"``permissions``, ``guild``, ``redirect_uri``, ``scopes`` "
+"in :meth:`utils.oauth_url`"
 msgstr ""
 
 #: ../../../migrating.rst:1095
@@ -2687,14 +2687,14 @@ msgstr ""
 
 #: ../../../migrating.rst:1100
 msgid ""
-"``rtc_region`` in :meth:`StageChannel.edit` is now of type Optional[:class:"
-"`str`]."
+"``rtc_region`` in :meth:`StageChannel.edit` is now of type "
+"Optional[:class:`str`]."
 msgstr ""
 
 #: ../../../migrating.rst:1101
 msgid ""
-"``rtc_region`` in :meth:`VoiceChannel.edit` is now of type Optional[:class:"
-"`str`]."
+"``rtc_region`` in :meth:`VoiceChannel.edit` is now of type "
+"Optional[:class:`str`]."
 msgstr ""
 
 #: ../../../migrating.rst:1102
@@ -2722,8 +2722,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1112
 msgid ""
-":attr:`Guild.shard_id` is now ``0`` instead of ``None`` if :class:"
-"`AutoShardedClient` is not used."
+":attr:`Guild.shard_id` is now ``0`` instead of ``None`` "
+"if :class:`AutoShardedClient` is not used."
 msgstr ""
 
 #: ../../../migrating.rst:1113
@@ -2757,8 +2757,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1121
 msgid ""
-"If you want the avatar that a user has displayed, consider :attr:`ClientUser."
-"display_avatar`."
+"If you want the avatar that a user has displayed, "
+"consider :attr:`ClientUser.display_avatar`."
 msgstr ""
 
 #: ../../../migrating.rst:1123
@@ -2767,8 +2767,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1125
 msgid ""
-"If you want the avatar that a member or user has displayed, consider :attr:"
-"`Member.display_avatar` or :attr:`User.display_avatar`."
+"If you want the avatar that a member or user has displayed, "
+"consider :attr:`Member.display_avatar` or :attr:`User.display_avatar`."
 msgstr ""
 
 #: ../../../migrating.rst:1128
@@ -2777,8 +2777,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1130
 msgid ""
-"If you want the avatar that a user has displayed, consider :attr:`User."
-"display_avatar`."
+"If you want the avatar that a user has displayed, "
+"consider :attr:`User.display_avatar`."
 msgstr ""
 
 #: ../../../migrating.rst:1132
@@ -2787,8 +2787,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1134
 msgid ""
-"If you want the avatar that a webhook has displayed, consider :attr:`Webhook."
-"display_avatar`."
+"If you want the avatar that a webhook has displayed, "
+"consider :attr:`Webhook.display_avatar`."
 msgstr ""
 
 #: ../../../migrating.rst:1136
@@ -2848,14 +2848,14 @@ msgstr ""
 
 #: ../../../migrating.rst:1163
 msgid ""
-"``Permissions.use_slash_commands`` and ``PermissionOverwrite."
-"use_slash_commands``"
+"``Permissions.use_slash_commands`` and "
+"``PermissionOverwrite.use_slash_commands``"
 msgstr ""
 
 #: ../../../migrating.rst:1163
 msgid ""
-"Use :attr:`Permissions.use_application_commands` and ``PermissionOverwrite."
-"use_application_commands`` instead."
+"Use :attr:`Permissions.use_application_commands` and "
+"``PermissionOverwrite.use_application_commands`` instead."
 msgstr ""
 
 #: ../../../migrating.rst:1167
@@ -2914,8 +2914,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1187
 msgid ""
-"``VerificationLevel.double_table_flip`` - use :attr:`VerificationLevel."
-"highest` instead."
+"``VerificationLevel.double_table_flip`` - "
+"use :attr:`VerificationLevel.highest` instead."
 msgstr ""
 
 #: ../../../migrating.rst:1188
@@ -2930,8 +2930,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1192
 msgid ""
-"The ``topic`` parameter must now be set via :meth:`StageChannel."
-"create_instance`."
+"The ``topic`` parameter must now be set "
+"via :meth:`StageChannel.create_instance`."
 msgstr ""
 
 #: ../../../migrating.rst:1194
@@ -3038,8 +3038,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1233
 msgid ""
-":func:`utils.oauth_url` now defaults to ``bot`` and ``applications."
-"commands`` scopes when not given instead of just ``bot``."
+":func:`utils.oauth_url` now defaults to ``bot`` and "
+"``applications.commands`` scopes when not given instead of just ``bot``."
 msgstr ""
 
 #: ../../../migrating.rst:1234
@@ -3050,8 +3050,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1235
 msgid ""
-":attr:`Intents.emojis` is now an alias of :attr:`Intents."
-"emojis_and_stickers`."
+":attr:`Intents.emojis` is now an alias "
+"of :attr:`Intents.emojis_and_stickers`."
 msgstr ""
 
 #: ../../../migrating.rst:1237
@@ -3144,9 +3144,9 @@ msgstr ""
 
 #: ../../../migrating.rst:1282
 msgid ""
-":meth:`Permissions.stage_moderator` now includes the :attr:`Permissions."
-"manage_channels` permission and the :attr:`Permissions.request_to_speak` "
-"permission is no longer included."
+":meth:`Permissions.stage_moderator` now includes "
+"the :attr:`Permissions.manage_channels` permission and "
+"the :attr:`Permissions.request_to_speak` permission is no longer included."
 msgstr ""
 
 #: ../../../migrating.rst:1284
@@ -3261,15 +3261,15 @@ msgstr "轉換器現已改為泛型執行時期協定"
 
 #: ../../../migrating.rst:1351
 msgid ""
-":class:`~ext.commands.Converter` is now a :func:`runtime-checkable <typing."
-"runtime_checkable>` :class:`typing.Protocol`."
+":class:`~ext.commands.Converter` is now a :func:`runtime-checkable "
+"<typing.runtime_checkable>` :class:`typing.Protocol`."
 msgstr ""
 
 #: ../../../migrating.rst:1353
 msgid ""
 "This results in a change of the base metaclass used by these classes which "
-"may affect user-created classes that inherit from :class:`~ext.commands."
-"Converter`."
+"may affect user-created classes that inherit "
+"from :class:`~ext.commands.Converter`."
 msgstr ""
 
 #: ../../../migrating.rst:1358
@@ -3291,9 +3291,9 @@ msgstr ""
 
 #: ../../../migrating.rst:1374
 msgid ""
-"In addition, :class:`~ext.commands.Converter` is now a :class:`typing."
-"Generic` which (optionally) allows the users to define their type hints more "
-"accurately."
+"In addition, :class:`~ext.commands.Converter` is now "
+"a :class:`typing.Generic` which (optionally) allows the users to define "
+"their type hints more accurately."
 msgstr ""
 
 #: ../../../migrating.rst:1382
@@ -3628,34 +3628,35 @@ msgstr ""
 
 #: ../../../migrating.rst:1489
 msgid ""
-"When passing a callable to ``type`` argument of :meth:`~ext.commands."
-"cooldown`, it now needs to accept :class:`~ext.commands.Context` rather "
-"than :class:`Message` as its only argument."
+"When passing a callable to ``type`` argument "
+"of :meth:`~ext.commands.cooldown`, it now needs to "
+"accept :class:`~ext.commands.Context` rather than :class:`Message` as its "
+"only argument."
 msgstr ""
 
 #: ../../../migrating.rst:1491
 msgid ""
-"Metaclass of :class:`~ext.commands.Context` changed from :class:`abc."
-"ABCMeta` to :class:`type`."
+"Metaclass of :class:`~ext.commands.Context` changed "
+"from :class:`abc.ABCMeta` to :class:`type`."
 msgstr ""
 
 #: ../../../migrating.rst:1492
 msgid ""
-"Changed type of :attr:`ext.commands.Command.clean_params` from :class:"
-"`collections.OrderedDict` to :class:`dict`. As the latter is guaranteed to "
-"preserve insertion order since Python 3.7."
+"Changed type of :attr:`ext.commands.Command.clean_params` "
+"from :class:`collections.OrderedDict` to :class:`dict`. As the latter is "
+"guaranteed to preserve insertion order since Python 3.7."
 msgstr ""
 
 #: ../../../migrating.rst:1494
 msgid ""
-":attr:`ext.commands.ChannelNotReadable.argument` may now be a :class:"
-"`Thread` due to the :ref:`migrating_2_0_thread_support` changes."
+":attr:`ext.commands.ChannelNotReadable.argument` may now be "
+"a :class:`Thread` due to the :ref:`migrating_2_0_thread_support` changes."
 msgstr ""
 
 #: ../../../migrating.rst:1495
 msgid ""
-":attr:`ext.commands.NSFWChannelRequired.channel` may now be a :class:"
-"`Thread` due to the :ref:`migrating_2_0_thread_support` changes."
+":attr:`ext.commands.NSFWChannelRequired.channel` may now be "
+"a :class:`Thread` due to the :ref:`migrating_2_0_thread_support` changes."
 msgstr ""
 
 #: ../../../migrating.rst:1496
@@ -3666,26 +3667,26 @@ msgstr ""
 
 #: ../../../migrating.rst:1497
 msgid ""
-":attr:`ext.commands.Context.channel` may now be a :class:"
-"`PartialMessageable`."
+":attr:`ext.commands.Context.channel` may now be "
+"a :class:`PartialMessageable`."
 msgstr ""
 
 #: ../../../migrating.rst:1498
 msgid ""
-"``MissingPermissions.missing_perms`` has been renamed to :attr:`ext.commands."
-"MissingPermissions.missing_permissions`."
+"``MissingPermissions.missing_perms`` has been renamed "
+"to :attr:`ext.commands.MissingPermissions.missing_permissions`."
 msgstr ""
 
 #: ../../../migrating.rst:1499
 msgid ""
-"``BotMissingPermissions.missing_perms`` has been renamed to :attr:`ext."
-"commands.BotMissingPermissions.missing_permissions`."
+"``BotMissingPermissions.missing_perms`` has been renamed "
+"to :attr:`ext.commands.BotMissingPermissions.missing_permissions`."
 msgstr ""
 
 #: ../../../migrating.rst:1500
 msgid ""
-":meth:`ext.commands.Cog.cog_load` has been added as part of the :ref:"
-"`migrating_2_0_commands_extension_cog_async` changes."
+":meth:`ext.commands.Cog.cog_load` has been added as part of "
+"the :ref:`migrating_2_0_commands_extension_cog_async` changes."
 msgstr ""
 
 #: ../../../migrating.rst:1501
@@ -3696,8 +3697,8 @@ msgstr ""
 
 #: ../../../migrating.rst:1502
 msgid ""
-":attr:`ext.commands.Command.clean_params` type now uses a custom :class:"
-"`inspect.Parameter` to handle defaults."
+":attr:`ext.commands.Command.clean_params` type now uses a "
+"custom :class:`inspect.Parameter` to handle defaults."
 msgstr ""
 
 #: ../../../migrating.rst:1507
