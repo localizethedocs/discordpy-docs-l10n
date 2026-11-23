@@ -552,7 +552,7 @@ msgstr ""
 #: discord.interactions.InteractionResponse.send_message:0
 #: discord.interactions.InteractionResponse.edit_message:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../discord/interactions.py:docstring of
 #: discord.interactions.Interaction.edit_original_response:11
@@ -3890,7 +3890,7 @@ msgstr ""
 
 #: ../../../interactions/api.rst:314
 msgid "Data Classes"
-msgstr ""
+msgstr "資料類別"
 
 #: ../../../interactions/api.rst:316
 msgid ""
@@ -4250,7 +4250,7 @@ msgstr ""
 
 #: ../../../interactions/api.rst:377
 msgid "Enumerations"
-msgstr ""
+msgstr "列舉"
 
 #: ../../../interactions/api.rst:381
 msgid "Specifies the type of :class:`Interaction`."

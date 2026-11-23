@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:6
 msgid "Cogs"
-msgstr ""
+msgstr "齒輪"
 
 #: ../../../ext/commands/cogs.rst:8
 msgid ""
@@ -30,44 +30,45 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:10
 msgid "The gist:"
-msgstr ""
+msgstr "要點如下："
 
 #: ../../../ext/commands/cogs.rst:12
 msgid "Each cog is a Python class that subclasses :class:`.commands.Cog`."
-msgstr ""
+msgstr "每個齒輪都是一個繼承自 :class:`.commands.Cog` 的 Python 類別。"
 
 #: ../../../ext/commands/cogs.rst:13
 msgid "Every command is marked with the :func:`.commands.command` decorator."
-msgstr ""
+msgstr "每個命令都使用 :func:`.commands.command` 裝飾器標註。"
 
 #: ../../../ext/commands/cogs.rst:14
 msgid ""
 "Every hybrid command is marked with the :func:`.commands.hybrid_command` "
 "decorator."
-msgstr ""
+msgstr "每個混合命令都使用 :func:`.commands.hybrid_command` 裝飾器標註。"
 
 #: ../../../ext/commands/cogs.rst:15
 msgid ""
 "Every listener is marked with the :meth:`.commands.Cog.listener` decorator."
-msgstr ""
+msgstr "每個監聽器都使用 :meth:`.commands.Cog.listener` 裝飾器標註。"
 
 #: ../../../ext/commands/cogs.rst:16
 msgid "Cogs are then registered with the :meth:`.Bot.add_cog` call."
-msgstr ""
+msgstr "接著透過 :meth:`.Bot.add_cog` 呼叫來註冊齒輪。"
 
 #: ../../../ext/commands/cogs.rst:17
 msgid "Cogs are subsequently removed with the :meth:`.Bot.remove_cog` call."
-msgstr ""
+msgstr "隨後透過 :meth:`.Bot.remove_cog` 呼叫來移除齒輪。"
 
 #: ../../../ext/commands/cogs.rst:19
 msgid ""
 "It should be noted that cogs are typically used alongside "
 "with :ref:`ext_commands_extensions`."
 msgstr ""
+"值得注意的是，齒輪通常會與\\ :ref:`ext_commands_extensions`\\ 搭配使用。"
 
 #: ../../../ext/commands/cogs.rst:22
 msgid "Quick Example"
-msgstr ""
+msgstr "快速範例"
 
 #: ../../../ext/commands/cogs.rst:24
 msgid ""
@@ -99,6 +100,26 @@ msgid ""
 "            await ctx.send(f'Hello {member.name}... This feels familiar.')\n"
 "        self._last_member = member"
 msgstr ""
+"class Greetings(commands.Cog):\n"
+"    def __init__(self, bot):\n"
+"        self.bot = bot\n"
+"        self._last_member = None\n"
+"\n"
+"    @commands.Cog.listener()\n"
+"    async def on_member_join(self, member):\n"
+"        channel = member.guild.system_channel\n"
+"        if channel is not None:\n"
+"            await channel.send(f'Welcome {member.mention}.')\n"
+"\n"
+"    @commands.command()\n"
+"    async def hello(self, ctx, *, member: discord.Member = None):\n"
+"        \"\"\"Says hello\"\"\"\n"
+"        member = member or ctx.author\n"
+"        if self._last_member is None or self._last_member.id != member.id:\n"
+"            await ctx.send(f'Hello {member.name}~')\n"
+"        else:\n"
+"            await ctx.send(f'Hello {member.name}... This feels familiar.')\n"
+"        self._last_member = member"
 
 #: ../../../ext/commands/cogs.rst:49
 msgid "A couple of technical notes to take into consideration:"
@@ -124,7 +145,7 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:56
 msgid "Cog Registration"
-msgstr ""
+msgstr "齒輪註冊"
 
 #: ../../../ext/commands/cogs.rst:58
 msgid ""
@@ -134,7 +155,7 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:60
 msgid "await bot.add_cog(Greetings(bot))"
-msgstr ""
+msgstr "await bot.add_cog(Greetings(bot))"
 
 #: ../../../ext/commands/cogs.rst:64
 msgid ""
@@ -151,11 +172,11 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:68
 msgid "await bot.remove_cog('Greetings')"
-msgstr ""
+msgstr "await bot.remove_cog('Greetings')"
 
 #: ../../../ext/commands/cogs.rst:73
 msgid "Using Cogs"
-msgstr ""
+msgstr "使用齒輪"
 
 #: ../../../ext/commands/cogs.rst:75
 msgid ""
@@ -196,7 +217,7 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:110
 msgid "Special Methods"
-msgstr ""
+msgstr "特殊方法"
 
 #: ../../../ext/commands/cogs.rst:112
 msgid ""
@@ -210,35 +231,35 @@ msgstr ""
 
 #: ../../../ext/commands/cogs.rst:116
 msgid ":meth:`.Cog.cog_load`"
-msgstr ""
+msgstr ":meth:`.Cog.cog_load`"
 
 #: ../../../ext/commands/cogs.rst:117
 msgid ":meth:`.Cog.cog_unload`"
-msgstr ""
+msgstr ":meth:`.Cog.cog_unload`"
 
 #: ../../../ext/commands/cogs.rst:118
 msgid ":meth:`.Cog.cog_check`"
-msgstr ""
+msgstr ":meth:`.Cog.cog_check`"
 
 #: ../../../ext/commands/cogs.rst:119
 msgid ":meth:`.Cog.cog_command_error`"
-msgstr ""
+msgstr ":meth:`.Cog.cog_command_error`"
 
 #: ../../../ext/commands/cogs.rst:120
 msgid ":meth:`.Cog.cog_before_invoke`"
-msgstr ""
+msgstr ":meth:`.Cog.cog_before_invoke`"
 
 #: ../../../ext/commands/cogs.rst:121
 msgid ":meth:`.Cog.cog_after_invoke`"
-msgstr ""
+msgstr ":meth:`.Cog.cog_after_invoke`"
 
 #: ../../../ext/commands/cogs.rst:122
 msgid ":meth:`.Cog.bot_check`"
-msgstr ""
+msgstr ":meth:`.Cog.bot_check`"
 
 #: ../../../ext/commands/cogs.rst:123
 msgid ":meth:`.Cog.bot_check_once`"
-msgstr ""
+msgstr ":meth:`.Cog.bot_check_once`"
 
 #: ../../../ext/commands/cogs.rst:125
 msgid "You can visit the reference to get more detail."

@@ -130,7 +130,7 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:76
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../ext/commands/commands.rst:78
 msgid ""
@@ -1706,7 +1706,7 @@ msgstr ""
 
 #: ../../../ext/commands/commands.rst:1032
 msgid "Error Handling"
-msgstr ""
+msgstr "錯誤處理"
 
 #: ../../../ext/commands/commands.rst:1034
 msgid ""

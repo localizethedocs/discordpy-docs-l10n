@@ -1993,7 +1993,7 @@ msgstr ""
 #: sphinx/domains/c.py:3352 sphinx/domains/cpp.py:7261
 #: sphinx/domains/python.py:445 sphinx/ext/napoleon/docstring.py:736
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: sphinx/domains/c.py:3355 sphinx/domains/cpp.py:7267
 msgid "Return values"
@@ -3196,7 +3196,7 @@ msgstr ""
 
 #: sphinx/ext/napoleon/docstring.py:727
 msgid "Other Parameters"
-msgstr ""
+msgstr "其他參數"
 
 #: sphinx/ext/napoleon/docstring.py:763
 msgid "Receives"
