@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../ext/commands/index.rst:4
 msgid "``discord.ext.commands`` -- Bot commands framework"
-msgstr ""
+msgstr "``discord.ext.commands`` -- 機器人命令框架"
 
 #: ../../../ext/commands/index.rst:6
 msgid ""

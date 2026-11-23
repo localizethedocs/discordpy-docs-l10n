@@ -70,7 +70,7 @@ msgstr ""
 
 #: ../../../ext/commands/extensions.rst:32
 msgid "Cogs"
-msgstr ""
+msgstr "齒輪"
 
 #: ../../../ext/commands/extensions.rst:35
 msgid ""

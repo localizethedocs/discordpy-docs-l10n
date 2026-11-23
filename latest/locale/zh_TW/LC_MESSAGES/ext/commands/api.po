@@ -286,7 +286,7 @@ msgstr ""
 #: discord.ext.commands.bot.BotBase.add_cog:0
 #: discord.ext.commands.bot.BotBase.add_command:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../discord/ext/commands/bot.py:docstring of
 #: discord.ext.commands.bot.BotBase.after_invoke:21
@@ -4461,7 +4461,7 @@ msgstr ""
 
 #: ../../../ext/commands/api.rst:243
 msgid "Cogs"
-msgstr ""
+msgstr "齒輪"
 
 #: ../../../ext/commands/api.rst:246
 msgid "Cog"

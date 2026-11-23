@@ -19,7 +19,7 @@ msgstr ""
 
 #: ../../../whats_new.rst:9
 msgid "Changelog"
-msgstr ""
+msgstr "變更日誌"
 
 #: ../../../whats_new.rst:11
 msgid ""

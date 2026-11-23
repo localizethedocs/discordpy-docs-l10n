@@ -95,7 +95,7 @@ msgstr ""
 #: discord.client.Client.before_identify_hook:0 discord.client.Client.login:0
 #: discord.client.Client.connect:0 discord.client.Client.start:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../discord/client.py:docstring of discord.client.Client:14
 msgid ""
@@ -6567,7 +6567,7 @@ msgstr ""
 
 #: ../../../api.rst:1654
 msgid "Enumerations"
-msgstr ""
+msgstr "列舉"
 
 #: ../../../api.rst:1656
 msgid ""
@@ -26731,7 +26731,7 @@ msgstr ""
 
 #: ../../../api.rst:5873
 msgid "Data Classes"
-msgstr ""
+msgstr "資料類別"
 
 #: ../../../api.rst:5875
 msgid "Some classes are just there to be data containers, this lists them."

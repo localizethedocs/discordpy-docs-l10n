@@ -284,7 +284,7 @@ msgstr ""
 #: discord.ext.tasks.Loop.error:0 discord.ext.tasks.Loop.__call__:0
 #: discord.ext.tasks.Loop.start:0
 msgid "Parameters"
-msgstr ""
+msgstr "參數"
 
 #: ../../../../discord/ext/tasks/__init__.py:docstring of
 #: discord.ext.tasks.Loop.after_loop:11
